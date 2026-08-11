@@ -1,0 +1,17 @@
+node_modules
+.next
+out
+build
+.DS_Store
+*.pem
+
+.env
+.env*.local
+
+.vercel
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# Source image dump at repo root (site serves copies from public/images/products)
+# Anchored so Windows case-insensitive matching does not ignore public/images/
+/IMAGES/

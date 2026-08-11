@@ -1,0 +1,507 @@
+[
+  {
+    "id": "garden-kneeler-tool-seat",
+    "slug": "garden-kneeler-tool-seat",
+    "sku": "THST-001",
+    "title": "Foldable Garden Kneeler & Tool Seat",
+    "brand": "Thornstead",
+    "category": "Garden Tools",
+    "categorySlug": "garden-tools",
+    "price": 34.95,
+    "currency": "GBP",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Gardening Tools",
+    "images": [
+      {
+        "src": "/images/products/garden-kneeler-tool-seat-1.jpg",
+        "alt": "Thornstead foldable garden kneeler and tool seat, front view"
+      },
+      {
+        "src": "/images/products/garden-kneeler-tool-seat-2.jpg",
+        "alt": "Thornstead garden kneeler and tool seat in use in a garden border"
+      },
+      {
+        "src": "/images/products/garden-kneeler-tool-seat-3.jpg",
+        "alt": "Close-up of the folding hinge and cushion on the Thornstead garden kneeler"
+      }
+    ],
+    "shortDescription": "A powder-coated steel frame that flips from a kneeling pad to a garden seat, with a thick foam cushion and two side pockets for hand tools.",
+    "description": "Weeding a border and then needing somewhere to sit are the same job, so the Thornstead kneeler does both. Flip it one way and the padded cushion sits low to the ground with steel handles either side to help you get back up. Flip it over and it becomes a stable seat at a comfortable height for potting, pruning or sowing. The frame folds flat in one movement, so it stores against a shed wall or in the boot of a car without taking a shelf hostage. Two detachable pockets carry secateurs, twine, labels and gloves so you are not walking back to the shed every ten minutes.",
+    "features": [
+      "Reverses between a kneeling pad and a raised garden seat",
+      "25mm high-density foam cushion over a powder-coated steel frame",
+      "Folds flat in one movement for storage",
+      "Two detachable tool pockets included",
+      "Supports up to 150kg"
+    ],
+    "specifications": [
+      { "label": "Frame", "value": "Powder-coated steel" },
+      { "label": "Cushion", "value": "25mm high-density EVA foam" },
+      { "label": "Open size", "value": "60 x 27 x 48cm" },
+      { "label": "Folded size", "value": "60 x 27 x 9cm" },
+      { "label": "Seat height", "value": "48cm" },
+      { "label": "Maximum load", "value": "150kg" },
+      { "label": "Weight", "value": "3.4kg" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": true,
+    "tags": ["kneeler", "seat", "foldable", "steel"]
+  },
+  {
+    "id": "galvanised-steel-planters-set-of-3",
+    "slug": "galvanised-steel-planters-set-of-3",
+    "sku": "THST-002",
+    "title": "Galvanised Steel Planters, Set of 3",
+    "brand": "Thornstead",
+    "category": "Planters & Growing",
+    "categorySlug": "planters-growing",
+    "price": 49.95,
+    "currency": "GBP",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Pots & Planters",
+    "images": [
+      {
+        "src": "/images/products/galvanised-steel-planters-set-of-3-1.jpg",
+        "alt": "Set of three Thornstead galvanised steel planters in graduated sizes"
+      },
+      {
+        "src": "/images/products/galvanised-steel-planters-set-of-3-2.jpg",
+        "alt": "Thornstead galvanised steel planters grouped on a patio, planted with herbs"
+      },
+      {
+        "src": "/images/products/galvanised-steel-planters-set-of-3-3.jpg",
+        "alt": "Close view of the rolled rim and drainage holes on a Thornstead planter"
+      }
+    ],
+    "shortDescription": "Three graduated planters in hot-dip galvanised steel with rolled rims and pre-drilled drainage, for herbs, bulbs and small shrubs.",
+    "description": "Galvanised steel weathers to a soft grey rather than flaking like painted metal, which is why we use it for this set of three. The planters nest in graduated sizes so you can group them on a patio, line them along a path or split them between rooms and a doorstep. Each has a rolled rim that is comfortable to lift and stiffens the body, plus pre-drilled drainage holes in the base so roots are not sitting in water after a wet week. They suit herbs and salad in the smallest, bulbs and bedding in the middle, and a compact shrub or acer in the largest.",
+    "features": [
+      "Hot-dip galvanised steel that weathers without flaking",
+      "Three graduated sizes for grouping or splitting up",
+      "Rolled rims for comfortable, rigid handling",
+      "Pre-drilled drainage holes in every base",
+      "Suitable for indoor and outdoor use"
+    ],
+    "specifications": [
+      { "label": "Material", "value": "Hot-dip galvanised steel, 0.6mm" },
+      { "label": "Large planter", "value": "30cm diameter x 26cm high" },
+      { "label": "Medium planter", "value": "25cm diameter x 22cm high" },
+      { "label": "Small planter", "value": "20cm diameter x 18cm high" },
+      { "label": "Drainage", "value": "4 pre-drilled holes per planter" },
+      { "label": "Set weight", "value": "2.1kg" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": true,
+    "tags": ["planter", "steel", "set", "outdoor"]
+  },
+  {
+    "id": "outdoor-storage-box-120l",
+    "slug": "outdoor-storage-box-120l",
+    "sku": "THST-003",
+    "title": "Water-Resistant Outdoor Storage Box, 120L",
+    "brand": "Thornstead",
+    "category": "Outdoor Storage",
+    "categorySlug": "outdoor-storage",
+    "price": 79.95,
+    "currency": "GBP",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Household Supplies > Storage & Organization > Storage Boxes",
+    "images": [
+      {
+        "src": "/images/products/outdoor-storage-box-120l-1.jpg",
+        "alt": "Thornstead 120 litre water-resistant outdoor storage box with the lid closed"
+      },
+      {
+        "src": "/images/products/outdoor-storage-box-120l-2.jpg",
+        "alt": "Thornstead storage box on a patio with the lid open showing the internal capacity"
+      },
+      {
+        "src": "/images/products/outdoor-storage-box-120l-3.jpg",
+        "alt": "Close-up of the gas-strut hinge and lid seam on the Thornstead storage box"
+      }
+    ],
+    "shortDescription": "A 120 litre resin box with an overlapping lid, gas-strut hinges and a ventilated base, sized to swallow cushions or tools and double as a bench.",
+    "description": "Garden cushions live indoors far more than they should because there is nowhere dry to put them. This box holds 120 litres, which is a two-seater set of cushions or a full run of hand tools, and the lid overlaps the body so rain runs off the sides rather than into the seam. Gas struts hold the lid open while you load it and lower it slowly instead of dropping on your fingers. The base is ribbed and slightly raised so air moves underneath and damp does not collect on a patio. The lid is rated to sit on, so it works as a bench by a back door.",
+    "features": [
+      "120 litre capacity with an overlapping, rain-shedding lid",
+      "Gas struts hold the lid open and lower it slowly",
+      "Ventilated, raised base that resists trapped damp",
+      "Lid rated as a seat for up to 120kg",
+      "UV-stabilised resin that will not need painting"
+    ],
+    "specifications": [
+      { "label": "Capacity", "value": "120 litres" },
+      { "label": "Material", "value": "UV-stabilised polypropylene resin" },
+      { "label": "External size", "value": "116 x 45 x 57cm" },
+      { "label": "Internal size", "value": "110 x 40 x 50cm" },
+      { "label": "Seat load", "value": "120kg" },
+      { "label": "Weight", "value": "9.8kg" },
+      { "label": "Assembly", "value": "Tool-free, around 10 minutes" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": true,
+    "tags": ["storage", "outdoor", "waterproof", "bench"]
+  },
+  {
+    "id": "bamboo-raised-garden-bed",
+    "slug": "bamboo-raised-garden-bed",
+    "sku": "THST-004",
+    "title": "Bamboo Raised Garden Bed",
+    "brand": "Thornstead",
+    "category": "Planters & Growing",
+    "categorySlug": "planters-growing",
+    "price": 89.95,
+    "currency": "GBP",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Pots & Planters",
+    "images": [
+      {
+        "src": "/images/products/bamboo-raised-garden-bed-1.jpg",
+        "alt": "Thornstead bamboo raised garden bed, empty"
+      },
+      {
+        "src": "/images/products/bamboo-raised-garden-bed-2.jpg",
+        "alt": "Thornstead bamboo raised garden bed planted with vegetables"
+      },
+      {
+        "src": "/images/products/bamboo-raised-garden-bed-3.jpg",
+        "alt": "Corner joint detail of the Thornstead bamboo raised bed"
+      }
+    ],
+    "shortDescription": "A waist-height bed in moso bamboo with a lined growing trough and a lower shelf, deep enough for carrots, salad and dwarf beans.",
+    "description": "A raised bed at waist height turns growing vegetables into something you do standing up, which matters if kneeling is uncomfortable or the garden is a paved yard. The trough is 30cm deep, enough for carrots and beetroot rather than only shallow salad, and it comes with a removable liner so soil stays in and the bamboo stays dry. Drainage holes run the length of the base. Underneath there is a slatted shelf for watering cans, seed trays and gloves. Moso bamboo is dense, fast-growing and finished here with a plant-safe oil rather than a film that peels.",
+    "features": [
+      "Waist-height growing without kneeling or bending",
+      "30cm deep trough, suitable for root vegetables",
+      "Removable liner with full-length drainage holes",
+      "Slatted lower shelf for cans, trays and tools",
+      "Moso bamboo finished with a plant-safe oil"
+    ],
+    "specifications": [
+      { "label": "Material", "value": "Moso bamboo, oil finished" },
+      { "label": "Overall size", "value": "100 x 50 x 80cm" },
+      { "label": "Trough depth", "value": "30cm" },
+      { "label": "Soil capacity", "value": "Approximately 105 litres" },
+      { "label": "Liner", "value": "Removable, perforated PE" },
+      { "label": "Weight", "value": "12.5kg" },
+      { "label": "Assembly", "value": "Required, tools and instructions included" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": true,
+    "tags": ["raised bed", "bamboo", "vegetables", "growing"]
+  },
+  {
+    "id": "solar-garden-lights-pack-of-6",
+    "slug": "solar-garden-lights-pack-of-6",
+    "sku": "THST-005",
+    "title": "Solar-Powered Garden Lights, Pack of 6",
+    "brand": "Thornstead",
+    "category": "Garden Lighting",
+    "categorySlug": "garden-lighting",
+    "price": 29.95,
+    "currency": "GBP",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Lighting > Landscape Lighting",
+    "images": [
+      {
+        "src": "/images/products/solar-garden-lights-pack-of-6-1.jpg",
+        "alt": "Six Thornstead solar garden lights arranged in a row"
+      },
+      {
+        "src": "/images/products/solar-garden-lights-pack-of-6-2.jpg",
+        "alt": "Thornstead solar garden lights glowing along a path at dusk"
+      },
+      {
+        "src": "/images/products/solar-garden-lights-pack-of-6-3.jpg",
+        "alt": "Detail of a Thornstead solar light head and ground spike"
+      }
+    ],
+    "shortDescription": "Six stake lights with warm white LEDs, an IP65 housing and a dusk sensor, giving roughly eight hours from a full summer charge.",
+    "description": "Path lighting should not involve a trench and an electrician. These six stake lights push into a border or lawn, charge through the day and switch themselves on at dusk. The LEDs are warm white rather than the blue-white that makes a garden feel like a car park, and the frosted lens spreads light down onto the path instead of into your neighbour's window. Housings are IP65 rated, so British weather is the expected condition rather than an exception. A full summer charge gives around eight hours; expect less in midwinter, which is normal for every solar light.",
+    "features": [
+      "Six lights per pack with ground spikes included",
+      "Warm white LEDs with a frosted, downward-spreading lens",
+      "Automatic dusk-to-dawn sensor, no switch to remember",
+      "IP65 rated housing for year-round outdoor use",
+      "Around 8 hours of light from a full summer charge"
+    ],
+    "specifications": [
+      { "label": "Quantity", "value": "6 lights" },
+      { "label": "Light colour", "value": "Warm white, 3000K" },
+      { "label": "Battery", "value": "600mAh Ni-MH, replaceable" },
+      { "label": "Charge time", "value": "6–8 hours of direct daylight" },
+      { "label": "Run time", "value": "Up to 8 hours (summer charge)" },
+      { "label": "Ingress rating", "value": "IP65" },
+      { "label": "Height installed", "value": "38cm above ground" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": false,
+    "tags": ["solar", "lighting", "path", "outdoor"]
+  },
+  {
+    "id": "heavy-duty-garden-kneeling-pad",
+    "slug": "heavy-duty-garden-kneeling-pad",
+    "sku": "THST-006",
+    "title": "Heavy-Duty Garden Kneeling Pad",
+    "brand": "Thornstead",
+    "category": "Garden Tools",
+    "categorySlug": "garden-tools",
+    "price": 14.95,
+    "currency": "GBP",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Gardening Tools",
+    "images": [
+      {
+        "src": "/images/products/heavy-duty-garden-kneeling-pad-1.jpg",
+        "alt": "Thornstead heavy-duty garden kneeling pad"
+      },
+      {
+        "src": "/images/products/heavy-duty-garden-kneeling-pad-2.jpg",
+        "alt": "Thornstead kneeling pad in use beside a flower border"
+      },
+      {
+        "src": "/images/products/heavy-duty-garden-kneeling-pad-3.jpg",
+        "alt": "Close-up of the textured surface and carry handle on the Thornstead kneeling pad"
+      }
+    ],
+    "shortDescription": "A 40mm closed-cell foam pad that stays dry on wet ground, with a moulded grip handle and a wipe-clean surface.",
+    "description": "Forty millimetres of closed-cell foam is the difference between an hour of planting and five minutes before your knees complain. Closed-cell means the foam does not soak up water, so the pad can sit on wet grass or a rained-on patio and still be dry on top. The surface is textured to grip rather than slide on decking, and it wipes clean with a cloth instead of needing a hose. A moulded handle is cut into one end so it hangs on a shed hook and carries in the same hand as a trowel.",
+    "features": [
+      "40mm closed-cell foam that does not absorb water",
+      "Textured, non-slip surface for decking and patios",
+      "Moulded carry handle, hangs on a shed hook",
+      "Wipes clean with a damp cloth",
+      "Will not crack in frost or perish in sunlight"
+    ],
+    "specifications": [
+      { "label": "Material", "value": "Closed-cell EVA foam" },
+      { "label": "Size", "value": "44 x 24 x 4cm" },
+      { "label": "Weight", "value": "0.4kg" },
+      { "label": "Surface", "value": "Textured, non-slip" },
+      { "label": "Care", "value": "Wipe clean" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": false,
+    "tags": ["kneeling pad", "foam", "gardening"]
+  },
+  {
+    "id": "stainless-steel-watering-can-5l",
+    "slug": "stainless-steel-watering-can-5l",
+    "sku": "THST-007",
+    "title": "Stainless Steel Watering Can, 5L",
+    "brand": "Thornstead",
+    "category": "Garden Tools",
+    "categorySlug": "garden-tools",
+    "price": 27.95,
+    "currency": "GBP",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Watering Equipment > Watering Cans",
+    "images": [
+      {
+        "src": "/images/products/stainless-steel-watering-can-5l-1.jpg",
+        "alt": "Thornstead 5 litre stainless steel watering can with brass rose"
+      },
+      {
+        "src": "/images/products/stainless-steel-watering-can-5l-2.jpg",
+        "alt": "Thornstead watering can being used on potted seedlings"
+      },
+      {
+        "src": "/images/products/stainless-steel-watering-can-5l-3.jpg",
+        "alt": "Detachable brass rose from the Thornstead watering can"
+      }
+    ],
+    "shortDescription": "A 5 litre can in brushed stainless steel with a long balanced spout and a detachable brass rose for seedlings.",
+    "description": "Plastic cans crack at the handle after two summers in the sun. This one is brushed stainless steel with a rolled rim and welded seams, so it lasts and it looks like something you leave out rather than hide. Five litres is the sensible compromise: enough to water a run of pots without refilling, light enough to carry full in one hand. The spout is long and set low on the body, which keeps the flow steady as the can empties and lets you reach the back of a border. A brass rose twists off for a fine spray over seedlings, or leave it off to water directly at the roots.",
+    "features": [
+      "Brushed 201 stainless steel with welded, leak-free seams",
+      "Long low-set spout for a steady flow and extra reach",
+      "Detachable brass rose for a fine seedling spray",
+      "Balanced handle that stays comfortable when full",
+      "Suitable for indoor plants and outdoor borders"
+    ],
+    "specifications": [
+      { "label": "Capacity", "value": "5 litres" },
+      { "label": "Material", "value": "201 stainless steel, brushed" },
+      { "label": "Rose", "value": "Solid brass, detachable" },
+      { "label": "Size", "value": "48 x 17 x 30cm" },
+      { "label": "Empty weight", "value": "1.1kg" },
+      { "label": "Care", "value": "Empty and dry after use in freezing weather" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": true,
+    "tags": ["watering can", "stainless steel", "brass"]
+  },
+  {
+    "id": "compact-kitchen-compost-bin",
+    "slug": "compact-kitchen-compost-bin",
+    "sku": "THST-008",
+    "title": "Compact Kitchen Compost Bin",
+    "brand": "Thornstead",
+    "category": "Kitchen & Composting",
+    "categorySlug": "kitchen-composting",
+    "price": 24.95,
+    "currency": "GBP",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Composting",
+    "images": [
+      {
+        "src": "/images/products/compact-kitchen-compost-bin-1.jpg",
+        "alt": "Thornstead compact kitchen compost bin"
+      },
+      {
+        "src": "/images/products/compact-kitchen-compost-bin-2.jpg",
+        "alt": "Thornstead compost bin on a kitchen countertop"
+      },
+      {
+        "src": "/images/products/compact-kitchen-compost-bin-3.jpg",
+        "alt": "Lid of the Thornstead compost bin lifted to show the carbon filter"
+      }
+    ],
+    "shortDescription": "A 5 litre worktop caddy in powder-coated steel with a replaceable carbon filter in the lid and a removable inner bucket.",
+    "description": "A food caddy only gets used if it can sit on the worktop without being unpleasant, so this one has a carbon filter set into the lid that takes the edge off between emptyings, and a lid that seals rather than rests. Five litres is roughly two or three days of peelings for a small household. The inner bucket lifts out with a wire handle so you can carry it to the garden bin and rinse it in the sink, leaving the outer shell clean. The shell is powder-coated steel in muted colours rather than white plastic that stains after a month of coffee grounds.",
+    "features": [
+      "Replaceable carbon filter fitted in the lid",
+      "Removable inner bucket with a wire carry handle",
+      "5 litre capacity, around 2–3 days for a small household",
+      "Powder-coated steel shell that wipes clean",
+      "Compatible with standard compostable caddy liners"
+    ],
+    "specifications": [
+      { "label": "Capacity", "value": "5 litres" },
+      { "label": "Shell", "value": "Powder-coated steel" },
+      { "label": "Inner bucket", "value": "Removable, food-safe plastic" },
+      { "label": "Filter", "value": "Activated carbon, replaceable" },
+      { "label": "Size", "value": "20 x 20 x 28cm" },
+      { "label": "Weight", "value": "1.3kg" },
+      { "label": "In the box", "value": "Bin, inner bucket, 2 carbon filters" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": false,
+    "tags": ["compost", "kitchen", "caddy", "steel"]
+  },
+  {
+    "id": "weatherproof-garden-furniture-cover-set",
+    "slug": "weatherproof-garden-furniture-cover-set",
+    "sku": "THST-009",
+    "title": "Weatherproof Garden Furniture Cover Set",
+    "brand": "Thornstead",
+    "category": "Outdoor Storage",
+    "categorySlug": "outdoor-storage",
+    "price": 44.95,
+    "currency": "GBP",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Outdoor Living > Outdoor Furniture Accessories > Outdoor Furniture Covers",
+    "images": [
+      {
+        "src": "/images/products/weatherproof-garden-furniture-cover-set-1.jpg",
+        "alt": "Thornstead weatherproof garden furniture cover set, folded"
+      },
+      {
+        "src": "/images/products/weatherproof-garden-furniture-cover-set-2.jpg",
+        "alt": "Thornstead weatherproof covers fitted over a garden table and chairs"
+      },
+      {
+        "src": "/images/products/weatherproof-garden-furniture-cover-set-3.jpg",
+        "alt": "Detail of the taped seam and drawcord hem on a Thornstead furniture cover"
+      }
+    ],
+    "shortDescription": "A three-piece cover set in 600D coated polyester with taped seams, mesh vents and drawcord hems, for a table and two chair stacks.",
+    "description": "Furniture covers fail in two ways: they let water through the seams, or they trap it underneath and everything grows mould. This set is made from 600D polyester with a waterproof coating and taped seams for the first problem, and mesh vents in the top panels for the second, so air keeps moving and condensation does not sit on the table. Elasticated, drawcord hems pull tight under the edges so a gust does not turn the cover into a sail across the lawn. The set covers a rectangular table plus two stacks of chairs, and each piece packs into its own storage bag over winter.",
+    "features": [
+      "600D polyester with a waterproof coating and taped seams",
+      "Mesh air vents that reduce condensation and mould",
+      "Elasticated drawcord hems that hold in wind",
+      "Three pieces: one table cover, two chair-stack covers",
+      "Storage bags included for each piece"
+    ],
+    "specifications": [
+      { "label": "Fabric", "value": "600D polyester, PU coated" },
+      { "label": "Table cover", "value": "200 x 110 x 70cm" },
+      { "label": "Chair covers", "value": "2 x 70 x 70 x 110cm" },
+      { "label": "Seams", "value": "Taped and heat sealed" },
+      { "label": "Fixings", "value": "Elasticated hem with drawcord" },
+      { "label": "Set weight", "value": "3.2kg" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": false,
+    "tags": ["cover", "furniture", "waterproof", "winter"]
+  },
+  {
+    "id": "wooden-bird-feeding-station",
+    "slug": "wooden-bird-feeding-station",
+    "sku": "THST-010",
+    "title": "Wooden Bird Feeding Station",
+    "brand": "Thornstead",
+    "category": "Wildlife & Bird Care",
+    "categorySlug": "wildlife-bird-care",
+    "price": 54.95,
+    "currency": "GBP",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Decor > Bird & Wildlife Feeders",
+    "images": [
+      {
+        "src": "/images/products/wooden-bird-feeding-station-1.jpg",
+        "alt": "Thornstead wooden bird feeding station"
+      },
+      {
+        "src": "/images/products/wooden-bird-feeding-station-2.jpg",
+        "alt": "Thornstead bird feeding station with birds perched on the arms"
+      },
+      {
+        "src": "/images/products/wooden-bird-feeding-station-3.jpg",
+        "alt": "Mesh seed tray and hanging arm detail of the Thornstead bird feeding station"
+      }
+    ],
+    "shortDescription": "A 1.9m FSC-certified pine station with four hanging arms, a seed tray, a water dish and a ground spike for lawns or borders.",
+    "description": "One post, four hanging points, and suddenly a garden has proper bird traffic. This station is FSC-certified pine, pressure treated so it stays in the ground year-round rather than rotting through its first wet winter. Four arms take seed feeders, fat balls, peanuts and a nyjer feeder at once, which is what actually brings in a range of species rather than only pigeons. A mesh seed tray sits mid-post to catch spill, and a shallow water dish clips on lower down for drinking and bathing. The spike drives into a lawn or border, and the post unscrews into three sections for storage.",
+    "features": [
+      "FSC-certified pine, pressure treated for year-round use",
+      "Four hanging arms for seed, fat balls, peanuts and nyjer",
+      "Mesh seed tray that catches spill under the feeders",
+      "Clip-on water dish for drinking and bathing",
+      "Three-section post with a ground spike, no digging needed"
+    ],
+    "specifications": [
+      { "label": "Material", "value": "FSC-certified pine, pressure treated" },
+      { "label": "Height", "value": "1.9m above ground" },
+      { "label": "Hanging arms", "value": "4" },
+      { "label": "Seed tray", "value": "30cm diameter, mesh base" },
+      { "label": "Water dish", "value": "22cm diameter, clip-on" },
+      { "label": "Weight", "value": "5.6kg" },
+      { "label": "Assembly", "value": "Required, feeders not included" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": false,
+    "tags": ["bird feeder", "wildlife", "wooden", "garden"]
+  }
+]

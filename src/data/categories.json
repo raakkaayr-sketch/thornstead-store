@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Garden Tools",
+    "slug": "garden-tools",
+    "description": "Kneelers, watering cans and hand tools built to be used season after season."
+  },
+  {
+    "name": "Planters & Growing",
+    "slug": "planters-growing",
+    "description": "Planters and raised beds for balconies, patios and back gardens."
+  },
+  {
+    "name": "Outdoor Storage",
+    "slug": "outdoor-storage",
+    "description": "Weatherproof boxes and covers that keep cushions, tools and furniture dry."
+  },
+  {
+    "name": "Garden Lighting",
+    "slug": "garden-lighting",
+    "description": "Solar lighting that marks paths and borders without any wiring."
+  },
+  {
+    "name": "Kitchen & Composting",
+    "slug": "kitchen-composting",
+    "description": "Everyday kitchen pieces that make composting food waste straightforward."
+  },
+  {
+    "name": "Wildlife & Bird Care",
+    "slug": "wildlife-bird-care",
+    "description": "Feeders and stations that bring garden birds closer to the house."
+  }
+]

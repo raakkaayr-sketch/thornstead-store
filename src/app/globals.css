@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm white, stone and moss — the Thornstead palette. */
+    --background: 40 33% 98%;
+    --foreground: 30 8% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 8% 14%;
+
+    --muted: 38 20% 94%;
+    --muted-foreground: 30 6% 42%;
+
+    --accent: 38 24% 92%;
+    --accent-foreground: 30 8% 14%;
+
+    --primary: 30 9% 16%;
+    --primary-foreground: 40 33% 98%;
+
+    --secondary: 38 20% 94%;
+    --secondary-foreground: 30 8% 14%;
+
+    --destructive: 0 62% 44%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 34 16% 87%;
+    --input: 34 16% 87%;
+    --ring: 103 26% 33%;
+
+    --brand: 103 26% 33%;
+    --brand-foreground: 0 0% 100%;
+
+    --radius: 0.75rem;
+
+    --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+      'Helvetica Neue', Arial, sans-serif;
+    --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia,
+      'Times New Roman', serif;
+  }
+
+  .dark {
+    --background: 30 8% 9%;
+    --foreground: 40 20% 94%;
+
+    --card: 30 8% 12%;
+    --card-foreground: 40 20% 94%;
+
+    --muted: 30 6% 16%;
+    --muted-foreground: 35 8% 64%;
+
+    --accent: 30 6% 18%;
+    --accent-foreground: 40 20% 94%;
+
+    --primary: 40 20% 94%;
+    --primary-foreground: 30 8% 12%;
+
+    --secondary: 30 6% 16%;
+    --secondary-foreground: 40 20% 94%;
+
+    --destructive: 0 55% 52%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 6% 21%;
+    --input: 30 6% 21%;
+    --ring: 100 26% 52%;
+
+    --brand: 100 26% 52%;
+    --brand-foreground: 30 8% 9%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+    font-feature-settings: 'cv11', 'ss01';
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    @apply tracking-tight;
+  }
+
+  /* Respect users who ask for less motion. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply container mx-auto max-w-[1320px];
+  }
+
+  .skeleton {
+    @apply relative overflow-hidden bg-muted;
+  }
+
+  .skeleton::after {
+    @apply absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-black/5 to-transparent content-[''];
+  }
+
+  .prose-legal h2 {
+    @apply mt-10 text-xl font-semibold text-foreground;
+  }
+
+  .prose-legal p,
+  .prose-legal li {
+    @apply text-[15px] leading-relaxed text-muted-foreground;
+  }
+
+  .prose-legal p {
+    @apply mt-3;
+  }
+
+  .prose-legal ul {
+    @apply mt-3 list-disc space-y-1.5 pl-5;
+  }
+}
