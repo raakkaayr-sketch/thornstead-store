@@ -22,14 +22,14 @@ export const siteConfig = {
   currency: 'GBP',
   currencySymbol: '£',
 
-  /** Legal entity behind the shop. Must match Companies House, Stripe and Merchant Center. */
+  /** Legal entity behind the shop. Must match Stripe and Merchant Center. */
   business: {
-    /** REPLACE with your registered company or sole-trader name. */
-    legalName: 'Thornstead Ltd',
+    /** Sole-trader / brand trading name (not a limited company). */
+    legalName: 'Thornstead',
     tradingName: 'Thornstead',
-    /** REPLACE with your Companies House number, or leave '' if a sole trader. */
+    /** Leave empty — not a Companies House registered company. */
     companyNumber: '',
-    /** REPLACE with your VAT number, or leave '' if not VAT registered. */
+    /** Leave empty if not VAT registered. */
     vatNumber: '',
     countryCode: 'GB',
     country: 'United Kingdom',
@@ -38,12 +38,12 @@ export const siteConfig = {
   /** REPLACE all of these with details you can actually be reached on. */
   contact: {
     email: 'contact@thornstead.store',
-    phone: '+44 117 456 7890',
+    phone: '+44 7462 294018',
     /** Digits only, for tel: links. */
-    phoneHref: '+441174567890',
-    street: '12 Mill Lane',
-    city: 'Bristol',
-    postcode: 'BS1 4ST',
+    phoneHref: '+447462294018',
+    street: '44 Glebe Way',
+    city: 'Hornchurch',
+    postcode: 'RM11 3RR',
     country: 'United Kingdom',
     countryCode: 'GB',
     hours: 'Monday to Friday, 9:00–17:00 (UK time)',
