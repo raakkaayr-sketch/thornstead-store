@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { Heart, Minus, Plus, ShoppingBag } from 'lucide-react';
+import { AlertCircle, Heart, Loader2, Lock, Minus, Plus, ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/components/providers/cart-provider';
 import { useWishlist } from '@/components/providers/wishlist-provider';
+import { useCheckout } from '@/components/cart/use-checkout';
 import { cn, formatPrice } from '@/lib/utils';
 import type { Product } from '@/lib/types';
 
@@ -12,8 +13,22 @@ export function BuyBox({ product }: { product: Product }) {
   const [quantity, setQuantity] = useState(1);
   const { addItem } = useCart();
   const { has, toggle, hydrated } = useWishlist();
+  const { checkout, loading, error } = useCheckout();
   const saved = hydrated && has(product.id);
   const inStock = product.availability === 'in_stock';
+
+  const buyNow = () =>
+    checkout([
+      {
+        id: product.id,
+        slug: product.slug,
+        title: product.title,
+        sku: product.sku,
+        price: product.price,
+        image: product.images[0]?.src ?? '',
+        quantity,
+      },
+    ]);
 
   return (
     <div className="space-y-4">
@@ -39,10 +54,10 @@ export function BuyBox({ product }: { product: Product }) {
         </div>
 
         <Button
-          variant="brand"
+          variant="outline"
           size="lg"
           className="flex-1"
-          disabled={!inStock}
+          disabled={!inStock || loading}
           onClick={() => addItem(product, quantity)}
         >
           <ShoppingBag className="h-4 w-4" />
@@ -61,6 +76,31 @@ export function BuyBox({ product }: { product: Product }) {
           <Heart className={cn('h-[18px] w-[18px]', saved && 'fill-brand text-brand')} />
         </button>
       </div>
+
+      <Button
+        variant="brand"
+        size="lg"
+        className="w-full"
+        disabled={!inStock || loading}
+        onClick={buyNow}
+      >
+        {loading ? (
+          <>
+            <Loader2 className="h-4 w-4 animate-spin" /> Taking you to checkout…
+          </>
+        ) : (
+          <>
+            <Lock className="h-4 w-4" /> Buy now · {formatPrice(product.price * quantity)}
+          </>
+        )}
+      </Button>
+
+      {error && (
+        <p className="flex items-start gap-2 rounded-xl border border-destructive/30 bg-destructive/10 px-3 py-2 text-xs text-destructive">
+          <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+          {error}
+        </p>
+      )}
     </div>
   );
 }
