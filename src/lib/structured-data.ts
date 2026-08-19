@@ -1,4 +1,4 @@
-import { siteConfig, formattedAddress } from './config';
+import { siteConfig } from './config';
 import { getRealSocialUrls } from './social';
 import { absoluteUrl, shippingFor } from './utils';
 import type { Product } from './types';
@@ -6,11 +6,12 @@ import type { Product } from './types';
 const base = siteConfig.url.replace(/\/$/, '');
 
 /**
- * Organization + OnlineStore. Values here must match the footer, the contact
- * page and your Merchant Center business information exactly.
+ * Organization + OnlineStore. Diese Werte müssen exakt mit dem Footer, dem
+ * Impressum und den Unternehmensangaben im Merchant Center übereinstimmen.
+ * Google vergleicht sie; Abweichungen führen zur Sperrung.
  */
 export function organizationJsonLd() {
-  const { contact, business } = siteConfig;
+  const { contact, business, payment } = siteConfig;
   const sameAs = getRealSocialUrls();
 
   return {
@@ -26,7 +27,7 @@ export function organizationJsonLd() {
     email: contact.email,
     telephone: contact.phone,
     currenciesAccepted: siteConfig.currency,
-    paymentAccepted: 'Credit Card, Debit Card',
+    paymentAccepted: payment.methods.join(', '),
     areaServed: { '@type': 'Country', name: business.country },
     address: {
       '@type': 'PostalAddress',
@@ -41,13 +42,10 @@ export function organizationJsonLd() {
       email: contact.email,
       telephone: contact.phone,
       areaServed: business.countryCode,
-      availableLanguage: ['English'],
+      availableLanguage: ['German', 'de'],
     },
     ...(sameAs.length ? { sameAs } : {}),
     ...(business.vatNumber ? { vatID: business.vatNumber } : {}),
-    ...(business.companyNumber
-      ? { identifier: business.companyNumber }
-      : {}),
   };
 }
 
@@ -58,6 +56,7 @@ export function websiteJsonLd() {
     '@id': `${base}/#website`,
     url: base,
     name: siteConfig.name,
+    inLanguage: 'de-DE',
     publisher: { '@id': `${base}/#organization` },
     potentialAction: {
       '@type': 'SearchAction',
@@ -71,12 +70,16 @@ export function websiteJsonLd() {
 }
 
 /**
- * Product schema. Every value below is also rendered on the page and sent in
- * the Merchant Center feed — Google cross-checks all three.
+ * Product schema. Jeder Wert unten wird auch auf der Seite dargestellt und im
+ * Merchant-Center-Feed übermittelt — Google prüft alle drei gegeneinander.
+ *
+ * Die Preise sind Bruttopreise, daher `valueAddedTaxIncluded: true`. Ein
+ * Nettopreis im Markup bei Bruttopreis auf der Seite wäre eine Abweichung, die
+ * Google als Preisfehler beanstandet.
  */
 export function productJsonLd(product: Product) {
-  const url = absoluteUrl(`/products/${product.slug}`);
-  const { shipping, returns, business } = siteConfig;
+  const url = absoluteUrl(`/produkte/${product.slug}`);
+  const { shipping, returns, business, gpsr } = siteConfig;
 
   return {
     '@context': 'https://schema.org',
@@ -89,12 +92,20 @@ export function productJsonLd(product: Product) {
     mpn: product.sku,
     ...(product.gtin ? { gtin: product.gtin } : {}),
     brand: { '@type': 'Brand', name: product.brand },
+    manufacturer: { '@type': 'Organization', name: gpsr.manufacturerName },
     category: product.category,
+    inLanguage: 'de-DE',
     offers: {
       '@type': 'Offer',
       url,
       price: product.price.toFixed(2),
       priceCurrency: product.currency,
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        price: product.price.toFixed(2),
+        priceCurrency: product.currency,
+        valueAddedTaxIncluded: !business.smallBusinessScheme,
+      },
       itemCondition: 'https://schema.org/NewCondition',
       availability:
         product.availability === 'in_stock'
@@ -108,10 +119,12 @@ export function productJsonLd(product: Product) {
           value: shippingFor(product.price).toFixed(2),
           currency: siteConfig.currency,
         },
-        shippingDestination: {
-          '@type': 'DefinedRegion',
-          addressCountry: business.countryCode,
-        },
+        shippingDestination: siteConfig.shipping.shipToCountries.map(
+          (countryCode) => ({
+            '@type': 'DefinedRegion',
+            addressCountry: countryCode,
+          })
+        ),
         deliveryTime: {
           '@type': 'ShippingDeliveryTime',
           handlingTime: {

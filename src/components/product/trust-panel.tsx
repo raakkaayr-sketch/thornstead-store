@@ -2,24 +2,24 @@ import { siteConfig } from '@/lib/config';
 import type { Product } from '@/lib/types';
 
 /**
- * Identity block for each product. Merchant Center reviewers look for the
- * seller, the brand and the item identifiers to be stated plainly on the
- * landing page, and these values match the feed exactly.
+ * Identitätsblock je Produkt. Prüfer im Merchant Center erwarten, dass
+ * Verkäufer, Marke und Artikelkennungen auf der Zielseite klar benannt sind;
+ * diese Werte stimmen exakt mit dem Feed überein.
  */
 export function TrustPanel({ product }: { product: Product }) {
   const rows = [
-    { label: 'Brand', value: product.brand },
-    { label: 'SKU', value: product.sku },
-    { label: 'Condition', value: 'New' },
-    { label: 'Sold and shipped by', value: siteConfig.business.legalName },
+    { label: 'Marke', value: product.brand },
+    { label: 'Artikelnummer', value: product.sku },
+    { label: 'Zustand', value: 'Neu' },
+    { label: 'Verkauf und Versand', value: siteConfig.business.tradingName },
   ];
 
   return (
     <div className="rounded-2xl bg-muted/60 p-5">
       <p className="text-sm text-muted-foreground">
-        Sold and shipped by {siteConfig.name}. Every item in this shop is
-        designed and branded by us — we are the brand of record, not a reseller
-        of other companies&apos; products.
+        Verkauf und Versand durch {siteConfig.name}. Jeder Artikel in diesem Shop
+        wird von uns entworfen und unter unserer Marke geführt — wir sind die
+        Marke selbst und kein Wiederverkäufer fremder Produkte.
       </p>
       <dl className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 border-t border-border pt-4 text-xs">
         {rows.map((row) => (

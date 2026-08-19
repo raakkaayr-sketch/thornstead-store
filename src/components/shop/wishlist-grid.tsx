@@ -32,13 +32,14 @@ export function WishlistGrid({ products }: { products: Product[] }) {
           <Heart className="h-6 w-6 text-muted-foreground" />
         </div>
         <div>
-          <p className="font-medium">Nothing saved yet</p>
+          <p className="font-medium">Noch nichts gemerkt</p>
           <p className="mt-1 text-sm text-muted-foreground">
-            Tap the heart on any product to keep it here for later.
+            Tippen Sie bei einem Produkt auf das Herz, um es hier für später
+            aufzubewahren.
           </p>
         </div>
         <Link href="/shop" className={buttonVariants({ variant: 'brand' })}>
-          Browse the shop
+          Zum Shop
         </Link>
       </div>
     );

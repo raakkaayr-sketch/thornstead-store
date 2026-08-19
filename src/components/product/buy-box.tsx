@@ -1,11 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { AlertCircle, Heart, Loader2, Lock, Minus, Plus, ShoppingBag } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { Heart, Lock, Minus, Plus, ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/components/providers/cart-provider';
 import { useWishlist } from '@/components/providers/wishlist-provider';
-import { useCheckout } from '@/components/cart/use-checkout';
+import { PriceNote } from '@/components/price-note';
 import { cn, formatPrice } from '@/lib/utils';
 import type { Product } from '@/lib/types';
 
@@ -13,22 +14,19 @@ export function BuyBox({ product }: { product: Product }) {
   const [quantity, setQuantity] = useState(1);
   const { addItem } = useCart();
   const { has, toggle, hydrated } = useWishlist();
-  const { checkout, loading, error } = useCheckout();
+  const router = useRouter();
   const saved = hydrated && has(product.id);
   const inStock = product.availability === 'in_stock';
 
-  const buyNow = () =>
-    checkout([
-      {
-        id: product.id,
-        slug: product.slug,
-        title: product.title,
-        sku: product.sku,
-        price: product.price,
-        image: product.images[0]?.src ?? '',
-        quantity,
-      },
-    ]);
+  /**
+   * "Jetzt kaufen" löst keine Zahlung aus, sondern legt den Artikel in den
+   * Warenkorb und führt zur Bestellübersicht. Ein direkter Sprung zu Stripe
+   * würde die Pflichtangaben nach § 312j Abs. 2 BGB überspringen.
+   */
+  const buyNow = () => {
+    addItem(product, quantity, { open: false });
+    router.push('/kasse');
+  };
 
   return (
     <div className="space-y-4">
@@ -36,7 +34,7 @@ export function BuyBox({ product }: { product: Product }) {
         <div className="flex items-center rounded-full border border-border">
           <button
             type="button"
-            aria-label="Reduce quantity"
+            aria-label="Menge verringern"
             onClick={() => setQuantity((q) => Math.max(1, q - 1))}
             className="flex h-11 w-11 items-center justify-center rounded-full text-muted-foreground hover:text-foreground"
           >
@@ -45,7 +43,7 @@ export function BuyBox({ product }: { product: Product }) {
           <span className="w-8 text-center text-sm tabular-nums">{quantity}</span>
           <button
             type="button"
-            aria-label="Increase quantity"
+            aria-label="Menge erhöhen"
             onClick={() => setQuantity((q) => Math.min(99, q + 1))}
             className="flex h-11 w-11 items-center justify-center rounded-full text-muted-foreground hover:text-foreground"
           >
@@ -57,18 +55,18 @@ export function BuyBox({ product }: { product: Product }) {
           variant="outline"
           size="lg"
           className="flex-1"
-          disabled={!inStock || loading}
+          disabled={!inStock}
           onClick={() => addItem(product, quantity)}
         >
           <ShoppingBag className="h-4 w-4" />
           {inStock
-            ? `Add to basket · ${formatPrice(product.price * quantity)}`
-            : 'Out of stock'}
+            ? `In den Warenkorb · ${formatPrice(product.price * quantity)}`
+            : 'Nicht verfügbar'}
         </Button>
 
         <button
           type="button"
-          aria-label={saved ? 'Remove from wishlist' : 'Save to wishlist'}
+          aria-label={saved ? 'Von der Merkliste entfernen' : 'Zur Merkliste hinzufügen'}
           aria-pressed={saved}
           onClick={() => toggle(product.id)}
           className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:text-foreground"
@@ -81,26 +79,14 @@ export function BuyBox({ product }: { product: Product }) {
         variant="brand"
         size="lg"
         className="w-full"
-        disabled={!inStock || loading}
+        disabled={!inStock}
         onClick={buyNow}
       >
-        {loading ? (
-          <>
-            <Loader2 className="h-4 w-4 animate-spin" /> Taking you to checkout…
-          </>
-        ) : (
-          <>
-            <Lock className="h-4 w-4" /> Buy now · {formatPrice(product.price * quantity)}
-          </>
-        )}
+        <Lock className="h-4 w-4" /> Jetzt kaufen ·{' '}
+        {formatPrice(product.price * quantity)}
       </Button>
 
-      {error && (
-        <p className="flex items-start gap-2 rounded-xl border border-destructive/30 bg-destructive/10 px-3 py-2 text-xs text-destructive">
-          <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
-          {error}
-        </p>
-      )}
+      <PriceNote />
     </div>
   );
 }

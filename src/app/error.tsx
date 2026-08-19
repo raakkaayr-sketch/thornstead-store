@@ -18,17 +18,17 @@ export default function Error({
 
   return (
     <div className="container-page flex min-h-[60vh] max-w-md flex-col items-center justify-center gap-5 px-6 text-center">
-      <h1 className="text-2xl font-semibold">Something went wrong</h1>
+      <h1 className="text-2xl font-semibold">Etwas ist schiefgelaufen</h1>
       <p className="text-[15px] text-muted-foreground">
-        Sorry — that page failed to load. Trying again usually fixes it. If it
-        keeps happening, please let us know.
+        Diese Seite konnte nicht geladen werden. Ein erneuter Versuch hilft in
+        den meisten Fällen. Wenn der Fehler bleibt, schreiben Sie uns bitte.
       </p>
       <div className="flex flex-col gap-2 sm:flex-row">
         <Button variant="brand" onClick={reset}>
-          Try again
+          Erneut versuchen
         </Button>
-        <Link href="/contact" className={buttonVariants({ variant: 'outline' })}>
-          Contact us
+        <Link href="/kontakt" className={buttonVariants({ variant: 'outline' })}>
+          Kontakt
         </Link>
       </div>
     </div>

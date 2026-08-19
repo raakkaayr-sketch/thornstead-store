@@ -4,21 +4,21 @@ import { WishlistGrid } from '@/components/shop/wishlist-grid';
 import { getAllProducts } from '@/lib/products';
 
 export const metadata: Metadata = {
-  title: 'Wishlist',
-  description: 'Products you have saved from the Thornstead range.',
-  alternates: { canonical: '/wishlist' },
+  title: 'Merkliste',
+  description: 'Produkte, die Sie aus dem Thornstead-Sortiment gemerkt haben.',
+  alternates: { canonical: '/merkliste' },
   robots: { index: false, follow: true },
 };
 
-export default function WishlistPage() {
+export default function MerklistePage() {
   return (
     <>
       <PageHeader
-        title="Your wishlist"
-        description="Saved on this device only — nothing is sent to us until you order."
+        title="Ihre Merkliste"
+        description="Nur auf diesem Gerät gespeichert — an uns wird nichts übertragen, solange Sie nicht bestellen."
         crumbs={[
-          { name: 'Home', path: '/' },
-          { name: 'Wishlist', path: '/wishlist' },
+          { name: 'Startseite', path: '/' },
+          { name: 'Merkliste', path: '/merkliste' },
         ]}
       />
       <div className="container-page px-6 py-12">

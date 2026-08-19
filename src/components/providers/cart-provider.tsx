@@ -20,7 +20,16 @@ interface CartContextValue {
   hydrated: boolean;
   openCart: () => void;
   closeCart: () => void;
-  addItem: (product: Product, quantity?: number) => void;
+  /**
+   * `open` steuert, ob die Warenkorb-Schublade aufgeht. "Jetzt kaufen" legt den
+   * Artikel ab und leitet direkt zur Bestellübersicht weiter, dort wäre die
+   * Schublade nur ein kurzes Aufblitzen.
+   */
+  addItem: (
+    product: Product,
+    quantity?: number,
+    options?: { open?: boolean }
+  ) => void;
   removeItem: (id: string) => void;
   updateQuantity: (id: string, quantity: number) => void;
   clearCart: () => void;
@@ -52,31 +61,34 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     }
   }, [items, hydrated]);
 
-  const addItem = useCallback((product: Product, quantity = 1) => {
-    setItems((prev) => {
-      const existing = prev.find((i) => i.id === product.id);
-      if (existing) {
-        return prev.map((i) =>
-          i.id === product.id
-            ? { ...i, quantity: Math.min(i.quantity + quantity, 99) }
-            : i
-        );
-      }
-      return [
-        ...prev,
-        {
-          id: product.id,
-          slug: product.slug,
-          title: product.title,
-          sku: product.sku,
-          price: product.price,
-          image: product.images[0]?.src ?? '',
-          quantity,
-        },
-      ];
-    });
-    setIsOpen(true);
-  }, []);
+  const addItem = useCallback(
+    (product: Product, quantity = 1, options?: { open?: boolean }) => {
+      setItems((prev) => {
+        const existing = prev.find((i) => i.id === product.id);
+        if (existing) {
+          return prev.map((i) =>
+            i.id === product.id
+              ? { ...i, quantity: Math.min(i.quantity + quantity, 99) }
+              : i
+          );
+        }
+        return [
+          ...prev,
+          {
+            id: product.id,
+            slug: product.slug,
+            title: product.title,
+            sku: product.sku,
+            price: product.price,
+            image: product.images[0]?.src ?? '',
+            quantity,
+          },
+        ];
+      });
+      if (options?.open !== false) setIsOpen(true);
+    },
+    []
+  );
 
   const removeItem = useCallback((id: string) => {
     setItems((prev) => prev.filter((i) => i.id !== id));

@@ -2,59 +2,72 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 import { PageHeader } from '@/components/page-header';
-import { siteConfig, deliveryWindow } from '@/lib/config';
+import { siteConfig, deliveryWindow, vatNote } from '@/lib/config';
 import { formatPrice } from '@/lib/utils';
 import { jsonLdScript } from '@/lib/structured-data';
 
 export const metadata: Metadata = {
-  title: 'Frequently asked questions',
+  title: 'Häufige Fragen',
   description:
-    'Answers about Thornstead delivery times, UK shipping costs, returns, payment security and how our own-brand products are made.',
+    'Antworten zu Lieferzeiten, Versandkosten, Widerruf und Rückgabe, Zahlungssicherheit und dazu, wie unsere Eigenmarkenprodukte entstehen.',
   alternates: { canonical: '/faq' },
 };
 
-const { shipping, returns, contact } = siteConfig;
-const window = deliveryWindow();
+const { shipping, returns, contact, payment, business } = siteConfig;
+const deliveryEstimate = deliveryWindow();
 
 const faqs = [
   {
-    q: 'Where do you deliver?',
-    a: 'We deliver to addresses in the United Kingdom only. We are not able to ship internationally at the moment.',
+    q: 'Wohin liefern Sie?',
+    a: 'Wir liefern ausschließlich an Adressen innerhalb Deutschlands, einschließlich der deutschen Inseln. Eine Lieferung ins Ausland ist derzeit nicht möglich.',
   },
   {
-    q: 'How much is delivery?',
+    q: 'Was kostet der Versand?',
     a:
       shipping.freeThreshold !== null
-        ? `Standard UK delivery is ${formatPrice(shipping.standardCost)} per order, and free on orders of ${formatPrice(shipping.freeThreshold)} or more. The charge is shown in your basket before you pay.`
-        : `Standard UK delivery is ${formatPrice(shipping.standardCost)} per order, shown in your basket before you pay.`,
+        ? `Der ${shipping.serviceName} kostet ${formatPrice(shipping.standardCost)} pro Bestellung. Ab einem Bestellwert von ${formatPrice(shipping.freeThreshold)} liefern wir versandkostenfrei. Die Versandkosten werden in der Bestellübersicht ausgewiesen, bevor Sie zahlen.`
+        : `Der ${shipping.serviceName} kostet ${formatPrice(shipping.standardCost)} pro Bestellung und wird in der Bestellübersicht ausgewiesen, bevor Sie zahlen.`,
   },
   {
-    q: 'How long will my order take?',
-    a: `Orders are packed within ${shipping.handlingDaysMin}–${shipping.handlingDaysMax} business days and delivery takes a further ${shipping.transitDaysMin}–${shipping.transitDaysMax} business days, so roughly ${window.min}–${window.max} business days in total.`,
+    q: 'Wie lange dauert meine Bestellung?',
+    a: `Bestellungen werden innerhalb von ${shipping.handlingDaysMin} bis ${shipping.handlingDaysMax} Werktagen verpackt, der Transport dauert weitere ${shipping.transitDaysMin} bis ${shipping.transitDaysMax} Werktage. Insgesamt sind es also etwa ${deliveryEstimate.min} bis ${deliveryEstimate.max} Werktage.`,
   },
   {
-    q: 'Can I return something if I change my mind?',
-    a: `Yes. You have a legal right to cancel within ${returns.statutoryCancellationDays} days of delivery under the Consumer Contracts Regulations 2013, and we voluntarily extend that to ${returns.days} days. Full details are in our returns and refunds policy.`,
+    q: 'Sind die Preise inklusive Mehrwertsteuer?',
+    a: business.smallBusinessScheme
+      ? 'Alle angegebenen Preise sind Endpreise. Als Kleinunternehmer nach § 19 UStG weisen wir keine Umsatzsteuer aus. Versandkosten kommen gesondert hinzu.'
+      : `Ja. Alle angegebenen Preise sind Endpreise, ${vatNote()}. Die Versandkosten werden gesondert ausgewiesen und erscheinen in der Bestellübersicht, bevor Sie zahlungspflichtig bestellen.`,
   },
   {
-    q: 'How do I pay, and is it secure?',
-    a: 'Checkout is handled by Stripe, which processes card payments for millions of businesses. Your card details are entered on Stripe\u2019s secure page and never reach our servers.',
+    q: 'Kann ich die Bestellung widerrufen, wenn ich es mir anders überlege?',
+    a: `Ja. Sie haben ein gesetzliches Widerrufsrecht von ${returns.statutoryCancellationDays} Tagen ab Erhalt der Ware nach § 355 BGB. Darüber hinaus gewähren wir freiwillig ein Rückgaberecht von ${returns.days} Tagen. Die vollständige Widerrufsbelehrung samt Muster-Widerrufsformular finden Sie unter „Widerrufsrecht & Rückgabe".`,
   },
   {
-    q: 'Are these your own products or are you a reseller?',
-    a: 'Every product in this shop is designed, branded and sold by Thornstead. We are the brand of record. We do not resell other companies\u2019 branded goods and we are not an authorised dealer for any third-party brand.',
+    q: 'Wer trägt die Kosten der Rücksendung?',
+    a:
+      returns.returnShippingPaidBy === 'merchant'
+        ? 'Bei einem Widerruf tragen wir die unmittelbaren Kosten der Rücksendung.'
+        : 'Bei einem Widerruf tragen Sie die unmittelbaren Kosten der Rücksendung. Ist die Ware mangelhaft, übernehmen wir die Rücksendekosten selbstverständlich.',
   },
   {
-    q: 'Do your products come with a guarantee?',
-    a: 'All products are covered by your statutory rights under the Consumer Rights Act 2015: goods must be of satisfactory quality, fit for purpose and as described. If something develops a fault, contact us and we will sort out a repair, replacement or refund.',
+    q: 'Wie bezahle ich, und ist das sicher?',
+    a: `Die Zahlung läuft über ${payment.processor}, einen der größten Zahlungsdienstleister Europas. Akzeptiert werden ${payment.methods.join(', ')}. Ihre Kartendaten geben Sie ausschließlich auf der gesicherten Seite des Zahlungsdienstleisters ein; sie erreichen unsere Server nie.`,
   },
   {
-    q: 'Will my solar lights work in winter?',
-    a: 'They will work, but for less time. Solar lights depend on how much daylight the panel receives, so a midwinter charge in the UK gives noticeably shorter run time than a summer one. That is true of every solar light, and we would rather say so than pretend otherwise.',
+    q: 'Sind das Ihre eigenen Produkte oder verkaufen Sie fremde Marken weiter?',
+    a: 'Jedes Produkt in diesem Shop wird von Thornstead entworfen, unter eigener Marke geführt und verkauft. Wir sind die Marke selbst. Wir handeln nicht mit Markenware anderer Unternehmen und sind kein autorisierter Händler für Drittmarken.',
   },
   {
-    q: 'Do you have a physical shop?',
-    a: `We sell online only, which is part of how the prices stay where they are. You can reach us by email at ${contact.email} or by phone on ${contact.phone}, ${contact.hours}.`,
+    q: 'Gibt es eine Garantie?',
+    a: 'Für alle Produkte gilt die gesetzliche Mängelhaftung nach §§ 434 ff. BGB mit einer Verjährungsfrist von zwei Jahren ab Erhalt der Ware. Zeigt sich ein Mangel, melden Sie sich bei uns — wir kümmern uns um Nachbesserung, Ersatzlieferung oder Rückzahlung.',
+  },
+  {
+    q: 'Wo finde ich Angaben zum Hersteller und zur Produktsicherheit?',
+    a: 'Auf jeder Produktseite steht ein Abschnitt mit den Pflichtangaben nach Artikel 19 der EU-Produktsicherheitsverordnung: Hersteller, in der EU verantwortliche Person und die zugehörigen Warn- und Sicherheitshinweise.',
+  },
+  {
+    q: 'Haben Sie ein Ladengeschäft?',
+    a: `Wir verkaufen ausschließlich online, was ein Teil des Grundes ist, warum die Preise dort liegen, wo sie liegen. Sie erreichen uns per E-Mail unter ${contact.email} oder telefonisch unter ${contact.phone}, ${contact.hours}.`,
   },
 ];
 
@@ -62,6 +75,7 @@ export default function FaqPage() {
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    inLanguage: 'de-DE',
     mainEntity: faqs.map((faq) => ({
       '@type': 'Question',
       name: faq.q,
@@ -76,11 +90,11 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={jsonLdScript(faqJsonLd)}
       />
       <PageHeader
-        title="Frequently asked questions"
-        description="Delivery, returns, payment and how the range is made."
+        title="Häufige Fragen"
+        description="Lieferung, Widerruf, Zahlung und wie das Sortiment entsteht."
         crumbs={[
-          { name: 'Home', path: '/' },
-          { name: 'FAQ', path: '/faq' },
+          { name: 'Startseite', path: '/' },
+          { name: 'Häufige Fragen', path: '/faq' },
         ]}
       />
 
@@ -100,11 +114,11 @@ export default function FaqPage() {
         </div>
 
         <p className="mt-8 text-sm text-muted-foreground">
-          Still stuck?{' '}
-          <Link href="/contact" className="text-brand hover:underline">
-            Contact us
+          Ihre Frage ist nicht dabei?{' '}
+          <Link href="/kontakt" className="text-brand hover:underline">
+            Schreiben Sie uns
           </Link>{' '}
-          and we will answer within one business day.
+          — wir antworten innerhalb eines Werktags.
         </p>
       </div>
     </>

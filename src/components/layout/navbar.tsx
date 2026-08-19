@@ -13,10 +13,10 @@ import { cn } from '@/lib/utils';
 
 const links = [
   { href: '/shop', label: 'Shop' },
-  { href: '/categories', label: 'Categories' },
-  { href: '/about', label: 'About' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/kategorien', label: 'Kategorien' },
+  { href: '/ueber-uns', label: 'Über uns' },
+  { href: '/faq', label: 'Fragen' },
+  { href: '/kontakt', label: 'Kontakt' },
 ];
 
 export function Navbar() {
@@ -32,7 +32,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
       <div className="container-page flex h-16 items-center justify-between gap-4 px-6">
-        <Link href="/" aria-label="Thornstead home" className="shrink-0">
+        <Link href="/" aria-label="Thornstead Startseite" className="shrink-0">
           <Logo />
         </Link>
 
@@ -58,8 +58,8 @@ export function Navbar() {
           <ThemeToggle />
 
           <Link
-            href="/wishlist"
-            aria-label="Wishlist"
+            href="/merkliste"
+            aria-label="Merkliste"
             className="relative flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
           >
             <Heart className="h-[18px] w-[18px]" />
@@ -71,7 +71,9 @@ export function Navbar() {
           <button
             type="button"
             onClick={openCart}
-            aria-label={`Open basket${hydrated && count ? `, ${count} items` : ''}`}
+            aria-label={`Warenkorb öffnen${
+              hydrated && count ? `, ${count} Artikel` : ''
+            }`}
             className="relative flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
           >
             <ShoppingBag className="h-[18px] w-[18px]" />
@@ -85,7 +87,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={() => setMobileOpen((v) => !v)}
-            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-label={mobileOpen ? 'Menü schließen' : 'Menü öffnen'}
             aria-expanded={mobileOpen}
             className="flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-foreground md:hidden"
           >

@@ -35,10 +35,10 @@ export default function OpengraphImage() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
           <span style={{ fontSize: 68, color: '#2a2723', lineHeight: 1.1 }}>
-            Home &amp; garden, made by us.
+            Garten und Zuhause, von uns gemacht.
           </span>
           <span style={{ fontSize: 30, color: '#6b665e' }}>
-            {siteConfig.tagline} Delivered across the United Kingdom.
+            {siteConfig.tagline} Lieferung innerhalb Deutschlands.
           </span>
         </div>
       </div>

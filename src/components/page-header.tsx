@@ -8,7 +8,7 @@ export interface Crumb {
 
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
-    <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1 text-xs text-muted-foreground">
+    <nav aria-label="Brotkrumennavigation" className="flex flex-wrap items-center gap-1 text-xs text-muted-foreground">
       {items.map((item, index) => (
         <span key={item.path} className="flex items-center gap-1">
           {index > 0 && <ChevronRight className="h-3 w-3" />}

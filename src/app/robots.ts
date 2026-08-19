@@ -9,9 +9,12 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        // Nothing here should be indexed, but Googlebot and AdsBot must still
-        // be able to fetch the feed and product pages, so no broad blocks.
-        disallow: ['/api/', '/checkout/', '/wishlist'],
+        /**
+         * Nur warenkorbabhängige Seiten und API-Routen werden ausgeschlossen.
+         * Googlebot und AdsBot müssen den Feed und die Produktseiten weiterhin
+         * abrufen können, daher keine pauschalen Sperren.
+         */
+        disallow: ['/api/', '/kasse', '/merkliste'],
       },
     ],
     sitemap: `${base}/sitemap.xml`,

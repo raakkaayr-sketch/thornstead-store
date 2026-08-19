@@ -1,16 +1,17 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input, Textarea } from '@/components/ui/input';
 import { siteConfig } from '@/lib/config';
 
 /**
- * The site is static, so rather than pretend to run a mail server we compose
- * the message and hand it to the visitor's own email client. Nothing is sent
- * anywhere without them pressing send, which also keeps us out of storing
- * personal data we do not need.
+ * Die Website ist statisch. Statt einen Mailserver vorzugeben, stellen wir die
+ * Nachricht zusammen und übergeben sie dem E-Mail-Programm der Besucherin oder
+ * des Besuchers. Ohne Absenden verlässt nichts das Gerät, und wir speichern
+ * keine personenbezogenen Daten, die wir nicht brauchen.
  */
 export function ContactForm() {
   const [form, setForm] = useState({
@@ -27,16 +28,16 @@ export function ContactForm() {
     event.preventDefault();
 
     const subject = form.orderNumber
-      ? `Enquiry about order ${form.orderNumber}`
-      : 'Website enquiry';
+      ? `Anfrage zu Bestellung ${form.orderNumber}`
+      : 'Anfrage über die Website';
 
     const body = [
       form.message,
       '',
       '---',
       `Name: ${form.name}`,
-      `Email: ${form.email}`,
-      form.orderNumber ? `Order number: ${form.orderNumber}` : '',
+      `E-Mail: ${form.email}`,
+      form.orderNumber ? `Bestellnummer: ${form.orderNumber}` : '',
     ]
       .filter(Boolean)
       .join('\n');
@@ -48,7 +49,7 @@ export function ContactForm() {
 
   return (
     <form onSubmit={submit} className="space-y-4">
-      <Field label="Your name" htmlFor="name">
+      <Field label="Ihr Name" htmlFor="name">
         <Input
           id="name"
           required
@@ -58,7 +59,7 @@ export function ContactForm() {
         />
       </Field>
 
-      <Field label="Email address" htmlFor="email">
+      <Field label="E-Mail-Adresse" htmlFor="email">
         <Input
           id="email"
           type="email"
@@ -69,16 +70,16 @@ export function ContactForm() {
         />
       </Field>
 
-      <Field label="Order number (optional)" htmlFor="orderNumber">
+      <Field label="Bestellnummer (optional)" htmlFor="orderNumber">
         <Input
           id="orderNumber"
           value={form.orderNumber}
           onChange={(e) => update('orderNumber', e.target.value)}
-          placeholder="e.g. cs_live_…"
+          placeholder="z. B. cs_live_…"
         />
       </Field>
 
-      <Field label="Message" htmlFor="message">
+      <Field label="Nachricht" htmlFor="message">
         <Textarea
           id="message"
           required
@@ -90,14 +91,15 @@ export function ContactForm() {
 
       <Button type="submit" variant="brand" className="w-full">
         <Send className="h-4 w-4" />
-        Open in your email app
+        Im E-Mail-Programm öffnen
       </Button>
 
       <p className="text-xs text-muted-foreground">
-        We use what you send only to answer your enquiry. See our{' '}
-        <a href="/privacy-policy" className="text-brand hover:underline">
-          privacy policy
-        </a>
+        Wir verwenden Ihre Angaben ausschließlich zur Beantwortung Ihrer Anfrage.
+        Näheres in unserer{' '}
+        <Link href="/datenschutz" className="text-brand hover:underline">
+          Datenschutzerklärung
+        </Link>
         .
       </p>
     </form>

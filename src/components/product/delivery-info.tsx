@@ -4,34 +4,34 @@ import { siteConfig, deliveryWindow } from '@/lib/config';
 import { formatPrice } from '@/lib/utils';
 
 /**
- * The delivery and returns terms shown on every product page. All values come
- * from config, so they always agree with the shipping policy, the checkout
- * total and the Merchant Center feed.
+ * Versand- und Rückgabebedingungen auf jeder Produktseite. Alle Werte stammen
+ * aus der Konfiguration und stimmen dadurch immer mit der Versandseite, dem
+ * Gesamtbetrag an der Kasse und dem Merchant-Center-Feed überein.
  */
 export function DeliveryInfo() {
-  const { shipping, returns } = siteConfig;
-  const window = deliveryWindow();
+  const { shipping, returns, payment } = siteConfig;
+  const deliveryEstimate = deliveryWindow();
 
   const deliveryLine =
     shipping.freeThreshold !== null
-      ? `${formatPrice(shipping.standardCost)} standard UK delivery, free on orders over ${formatPrice(shipping.freeThreshold)}.`
-      : `${formatPrice(shipping.standardCost)} standard UK delivery.`;
+      ? `${formatPrice(shipping.standardCost)} ${shipping.serviceName}, versandkostenfrei ab ${formatPrice(shipping.freeThreshold)}.`
+      : `${formatPrice(shipping.standardCost)} ${shipping.serviceName}.`;
 
   const items = [
     {
       icon: Truck,
-      title: 'UK delivery',
-      body: `${deliveryLine} Estimated ${window.min}–${window.max} business days, including ${shipping.handlingDaysMin}–${shipping.handlingDaysMax} days to pack and dispatch.`,
+      title: 'Versand innerhalb Deutschlands',
+      body: `${deliveryLine} Voraussichtlich ${deliveryEstimate.min} bis ${deliveryEstimate.max} Werktage, davon ${shipping.handlingDaysMin} bis ${shipping.handlingDaysMax} Tage für Verpackung und Übergabe.`,
     },
     {
       icon: RefreshCcw,
-      title: `${returns.days}-day returns`,
-      body: `Change your mind within ${returns.days} days and send it back for a refund. This is on top of your 14-day legal right to cancel.`,
+      title: `${returns.days} Tage Rückgaberecht`,
+      body: `Sie können es sich ${returns.days} Tage lang anders überlegen und die Ware zurücksenden. Das gilt zusätzlich zu Ihrem gesetzlichen Widerrufsrecht von ${returns.statutoryCancellationDays} Tagen.`,
     },
     {
       icon: ShieldCheck,
-      title: 'Secure payment',
-      body: 'Card payments are processed by Stripe. We never see or store your card details.',
+      title: 'Sichere Zahlung',
+      body: `Kartenzahlungen werden über ${payment.processor} abgewickelt. Wir sehen und speichern Ihre Kartendaten nie.`,
     },
   ];
 
@@ -49,13 +49,13 @@ export function DeliveryInfo() {
         </div>
       ))}
       <p className="p-4 text-xs text-muted-foreground">
-        Full details in our{' '}
-        <Link href="/shipping-policy" className="text-brand hover:underline">
-          shipping policy
+        Alle Einzelheiten unter{' '}
+        <Link href="/versand" className="text-brand hover:underline">
+          Versand &amp; Lieferung
         </Link>{' '}
-        and{' '}
-        <Link href="/returns-policy" className="text-brand hover:underline">
-          returns policy
+        und{' '}
+        <Link href="/widerruf" className="text-brand hover:underline">
+          Widerrufsrecht &amp; Rückgabe
         </Link>
         .
       </p>

@@ -7,6 +7,7 @@ import { ProductGallery } from '@/components/product/product-gallery';
 import { BuyBox } from '@/components/product/buy-box';
 import { DeliveryInfo } from '@/components/product/delivery-info';
 import { TrustPanel } from '@/components/product/trust-panel';
+import { ProductCompliance } from '@/components/product/product-compliance';
 import { RecentlyViewed } from '@/components/product/recently-viewed';
 import { ProductCard } from '@/components/product/product-card';
 import { Badge } from '@/components/ui/badge';
@@ -33,14 +34,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(slug);
-  if (!product) return { title: 'Product not found' };
+  if (!product) return { title: 'Produkt nicht gefunden' };
 
   return {
     title: product.title,
     description: product.shortDescription,
-    alternates: { canonical: `/products/${product.slug}` },
+    alternates: { canonical: `/produkte/${product.slug}` },
     openGraph: {
       type: 'website',
+      locale: 'de_DE',
       title: `${product.title} | Thornstead`,
       description: product.shortDescription,
       images: [{ url: product.images[0].src }],
@@ -48,7 +50,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function ProductPage({
+export default async function ProduktSeite({
   params,
 }: {
   params: Promise<{ slug: string }>;
@@ -60,10 +62,10 @@ export default async function ProductPage({
   const related = getRelatedProducts(product, 4);
   const shipping = shippingFor(product.price);
   const crumbs = [
-    { name: 'Home', path: '/' },
+    { name: 'Startseite', path: '/' },
     { name: 'Shop', path: '/shop' },
-    { name: product.category, path: `/categories/${product.categorySlug}` },
-    { name: product.title, path: `/products/${product.slug}` },
+    { name: product.category, path: `/kategorien/${product.categorySlug}` },
+    { name: product.title, path: `/produkte/${product.slug}` },
   ];
 
   return (
@@ -87,7 +89,7 @@ export default async function ProductPage({
 
           <div>
             <Link
-              href={`/categories/${product.categorySlug}`}
+              href={`/kategorien/${product.categorySlug}`}
               className="text-xs uppercase tracking-wider text-muted-foreground hover:text-foreground"
             >
               {product.category}
@@ -101,12 +103,14 @@ export default async function ProductPage({
                 {formatPrice(product.price)}
               </p>
               <Badge variant="brand">
-                {product.availability === 'in_stock' ? 'In stock' : 'Out of stock'}
+                {product.availability === 'in_stock'
+                  ? 'Auf Lager'
+                  : 'Nicht verfügbar'}
               </Badge>
               <span className="text-sm text-muted-foreground">
                 {shipping === 0
-                  ? 'Free UK delivery'
-                  : `+ ${formatPrice(shipping)} UK delivery`}
+                  ? 'versandkostenfrei'
+                  : `zzgl. ${formatPrice(shipping)} Versand`}
               </span>
             </div>
 
@@ -130,7 +134,7 @@ export default async function ProductPage({
 
         <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:gap-14">
           <section>
-            <h2 className="text-xl font-semibold">About this product</h2>
+            <h2 className="text-xl font-semibold">Produktbeschreibung</h2>
             <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">
               {product.description}
             </p>
@@ -148,7 +152,7 @@ export default async function ProductPage({
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold">Specifications</h2>
+            <h2 className="text-xl font-semibold">Technische Daten</h2>
             <dl className="mt-4 divide-y divide-border rounded-2xl border border-border">
               {product.specifications.map((spec) => (
                 <div
@@ -160,16 +164,18 @@ export default async function ProductPage({
                 </div>
               ))}
               <div className="flex justify-between gap-6 px-4 py-3 text-sm">
-                <dt className="text-muted-foreground">SKU</dt>
+                <dt className="text-muted-foreground">Artikelnummer</dt>
                 <dd className="text-right font-medium">{product.sku}</dd>
               </div>
             </dl>
           </section>
         </div>
 
+        <ProductCompliance product={product} />
+
         {related.length > 0 && (
           <section className="mt-20">
-            <h2 className="text-xl font-semibold">You might also like</h2>
+            <h2 className="text-xl font-semibold">Passt dazu</h2>
             <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-10 lg:grid-cols-4">
               {related.map((item) => (
                 <ProductCard key={item.id} product={item} />

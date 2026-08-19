@@ -3,17 +3,17 @@ import { Suspense } from 'react';
 import { OrderConfirmation } from '@/components/cart/order-confirmation';
 
 export const metadata: Metadata = {
-  title: 'Order confirmed',
-  description: 'Your Thornstead order has been received.',
+  title: 'Bestellung bestätigt',
+  description: 'Ihre Bestellung bei Thornstead ist bei uns eingegangen.',
   robots: { index: false, follow: false },
 };
 
-export default function CheckoutSuccessPage() {
+export default function BestaetigungPage() {
   return (
     <Suspense
       fallback={
         <div className="flex min-h-[50vh] items-center justify-center text-sm text-muted-foreground">
-          Confirming your order…
+          Bestellung wird bestätigt…
         </div>
       }
     >

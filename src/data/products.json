@@ -1,14 +1,14 @@
 [
   {
-    "id": "garden-kneeler-tool-seat",
-    "slug": "garden-kneeler-tool-seat",
+    "id": "garten-kniebank-werkzeugsitz",
+    "slug": "garten-kniebank-werkzeugsitz",
     "sku": "THST-001",
-    "title": "Foldable Garden Kneeler & Tool Seat",
+    "title": "Klappbare Garten-Kniebank mit Werkzeugsitz",
     "brand": "Thornstead",
-    "category": "Garden Tools",
-    "categorySlug": "garden-tools",
-    "price": 34.95,
-    "currency": "GBP",
+    "category": "Gartenwerkzeug",
+    "categorySlug": "gartenwerkzeug",
+    "price": 39.95,
+    "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
     "gtin": "",
@@ -16,50 +16,50 @@
     "images": [
       {
         "src": "/images/products/garden-kneeler-tool-seat-1.jpg",
-        "alt": "Thornstead foldable garden kneeler and tool seat, front view"
+        "alt": "Thornstead klappbare Garten-Kniebank mit Werkzeugsitz, Vorderansicht"
       },
       {
         "src": "/images/products/garden-kneeler-tool-seat-2.jpg",
-        "alt": "Thornstead garden kneeler and tool seat in use in a garden border"
+        "alt": "Thornstead Garten-Kniebank im Einsatz an einem Gartenbeet"
       },
       {
         "src": "/images/products/garden-kneeler-tool-seat-3.jpg",
-        "alt": "Close-up of the folding hinge and cushion on the Thornstead garden kneeler"
+        "alt": "Nahaufnahme von Klappscharnier und Polster der Thornstead Garten-Kniebank"
       }
     ],
-    "shortDescription": "A powder-coated steel frame that flips from a kneeling pad to a garden seat, with a thick foam cushion and two side pockets for hand tools.",
-    "description": "Weeding a border and then needing somewhere to sit are the same job, so the Thornstead kneeler does both. Flip it one way and the padded cushion sits low to the ground with steel handles either side to help you get back up. Flip it over and it becomes a stable seat at a comfortable height for potting, pruning or sowing. The frame folds flat in one movement, so it stores against a shed wall or in the boot of a car without taking a shelf hostage. Two detachable pockets carry secateurs, twine, labels and gloves so you are not walking back to the shed every ten minutes.",
+    "shortDescription": "Ein pulverbeschichtetes Stahlgestell, das sich von der Kniebank zum Gartensitz wenden lässt, mit dickem Schaumpolster und zwei Seitentaschen für Handwerkzeug.",
+    "description": "Ein Beet jäten und danach eine Sitzgelegenheit brauchen gehört zur selben Arbeit, deshalb kann die Thornstead-Kniebank beides. In der einen Richtung liegt das gepolsterte Kissen tief am Boden, mit Stahlgriffen an beiden Seiten, die beim Aufstehen helfen. Umgedreht entsteht ein stabiler Sitz in angenehmer Höhe zum Umtopfen, Schneiden oder Aussäen. Das Gestell klappt in einer einzigen Bewegung flach zusammen und findet so an der Schuppenwand oder im Kofferraum Platz, ohne ein ganzes Regal zu belegen. Zwei abnehmbare Taschen nehmen Gartenschere, Bindegarn, Etiketten und Handschuhe auf, damit nicht alle zehn Minuten der Weg zurück zum Schuppen ansteht.",
     "features": [
-      "Reverses between a kneeling pad and a raised garden seat",
-      "25mm high-density foam cushion over a powder-coated steel frame",
-      "Folds flat in one movement for storage",
-      "Two detachable tool pockets included",
-      "Supports up to 150kg"
+      "Wendbar zwischen Kniepolster und erhöhtem Gartensitz",
+      "25 mm hochdichtes Schaumpolster auf pulverbeschichtetem Stahlgestell",
+      "Klappt in einer Bewegung flach zusammen",
+      "Zwei abnehmbare Werkzeugtaschen inklusive",
+      "Belastbar bis 150 kg"
     ],
     "specifications": [
-      { "label": "Frame", "value": "Powder-coated steel" },
-      { "label": "Cushion", "value": "25mm high-density EVA foam" },
-      { "label": "Open size", "value": "60 x 27 x 48cm" },
-      { "label": "Folded size", "value": "60 x 27 x 9cm" },
-      { "label": "Seat height", "value": "48cm" },
-      { "label": "Maximum load", "value": "150kg" },
-      { "label": "Weight", "value": "3.4kg" }
+      { "label": "Gestell", "value": "Pulverbeschichteter Stahl" },
+      { "label": "Polster", "value": "25 mm hochdichter EVA-Schaum" },
+      { "label": "Maße geöffnet", "value": "60 x 27 x 48 cm" },
+      { "label": "Maße gefaltet", "value": "60 x 27 x 9 cm" },
+      { "label": "Sitzhöhe", "value": "48 cm" },
+      { "label": "Maximale Belastung", "value": "150 kg" },
+      { "label": "Gewicht", "value": "3,4 kg" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": true,
-    "tags": ["kneeler", "seat", "foldable", "steel"]
+    "tags": ["kniebank", "sitz", "klappbar", "stahl"]
   },
   {
-    "id": "galvanised-steel-planters-set-of-3",
-    "slug": "galvanised-steel-planters-set-of-3",
+    "id": "pflanzkuebel-stahl-3er-set",
+    "slug": "pflanzkuebel-stahl-3er-set",
     "sku": "THST-002",
-    "title": "Galvanised Steel Planters, Set of 3",
+    "title": "Pflanzkübel aus verzinktem Stahl, 3er-Set",
     "brand": "Thornstead",
-    "category": "Planters & Growing",
-    "categorySlug": "planters-growing",
-    "price": 49.95,
-    "currency": "GBP",
+    "category": "Pflanzgefäße & Anbau",
+    "categorySlug": "pflanzgefaesse-anbau",
+    "price": 59.95,
+    "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
     "gtin": "",
@@ -67,49 +67,49 @@
     "images": [
       {
         "src": "/images/products/galvanised-steel-planters-set-of-3-1.jpg",
-        "alt": "Set of three Thornstead galvanised steel planters in graduated sizes"
+        "alt": "Set aus drei Thornstead Pflanzkübeln aus verzinktem Stahl in abgestuften Größen"
       },
       {
         "src": "/images/products/galvanised-steel-planters-set-of-3-2.jpg",
-        "alt": "Thornstead galvanised steel planters grouped on a patio, planted with herbs"
+        "alt": "Thornstead Pflanzkübel auf einer Terrasse, mit Kräutern bepflanzt"
       },
       {
         "src": "/images/products/galvanised-steel-planters-set-of-3-3.jpg",
-        "alt": "Close view of the rolled rim and drainage holes on a Thornstead planter"
+        "alt": "Nahaufnahme von Rollrand und Drainagelöchern eines Thornstead Pflanzkübels"
       }
     ],
-    "shortDescription": "Three graduated planters in hot-dip galvanised steel with rolled rims and pre-drilled drainage, for herbs, bulbs and small shrubs.",
-    "description": "Galvanised steel weathers to a soft grey rather than flaking like painted metal, which is why we use it for this set of three. The planters nest in graduated sizes so you can group them on a patio, line them along a path or split them between rooms and a doorstep. Each has a rolled rim that is comfortable to lift and stiffens the body, plus pre-drilled drainage holes in the base so roots are not sitting in water after a wet week. They suit herbs and salad in the smallest, bulbs and bedding in the middle, and a compact shrub or acer in the largest.",
+    "shortDescription": "Drei abgestufte Pflanzkübel aus feuerverzinktem Stahl mit Rollrand und vorgebohrter Drainage, für Kräuter, Zwiebelblumen und kleine Sträucher.",
+    "description": "Verzinkter Stahl verwittert zu einem weichen Grau, statt wie lackiertes Metall abzublättern. Genau deshalb verwenden wir ihn für dieses Dreierset. Die Kübel sind in Größen abgestuft, sodass sie sich auf der Terrasse gruppieren, entlang eines Wegs aufreihen oder zwischen Wohnraum und Hauseingang aufteilen lassen. Jeder Kübel hat einen Rollrand, der angenehm zu greifen ist und den Korpus versteift, dazu vorgebohrte Drainagelöcher im Boden, damit die Wurzeln nach einer nassen Woche nicht im Wasser stehen. Der kleinste passt zu Kräutern und Salat, der mittlere zu Zwiebelblumen und Beetpflanzen, der größte zu einem kompakten Strauch oder Fächerahorn.",
     "features": [
-      "Hot-dip galvanised steel that weathers without flaking",
-      "Three graduated sizes for grouping or splitting up",
-      "Rolled rims for comfortable, rigid handling",
-      "Pre-drilled drainage holes in every base",
-      "Suitable for indoor and outdoor use"
+      "Feuerverzinkter Stahl, verwittert ohne abzublättern",
+      "Drei abgestufte Größen zum Gruppieren oder Aufteilen",
+      "Rollränder für sicheren Griff und hohe Stabilität",
+      "Vorgebohrte Drainagelöcher in jedem Boden",
+      "Für Innen- und Außenbereich geeignet"
     ],
     "specifications": [
-      { "label": "Material", "value": "Hot-dip galvanised steel, 0.6mm" },
-      { "label": "Large planter", "value": "30cm diameter x 26cm high" },
-      { "label": "Medium planter", "value": "25cm diameter x 22cm high" },
-      { "label": "Small planter", "value": "20cm diameter x 18cm high" },
-      { "label": "Drainage", "value": "4 pre-drilled holes per planter" },
-      { "label": "Set weight", "value": "2.1kg" }
+      { "label": "Material", "value": "Feuerverzinkter Stahl, 0,6 mm" },
+      { "label": "Großer Kübel", "value": "30 cm Durchmesser x 26 cm hoch" },
+      { "label": "Mittlerer Kübel", "value": "25 cm Durchmesser x 22 cm hoch" },
+      { "label": "Kleiner Kübel", "value": "20 cm Durchmesser x 18 cm hoch" },
+      { "label": "Drainage", "value": "4 vorgebohrte Löcher pro Kübel" },
+      { "label": "Gewicht des Sets", "value": "2,1 kg" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": true,
-    "tags": ["planter", "steel", "set", "outdoor"]
+    "tags": ["pflanzkübel", "stahl", "set", "außenbereich"]
   },
   {
-    "id": "outdoor-storage-box-120l",
-    "slug": "outdoor-storage-box-120l",
+    "id": "gartenbox-wetterfest-120-l",
+    "slug": "gartenbox-wetterfest-120-l",
     "sku": "THST-003",
-    "title": "Water-Resistant Outdoor Storage Box, 120L",
+    "title": "Wetterfeste Gartenbox, 120 L",
     "brand": "Thornstead",
-    "category": "Outdoor Storage",
-    "categorySlug": "outdoor-storage",
-    "price": 79.95,
-    "currency": "GBP",
+    "category": "Außenaufbewahrung",
+    "categorySlug": "aussenaufbewahrung",
+    "price": 94.95,
+    "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
     "gtin": "",
@@ -117,50 +117,50 @@
     "images": [
       {
         "src": "/images/products/outdoor-storage-box-120l-1.jpg",
-        "alt": "Thornstead 120 litre water-resistant outdoor storage box with the lid closed"
+        "alt": "Thornstead wetterfeste Gartenbox mit 120 Litern, geschlossener Deckel"
       },
       {
         "src": "/images/products/outdoor-storage-box-120l-2.jpg",
-        "alt": "Thornstead storage box on a patio with the lid open showing the internal capacity"
+        "alt": "Thornstead Gartenbox auf einer Terrasse mit geöffnetem Deckel und Blick auf das Innenvolumen"
       },
       {
         "src": "/images/products/outdoor-storage-box-120l-3.jpg",
-        "alt": "Close-up of the gas-strut hinge and lid seam on the Thornstead storage box"
+        "alt": "Nahaufnahme von Gasdruckfeder und Deckelfalz der Thornstead Gartenbox"
       }
     ],
-    "shortDescription": "A 120 litre resin box with an overlapping lid, gas-strut hinges and a ventilated base, sized to swallow cushions or tools and double as a bench.",
-    "description": "Garden cushions live indoors far more than they should because there is nowhere dry to put them. This box holds 120 litres, which is a two-seater set of cushions or a full run of hand tools, and the lid overlaps the body so rain runs off the sides rather than into the seam. Gas struts hold the lid open while you load it and lower it slowly instead of dropping on your fingers. The base is ribbed and slightly raised so air moves underneath and damp does not collect on a patio. The lid is rated to sit on, so it works as a bench by a back door.",
+    "shortDescription": "Eine Box mit 120 Litern aus UV-stabilisiertem Kunststoff, mit überlappendem Deckel, Gasdruckfedern und belüftetem Boden, groß genug für Polster oder Werkzeug und belastbar als Sitzbank.",
+    "description": "Gartenpolster verbringen weit mehr Zeit im Haus als nötig, weil es draußen keinen trockenen Platz für sie gibt. Diese Box fasst 120 Liter, das entspricht den Polstern einer Zweisitzergarnitur oder einer vollständigen Sammlung Handwerkzeug. Der Deckel überlappt den Korpus, sodass Regen an den Seiten abläuft und nicht in die Fuge dringt. Gasdruckfedern halten den Deckel beim Beladen offen und senken ihn langsam ab, statt auf die Finger zu fallen. Der Boden ist gerippt und leicht erhöht, damit Luft darunter zirkuliert und sich auf der Terrasse keine Feuchtigkeit sammelt. Der Deckel ist zum Sitzen freigegeben und funktioniert damit als Bank neben der Hintertür.",
     "features": [
-      "120 litre capacity with an overlapping, rain-shedding lid",
-      "Gas struts hold the lid open and lower it slowly",
-      "Ventilated, raised base that resists trapped damp",
-      "Lid rated as a seat for up to 120kg",
-      "UV-stabilised resin that will not need painting"
+      "120 Liter Volumen mit überlappendem, regenabweisendem Deckel",
+      "Gasdruckfedern halten den Deckel offen und senken ihn langsam",
+      "Belüfteter, erhöhter Boden gegen Staufeuchte",
+      "Deckel als Sitzfläche bis 120 kg freigegeben",
+      "UV-stabilisierter Kunststoff, kein Nachstreichen nötig"
     ],
     "specifications": [
-      { "label": "Capacity", "value": "120 litres" },
-      { "label": "Material", "value": "UV-stabilised polypropylene resin" },
-      { "label": "External size", "value": "116 x 45 x 57cm" },
-      { "label": "Internal size", "value": "110 x 40 x 50cm" },
-      { "label": "Seat load", "value": "120kg" },
-      { "label": "Weight", "value": "9.8kg" },
-      { "label": "Assembly", "value": "Tool-free, around 10 minutes" }
+      { "label": "Volumen", "value": "120 Liter" },
+      { "label": "Material", "value": "UV-stabilisiertes Polypropylen" },
+      { "label": "Außenmaße", "value": "116 x 45 x 57 cm" },
+      { "label": "Innenmaße", "value": "110 x 40 x 50 cm" },
+      { "label": "Sitzbelastung", "value": "120 kg" },
+      { "label": "Gewicht", "value": "9,8 kg" },
+      { "label": "Montage", "value": "Werkzeuglos, etwa 10 Minuten" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": true,
-    "tags": ["storage", "outdoor", "waterproof", "bench"]
+    "tags": ["gartenbox", "aufbewahrung", "wetterfest", "sitzbank"]
   },
   {
-    "id": "bamboo-raised-garden-bed",
-    "slug": "bamboo-raised-garden-bed",
+    "id": "hochbeet-bambus",
+    "slug": "hochbeet-bambus",
     "sku": "THST-004",
-    "title": "Bamboo Raised Garden Bed",
+    "title": "Hochbeet aus Bambus",
     "brand": "Thornstead",
-    "category": "Planters & Growing",
-    "categorySlug": "planters-growing",
-    "price": 89.95,
-    "currency": "GBP",
+    "category": "Pflanzgefäße & Anbau",
+    "categorySlug": "pflanzgefaesse-anbau",
+    "price": 104.95,
+    "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
     "gtin": "",
@@ -168,101 +168,50 @@
     "images": [
       {
         "src": "/images/products/bamboo-raised-garden-bed-1.jpg",
-        "alt": "Thornstead bamboo raised garden bed, empty"
+        "alt": "Thornstead Hochbeet aus Bambus, unbepflanzt"
       },
       {
         "src": "/images/products/bamboo-raised-garden-bed-2.jpg",
-        "alt": "Thornstead bamboo raised garden bed planted with vegetables"
+        "alt": "Thornstead Hochbeet aus Bambus mit Gemüse bepflanzt"
       },
       {
         "src": "/images/products/bamboo-raised-garden-bed-3.jpg",
-        "alt": "Corner joint detail of the Thornstead bamboo raised bed"
+        "alt": "Eckverbindung des Thornstead Hochbeets aus Bambus im Detail"
       }
     ],
-    "shortDescription": "A waist-height bed in moso bamboo with a lined growing trough and a lower shelf, deep enough for carrots, salad and dwarf beans.",
-    "description": "A raised bed at waist height turns growing vegetables into something you do standing up, which matters if kneeling is uncomfortable or the garden is a paved yard. The trough is 30cm deep, enough for carrots and beetroot rather than only shallow salad, and it comes with a removable liner so soil stays in and the bamboo stays dry. Drainage holes run the length of the base. Underneath there is a slatted shelf for watering cans, seed trays and gloves. Moso bamboo is dense, fast-growing and finished here with a plant-safe oil rather than a film that peels.",
+    "shortDescription": "Ein Hochbeet in Hüfthöhe aus Moso-Bambus mit ausgekleidetem Pflanztrog und unterer Ablage, tief genug für Karotten, Salat und Buschbohnen.",
+    "description": "Ein Hochbeet in Hüfthöhe macht aus dem Gemüseanbau eine Arbeit, die man im Stehen erledigt. Das zählt besonders, wenn Knien unangenehm ist oder der Garten ein gepflasterter Hof ist. Der Trog ist 30 cm tief, also ausreichend für Karotten und Rote Bete und nicht nur für flach wurzelnden Salat. Eine herausnehmbare Auskleidung hält die Erde im Beet und den Bambus trocken, Drainagelöcher verlaufen über die gesamte Bodenlänge. Darunter liegt eine Lattenablage für Gießkannen, Anzuchtschalen und Handschuhe. Moso-Bambus ist dicht und schnell nachwachsend und hier mit einem pflanzenverträglichen Öl behandelt, das nicht abblättert.",
     "features": [
-      "Waist-height growing without kneeling or bending",
-      "30cm deep trough, suitable for root vegetables",
-      "Removable liner with full-length drainage holes",
-      "Slatted lower shelf for cans, trays and tools",
-      "Moso bamboo finished with a plant-safe oil"
+      "Anbau in Hüfthöhe, ohne Knien oder Bücken",
+      "30 cm tiefer Trog, auch für Wurzelgemüse geeignet",
+      "Herausnehmbare Auskleidung mit Drainagelöchern über die volle Länge",
+      "Untere Lattenablage für Kannen, Schalen und Werkzeug",
+      "Moso-Bambus mit pflanzenverträglichem Öl behandelt"
     ],
     "specifications": [
-      { "label": "Material", "value": "Moso bamboo, oil finished" },
-      { "label": "Overall size", "value": "100 x 50 x 80cm" },
-      { "label": "Trough depth", "value": "30cm" },
-      { "label": "Soil capacity", "value": "Approximately 105 litres" },
-      { "label": "Liner", "value": "Removable, perforated PE" },
-      { "label": "Weight", "value": "12.5kg" },
-      { "label": "Assembly", "value": "Required, tools and instructions included" }
+      { "label": "Material", "value": "Moso-Bambus, geölt" },
+      { "label": "Gesamtmaße", "value": "100 x 50 x 80 cm" },
+      { "label": "Trogtiefe", "value": "30 cm" },
+      { "label": "Erdvolumen", "value": "etwa 105 Liter" },
+      { "label": "Auskleidung", "value": "Herausnehmbar, perforiertes PE" },
+      { "label": "Gewicht", "value": "12,5 kg" },
+      { "label": "Montage", "value": "Erforderlich, Werkzeug und Anleitung enthalten" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": true,
-    "tags": ["raised bed", "bamboo", "vegetables", "growing"]
+    "tags": ["hochbeet", "bambus", "gemüse", "anbau"]
   },
   {
-    "id": "solar-garden-lights-pack-of-6",
-    "slug": "solar-garden-lights-pack-of-6",
-    "sku": "THST-005",
-    "title": "Solar-Powered Garden Lights, Pack of 6",
-    "brand": "Thornstead",
-    "category": "Garden Lighting",
-    "categorySlug": "garden-lighting",
-    "price": 29.95,
-    "currency": "GBP",
-    "condition": "new",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Home & Garden > Lighting > Landscape Lighting",
-    "images": [
-      {
-        "src": "/images/products/solar-garden-lights-pack-of-6-1.jpg",
-        "alt": "Six Thornstead solar garden lights arranged in a row"
-      },
-      {
-        "src": "/images/products/solar-garden-lights-pack-of-6-2.jpg",
-        "alt": "Thornstead solar garden lights glowing along a path at dusk"
-      },
-      {
-        "src": "/images/products/solar-garden-lights-pack-of-6-3.jpg",
-        "alt": "Detail of a Thornstead solar light head and ground spike"
-      }
-    ],
-    "shortDescription": "Six stake lights with warm white LEDs, an IP65 housing and a dusk sensor, giving roughly eight hours from a full summer charge.",
-    "description": "Path lighting should not involve a trench and an electrician. These six stake lights push into a border or lawn, charge through the day and switch themselves on at dusk. The LEDs are warm white rather than the blue-white that makes a garden feel like a car park, and the frosted lens spreads light down onto the path instead of into your neighbour's window. Housings are IP65 rated, so British weather is the expected condition rather than an exception. A full summer charge gives around eight hours; expect less in midwinter, which is normal for every solar light.",
-    "features": [
-      "Six lights per pack with ground spikes included",
-      "Warm white LEDs with a frosted, downward-spreading lens",
-      "Automatic dusk-to-dawn sensor, no switch to remember",
-      "IP65 rated housing for year-round outdoor use",
-      "Around 8 hours of light from a full summer charge"
-    ],
-    "specifications": [
-      { "label": "Quantity", "value": "6 lights" },
-      { "label": "Light colour", "value": "Warm white, 3000K" },
-      { "label": "Battery", "value": "600mAh Ni-MH, replaceable" },
-      { "label": "Charge time", "value": "6–8 hours of direct daylight" },
-      { "label": "Run time", "value": "Up to 8 hours (summer charge)" },
-      { "label": "Ingress rating", "value": "IP65" },
-      { "label": "Height installed", "value": "38cm above ground" }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": ["solar", "lighting", "path", "outdoor"]
-  },
-  {
-    "id": "heavy-duty-garden-kneeling-pad",
-    "slug": "heavy-duty-garden-kneeling-pad",
+    "id": "kniepolster-garten",
+    "slug": "kniepolster-garten",
     "sku": "THST-006",
-    "title": "Heavy-Duty Garden Kneeling Pad",
+    "title": "Robustes Kniepolster für die Gartenarbeit",
     "brand": "Thornstead",
-    "category": "Garden Tools",
-    "categorySlug": "garden-tools",
-    "price": 14.95,
-    "currency": "GBP",
+    "category": "Gartenwerkzeug",
+    "categorySlug": "gartenwerkzeug",
+    "price": 17.95,
+    "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
     "gtin": "",
@@ -270,48 +219,48 @@
     "images": [
       {
         "src": "/images/products/heavy-duty-garden-kneeling-pad-1.jpg",
-        "alt": "Thornstead heavy-duty garden kneeling pad"
+        "alt": "Thornstead robustes Kniepolster für die Gartenarbeit"
       },
       {
         "src": "/images/products/heavy-duty-garden-kneeling-pad-2.jpg",
-        "alt": "Thornstead kneeling pad in use beside a flower border"
+        "alt": "Thornstead Kniepolster im Einsatz neben einem Blumenbeet"
       },
       {
         "src": "/images/products/heavy-duty-garden-kneeling-pad-3.jpg",
-        "alt": "Close-up of the textured surface and carry handle on the Thornstead kneeling pad"
+        "alt": "Nahaufnahme der strukturierten Oberfläche und des Tragegriffs am Thornstead Kniepolster"
       }
     ],
-    "shortDescription": "A 40mm closed-cell foam pad that stays dry on wet ground, with a moulded grip handle and a wipe-clean surface.",
-    "description": "Forty millimetres of closed-cell foam is the difference between an hour of planting and five minutes before your knees complain. Closed-cell means the foam does not soak up water, so the pad can sit on wet grass or a rained-on patio and still be dry on top. The surface is textured to grip rather than slide on decking, and it wipes clean with a cloth instead of needing a hose. A moulded handle is cut into one end so it hangs on a shed hook and carries in the same hand as a trowel.",
+    "shortDescription": "Ein 40 mm starkes Polster aus geschlossenzelligem Schaum, das auf nassem Boden trocken bleibt, mit angeformtem Griff und abwischbarer Oberfläche.",
+    "description": "Vierzig Millimeter geschlossenzelliger Schaum sind der Unterschied zwischen einer Stunde Pflanzarbeit und fünf Minuten, bis die Knie sich melden. Geschlossenzellig bedeutet, dass der Schaum kein Wasser aufnimmt: Das Polster kann auf nassem Rasen oder einer verregneten Terrasse liegen und bleibt oben trocken. Die Oberfläche ist strukturiert, damit sie auf Holzdielen greift statt zu rutschen, und lässt sich mit einem Tuch abwischen, anstatt abgespritzt werden zu müssen. In eine Seite ist ein Griff eingeformt, sodass das Polster am Schuppenhaken hängt und sich in derselben Hand wie eine Pflanzkelle tragen lässt.",
     "features": [
-      "40mm closed-cell foam that does not absorb water",
-      "Textured, non-slip surface for decking and patios",
-      "Moulded carry handle, hangs on a shed hook",
-      "Wipes clean with a damp cloth",
-      "Will not crack in frost or perish in sunlight"
+      "40 mm geschlossenzelliger Schaum, nimmt kein Wasser auf",
+      "Strukturierte, rutschhemmende Oberfläche für Terrasse und Holzdielen",
+      "Angeformter Tragegriff, passt auf jeden Schuppenhaken",
+      "Mit einem feuchten Tuch abwischbar",
+      "Reißt bei Frost nicht und wird in der Sonne nicht brüchig"
     ],
     "specifications": [
-      { "label": "Material", "value": "Closed-cell EVA foam" },
-      { "label": "Size", "value": "44 x 24 x 4cm" },
-      { "label": "Weight", "value": "0.4kg" },
-      { "label": "Surface", "value": "Textured, non-slip" },
-      { "label": "Care", "value": "Wipe clean" }
+      { "label": "Material", "value": "Geschlossenzelliger EVA-Schaum" },
+      { "label": "Maße", "value": "44 x 24 x 4 cm" },
+      { "label": "Gewicht", "value": "0,4 kg" },
+      { "label": "Oberfläche", "value": "Strukturiert, rutschhemmend" },
+      { "label": "Pflege", "value": "Feucht abwischen" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": false,
-    "tags": ["kneeling pad", "foam", "gardening"]
+    "tags": ["kniepolster", "schaum", "gartenarbeit"]
   },
   {
-    "id": "stainless-steel-watering-can-5l",
-    "slug": "stainless-steel-watering-can-5l",
+    "id": "giesskanne-edelstahl-5-l",
+    "slug": "giesskanne-edelstahl-5-l",
     "sku": "THST-007",
-    "title": "Stainless Steel Watering Can, 5L",
+    "title": "Gießkanne aus Edelstahl, 5 L",
     "brand": "Thornstead",
-    "category": "Garden Tools",
-    "categorySlug": "garden-tools",
-    "price": 27.95,
-    "currency": "GBP",
+    "category": "Gartenwerkzeug",
+    "categorySlug": "gartenwerkzeug",
+    "price": 32.95,
+    "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
     "gtin": "",
@@ -319,49 +268,49 @@
     "images": [
       {
         "src": "/images/products/stainless-steel-watering-can-5l-1.jpg",
-        "alt": "Thornstead 5 litre stainless steel watering can with brass rose"
+        "alt": "Thornstead Gießkanne aus Edelstahl mit 5 Litern und Messingbrause"
       },
       {
         "src": "/images/products/stainless-steel-watering-can-5l-2.jpg",
-        "alt": "Thornstead watering can being used on potted seedlings"
+        "alt": "Thornstead Gießkanne beim Wässern von Jungpflanzen in Töpfen"
       },
       {
         "src": "/images/products/stainless-steel-watering-can-5l-3.jpg",
-        "alt": "Detachable brass rose from the Thornstead watering can"
+        "alt": "Abnehmbare Messingbrause der Thornstead Gießkanne"
       }
     ],
-    "shortDescription": "A 5 litre can in brushed stainless steel with a long balanced spout and a detachable brass rose for seedlings.",
-    "description": "Plastic cans crack at the handle after two summers in the sun. This one is brushed stainless steel with a rolled rim and welded seams, so it lasts and it looks like something you leave out rather than hide. Five litres is the sensible compromise: enough to water a run of pots without refilling, light enough to carry full in one hand. The spout is long and set low on the body, which keeps the flow steady as the can empties and lets you reach the back of a border. A brass rose twists off for a fine spray over seedlings, or leave it off to water directly at the roots.",
+    "shortDescription": "Eine Kanne mit 5 Litern aus gebürstetem Edelstahl, mit langem, ausbalanciertem Ausguss und abnehmbarer Messingbrause für Jungpflanzen.",
+    "description": "Kunststoffkannen brechen nach zwei Sommern in der Sonne am Griff. Diese hier ist aus gebürstetem Edelstahl mit Rollrand und geschweißten Nähten, hält also lange und sieht aus wie etwas, das draußen stehen bleiben darf, statt versteckt zu werden. Fünf Liter sind der sinnvolle Kompromiss: genug, um eine Reihe Töpfe zu wässern, ohne nachzufüllen, und leicht genug, um die Kanne voll in einer Hand zu tragen. Der Ausguss ist lang und tief am Korpus angesetzt, was den Wasserfluss auch bei sinkendem Füllstand gleichmäßig hält und die Reichweite bis in die Beetmitte verlängert. Die Messingbrause lässt sich für einen feinen Sprühstrahl über Jungpflanzen aufdrehen oder abnehmen, um direkt an der Wurzel zu gießen.",
     "features": [
-      "Brushed 201 stainless steel with welded, leak-free seams",
-      "Long low-set spout for a steady flow and extra reach",
-      "Detachable brass rose for a fine seedling spray",
-      "Balanced handle that stays comfortable when full",
-      "Suitable for indoor plants and outdoor borders"
+      "Gebürsteter Edelstahl mit geschweißten, dichten Nähten",
+      "Langer, tief angesetzter Ausguss für gleichmäßigen Fluss und mehr Reichweite",
+      "Abnehmbare Messingbrause für feinen Sprühstrahl",
+      "Ausbalancierter Griff, auch voll bequem zu tragen",
+      "Für Zimmerpflanzen und Gartenbeete geeignet"
     ],
     "specifications": [
-      { "label": "Capacity", "value": "5 litres" },
-      { "label": "Material", "value": "201 stainless steel, brushed" },
-      { "label": "Rose", "value": "Solid brass, detachable" },
-      { "label": "Size", "value": "48 x 17 x 30cm" },
-      { "label": "Empty weight", "value": "1.1kg" },
-      { "label": "Care", "value": "Empty and dry after use in freezing weather" }
+      { "label": "Volumen", "value": "5 Liter" },
+      { "label": "Material", "value": "Edelstahl 201, gebürstet" },
+      { "label": "Brause", "value": "Massives Messing, abnehmbar" },
+      { "label": "Maße", "value": "48 x 17 x 30 cm" },
+      { "label": "Leergewicht", "value": "1,1 kg" },
+      { "label": "Pflege", "value": "Bei Frost entleeren und trocknen" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": true,
-    "tags": ["watering can", "stainless steel", "brass"]
+    "tags": ["gießkanne", "edelstahl", "messing"]
   },
   {
-    "id": "compact-kitchen-compost-bin",
-    "slug": "compact-kitchen-compost-bin",
+    "id": "komposteimer-kueche",
+    "slug": "komposteimer-kueche",
     "sku": "THST-008",
-    "title": "Compact Kitchen Compost Bin",
+    "title": "Kompakter Komposteimer für die Küche",
     "brand": "Thornstead",
-    "category": "Kitchen & Composting",
-    "categorySlug": "kitchen-composting",
-    "price": 24.95,
-    "currency": "GBP",
+    "category": "Küche & Kompost",
+    "categorySlug": "kueche-kompost",
+    "price": 29.95,
+    "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
     "gtin": "",
@@ -369,50 +318,50 @@
     "images": [
       {
         "src": "/images/products/compact-kitchen-compost-bin-1.jpg",
-        "alt": "Thornstead compact kitchen compost bin"
+        "alt": "Thornstead kompakter Komposteimer für die Küche"
       },
       {
         "src": "/images/products/compact-kitchen-compost-bin-2.jpg",
-        "alt": "Thornstead compost bin on a kitchen countertop"
+        "alt": "Thornstead Komposteimer auf einer Küchenarbeitsplatte"
       },
       {
         "src": "/images/products/compact-kitchen-compost-bin-3.jpg",
-        "alt": "Lid of the Thornstead compost bin lifted to show the carbon filter"
+        "alt": "Geöffneter Deckel des Thornstead Komposteimers mit Blick auf den Aktivkohlefilter"
       }
     ],
-    "shortDescription": "A 5 litre worktop caddy in powder-coated steel with a replaceable carbon filter in the lid and a removable inner bucket.",
-    "description": "A food caddy only gets used if it can sit on the worktop without being unpleasant, so this one has a carbon filter set into the lid that takes the edge off between emptyings, and a lid that seals rather than rests. Five litres is roughly two or three days of peelings for a small household. The inner bucket lifts out with a wire handle so you can carry it to the garden bin and rinse it in the sink, leaving the outer shell clean. The shell is powder-coated steel in muted colours rather than white plastic that stains after a month of coffee grounds.",
+    "shortDescription": "Ein Eimer mit 5 Litern für die Arbeitsplatte, aus pulverbeschichtetem Stahl, mit austauschbarem Aktivkohlefilter im Deckel und herausnehmbarem Innenbehälter.",
+    "description": "Ein Bioabfalleimer wird nur benutzt, wenn er auf der Arbeitsplatte stehen kann, ohne unangenehm zu werden. Deshalb sitzt hier ein Aktivkohlefilter im Deckel, der die Gerüche zwischen zwei Entleerungen abfängt, und der Deckel schließt dicht, statt nur aufzuliegen. Fünf Liter entsprechen etwa zwei bis drei Tagen Schalenabfall in einem kleinen Haushalt. Der Innenbehälter lässt sich am Drahtgriff herausheben, zur Biotonne tragen und im Becken ausspülen, sodass die Außenhülle sauber bleibt. Diese Hülle ist aus pulverbeschichtetem Stahl in gedeckten Farben statt aus weißem Kunststoff, der nach einem Monat Kaffeesatz Flecken behält.",
     "features": [
-      "Replaceable carbon filter fitted in the lid",
-      "Removable inner bucket with a wire carry handle",
-      "5 litre capacity, around 2–3 days for a small household",
-      "Powder-coated steel shell that wipes clean",
-      "Compatible with standard compostable caddy liners"
+      "Austauschbarer Aktivkohlefilter im Deckel",
+      "Herausnehmbarer Innenbehälter mit Drahtgriff",
+      "5 Liter Volumen, etwa 2 bis 3 Tage für einen kleinen Haushalt",
+      "Abwischbare Außenhülle aus pulverbeschichtetem Stahl",
+      "Passend für handelsübliche kompostierbare Beutel"
     ],
     "specifications": [
-      { "label": "Capacity", "value": "5 litres" },
-      { "label": "Shell", "value": "Powder-coated steel" },
-      { "label": "Inner bucket", "value": "Removable, food-safe plastic" },
-      { "label": "Filter", "value": "Activated carbon, replaceable" },
-      { "label": "Size", "value": "20 x 20 x 28cm" },
-      { "label": "Weight", "value": "1.3kg" },
-      { "label": "In the box", "value": "Bin, inner bucket, 2 carbon filters" }
+      { "label": "Volumen", "value": "5 Liter" },
+      { "label": "Außenhülle", "value": "Pulverbeschichteter Stahl" },
+      { "label": "Innenbehälter", "value": "Herausnehmbar, lebensmittelechter Kunststoff" },
+      { "label": "Filter", "value": "Aktivkohle, austauschbar" },
+      { "label": "Maße", "value": "20 x 20 x 28 cm" },
+      { "label": "Gewicht", "value": "1,3 kg" },
+      { "label": "Lieferumfang", "value": "Eimer, Innenbehälter, 2 Aktivkohlefilter" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": false,
-    "tags": ["compost", "kitchen", "caddy", "steel"]
+    "tags": ["kompost", "küche", "bioabfall", "stahl"]
   },
   {
-    "id": "weatherproof-garden-furniture-cover-set",
-    "slug": "weatherproof-garden-furniture-cover-set",
+    "id": "schutzhuellen-set-gartenmoebel",
+    "slug": "schutzhuellen-set-gartenmoebel",
     "sku": "THST-009",
-    "title": "Weatherproof Garden Furniture Cover Set",
+    "title": "Wetterfestes Schutzhüllen-Set für Gartenmöbel",
     "brand": "Thornstead",
-    "category": "Outdoor Storage",
-    "categorySlug": "outdoor-storage",
-    "price": 44.95,
-    "currency": "GBP",
+    "category": "Außenaufbewahrung",
+    "categorySlug": "aussenaufbewahrung",
+    "price": 52.95,
+    "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
     "gtin": "",
@@ -420,49 +369,49 @@
     "images": [
       {
         "src": "/images/products/weatherproof-garden-furniture-cover-set-1.jpg",
-        "alt": "Thornstead weatherproof garden furniture cover set, folded"
+        "alt": "Thornstead wetterfestes Schutzhüllen-Set für Gartenmöbel, zusammengefaltet"
       },
       {
         "src": "/images/products/weatherproof-garden-furniture-cover-set-2.jpg",
-        "alt": "Thornstead weatherproof covers fitted over a garden table and chairs"
+        "alt": "Thornstead Schutzhüllen über Gartentisch und Stühlen gezogen"
       },
       {
         "src": "/images/products/weatherproof-garden-furniture-cover-set-3.jpg",
-        "alt": "Detail of the taped seam and drawcord hem on a Thornstead furniture cover"
+        "alt": "Detail von verschweißter Naht und Kordelzug einer Thornstead Schutzhülle"
       }
     ],
-    "shortDescription": "A three-piece cover set in 600D coated polyester with taped seams, mesh vents and drawcord hems, for a table and two chair stacks.",
-    "description": "Furniture covers fail in two ways: they let water through the seams, or they trap it underneath and everything grows mould. This set is made from 600D polyester with a waterproof coating and taped seams for the first problem, and mesh vents in the top panels for the second, so air keeps moving and condensation does not sit on the table. Elasticated, drawcord hems pull tight under the edges so a gust does not turn the cover into a sail across the lawn. The set covers a rectangular table plus two stacks of chairs, and each piece packs into its own storage bag over winter.",
+    "shortDescription": "Ein dreiteiliges Set aus beschichtetem 600D-Polyester mit verschweißten Nähten, Lüftungsgittern und Kordelzug, für einen Tisch und zwei Stuhlstapel.",
+    "description": "Schutzhüllen versagen auf zwei Arten: Sie lassen Wasser durch die Nähte, oder sie halten es darunter fest und alles beginnt zu schimmeln. Dieses Set löst das erste Problem mit 600D-Polyester, wasserdichter Beschichtung und verschweißten Nähten und das zweite mit Lüftungsgittern in den Deckflächen, sodass Luft in Bewegung bleibt und sich kein Kondenswasser auf der Tischplatte sammelt. Elastische Säume mit Kordelzug werden unter den Kanten festgezogen, damit eine Windböe die Hülle nicht als Segel über den Rasen trägt. Das Set deckt einen rechteckigen Tisch und zwei Stuhlstapel ab, und jedes Teil lässt sich über den Winter in seinem eigenen Beutel verstauen.",
     "features": [
-      "600D polyester with a waterproof coating and taped seams",
-      "Mesh air vents that reduce condensation and mould",
-      "Elasticated drawcord hems that hold in wind",
-      "Three pieces: one table cover, two chair-stack covers",
-      "Storage bags included for each piece"
+      "600D-Polyester mit wasserdichter Beschichtung und verschweißten Nähten",
+      "Lüftungsgitter reduzieren Kondenswasser und Schimmel",
+      "Elastische Säume mit Kordelzug halten bei Wind",
+      "Drei Teile: eine Tischhülle, zwei Stuhlhüllen",
+      "Aufbewahrungsbeutel für jedes Teil enthalten"
     ],
     "specifications": [
-      { "label": "Fabric", "value": "600D polyester, PU coated" },
-      { "label": "Table cover", "value": "200 x 110 x 70cm" },
-      { "label": "Chair covers", "value": "2 x 70 x 70 x 110cm" },
-      { "label": "Seams", "value": "Taped and heat sealed" },
-      { "label": "Fixings", "value": "Elasticated hem with drawcord" },
-      { "label": "Set weight", "value": "3.2kg" }
+      { "label": "Material", "value": "600D-Polyester, PU-beschichtet" },
+      { "label": "Tischhülle", "value": "200 x 110 x 70 cm" },
+      { "label": "Stuhlhüllen", "value": "2 x 70 x 70 x 110 cm" },
+      { "label": "Nähte", "value": "Verschweißt und abgeklebt" },
+      { "label": "Befestigung", "value": "Elastischer Saum mit Kordelzug" },
+      { "label": "Gewicht des Sets", "value": "3,2 kg" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": false,
-    "tags": ["cover", "furniture", "waterproof", "winter"]
+    "tags": ["schutzhülle", "gartenmöbel", "wetterfest", "winter"]
   },
   {
-    "id": "wooden-bird-feeding-station",
-    "slug": "wooden-bird-feeding-station",
+    "id": "vogelfutterstation-holz",
+    "slug": "vogelfutterstation-holz",
     "sku": "THST-010",
-    "title": "Wooden Bird Feeding Station",
+    "title": "Vogelfutterstation aus Holz",
     "brand": "Thornstead",
-    "category": "Wildlife & Bird Care",
-    "categorySlug": "wildlife-bird-care",
-    "price": 54.95,
-    "currency": "GBP",
+    "category": "Vögel & Wildtiere",
+    "categorySlug": "voegel-wildtiere",
+    "price": 64.95,
+    "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
     "gtin": "",
@@ -470,38 +419,38 @@
     "images": [
       {
         "src": "/images/products/wooden-bird-feeding-station-1.jpg",
-        "alt": "Thornstead wooden bird feeding station"
+        "alt": "Thornstead Vogelfutterstation aus Holz"
       },
       {
         "src": "/images/products/wooden-bird-feeding-station-2.jpg",
-        "alt": "Thornstead bird feeding station with birds perched on the arms"
+        "alt": "Thornstead Vogelfutterstation mit Vögeln auf den Auslegern"
       },
       {
         "src": "/images/products/wooden-bird-feeding-station-3.jpg",
-        "alt": "Mesh seed tray and hanging arm detail of the Thornstead bird feeding station"
+        "alt": "Futterschale mit Gitterboden und Ausleger der Thornstead Vogelfutterstation im Detail"
       }
     ],
-    "shortDescription": "A 1.9m FSC-certified pine station with four hanging arms, a seed tray, a water dish and a ground spike for lawns or borders.",
-    "description": "One post, four hanging points, and suddenly a garden has proper bird traffic. This station is FSC-certified pine, pressure treated so it stays in the ground year-round rather than rotting through its first wet winter. Four arms take seed feeders, fat balls, peanuts and a nyjer feeder at once, which is what actually brings in a range of species rather than only pigeons. A mesh seed tray sits mid-post to catch spill, and a shallow water dish clips on lower down for drinking and bathing. The spike drives into a lawn or border, and the post unscrews into three sections for storage.",
+    "shortDescription": "Eine 1,9 m hohe Station aus FSC-zertifizierter Kiefer mit vier Auslegern, Futterschale, Wasserschale und Erdspieß für Rasen und Beete.",
+    "description": "Ein Pfosten, vier Aufhängepunkte, und plötzlich hat ein Garten regen Vogelverkehr. Diese Station besteht aus FSC-zertifizierter Kiefer, kesseldruckimprägniert, damit sie das ganze Jahr im Boden bleiben kann, statt den ersten nassen Winter über durchzufaulen. Vier Ausleger tragen gleichzeitig Körnersilo, Fettkugeln, Erdnüsse und ein Nigersaatsilo, und genau diese Vielfalt bringt ein breites Artenspektrum an den Garten statt nur Tauben. Auf halber Höhe fängt eine Futterschale mit Gitterboden herabfallende Körner auf, weiter unten lässt sich eine flache Wasserschale zum Trinken und Baden einklipsen. Der Erdspieß wird in Rasen oder Beet getrieben, und der Pfosten lässt sich zum Verstauen in drei Teile zerlegen.",
     "features": [
-      "FSC-certified pine, pressure treated for year-round use",
-      "Four hanging arms for seed, fat balls, peanuts and nyjer",
-      "Mesh seed tray that catches spill under the feeders",
-      "Clip-on water dish for drinking and bathing",
-      "Three-section post with a ground spike, no digging needed"
+      "FSC-zertifizierte Kiefer, kesseldruckimprägniert für den Ganzjahreseinsatz",
+      "Vier Ausleger für Körner, Fettkugeln, Erdnüsse und Nigersaat",
+      "Futterschale mit Gitterboden fängt herabfallende Körner auf",
+      "Einklipsbare Wasserschale zum Trinken und Baden",
+      "Dreiteiliger Pfosten mit Erdspieß, kein Ausheben nötig"
     ],
     "specifications": [
-      { "label": "Material", "value": "FSC-certified pine, pressure treated" },
-      { "label": "Height", "value": "1.9m above ground" },
-      { "label": "Hanging arms", "value": "4" },
-      { "label": "Seed tray", "value": "30cm diameter, mesh base" },
-      { "label": "Water dish", "value": "22cm diameter, clip-on" },
-      { "label": "Weight", "value": "5.6kg" },
-      { "label": "Assembly", "value": "Required, feeders not included" }
+      { "label": "Material", "value": "FSC-zertifizierte Kiefer, kesseldruckimprägniert" },
+      { "label": "Höhe", "value": "1,9 m über dem Boden" },
+      { "label": "Ausleger", "value": "4" },
+      { "label": "Futterschale", "value": "30 cm Durchmesser, Gitterboden" },
+      { "label": "Wasserschale", "value": "22 cm Durchmesser, einklipsbar" },
+      { "label": "Gewicht", "value": "5,6 kg" },
+      { "label": "Montage", "value": "Erforderlich, Futtersilos nicht enthalten" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": false,
-    "tags": ["bird feeder", "wildlife", "wooden", "garden"]
+    "tags": ["vogelfutter", "wildtiere", "holz", "garten"]
   }
 ]

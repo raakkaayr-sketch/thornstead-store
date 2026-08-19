@@ -6,46 +6,46 @@ import { ContactForm } from '@/components/contact-form';
 import { siteConfig, formattedAddress } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Contact us',
+  title: 'Kontakt',
   description:
-    'Get in touch with Thornstead by email, telephone or post. Our UK address, phone number and customer service hours.',
-  alternates: { canonical: '/contact' },
+    'So erreichen Sie Thornstead: E-Mail, Telefon und Postanschrift sowie unsere Erreichbarkeitszeiten.',
+  alternates: { canonical: '/kontakt' },
 };
 
-export default function ContactPage() {
+export default function KontaktPage() {
   const { contact, business, returns } = siteConfig;
 
   const details = [
     {
       icon: Mail,
-      label: 'Email',
+      label: 'E-Mail',
       value: contact.email,
       href: `mailto:${contact.email}`,
     },
     {
       icon: Phone,
-      label: 'Telephone',
+      label: 'Telefon',
       value: contact.phone,
       href: `tel:${contact.phoneHref}`,
     },
-    { icon: MapPin, label: 'Address', value: formattedAddress() },
-    { icon: Clock, label: 'Hours', value: contact.hours },
+    { icon: MapPin, label: 'Anschrift', value: formattedAddress() },
+    { icon: Clock, label: 'Erreichbarkeit', value: contact.hours },
   ];
 
   return (
     <>
       <PageHeader
-        title="Contact us"
-        description="A real person reads every message. We answer emails within one business day."
+        title="Kontakt"
+        description="Jede Nachricht wird von einem Menschen gelesen. E-Mails beantworten wir innerhalb eines Werktags."
         crumbs={[
-          { name: 'Home', path: '/' },
-          { name: 'Contact', path: '/contact' },
+          { name: 'Startseite', path: '/' },
+          { name: 'Kontakt', path: '/kontakt' },
         ]}
       />
 
       <div className="container-page grid gap-12 px-6 py-12 lg:grid-cols-2">
         <div>
-          <h2 className="text-xl font-semibold">Ways to reach us</h2>
+          <h2 className="text-xl font-semibold">So erreichen Sie uns</h2>
           <dl className="mt-6 space-y-5">
             {details.map((detail) => (
               <div key={detail.label} className="flex gap-3.5">
@@ -69,30 +69,35 @@ export default function ContactPage() {
           </dl>
 
           <div className="mt-8 rounded-2xl bg-muted/60 p-5 text-sm text-muted-foreground">
-            <p className="font-medium text-foreground">{business.legalName}</p>
+            <p className="font-medium text-foreground">{business.ownerName}</p>
             <p className="mt-1.5">
-              Trading as {business.tradingName}. We sell our own-brand home and
-              garden products to customers in the United Kingdom.
+              Handelnd unter der Marke {business.tradingName}. Wir verkaufen
+              unsere eigenen Produkte für Garten und Zuhause an Kundinnen und
+              Kunden in Deutschland.
             </p>
             <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs">
-              <Link href="/shipping-policy" className="text-brand hover:underline">
-                Shipping &amp; delivery
+              <Link href="/versand" className="text-brand hover:underline">
+                Versand &amp; Lieferung
               </Link>
-              <Link href="/returns-policy" className="text-brand hover:underline">
-                {returns.days}-day returns
+              <Link href="/widerruf" className="text-brand hover:underline">
+                {returns.days} Tage Rückgabe
               </Link>
-              <Link href="/privacy-policy" className="text-brand hover:underline">
-                Privacy &amp; cookies
+              <Link href="/datenschutz" className="text-brand hover:underline">
+                Datenschutz
+              </Link>
+              <Link href="/impressum" className="text-brand hover:underline">
+                Impressum
               </Link>
             </p>
           </div>
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold">Send us a message</h2>
+          <h2 className="text-xl font-semibold">Nachricht schreiben</h2>
           <p className="mt-2 text-sm text-muted-foreground">
-            This form opens your email app with the message ready to send, so
-            you keep a copy of what you sent us.
+            Dieses Formular öffnet Ihr E-Mail-Programm mit der fertig
+            vorbereiteten Nachricht. So behalten Sie eine Kopie von allem, was
+            Sie uns geschickt haben.
           </p>
           <div className="mt-6">
             <ContactForm />

@@ -19,7 +19,7 @@ export interface Product {
   category: string;
   categorySlug: string;
   price: number;
-  /** ISO 4217, always GBP for this store. */
+  /** ISO 4217, für diesen Shop immer EUR. Bruttopreis inklusive MwSt. */
   currency: string;
   /** Google product condition. All stock is new. */
   condition: 'new';
@@ -42,6 +42,11 @@ export interface Product {
   ratingValue: number;
   featured: boolean;
   tags: string[];
+  /**
+   * Produktspezifische Warn- und Sicherheitshinweise nach Art. 19 Abs. 1 Buchst. d
+   * GPSR. Fehlt das Feld, greift der allgemeine Hinweis in ProductCompliance.
+   */
+  safetyNotes?: string[];
 }
 
 export interface Category {

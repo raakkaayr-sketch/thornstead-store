@@ -9,11 +9,11 @@ import { cn, formatPrice } from '@/lib/utils';
 import type { Category, Product, SortOption } from '@/lib/types';
 
 const sortOptions: { value: SortOption; label: string }[] = [
-  { value: 'featured', label: 'Featured' },
-  { value: 'price-asc', label: 'Price: low to high' },
-  { value: 'price-desc', label: 'Price: high to low' },
-  { value: 'name-asc', label: 'Name: A to Z' },
-  { value: 'name-desc', label: 'Name: Z to A' },
+  { value: 'featured', label: 'Empfohlen' },
+  { value: 'price-asc', label: 'Preis: aufsteigend' },
+  { value: 'price-desc', label: 'Preis: absteigend' },
+  { value: 'name-asc', label: 'Name: A bis Z' },
+  { value: 'name-desc', label: 'Name: Z bis A' },
 ];
 
 export function ShopBrowser({
@@ -61,11 +61,15 @@ export function ShopBrowser({
       case 'price-desc':
         list.sort((a, b) => b.price - a.price);
         break;
+      /**
+       * Mit deutschem Collator sortieren, damit Umlaute richtig einsortiert
+       * werden: Ä gehört zu A, Ö zu O, Ü zu U.
+       */
       case 'name-asc':
-        list.sort((a, b) => a.title.localeCompare(b.title));
+        list.sort((a, b) => a.title.localeCompare(b.title, 'de-DE'));
         break;
       case 'name-desc':
-        list.sort((a, b) => b.title.localeCompare(a.title));
+        list.sort((a, b) => b.title.localeCompare(a.title, 'de-DE'));
         break;
       default:
         list.sort(
@@ -94,18 +98,20 @@ export function ShopBrowser({
   const filters = (
     <div className="space-y-8">
       <div>
-        <h2 className="text-xs font-semibold uppercase tracking-wider">Search</h2>
+        <h2 className="text-xs font-semibold uppercase tracking-wider">Suche</h2>
         <Input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search the range"
+          placeholder="Sortiment durchsuchen"
           className="mt-3"
-          aria-label="Search products"
+          aria-label="Produkte durchsuchen"
         />
       </div>
 
       <div>
-        <h2 className="text-xs font-semibold uppercase tracking-wider">Category</h2>
+        <h2 className="text-xs font-semibold uppercase tracking-wider">
+          Kategorie
+        </h2>
         <ul className="mt-3 space-y-2">
           {categories.map((category) => {
             const count = products.filter(
@@ -131,7 +137,7 @@ export function ShopBrowser({
 
       <div>
         <h2 className="text-xs font-semibold uppercase tracking-wider">
-          Maximum price
+          Höchstpreis
         </h2>
         <input
           type="range"
@@ -140,17 +146,17 @@ export function ShopBrowser({
           step={5}
           value={maxPrice}
           onChange={(e) => setMaxPrice(Number(e.target.value))}
-          aria-label="Maximum price"
+          aria-label="Höchstpreis"
           className="mt-4 w-full accent-[hsl(var(--brand))]"
         />
         <p className="mt-2 text-sm text-muted-foreground">
-          Up to <span className="tabular-nums">{formatPrice(maxPrice)}</span>
+          bis <span className="tabular-nums">{formatPrice(maxPrice)}</span>
         </p>
       </div>
 
       {activeFilters > 0 && (
         <Button variant="outline" size="sm" onClick={reset} className="w-full">
-          Clear filters
+          Filter zurücksetzen
         </Button>
       )}
     </div>
@@ -165,8 +171,8 @@ export function ShopBrowser({
       <div>
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="text-sm text-muted-foreground">
-            {results.length} {results.length === 1 ? 'product' : 'products'}
-            {activeFilters > 0 && ' matching your filters'}
+            {results.length} {results.length === 1 ? 'Produkt' : 'Produkte'}
+            {activeFilters > 0 && ' passend zu Ihren Filtern'}
           </p>
 
           <div className="flex items-center gap-2">
@@ -177,14 +183,14 @@ export function ShopBrowser({
               onClick={() => setFiltersOpen(true)}
             >
               <SlidersHorizontal className="h-4 w-4" />
-              Filters
+              Filter
               {activeFilters > 0 && ` (${activeFilters})`}
             </Button>
 
             <Select
               value={sort}
               onChange={(e) => setSort(e.target.value as SortOption)}
-              aria-label="Sort products"
+              aria-label="Produkte sortieren"
               className="h-9 w-auto py-0 text-[13px]"
             >
               {sortOptions.map((option) => (
@@ -198,13 +204,15 @@ export function ShopBrowser({
 
         {results.length === 0 ? (
           <div className="mt-16 flex flex-col items-center gap-3 text-center">
-            <p className="font-medium">No products match those filters</p>
+            <p className="font-medium">
+              Zu diesen Filtern passt kein Produkt
+            </p>
             <p className="max-w-sm text-sm text-muted-foreground">
-              Try widening the price range or clearing a category to see more of
-              the range.
+              Erweitern Sie den Preisbereich oder entfernen Sie eine Kategorie,
+              um mehr aus dem Sortiment zu sehen.
             </p>
             <Button variant="outline" size="sm" onClick={reset}>
-              Clear filters
+              Filter zurücksetzen
             </Button>
           </div>
         ) : (
@@ -232,11 +240,11 @@ export function ShopBrowser({
             )}
           >
             <div className="mb-6 flex items-center justify-between">
-              <h2 className="font-display text-lg font-semibold">Filters</h2>
+              <h2 className="font-display text-lg font-semibold">Filter</h2>
               <button
                 type="button"
                 onClick={() => setFiltersOpen(false)}
-                aria-label="Close filters"
+                aria-label="Filter schließen"
                 className="rounded-full p-2 text-muted-foreground hover:bg-accent"
               >
                 <X className="h-5 w-5" />
@@ -248,7 +256,8 @@ export function ShopBrowser({
               className="mt-8 w-full"
               onClick={() => setFiltersOpen(false)}
             >
-              Show {results.length} products
+              {results.length}{' '}
+              {results.length === 1 ? 'Produkt' : 'Produkte'} anzeigen
             </Button>
           </div>
         </div>

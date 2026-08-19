@@ -6,9 +6,9 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-/** Formats a GBP amount the way a UK shopper expects: £34.95. */
+/** Formatiert einen Betrag wie in Deutschland erwartet: 39,95 €. */
 export function formatPrice(amount: number, currency: string = siteConfig.currency) {
-  return new Intl.NumberFormat('en-GB', {
+  return new Intl.NumberFormat(siteConfig.locale, {
     style: 'currency',
     currency,
     minimumFractionDigits: 2,
@@ -16,15 +16,31 @@ export function formatPrice(amount: number, currency: string = siteConfig.curren
   }).format(amount);
 }
 
-/** Feed-friendly price string: "34.95 GBP". */
+/**
+ * Preisangabe für den Merchant-Center-Feed: "39.95 EUR".
+ *
+ * Bewusst nicht lokalisiert: Google verlangt den Punkt als Dezimaltrennzeichen.
+ * Ein deutsches Komma würde als Tausendertrennzeichen gelesen und den Preis
+ * verfälschen. Diese Funktion darf nicht mit formatPrice zusammengelegt werden.
+ */
 export function feedPrice(amount: number, currency: string = siteConfig.currency) {
   return `${amount.toFixed(2)} ${currency}`;
 }
 
+/** Datum im deutschen Format: 17. August 2026. */
+export function formatDate(date: Date) {
+  return new Intl.DateTimeFormat(siteConfig.locale, {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(date);
+}
+
 /**
- * Delivery charge for a given basket subtotal. This is the only place shipping
- * is calculated — the policy page, product pages, cart and Stripe session all
- * call it, so the feed and the checkout can never disagree.
+ * Versandkosten für einen gegebenen Warenwert. Dies ist die einzige Stelle, an
+ * der Versandkosten berechnet werden — Versandseite, Produktseiten, Warenkorb,
+ * Bestellübersicht und Stripe-Session rufen alle diese Funktion auf, sodass Feed
+ * und Kasse nie voneinander abweichen können.
  */
 export function shippingFor(subtotal: number) {
   const { standardCost, freeThreshold } = siteConfig.shipping;
@@ -34,6 +50,19 @@ export function shippingFor(subtotal: number) {
 
 export function orderTotal(subtotal: number) {
   return subtotal + shippingFor(subtotal);
+}
+
+/**
+ * Enthaltener Umsatzsteueranteil eines Bruttobetrags.
+ *
+ * Alle Preise im Katalog sind Bruttopreise, wie es die PAngV für Verbraucher
+ * verlangt. Die Steuer wird daher herausgerechnet und nicht aufgeschlagen:
+ * brutto × 19 / 119. Ein Aufschlag von 19 % auf den Bruttopreis wäre zu hoch.
+ */
+export function vatPortion(gross: number) {
+  const { vatRate, smallBusinessScheme } = siteConfig.business;
+  if (smallBusinessScheme) return 0;
+  return (gross * vatRate) / (100 + vatRate);
 }
 
 export function absoluteUrl(path: string) {

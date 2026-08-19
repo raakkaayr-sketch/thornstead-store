@@ -45,7 +45,7 @@ export function SearchDialog() {
     <>
       <button
         type="button"
-        aria-label="Search products"
+        aria-label="Produkte durchsuchen"
         onClick={() => setOpen(true)}
         className="flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
       >
@@ -61,7 +61,7 @@ export function SearchDialog() {
           <div
             role="dialog"
             aria-modal="true"
-            aria-label="Product search"
+            aria-label="Produktsuche"
             className="relative w-full max-w-xl overflow-hidden rounded-2xl border border-border bg-card shadow-2xl"
           >
             <div className="flex items-center gap-3 border-b border-border px-4">
@@ -70,13 +70,13 @@ export function SearchDialog() {
                 ref={inputRef}
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search planters, storage, tools…"
+                placeholder="Pflanzkübel, Aufbewahrung, Werkzeug…"
                 className="h-14 flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground"
               />
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                aria-label="Close search"
+                aria-label="Suche schließen"
                 className="rounded-full p-1.5 text-muted-foreground hover:bg-accent hover:text-foreground"
               >
                 <X className="h-4 w-4" />
@@ -86,20 +86,21 @@ export function SearchDialog() {
             <div className="max-h-[52vh] overflow-y-auto p-2">
               {query.trim() && results.length === 0 && (
                 <p className="px-3 py-8 text-center text-sm text-muted-foreground">
-                  Nothing matched “{query}”. Try “planter”, “storage” or “solar”.
+                  Zu „{query}" wurde nichts gefunden. Versuchen Sie
+                  „Pflanzkübel", „Aufbewahrung" oder „Kompost".
                 </p>
               )}
 
               {!query.trim() && (
                 <p className="px-3 py-8 text-center text-sm text-muted-foreground">
-                  Start typing to search the Thornstead range.
+                  Tippen Sie los, um das Thornstead-Sortiment zu durchsuchen.
                 </p>
               )}
 
               {results.map((product) => (
                 <Link
                   key={product.id}
-                  href={`/products/${product.slug}`}
+                  href={`/produkte/${product.slug}`}
                   onClick={() => setOpen(false)}
                   className="flex items-center gap-3 rounded-xl p-2 transition-colors hover:bg-accent"
                 >

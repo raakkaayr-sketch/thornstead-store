@@ -21,16 +21,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const category = getCategoryBySlug(slug);
-  if (!category) return { title: 'Category not found' };
+  if (!category) return { title: 'Kategorie nicht gefunden' };
 
   return {
     title: category.name,
     description: category.description,
-    alternates: { canonical: `/categories/${category.slug}` },
+    alternates: { canonical: `/kategorien/${category.slug}` },
   };
 }
 
-export default async function CategoryPage({
+export default async function KategorieSeite({
   params,
 }: {
   params: Promise<{ slug: string }>;
@@ -39,26 +39,22 @@ export default async function CategoryPage({
   const category = getCategoryBySlug(slug);
   if (!category) notFound();
 
+  const crumbs = [
+    { name: 'Startseite', path: '/' },
+    { name: 'Kategorien', path: '/kategorien' },
+    { name: category.name, path: `/kategorien/${category.slug}` },
+  ];
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(
-          breadcrumbJsonLd([
-            { name: 'Home', path: '/' },
-            { name: 'Categories', path: '/categories' },
-            { name: category.name, path: `/categories/${category.slug}` },
-          ])
-        )}
+        dangerouslySetInnerHTML={jsonLdScript(breadcrumbJsonLd(crumbs))}
       />
       <PageHeader
         title={category.name}
         description={category.description}
-        crumbs={[
-          { name: 'Home', path: '/' },
-          { name: 'Categories', path: '/categories' },
-          { name: category.name, path: `/categories/${category.slug}` },
-        ]}
+        crumbs={crumbs}
       />
       <ShopBrowser
         products={getAllProducts()}

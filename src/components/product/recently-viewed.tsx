@@ -7,7 +7,10 @@ import { useRecentlyViewed } from '@/components/providers/recently-viewed-provid
 import { formatPrice } from '@/lib/utils';
 import type { Product } from '@/lib/types';
 
-/** Records the current product, then shows the rest of the visitor's history. */
+/**
+ * Merkt das aktuelle Produkt vor und zeigt anschließend den übrigen
+ * Ansichtsverlauf. Der Verlauf liegt nur im Local Storage des Browsers.
+ */
 export function RecentlyViewed({
   products,
   currentId,
@@ -33,12 +36,12 @@ export function RecentlyViewed({
 
   return (
     <section className="mt-20">
-      <h2 className="text-xl font-semibold">Recently viewed</h2>
+      <h2 className="text-xl font-semibold">Zuletzt angesehen</h2>
       <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
         {items.map((product) => (
           <Link
             key={product.id}
-            href={`/products/${product.slug}`}
+            href={`/produkte/${product.slug}`}
             className="group"
           >
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted">

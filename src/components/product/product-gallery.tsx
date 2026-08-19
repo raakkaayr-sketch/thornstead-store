@@ -29,7 +29,7 @@ export function ProductGallery({ images }: { images: ProductImage[] }) {
               key={image.src}
               type="button"
               onClick={() => setActive(index)}
-              aria-label={`Show image ${index + 1}`}
+              aria-label={`Bild ${index + 1} anzeigen`}
               aria-current={index === active ? 'true' : undefined}
               className={cn(
                 'relative h-20 w-20 overflow-hidden rounded-xl bg-muted ring-offset-2 ring-offset-background transition-all',

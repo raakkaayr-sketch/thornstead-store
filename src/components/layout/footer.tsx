@@ -1,27 +1,35 @@
 import Link from 'next/link';
 import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import { Logo } from '@/components/brand/logo';
-import { siteConfig, formattedAddress } from '@/lib/config';
+import { siteConfig, formattedAddress, vatNote } from '@/lib/config';
 import { getAllCategories } from '@/lib/products';
 import { isRealProfileUrl } from '@/lib/social';
+import { formatPrice } from '@/lib/utils';
 
 const shopLinks = [
-  { href: '/shop', label: 'All products' },
-  { href: '/categories', label: 'Categories' },
-  { href: '/wishlist', label: 'Wishlist' },
+  { href: '/shop', label: 'Alle Produkte' },
+  { href: '/kategorien', label: 'Kategorien' },
+  { href: '/merkliste', label: 'Merkliste' },
 ];
 
 const companyLinks = [
-  { href: '/about', label: 'About Thornstead' },
-  { href: '/contact', label: 'Contact us' },
-  { href: '/faq', label: 'FAQ' },
+  { href: '/ueber-uns', label: 'Über Thornstead' },
+  { href: '/kontakt', label: 'Kontakt' },
+  { href: '/faq', label: 'Häufige Fragen' },
 ];
 
-const policyLinks = [
-  { href: '/shipping-policy', label: 'Shipping & delivery' },
-  { href: '/returns-policy', label: 'Returns & refunds' },
-  { href: '/privacy-policy', label: 'Privacy policy' },
-  { href: '/terms', label: 'Terms & conditions' },
+/**
+ * Impressum und Datenschutzerklärung müssen nach § 5 DDG und Art. 12 ff. DSGVO
+ * von jeder Seite aus leicht erkennbar, unmittelbar erreichbar und ständig
+ * verfügbar sein. Deshalb stehen sie hier im Footer und nicht nur auf einer
+ * Unterseite — die Reihenfolge beginnt bewusst mit dem Impressum.
+ */
+const legalLinks = [
+  { href: '/impressum', label: 'Impressum' },
+  { href: '/datenschutz', label: 'Datenschutz' },
+  { href: '/agb', label: 'AGB' },
+  { href: '/widerruf', label: 'Widerrufsrecht' },
+  { href: '/versand', label: 'Versand & Lieferung' },
 ];
 
 const socials = [
@@ -31,7 +39,7 @@ const socials = [
 
 export function Footer() {
   const categories = getAllCategories();
-  const { business, contact } = siteConfig;
+  const { business, contact, shipping, payment } = siteConfig;
 
   return (
     <footer className="mt-24 border-t border-border bg-muted/40">
@@ -40,8 +48,8 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Logo showTagline />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Thornstead designs its own range of home and garden essentials and
-              sells them direct to customers across the United Kingdom.
+              Thornstead entwickelt eigene Produkte für Garten und Zuhause und
+              verkauft sie direkt an Kundinnen und Kunden in Deutschland.
             </p>
 
             <address className="mt-6 space-y-2 text-sm not-italic text-muted-foreground">
@@ -85,34 +93,36 @@ export function Footer() {
 
           <FooterColumn title="Shop" links={shopLinks} />
           <FooterColumn
-            title="Categories"
+            title="Kategorien"
             links={categories.slice(0, 6).map((c) => ({
-              href: `/categories/${c.slug}`,
+              href: `/kategorien/${c.slug}`,
               label: c.name,
             }))}
           />
           <div className="space-y-8">
-            <FooterColumn title="Company" links={companyLinks} />
-            <FooterColumn title="Policies" links={policyLinks} />
+            <FooterColumn title="Unternehmen" links={companyLinks} />
+            <FooterColumn title="Rechtliches" links={legalLinks} />
           </div>
         </div>
 
         <div className="mt-12 space-y-3 border-t border-border pt-8 text-xs text-muted-foreground">
           <p>
             {[
-              `© ${new Date().getFullYear()} ${business.legalName}. All rights reserved.`,
-              business.companyNumber &&
-                `Registered in England and Wales, company number ${business.companyNumber}.`,
-              business.vatNumber &&
-                `VAT registration number ${business.vatNumber}.`,
+              `© ${new Date().getFullYear()} ${business.ownerName}, ${business.tradingName}. Alle Rechte vorbehalten.`,
+              business.vatNumber && `USt-IdNr. ${business.vatNumber}.`,
             ]
               .filter(Boolean)
               .join(' ')}
           </p>
           <p>
-            Card payments are processed securely by Stripe. Thornstead never
-            sees or stores your full card details. Prices include VAT where
-            applicable and are shown in pounds sterling (GBP).
+            Alle Preise {vatNote()} zzgl. Versandkosten.{' '}
+            {shipping.freeThreshold !== null &&
+              `Versandkostenfrei ab ${formatPrice(shipping.freeThreshold)}. `}
+            Versand ausschließlich innerhalb Deutschlands.
+          </p>
+          <p>
+            Kartenzahlungen werden sicher über {payment.processor} abgewickelt.
+            Thornstead sieht und speichert Ihre vollständigen Kartendaten nie.
           </p>
         </div>
       </div>

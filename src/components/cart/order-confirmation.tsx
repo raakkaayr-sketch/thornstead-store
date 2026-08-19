@@ -21,7 +21,7 @@ export function OrderConfirmation() {
   const sessionId = params.get('session_id');
   const { clearCart, closeCart } = useCart();
   const [summary, setSummary] = useState<SessionSummary | null>(null);
-  const window_ = deliveryWindow();
+  const deliveryEstimate = deliveryWindow();
 
   useEffect(() => {
     clearCart();
@@ -43,27 +43,34 @@ export function OrderConfirmation() {
       </div>
 
       <div>
-        <h1 className="text-2xl font-semibold">Thank you — your order is confirmed</h1>
+        <h1 className="text-2xl font-semibold">
+          Vielen Dank — Ihre Bestellung ist eingegangen
+        </h1>
         <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">
-          Stripe has emailed your receipt
-          {summary?.email ? ` to ${summary.email}` : ''}. We will send a second
-          email with tracking as soon as your parcel is collected, normally
-          within {siteConfig.shipping.handlingDaysMin}–
-          {siteConfig.shipping.handlingDaysMax} business days. Expect delivery in
-          around {window_.min}–{window_.max} business days.
+          Die Zahlungsbestätigung wurde per E-Mail
+          {summary?.email ? ` an ${summary.email}` : ''} versendet. Sobald Ihr
+          Paket abgeholt wurde, erhalten Sie eine zweite E-Mail mit der
+          Sendungsnummer, in der Regel innerhalb von{' '}
+          {siteConfig.shipping.handlingDaysMin} bis{' '}
+          {siteConfig.shipping.handlingDaysMax} Werktagen. Mit der Lieferung
+          rechnen Sie am besten in {deliveryEstimate.min} bis{' '}
+          {deliveryEstimate.max} Werktagen.
         </p>
       </div>
 
       {summary?.amountTotal != null && (
         <dl className="w-full rounded-2xl border border-border p-5 text-sm">
           <div className="flex justify-between">
-            <dt className="text-muted-foreground">Total paid</dt>
+            <dt className="text-muted-foreground">Gezahlter Gesamtbetrag</dt>
             <dd className="font-medium tabular-nums">
-              {formatPrice(summary.amountTotal / 100, summary.currency)}
+              {formatPrice(
+                summary.amountTotal / 100,
+                summary.currency.toUpperCase()
+              )}
             </dd>
           </div>
           <div className="mt-2 flex justify-between gap-4">
-            <dt className="text-muted-foreground">Order reference</dt>
+            <dt className="text-muted-foreground">Bestellreferenz</dt>
             <dd className="truncate font-mono text-xs">{summary.id}</dd>
           </div>
         </dl>
@@ -74,19 +81,19 @@ export function OrderConfirmation() {
           href="/shop"
           className={`${buttonVariants({ variant: 'outline' })} flex-1`}
         >
-          Continue shopping
+          Weiter einkaufen
         </Link>
         <Link
-          href="/contact"
+          href="/kontakt"
           className={`${buttonVariants({ variant: 'brand' })} flex-1`}
         >
-          Contact us about this order
+          Frage zu dieser Bestellung
         </Link>
       </div>
 
       <p className="text-xs text-muted-foreground">
-        Keep your order reference — quoting it makes any question about
-        delivery or returns much quicker to answer.
+        Bitte bewahren Sie die Bestellreferenz auf. Mit ihr lassen sich Fragen zu
+        Lieferung, Widerruf oder Rückgabe deutlich schneller klären.
       </p>
     </div>
   );

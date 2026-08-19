@@ -4,16 +4,22 @@ import { absoluteUrl, escapeCsv, escapeXml, feedPrice, shippingFor } from './uti
 import type { Product } from './types';
 
 /**
- * Google Merchant Center feeds.
+ * Feeds für Google Merchant Center (Deutschland).
  *
- * Both feeds are generated from the same product data that renders the site,
- * so a price, title, image or availability can never drift between the feed
- * and the landing page — mismatches there are the most common cause of
- * "Mismatched value" disapprovals and Misrepresentation flags.
+ * Beide Feeds entstehen aus denselben Produktdaten wie die Website. Preis,
+ * Titel, Bild und Verfügbarkeit können daher nicht zwischen Feed und Zielseite
+ * auseinanderlaufen — solche Abweichungen sind die häufigste Ursache für
+ * Ablehnungen wegen "Wert stimmt nicht überein" und für Sperrungen wegen
+ * Falschdarstellung.
  *
- * Own-brand products have no GTIN, so we submit `brand` + `mpn` and set
- * `identifier_exists` to `no`, which is exactly what Google asks for when a
- * manufacturer has not assigned a barcode. We never invent a GTIN.
+ * Eigenmarkenprodukte haben keine GTIN. Wir übermitteln daher Marke + MPN und
+ * setzen `identifier_exists` auf `no`, genau so wie Google es verlangt, wenn
+ * der Hersteller keine EAN vergeben hat. Eine GTIN wird niemals erfunden.
+ *
+ * Preise sind Bruttopreise inklusive 19 % MwSt. Google erwartet für
+ * Deutschland den Steueranteil im Preis, nicht als gesondertes Feld. Die
+ * Versandkosten im Feed müssen mit denen an der Kasse und auf der
+ * Versandseite übereinstimmen.
  */
 
 function availabilityValue(product: Product) {
@@ -29,17 +35,22 @@ function availabilityValue(product: Product) {
 
 function shippingLabel(product: Product) {
   return shippingFor(product.price) === 0
-    ? 'Free UK delivery'
+    ? 'Versandkostenfreie Lieferung'
     : siteConfig.shipping.serviceName;
+}
+
+function productLink(product: Product) {
+  return absoluteUrl(`/produkte/${product.slug}`);
 }
 
 export function generateProductFeedXml(): string {
   const products = getAllProducts();
   const now = new Date().toUTCString();
+  const { countryCode } = siteConfig.business;
 
   const items = products
     .map((product) => {
-      const link = absoluteUrl(`/products/${product.slug}`);
+      const link = productLink(product);
       const [mainImage, ...extraImages] = product.images;
       const shippingCost = shippingFor(product.price);
 
@@ -75,7 +86,7 @@ ${additionalImages}
       )}</g:google_product_category>
       <g:product_type>${escapeXml(product.category)}</g:product_type>
       <g:shipping>
-        <g:country>${siteConfig.business.countryCode}</g:country>
+        <g:country>${countryCode}</g:country>
         <g:service>${escapeXml(shippingLabel(product))}</g:service>
         <g:price>${feedPrice(shippingCost)}</g:price>
       </g:shipping>
@@ -86,7 +97,7 @@ ${additionalImages}
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>${escapeXml(siteConfig.name)} — Product Feed</title>
+    <title>${escapeXml(siteConfig.name)} — Produktfeed</title>
     <link>${escapeXml(siteConfig.url)}</link>
     <description>${escapeXml(siteConfig.description)}</description>
     <lastBuildDate>${now}</lastBuildDate>
@@ -117,6 +128,7 @@ const CSV_COLUMNS = [
 
 export function generateProductFeedCsv(): string {
   const products = getAllProducts();
+  const { countryCode } = siteConfig.business;
 
   const rows = products.map((product) => {
     const [mainImage, ...extraImages] = product.images;
@@ -126,7 +138,7 @@ export function generateProductFeedCsv(): string {
       id: product.sku,
       title: product.title,
       description: product.shortDescription,
-      link: absoluteUrl(`/products/${product.slug}`),
+      link: productLink(product),
       image_link: absoluteUrl(mainImage.src),
       additional_image_link: extraImages
         .map((img) => absoluteUrl(img.src))
@@ -140,7 +152,7 @@ export function generateProductFeedCsv(): string {
       identifier_exists: product.gtin ? 'yes' : 'no',
       google_product_category: product.googleProductCategory,
       product_type: product.category,
-      shipping: `${siteConfig.business.countryCode}:::${feedPrice(shippingCost)}`,
+      shipping: `${countryCode}:::${feedPrice(shippingCost)}`,
     };
 
     return CSV_COLUMNS.map((col) => escapeCsv(values[col])).join(',');

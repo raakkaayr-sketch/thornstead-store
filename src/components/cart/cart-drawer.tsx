@@ -3,27 +3,21 @@
 import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  AlertCircle,
-  Loader2,
-  Lock,
-  Minus,
-  Plus,
-  ShoppingBag,
-  Trash2,
-  X,
-} from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Minus, Plus, ShoppingBag, Trash2, X } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button-variants';
 import { useCart } from '@/components/providers/cart-provider';
-import { useCheckout } from './use-checkout';
-import { siteConfig } from '@/lib/config';
+import { siteConfig, vatNote } from '@/lib/config';
 import { formatPrice, orderTotal, shippingFor } from '@/lib/utils';
 
+/**
+ * Die Schublade endet bewusst mit einem Link auf /kasse und nicht mit einem
+ * Zahlungsvorgang. Die Bestellung darf erst nach der Übersichtsseite ausgelöst
+ * werden, damit die Pflichtangaben nach § 312j Abs. 2 BGB unmittelbar vor der
+ * Bestellschaltfläche stehen.
+ */
 export function CartDrawer() {
   const { items, isOpen, closeCart, subtotal, updateQuantity, removeItem } =
     useCart();
-  const { checkout, loading, error } = useCheckout();
 
   const shipping = shippingFor(subtotal);
   const total = orderTotal(subtotal);
@@ -58,15 +52,15 @@ export function CartDrawer() {
       <aside
         role="dialog"
         aria-modal="true"
-        aria-label="Shopping basket"
+        aria-label="Warenkorb"
         className="absolute right-0 top-0 flex h-full w-full max-w-md animate-slide-in-right flex-col border-l border-border bg-background shadow-2xl"
       >
         <header className="flex items-center justify-between border-b border-border px-5 py-4">
-          <h2 className="font-display text-lg font-semibold">Your basket</h2>
+          <h2 className="font-display text-lg font-semibold">Ihr Warenkorb</h2>
           <button
             type="button"
             onClick={closeCart}
-            aria-label="Close basket"
+            aria-label="Warenkorb schließen"
             className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
           >
             <X className="h-5 w-5" />
@@ -79,9 +73,9 @@ export function CartDrawer() {
               <ShoppingBag className="h-6 w-6 text-muted-foreground" />
             </div>
             <div>
-              <p className="font-medium">Your basket is empty</p>
+              <p className="font-medium">Ihr Warenkorb ist leer</p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Have a look through the range and add something you like.
+                Sehen Sie sich das Sortiment an und legen Sie etwas hinein.
               </p>
             </div>
             <Link
@@ -89,7 +83,7 @@ export function CartDrawer() {
               onClick={closeCart}
               className={buttonVariants({ variant: 'brand' })}
             >
-              Browse the shop
+              Zum Shop
             </Link>
           </div>
         ) : (
@@ -98,7 +92,7 @@ export function CartDrawer() {
               {items.map((item) => (
                 <div key={item.id} className="flex gap-3">
                   <Link
-                    href={`/products/${item.slug}`}
+                    href={`/produkte/${item.slug}`}
                     onClick={closeCart}
                     className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl bg-muted"
                   >
@@ -114,7 +108,7 @@ export function CartDrawer() {
                   <div className="flex min-w-0 flex-1 flex-col justify-between">
                     <div>
                       <Link
-                        href={`/products/${item.slug}`}
+                        href={`/produkte/${item.slug}`}
                         onClick={closeCart}
                         className="line-clamp-2 text-sm font-medium hover:underline"
                       >
@@ -129,7 +123,7 @@ export function CartDrawer() {
                       <div className="flex items-center rounded-full border border-border">
                         <button
                           type="button"
-                          aria-label={`Reduce quantity of ${item.title}`}
+                          aria-label={`Menge von ${item.title} verringern`}
                           onClick={() =>
                             updateQuantity(item.id, item.quantity - 1)
                           }
@@ -142,7 +136,7 @@ export function CartDrawer() {
                         </span>
                         <button
                           type="button"
-                          aria-label={`Increase quantity of ${item.title}`}
+                          aria-label={`Menge von ${item.title} erhöhen`}
                           onClick={() =>
                             updateQuantity(item.id, item.quantity + 1)
                           }
@@ -158,7 +152,7 @@ export function CartDrawer() {
                         </span>
                         <button
                           type="button"
-                          aria-label={`Remove ${item.title}`}
+                          aria-label={`${item.title} entfernen`}
                           onClick={() => removeItem(item.id)}
                           className="text-muted-foreground transition-colors hover:text-destructive"
                         >
@@ -174,58 +168,43 @@ export function CartDrawer() {
             <footer className="space-y-3 border-t border-border px-5 py-4">
               {remainingForFree > 0 && (
                 <p className="rounded-xl bg-brand/10 px-3 py-2 text-xs text-brand">
-                  Spend {formatPrice(remainingForFree)} more for free UK
-                  delivery.
+                  Noch {formatPrice(remainingForFree)} bis zum
+                  versandkostenfreien Versand.
                 </p>
               )}
 
               <dl className="space-y-1.5 text-sm">
                 <div className="flex justify-between text-muted-foreground">
-                  <dt>Subtotal</dt>
+                  <dt>Zwischensumme</dt>
                   <dd className="tabular-nums">{formatPrice(subtotal)}</dd>
                 </div>
                 <div className="flex justify-between text-muted-foreground">
-                  <dt>UK delivery</dt>
+                  <dt>Versand</dt>
                   <dd className="tabular-nums">
-                    {shipping === 0 ? 'Free' : formatPrice(shipping)}
+                    {shipping === 0 ? 'kostenlos' : formatPrice(shipping)}
                   </dd>
                 </div>
                 <div className="flex justify-between border-t border-border pt-2 text-base font-medium">
-                  <dt>Total</dt>
+                  <dt>Gesamt</dt>
                   <dd className="tabular-nums">{formatPrice(total)}</dd>
                 </div>
               </dl>
 
-              {error && (
-                <p className="flex items-start gap-2 rounded-xl border border-destructive/30 bg-destructive/10 px-3 py-2 text-xs text-destructive">
-                  <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
-                  {error}
-                </p>
-              )}
+              <p className="text-xs text-muted-foreground">{vatNote()}</p>
 
-              <Button
-                variant="brand"
-                size="lg"
-                className="w-full"
-                disabled={loading}
-                onClick={() => checkout(items)}
+              <Link
+                href="/kasse"
+                onClick={closeCart}
+                className={`${buttonVariants({ variant: 'brand', size: 'lg' })} w-full`}
               >
-                {loading ? (
-                  <>
-                    <Loader2 className="h-4 w-4 animate-spin" /> Taking you to
-                    checkout…
-                  </>
-                ) : (
-                  <>
-                    <Lock className="h-4 w-4" /> Secure checkout
-                  </>
-                )}
-              </Button>
+                Zur Kasse
+              </Link>
 
               <p className="text-center text-[11px] leading-relaxed text-muted-foreground">
-                Payments handled by Stripe. UK delivery only.{' '}
-                <Link href="/returns-policy" className="underline">
-                  {siteConfig.returns.days}-day returns
+                Zahlung über {siteConfig.payment.processor}. Versand nur
+                innerhalb Deutschlands.{' '}
+                <Link href="/widerruf" className="underline">
+                  {siteConfig.returns.days} Tage Rückgaberecht
                 </Link>
                 .
               </p>

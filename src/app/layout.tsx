@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
-    locale: 'en_GB',
+    locale: 'de_DE',
     url: siteConfig.url,
     siteName: siteConfig.name,
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-GB" suppressHydrationWarning>
+    <html lang="de" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -61,7 +61,7 @@ export default function RootLayout({
             href="#main"
             className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-brand focus:px-4 focus:py-2 focus:text-sm focus:text-brand-foreground"
           >
-            Skip to content
+            Zum Inhalt springen
           </a>
           <Navbar />
           <main id="main" className="min-h-[60vh]">

@@ -5,11 +5,16 @@ import { getAllCategories, getAllProducts, getPriceRange } from '@/lib/products'
 import { jsonLdScript, breadcrumbJsonLd } from '@/lib/structured-data';
 
 export const metadata: Metadata = {
-  title: 'Shop all home & garden products',
+  title: 'Shop — alle Produkte für Garten und Zuhause',
   description:
-    'The full Thornstead range of own-brand planters, outdoor storage, garden tools, lighting and wildlife care. Delivered across the UK.',
+    'Das gesamte Thornstead-Sortiment: Pflanzkübel, Außenaufbewahrung, Gartenwerkzeug, Küchenhelfer und Vogelpflege. Versand innerhalb Deutschlands.',
   alternates: { canonical: '/shop' },
 };
+
+const crumbs = [
+  { name: 'Startseite', path: '/' },
+  { name: 'Shop', path: '/shop' },
+];
 
 export default async function ShopPage({
   searchParams,
@@ -22,20 +27,12 @@ export default async function ShopPage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(
-          breadcrumbJsonLd([
-            { name: 'Home', path: '/' },
-            { name: 'Shop', path: '/shop' },
-          ])
-        )}
+        dangerouslySetInnerHTML={jsonLdScript(breadcrumbJsonLd(crumbs))}
       />
       <PageHeader
-        title="The full range"
-        description="Everything Thornstead makes, in one place. Filter by category or price to narrow it down."
-        crumbs={[
-          { name: 'Home', path: '/' },
-          { name: 'Shop', path: '/shop' },
-        ]}
+        title="Das gesamte Sortiment"
+        description="Alles von Thornstead an einem Ort. Filtern Sie nach Kategorie oder Preis, um schneller zu finden, was Sie suchen."
+        crumbs={crumbs}
       />
       <ShopBrowser
         products={getAllProducts()}
