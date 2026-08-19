@@ -1,10 +1,10 @@
-# Thornstead — German home & garden storefront
+# Hainholt — German home & garden storefront
 
-A production-ready ecommerce site for **Thornstead**, an own-brand home and garden company selling to customers in Germany. Built with Next.js 15 (App Router), TypeScript, Tailwind CSS and Stripe Checkout. No database and no CMS — the catalogue is local JSON, so the whole site deploys as static pages plus two small API routes.
+A production-ready ecommerce site for **Hainholt**, an own-brand home and garden company selling to customers in Germany. Built with Next.js 15 (App Router), TypeScript, Tailwind CSS and Stripe Checkout. No database and no CMS — the catalogue is local JSON, so the whole site deploys as static pages plus two small API routes.
 
 The shop is German-only: `de-DE` locale, EUR, 19 % MwSt., DHL shipping inside Germany, and the legal pages German consumer law requires. Solar lights were dropped so the shop does not need ElektroG or BattG registration.
 
-Everything is designed around one rule that decides whether Google Merchant Center approves you: **every product is Thornstead's own brand.** There are no third-party trademarks, no "authorised dealer" claims and no reseller language anywhere in the code or copy. That removes the counterfeit and unauthorised-reseller risk that gets most new stores suspended.
+Everything is designed around one rule that decides whether Google Merchant Center approves you: **every product is Hainholt's own brand.** There are no third-party trademarks, no "authorised dealer" claims and no reseller language anywhere in the code or copy. That removes the counterfeit and unauthorised-reseller risk that gets most new stores suspended.
 
 ```bash
 npm install
@@ -96,7 +96,7 @@ Edit **`src/data/products.json`**. Each entry needs:
   "slug": "eindeutiger-slug",         // becomes /produkte/eindeutiger-slug
   "sku": "THST-011",                  // also used as the feed mpn
   "title": "Produktname",
-  "brand": "Thornstead",              // never anything else
+  "brand": "Hainholt",              // never anything else
   "category": "Gartenwerkzeug",       // must match a name in categories.json
   "categorySlug": "gartenwerkzeug",
   "price": 39.95,                     // EUR, gross including 19 % MwSt.
@@ -120,7 +120,7 @@ Edit **`src/data/products.json`**. Each entry needs:
 
 Rules worth keeping:
 
-- **`brand` is always `Thornstead`.** The moment you list someone else's brand you inherit the burden of proving you are authorised to sell it.
+- **`brand` is always `Hainholt`.** The moment you list someone else's brand you inherit the burden of proving you are authorised to sell it.
 - **Never invent a GTIN.** Leave `gtin` empty and the feed sends `identifier_exists: no` with `brand` + `mpn`, which is exactly what Google asks for on own-brand goods. A wrong barcode is an instant disapproval.
 - **Never invent reviews.** `reviewCount` and `ratingValue` stay at `0` until you have real ones. Fabricated ratings in structured data are treated as misrepresentation, and the star display hides itself at 0.
 - **Prices are gross.** They already include 19 % MwSt. Stripe is told `tax_behavior: 'inclusive'` so it does not add tax on top.

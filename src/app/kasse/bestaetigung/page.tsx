@@ -4,7 +4,7 @@ import { OrderConfirmation } from '@/components/cart/order-confirmation';
 
 export const metadata: Metadata = {
   title: 'Bestellung bestätigt',
-  description: 'Ihre Bestellung bei Thornstead ist bei uns eingegangen.',
+  description: 'Ihre Bestellung bei Hainholt ist bei uns eingegangen.',
   robots: { index: false, follow: false },
 };
 

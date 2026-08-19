@@ -9,7 +9,7 @@ import {
   useState,
 } from 'react';
 
-const STORAGE_KEY = 'thornstead:recently-viewed';
+const STORAGE_KEY = 'hainholt:recently-viewed';
 const MAX_ITEMS = 6;
 
 interface RecentlyViewedContextValue {

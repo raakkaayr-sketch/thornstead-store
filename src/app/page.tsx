@@ -23,7 +23,7 @@ export default function HomePage() {
     {
       icon: Leaf,
       title: 'Eigene Entwürfe',
-      body: 'Jedes Produkt wird von Thornstead entworfen, unter eigener Marke geführt und verkauft. Hier gibt es keine umetikettierte Katalogware.',
+      body: 'Jedes Produkt wird von Hainholt entworfen, unter eigener Marke geführt und verkauft. Hier gibt es keine umetikettierte Katalogware.',
     },
     {
       icon: Truck,
@@ -57,7 +57,7 @@ export default function HomePage() {
               Dinge für den Garten, die länger halten als eine Saison.
             </h1>
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Thornstead entwickelt sein Sortiment aus Pflanzkübeln,
+              Hainholt entwickelt sein Sortiment aus Pflanzkübeln,
               Aufbewahrung, Werkzeug und Vogelpflege selbst — und verkauft es
               direkt. Sie zahlen also für das Produkt und nicht für drei
               Zwischenhändler.

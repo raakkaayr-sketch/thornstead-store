@@ -1,5 +1,5 @@
 /**
- * Thornstead — zentrale Quelle für Marken-, Unternehmens- und Rechtsdaten.
+ * Hainholt — zentrale Quelle für Marken-, Unternehmens- und Rechtsdaten.
  *
  * Jede kundenseitige Fläche (Footer, Kontaktseite, Rechtstexte, Kasse,
  * JSON-LD, Merchant-Center-Feed) liest aus dieser Datei. Google vergleicht die
@@ -14,10 +14,10 @@
  */
 
 export const siteConfig = {
-  name: 'Thornstead',
+  name: 'Hainholt',
   tagline: 'Gemacht, um zu bleiben.',
   description:
-    'Thornstead entwickelt und verkauft eigene Produkte für Garten und Zuhause in Deutschland — Pflanzkübel, Gartenboxen, Gartenwerkzeug und Vogelpflege, versandkostenfrei ab 50 €.',
+    'Hainholt entwickelt und verkauft eigene Produkte für Garten und Zuhause in Deutschland — Pflanzkübel, Gartenboxen, Gartenwerkzeug und Vogelpflege, versandkostenfrei ab 50 €.',
   /** Live-Domain. Zusätzlich NEXT_PUBLIC_SITE_URL in Vercel setzen. */
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://thornstead.store',
   locale: 'de-DE',
@@ -29,8 +29,8 @@ export const siteConfig = {
    * übereinstimmen.
    */
   business: {
-    legalName: 'Thornstead',
-    tradingName: 'Thornstead',
+    legalName: 'Hainholt',
+    tradingName: 'Hainholt',
     /**
      * PLATZHALTER — vollständiger Vor- und Nachname des Inhabers.
      * Bei Einzelunternehmen zwingend im Impressum (§ 5 Abs. 1 Nr. 1 DDG);
@@ -88,13 +88,13 @@ export const siteConfig = {
    * Produktsicherheit nach GPSR (Verordnung (EU) 2023/988), Art. 19.
    *
    * Diese Angaben müssen direkt auf der Produktseite stehen, nicht nur im
-   * Impressum oder in den AGB. Da Thornstead die Marke ist und der Hersteller
+   * Impressum oder in den AGB. Da Hainholt die Marke ist und der Hersteller
    * außerhalb der EU sitzt, ist zusätzlich eine in der EU niedergelassene
    * verantwortliche Person zwingend erforderlich — ohne sie dürfen die
    * Produkte in der EU nicht angeboten werden.
    */
   gpsr: {
-    manufacturerName: 'Thornstead',
+    manufacturerName: 'Hainholt',
     /** PLATZHALTER — in der EU niedergelassene verantwortliche Person. */
     euResponsiblePerson: {
       name: 'PLATZHALTER — Name der EU-Verantwortlichen',

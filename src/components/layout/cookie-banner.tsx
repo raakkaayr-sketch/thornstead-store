@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-const STORAGE_KEY = 'thornstead:hinweis-speicherung';
+const STORAGE_KEY = 'hainholt:hinweis-speicherung';
 
 /**
  * Bewusst ein reiner Hinweis und kein Consent-Banner.

@@ -6,9 +6,9 @@ import { siteConfig, formattedAddress } from '@/lib/config';
 import { getAllProducts, getAllCategories } from '@/lib/products';
 
 export const metadata: Metadata = {
-  title: 'Über Thornstead',
+  title: 'Über Hainholt',
   description:
-    'Thornstead ist eine Eigenmarke für Garten und Zuhause. Wir entwerfen unser Sortiment selbst und verkaufen direkt — wir sind die Marke, kein Wiederverkäufer.',
+    'Hainholt ist eine Eigenmarke für Garten und Zuhause. Wir entwerfen unser Sortiment selbst und verkaufen direkt — wir sind die Marke, kein Wiederverkäufer.',
   alternates: { canonical: '/ueber-uns' },
 };
 
@@ -20,7 +20,7 @@ export default function UeberUnsPage() {
   return (
     <>
       <PageHeader
-        title="Über Thornstead"
+        title="Über Hainholt"
         description="Eine kleine Marke, die ihr Sortiment für Haus und Garten selbst entwickelt und direkt verkauft."
         crumbs={[
           { name: 'Startseite', path: '/' },
@@ -33,7 +33,7 @@ export default function UeberUnsPage() {
           <h2>Wir sind die Marke, kein Wiederverkäufer</h2>
           <p>
             Das ist wichtig genug, um es gleich am Anfang klar zu sagen: Jedes
-            Produkt auf dieser Website wird von Thornstead entworfen, nach
+            Produkt auf dieser Website wird von Hainholt entworfen, nach
             unserer Spezifikation gefertigt, unter unserem Namen verkauft und von
             uns versandt. Wir sind für das gesamte Sortiment die Marke selbst.
             Wir führen keine Markenware anderer Unternehmen, wir bezeichnen uns
@@ -48,7 +48,7 @@ export default function UeberUnsPage() {
 
           <h2>Wie das Sortiment entstanden ist</h2>
           <p>
-            Thornstead ist aus einem Ärger entstanden, den jeder kennt, der
+            Hainholt ist aus einem Ärger entstanden, den jeder kennt, der
             Gartenausrüstung online gekauft hat: die Kniebank, deren Rahmen in
             der zweiten Saison nachgibt, der Pflanzkübel, dessen Lack nach einem
             Winter abblättert, die Aufbewahrungsbox, die am Deckelfalz Wasser
@@ -70,7 +70,7 @@ export default function UeberUnsPage() {
             Direkt, über diese Website, an Kundinnen und Kunden in Deutschland.
             Direktverkauf bedeutet, dass keine Großhandels- und keine
             Handelsmarge auf die tatsächlichen Herstellungskosten aufgeschlagen
-            wird. Genau deshalb kostet ein Stück von Thornstead in der Regel
+            wird. Genau deshalb kostet ein Stück von Hainholt in der Regel
             weniger als ein vergleichbares im Ladenregal.
           </p>
           <p>

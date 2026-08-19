@@ -2,7 +2,7 @@
   "name": "thornstead-store",
   "version": "1.0.0",
   "private": true,
-  "description": "Thornstead — Rooted in good design. UK own-brand home & garden storefront.",
+  "description": "Hainholt — Gemacht, um zu bleiben. German own-brand home & garden storefront.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

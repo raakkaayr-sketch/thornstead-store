@@ -14,7 +14,7 @@ export interface Product {
   /** Stable internal identifier, also used as the feed `mpn`. */
   sku: string;
   title: string;
-  /** Always "Thornstead" — we are the brand of record for everything we sell. */
+  /** Always "Hainholt" — we are the brand of record for everything we sell. */
   brand: string;
   category: string;
   categorySlug: string;

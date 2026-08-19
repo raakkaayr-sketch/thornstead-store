@@ -8,7 +8,7 @@ import { siteConfig, formattedAddress } from '@/lib/config';
 export const metadata: Metadata = {
   title: 'Kontakt',
   description:
-    'So erreichen Sie Thornstead: E-Mail, Telefon und Postanschrift sowie unsere Erreichbarkeitszeiten.',
+    'So erreichen Sie Hainholt: E-Mail, Telefon und Postanschrift sowie unsere Erreichbarkeitszeiten.',
   alternates: { canonical: '/kontakt' },
 };
 

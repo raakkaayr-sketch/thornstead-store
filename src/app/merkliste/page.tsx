@@ -5,7 +5,7 @@ import { getAllProducts } from '@/lib/products';
 
 export const metadata: Metadata = {
   title: 'Merkliste',
-  description: 'Produkte, die Sie aus dem Thornstead-Sortiment gemerkt haben.',
+  description: 'Produkte, die Sie aus dem Hainholt-Sortiment gemerkt haben.',
   alternates: { canonical: '/merkliste' },
   robots: { index: false, follow: true },
 };

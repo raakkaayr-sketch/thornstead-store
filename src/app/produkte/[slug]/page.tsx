@@ -43,7 +43,7 @@ export async function generateMetadata({
     openGraph: {
       type: 'website',
       locale: 'de_DE',
-      title: `${product.title} | Thornstead`,
+      title: `${product.title} | Hainholt`,
       description: product.shortDescription,
       images: [{ url: product.images[0].src }],
     },

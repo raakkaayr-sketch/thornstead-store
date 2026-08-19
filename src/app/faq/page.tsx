@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: 'Sind das Ihre eigenen Produkte oder verkaufen Sie fremde Marken weiter?',
-    a: 'Jedes Produkt in diesem Shop wird von Thornstead entworfen, unter eigener Marke geführt und verkauft. Wir sind die Marke selbst. Wir handeln nicht mit Markenware anderer Unternehmen und sind kein autorisierter Händler für Drittmarken.',
+    a: 'Jedes Produkt in diesem Shop wird von Hainholt entworfen, unter eigener Marke geführt und verkauft. Wir sind die Marke selbst. Wir handeln nicht mit Markenware anderer Unternehmen und sind kein autorisierter Händler für Drittmarken.',
   },
   {
     q: 'Gibt es eine Garantie?',

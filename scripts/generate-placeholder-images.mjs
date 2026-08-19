@@ -71,7 +71,7 @@ function svg(title, variant) {
     <path d="M22 34V18" stroke="${palette.bg}" stroke-width="2.4" stroke-linecap="round"/>
     <path d="M22 24c0-4.5 3.3-8.2 7.4-8.2 0 4.5-3.3 8.2-7.4 8.2Z" fill="${palette.bg}"/>
     <path d="M22 29.5c0-3.8-2.7-6.9-6.3-6.9 0 3.8 2.7 6.9 6.3 6.9Z" fill="${palette.bg}" opacity="0.7"/>
-    <text x="58" y="30" font-family="Georgia, serif" font-size="22" fill="${palette.ink}">Thornstead</text>
+    <text x="58" y="30" font-family="Georgia, serif" font-size="22" fill="${palette.ink}">Hainholt</text>
   </g>
 ${text}
   <text x="400" y="${startY + lines.length * 48 + 18}" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" fill="${palette.ink}" opacity="0.6">Placeholder — replace with product photography</text>

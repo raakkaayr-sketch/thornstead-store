@@ -9,7 +9,7 @@ import { jsonLdScript, breadcrumbJsonLd } from '@/lib/structured-data';
 export const metadata: Metadata = {
   title: 'Kategorien',
   description:
-    'Thornstead nach Kategorie durchsehen: Gartenwerkzeug, Pflanzgefäße und Anbau, Außenaufbewahrung, Küche und Kompost sowie Vögel und Wildtiere.',
+    'Hainholt nach Kategorie durchsehen: Gartenwerkzeug, Pflanzgefäße und Anbau, Außenaufbewahrung, Küche und Kompost sowie Vögel und Wildtiere.',
   alternates: { canonical: '/kategorien' },
 };
 

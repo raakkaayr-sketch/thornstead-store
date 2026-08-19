@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import { siteConfig } from '@/lib/config';
 
 /**
- * Thornstead mark: a sprig growing from a grounded base, drawn in a single
+ * Hainholt mark: a sprig growing from a grounded base, drawn in a single
  * weight so it stays legible at favicon size.
  */
 export function LogoMark({ className }: { className?: string }) {

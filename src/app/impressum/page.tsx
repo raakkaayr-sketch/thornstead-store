@@ -6,7 +6,7 @@ import { siteConfig, formattedAddress } from '@/lib/config';
 export const metadata: Metadata = {
   title: 'Impressum',
   description:
-    'Anbieterkennzeichnung nach § 5 DDG: Name, Anschrift und Kontaktdaten des Betreibers von Thornstead.',
+    'Anbieterkennzeichnung nach § 5 DDG: Name, Anschrift und Kontaktdaten des Betreibers von Hainholt.',
   alternates: { canonical: '/impressum' },
 };
 

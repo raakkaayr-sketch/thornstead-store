@@ -13,7 +13,7 @@ const shopLinks = [
 ];
 
 const companyLinks = [
-  { href: '/ueber-uns', label: 'Über Thornstead' },
+  { href: '/ueber-uns', label: 'Über Hainholt' },
   { href: '/kontakt', label: 'Kontakt' },
   { href: '/faq', label: 'Häufige Fragen' },
 ];
@@ -48,7 +48,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Logo showTagline />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Thornstead entwickelt eigene Produkte für Garten und Zuhause und
+              Hainholt entwickelt eigene Produkte für Garten und Zuhause und
               verkauft sie direkt an Kundinnen und Kunden in Deutschland.
             </p>
 
@@ -122,7 +122,7 @@ export function Footer() {
           </p>
           <p>
             Kartenzahlungen werden sicher über {payment.processor} abgewickelt.
-            Thornstead sieht und speichert Ihre vollständigen Kartendaten nie.
+            Hainholt sieht und speichert Ihre vollständigen Kartendaten nie.
           </p>
         </div>
       </div>

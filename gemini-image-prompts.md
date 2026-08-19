@@ -1,4 +1,4 @@
-# Thornstead — Gemini product photo prompts
+# Hainholt — Gemini product photo prompts
 
 Paste these into Gemini's image generation (Nano Banana) one at a time, in a fresh
 message each time so details don't blend between shots. Generate square (1:1),

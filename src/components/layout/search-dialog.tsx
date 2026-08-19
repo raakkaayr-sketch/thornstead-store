@@ -93,7 +93,7 @@ export function SearchDialog() {
 
               {!query.trim() && (
                 <p className="px-3 py-8 text-center text-sm text-muted-foreground">
-                  Tippen Sie los, um das Thornstead-Sortiment zu durchsuchen.
+                  Tippen Sie los, um das Hainholt-Sortiment zu durchsuchen.
                 </p>
               )}
 

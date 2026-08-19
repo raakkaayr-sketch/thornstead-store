@@ -7,7 +7,7 @@ import { jsonLdScript, breadcrumbJsonLd } from '@/lib/structured-data';
 export const metadata: Metadata = {
   title: 'Shop — alle Produkte für Garten und Zuhause',
   description:
-    'Das gesamte Thornstead-Sortiment: Pflanzkübel, Außenaufbewahrung, Gartenwerkzeug, Küchenhelfer und Vogelpflege. Versand innerhalb Deutschlands.',
+    'Das gesamte Hainholt-Sortiment: Pflanzkübel, Außenaufbewahrung, Gartenwerkzeug, Küchenhelfer und Vogelpflege. Versand innerhalb Deutschlands.',
   alternates: { canonical: '/shop' },
 };
 
@@ -31,7 +31,7 @@ export default async function ShopPage({
       />
       <PageHeader
         title="Das gesamte Sortiment"
-        description="Alles von Thornstead an einem Ort. Filtern Sie nach Kategorie oder Preis, um schneller zu finden, was Sie suchen."
+        description="Alles von Hainholt an einem Ort. Filtern Sie nach Kategorie oder Preis, um schneller zu finden, was Sie suchen."
         crumbs={crumbs}
       />
       <ShopBrowser

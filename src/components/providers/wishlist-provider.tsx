@@ -9,7 +9,7 @@ import {
   useState,
 } from 'react';
 
-const STORAGE_KEY = 'thornstead:wishlist';
+const STORAGE_KEY = 'hainholt:wishlist';
 
 interface WishlistContextValue {
   ids: string[];

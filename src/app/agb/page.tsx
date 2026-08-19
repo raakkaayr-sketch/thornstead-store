@@ -7,7 +7,7 @@ import { formatPrice } from '@/lib/utils';
 export const metadata: Metadata = {
   title: 'Allgemeine Geschäftsbedingungen',
   description:
-    'Allgemeine Geschäftsbedingungen für Bestellungen bei Thornstead: Vertragsschluss, Preise, Zahlung, Lieferung, Gewährleistung und Haftung.',
+    'Allgemeine Geschäftsbedingungen für Bestellungen bei Hainholt: Vertragsschluss, Preise, Zahlung, Lieferung, Gewährleistung und Haftung.',
   alternates: { canonical: '/agb' },
 };
 
