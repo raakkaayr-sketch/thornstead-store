@@ -56,20 +56,19 @@ export const siteConfig = {
   },
 
   /**
-   * PLATZHALTER prüfen — dies ist die ladungsfähige Anschrift im Impressum.
-   * Ein Postfach ist nicht zulässig. Die Adresse muss mit Stripe und dem
-   * Merchant Center übereinstimmen.
+   * Ladungsfähige Anschrift im Impressum. Ein Postfach ist nicht zulässig.
+   * Die Adresse muss mit Stripe und dem Merchant Center übereinstimmen.
    */
   contact: {
     email: 'contact@thornstead.store',
-    phone: '+44 7462 294018',
+    phone: '+49 176 15796947',
     /** Nur Ziffern, für tel:-Links. */
-    phoneHref: '+447462294018',
-    street: '44 Glebe Way',
-    city: 'Hornchurch',
-    postcode: 'RM11 3RR',
-    country: 'Vereinigtes Königreich',
-    countryCode: 'GB',
+    phoneHref: '+4917615796947',
+    street: 'Finkenweg 12',
+    city: 'Halle (Saale)',
+    postcode: '06110',
+    country: 'Deutschland',
+    countryCode: 'DE',
     hours: 'Montag bis Freitag, 9:00–17:00 Uhr (MEZ)',
   },
 
@@ -88,21 +87,19 @@ export const siteConfig = {
    * Produktsicherheit nach GPSR (Verordnung (EU) 2023/988), Art. 19.
    *
    * Diese Angaben müssen direkt auf der Produktseite stehen, nicht nur im
-   * Impressum oder in den AGB. Da Hainholt die Marke ist und der Hersteller
-   * außerhalb der EU sitzt, ist zusätzlich eine in der EU niedergelassene
-   * verantwortliche Person zwingend erforderlich — ohne sie dürfen die
-   * Produkte in der EU nicht angeboten werden.
+   * Impressum oder in den AGB. Der Hersteller ist in Deutschland niedergelassen,
+   * daher ist keine gesonderte EU-Verantwortliche außerhalb des Unternehmens
+   * erforderlich — Name, Anschrift und E-Mail des Herstellers genügen.
    */
   gpsr: {
     manufacturerName: 'Hainholt',
-    /** PLATZHALTER — in der EU niedergelassene verantwortliche Person. */
     euResponsiblePerson: {
-      name: 'PLATZHALTER — Name der EU-Verantwortlichen',
-      street: 'PLATZHALTER — Straße und Hausnummer',
-      postcode: 'PLATZHALTER',
-      city: 'PLATZHALTER',
+      name: 'Hainholt',
+      street: 'Finkenweg 12',
+      postcode: '06110',
+      city: 'Halle (Saale)',
       country: 'Deutschland',
-      email: 'PLATZHALTER — E-Mail-Adresse',
+      email: 'contact@thornstead.store',
     },
   },
 
