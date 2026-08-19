@@ -13,13 +13,35 @@
  * GPSR Art. 19, VerpackG) — unvollständige Angaben sind abmahnbar.
  */
 
+const LIVE_SITE_URL = 'https://thornstead-store-three.vercel.app';
+const LEGACY_UK_HOST = 'thornstead.store';
+
+function resolveSiteUrl() {
+  const fromEnv = (process.env.NEXT_PUBLIC_SITE_URL || '').trim().replace(/\/$/, '');
+  if (!fromEnv) return LIVE_SITE_URL;
+
+  try {
+    const host = new URL(fromEnv).hostname.replace(/^www\./, '');
+    if (host === LEGACY_UK_HOST) return LIVE_SITE_URL;
+  } catch {
+    return LIVE_SITE_URL;
+  }
+
+  return fromEnv;
+}
+
 export const siteConfig = {
   name: 'Hainholt',
   tagline: 'Gemacht, um zu bleiben.',
   description:
     'Hainholt entwickelt und verkauft eigene Produkte für Garten und Zuhause in Deutschland — Pflanzkübel, Gartenboxen, Gartenwerkzeug und Vogelpflege, versandkostenfrei ab 50 €.',
-  /** Live-Domain. Zusätzlich NEXT_PUBLIC_SITE_URL in Vercel setzen. */
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://thornstead.store',
+  /**
+   * Live-Shop-URL für Canonicals, Sitemap, JSON-LD und den Merchant-Center-Feed.
+   * NEXT_PUBLIC_SITE_URL in Vercel setzen, sobald eine eigene Domain live ist.
+   * Die alte UK-Domain thornstead.store wird ignoriert, damit Google nicht auf
+   * den alten Shop geschickt wird.
+   */
+  url: resolveSiteUrl(),
   locale: 'de-DE',
   currency: 'EUR',
   currencySymbol: '€',
