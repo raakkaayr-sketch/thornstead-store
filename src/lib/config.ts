@@ -83,9 +83,9 @@ export const siteConfig = {
    */
   contact: {
     email: 'contact@thornstead.store',
-    phone: '+49 176 15796947',
+    phone: '+49 152 14085921',
     /** Nur Ziffern, für tel:-Links. */
-    phoneHref: '+4917615796947',
+    phoneHref: '+4915214085921',
     street: 'Finkenweg 12',
     city: 'Halle (Saale)',
     postcode: '06110',
