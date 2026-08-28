@@ -1,1640 +1,456 @@
 [
   {
-    "id": "canon-powershot-g7-x-mark-ii-20-1-mp-schwarz",
-    "slug": "canon-powershot-g7-x-mark-ii-20-1-mp-schwarz",
-    "sku": "PHTR-001",
-    "title": "Canon PowerShot G7 X Mark II — 20,1 MP, schwarz",
-    "brand": "Canon",
-    "category": "Kompaktkameras",
-    "categorySlug": "kompaktkameras",
-    "price": 91.95,
+    "id": "garten-kniebank-werkzeugsitz",
+    "slug": "garten-kniebank-werkzeugsitz",
+    "sku": "THST-001",
+    "title": "Klappbare Garten-Kniebank mit Werkzeugsitz",
+    "brand": "Hainholt",
+    "category": "Gartenwerkzeug",
+    "categorySlug": "gartenwerkzeug",
+    "price": 39.95,
     "currency": "EUR",
-    "condition": "used",
+    "condition": "new",
     "availability": "in_stock",
     "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Gardening Tools",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_375e9107-e9aa-489d-9904-930666e68ad0.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — 20,1 MP, schwarz — Hauptbild"
+        "src": "/images/products/garden-kneeler-tool-seat-1.jpg",
+        "alt": "Hainholt klappbare Garten-Kniebank mit Werkzeugsitz, Vorderansicht"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_2c101296-b9ba-43f2-a912-7b5e6b916045.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — 20,1 MP, schwarz — Bild 2"
+        "src": "/images/products/garden-kneeler-tool-seat-2.jpg",
+        "alt": "Hainholt Garten-Kniebank im Einsatz an einem Gartenbeet"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_109e77cb-b0d4-4d29-8647-3ad47cd15e02.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — 20,1 MP, schwarz — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_371c504f-e1fe-4735-8335-d081c7bcde78.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — 20,1 MP, schwarz — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_6a1fd4a1-29c8-491b-af48-c224bb220552.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — 20,1 MP, schwarz — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_97cde7d5-523c-4858-82f1-776e4722fa8a.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — 20,1 MP, schwarz — Bild 6"
+        "src": "/images/products/garden-kneeler-tool-seat-3.jpg",
+        "alt": "Nahaufnahme von Klappscharnier und Polster der Hainholt Garten-Kniebank"
       }
     ],
-    "shortDescription": "Kompakte Canon PowerShot G7 X Mark II in gutem Zustand, mit zwei Akkus, Original-Ladegerät und Tragetasche.",
-    "description": "Die Canon PowerShot G7 X Mark II ist eine beliebte Kompaktkamera mit 20,1 Megapixel und hellem f/1,8–2,8-Objektiv — ideal für Reise, Street und Alltag. Dieses Exemplar befindet sich in gutem Zustand. Im Lieferumfang sind zwei Akkus, das Original-Ladegerät und eine Tragetasche enthalten. Bitte prüfen Sie die Fotos auf kleinere Gebrauchsspuren.",
+    "shortDescription": "Ein pulverbeschichtetes Stahlgestell, das sich von der Kniebank zum Gartensitz wenden lässt, mit dickem Schaumpolster und zwei Seitentaschen für Handwerkzeug.",
+    "description": "Ein Beet jäten und danach eine Sitzgelegenheit brauchen gehört zur selben Arbeit, deshalb kann die Hainholt-Kniebank beides. In der einen Richtung liegt das gepolsterte Kissen tief am Boden, mit Stahlgriffen an beiden Seiten, die beim Aufstehen helfen. Umgedreht entsteht ein stabiler Sitz in angenehmer Höhe zum Umtopfen, Schneiden oder Aussäen. Das Gestell klappt in einer einzigen Bewegung flach zusammen und findet so an der Schuppenwand oder im Kofferraum Platz, ohne ein ganzes Regal zu belegen. Zwei abnehmbare Taschen nehmen Gartenschere, Bindegarn, Etiketten und Handschuhe auf, damit nicht alle zehn Minuten der Weg zurück zum Schuppen ansteht.",
     "features": [
-      "20,1 MP 1\"-CMOS-Sensor mit DIGIC 7",
-      "4,2-fach optisches Zoomobjektiv (f/1,8–2,8)",
-      "Full-HD-Videoaufnahme",
-      "Zwei Akkus und Original-Ladegerät inklusive",
-      "Tragetasche im Lieferumfang"
+      "Wendbar zwischen Kniepolster und erhöhtem Gartensitz",
+      "25 mm hochdichtes Schaumpolster auf pulverbeschichtetem Stahlgestell",
+      "Klappt in einer Bewegung flach zusammen",
+      "Zwei abnehmbare Werkzeugtaschen inklusive",
+      "Belastbar bis 150 kg"
     ],
     "specifications": [
-      {
-        "label": "Marke",
-        "value": "Canon"
-      },
-      {
-        "label": "Modell",
-        "value": "PowerShot G7 X Mark II"
-      },
-      {
-        "label": "Farbe",
-        "value": "Schwarz"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
+      { "label": "Gestell", "value": "Pulverbeschichteter Stahl" },
+      { "label": "Polster", "value": "25 mm hochdichter EVA-Schaum" },
+      { "label": "Maße geöffnet", "value": "60 x 27 x 48 cm" },
+      { "label": "Maße gefaltet", "value": "60 x 27 x 9 cm" },
+      { "label": "Sitzhöhe", "value": "48 cm" },
+      { "label": "Maximale Belastung", "value": "150 kg" },
+      { "label": "Gewicht", "value": "3,4 kg" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": true,
-    "tags": [
-      "canon",
-      "kompaktkamera",
-      "powershot",
-      "schwarz"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
+    "tags": ["kniebank", "sitz", "klappbar", "stahl"]
   },
   {
-    "id": "canon-powershot-g7-x-mark-ii-gebraucht-ohne-ladegerat",
-    "slug": "canon-powershot-g7-x-mark-ii-gebraucht-ohne-ladegerat",
-    "sku": "PHTR-002",
-    "title": "Canon PowerShot G7 X Mark II — gebraucht, ohne Ladegerät",
-    "brand": "Canon",
-    "category": "Kompaktkameras",
-    "categorySlug": "kompaktkameras",
-    "price": 91.95,
+    "id": "pflanzkuebel-stahl-3er-set",
+    "slug": "pflanzkuebel-stahl-3er-set",
+    "sku": "THST-002",
+    "title": "Pflanzkübel aus verzinktem Stahl, 3er-Set",
+    "brand": "Hainholt",
+    "category": "Pflanzgefäße & Anbau",
+    "categorySlug": "pflanzgefaesse-anbau",
+    "price": 59.95,
     "currency": "EUR",
-    "condition": "used",
+    "condition": "new",
     "availability": "in_stock",
     "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Pots & Planters",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_e1cedbbe-c02f-4071-b653-884af551bc85.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — gebraucht, ohne Ladegerät — Hauptbild"
+        "src": "/images/products/galvanised-steel-planters-set-of-3-1.jpg",
+        "alt": "Set aus drei Hainholt Pflanzkübeln aus verzinktem Stahl in abgestuften Größen"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_6d78d8b8-a762-418a-919d-fcbebe9401e6.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — gebraucht, ohne Ladegerät — Bild 2"
+        "src": "/images/products/galvanised-steel-planters-set-of-3-2.jpg",
+        "alt": "Hainholt Pflanzkübel auf einer Terrasse, mit Kräutern bepflanzt"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_49bc5536-9612-47e4-83c6-0f3ab66bcedf.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — gebraucht, ohne Ladegerät — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_c38b8d44-b5b0-4f93-9ff8-34626110fb59.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — gebraucht, ohne Ladegerät — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ed3f2b27-e4af-463f-9f87-eb0f34f8bf4d.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — gebraucht, ohne Ladegerät — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_f6d847f2-82a1-49bc-9329-6f2b68291af3.jpg?v=1781903862",
-        "alt": "Canon Canon PowerShot G7 X Mark II — gebraucht, ohne Ladegerät — Bild 6"
+        "src": "/images/products/galvanised-steel-planters-set-of-3-3.jpg",
+        "alt": "Nahaufnahme von Rollrand und Drainagelöchern eines Hainholt Pflanzkübels"
       }
     ],
-    "shortDescription": "Canon PowerShot G7 X Mark II in gutem Zustand. Leichte Kratzer auf dem Display, funktioniert einwandfrei. Nur Kamera, kein Ladegerät.",
-    "description": "Solide Canon PowerShot G7 X Mark II für alle, die eine kompakte Kamera mit großem Sensor suchen. Das Gerät ist in gutem Zustand und voll funktionsfähig; am Bildschirm sind leichte Kratzer sichtbar. Geliefert wird nur die Kamera — kein Ladegerät.",
+    "shortDescription": "Drei abgestufte Pflanzkübel aus feuerverzinktem Stahl mit Rollrand und vorgebohrter Drainage, für Kräuter, Zwiebelblumen und kleine Sträucher.",
+    "description": "Verzinkter Stahl verwittert zu einem weichen Grau, statt wie lackiertes Metall abzublättern. Genau deshalb verwenden wir ihn für dieses Dreierset. Die Kübel sind in Größen abgestuft, sodass sie sich auf der Terrasse gruppieren, entlang eines Wegs aufreihen oder zwischen Wohnraum und Hauseingang aufteilen lassen. Jeder Kübel hat einen Rollrand, der angenehm zu greifen ist und den Korpus versteift, dazu vorgebohrte Drainagelöcher im Boden, damit die Wurzeln nach einer nassen Woche nicht im Wasser stehen. Der kleinste passt zu Kräutern und Salat, der mittlere zu Zwiebelblumen und Beetpflanzen, der größte zu einem kompakten Strauch oder Fächerahorn.",
     "features": [
-      "20,1 MP Kompaktkamera mit 1\"-Sensor",
-      "Kleines, helles Objektiv für schwaches Licht",
-      "Leichte Displaykratzer, keine Funktionseinschränkung",
-      "Voll funktionsfähig geprüft"
+      "Feuerverzinkter Stahl, verwittert ohne abzublättern",
+      "Drei abgestufte Größen zum Gruppieren oder Aufteilen",
+      "Rollränder für sicheren Griff und hohe Stabilität",
+      "Vorgebohrte Drainagelöcher in jedem Boden",
+      "Für Innen- und Außenbereich geeignet"
     ],
     "specifications": [
-      {
-        "label": "Marke",
-        "value": "Canon"
-      },
-      {
-        "label": "Modell",
-        "value": "PowerShot G7 X Mark II"
-      },
-      {
-        "label": "Farbe",
-        "value": "Schwarz"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      },
-      {
-        "label": "Lieferumfang",
-        "value": "Nur Kamera"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "canon",
-      "kompaktkamera",
-      "powershot"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "sony-zv-1-mark-ii-wei-gebraucht",
-    "slug": "sony-zv-1-mark-ii-wei-gebraucht",
-    "sku": "PHTR-003",
-    "title": "Sony ZV-1 Mark II — weiß, gebraucht",
-    "brand": "Sony",
-    "category": "Kompaktkameras",
-    "categorySlug": "kompaktkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_e2b7ab2d-6cfc-4110-834a-7ace10f19c02.jpg?v=1781903860",
-        "alt": "Sony Sony ZV-1 Mark II — weiß, gebraucht — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_f7df4ad5-5803-41b9-a09e-d1d3e2efd7ee.jpg?v=1781903860",
-        "alt": "Sony Sony ZV-1 Mark II — weiß, gebraucht — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_c01dd681-bec9-473c-a44f-8fda8cc64dc5.jpg?v=1781903860",
-        "alt": "Sony Sony ZV-1 Mark II — weiß, gebraucht — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_8c774952-bb2e-46a4-beb1-db2d734da4cf.jpg?v=1781903860",
-        "alt": "Sony Sony ZV-1 Mark II — weiß, gebraucht — Bild 4"
-      }
-    ],
-    "shortDescription": "Sony ZV-1 Mark II in weiß, guter Zustand. Mit Windschutz für das Mikrofon und einem Akku. Ohne Ladegerät.",
-    "description": "Die Sony ZV-1 Mark II ist auf Vlogging und Content-Erstellung ausgelegt. Dieses weiße Exemplar ist in gutem Zustand; am Objektivanschluss sind leichte Gebrauchsspuren sichtbar. Enthalten sind der Windschutz für das Mikrofon und ein Akku. Ein Ladegerät ist nicht im Lieferumfang.",
-    "features": [
-      "Vlogging-Kompaktkamera mit Weitwinkelobjektiv",
-      "Windschutz für das integrierte Mikrofon",
-      "Ein Akku enthalten",
-      "Ohne Ladegerät"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Sony"
-      },
-      {
-        "label": "Modell",
-        "value": "ZV-1 Mark II"
-      },
-      {
-        "label": "Farbe",
-        "value": "Weiß"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "sony",
-      "vlogging",
-      "kompaktkamera",
-      "weiss"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "canon-powershot-g7-x-mark-ii-mit-speicherkarte-ladegerat",
-    "slug": "canon-powershot-g7-x-mark-ii-mit-speicherkarte-ladegerat",
-    "sku": "PHTR-004",
-    "title": "Canon PowerShot G7 X Mark II — mit Speicherkarte & Ladegerät",
-    "brand": "Canon",
-    "category": "Kompaktkameras",
-    "categorySlug": "kompaktkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_76b595ad-4a3f-4932-86fc-f5b2518a0245.jpg?v=1781903858",
-        "alt": "Canon Canon PowerShot G7 X Mark II — mit Speicherkarte & Ladegerät — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_b036e850-e60e-41a2-998c-7ca2a713244a.jpg?v=1781903858",
-        "alt": "Canon Canon PowerShot G7 X Mark II — mit Speicherkarte & Ladegerät — Bild 2"
-      }
-    ],
-    "shortDescription": "Voll funktionsfähige Canon G7 X Mark II mit Kabel, Universal-Ladegerät und 32-GB-Speicherkarte.",
-    "description": "Diese Canon PowerShot G7 X Mark II ist voll funktionsfähig. Im Inneren des Objektivs befindet sich ein weißer Fleck ohne Einfluss auf die Bildqualität. Mitgeliefert werden ein Kabel, ein Universal-Ladegerät und eine 32-GB-Speicherkarte.",
-    "features": [
-      "Voll funktionsfähig",
-      "32-GB-Speicherkarte inklusive",
-      "Universal-Ladegerät und Kabel",
-      "Kompakte Reisekamera mit 20,1 MP"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Canon"
-      },
-      {
-        "label": "Modell",
-        "value": "PowerShot G7 X Mark II"
-      },
-      {
-        "label": "Speicherkarte",
-        "value": "32 GB"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "canon",
-      "kompaktkamera",
-      "speicherkarte"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "sony-alpha-zv-e10-ii-mit-35-mm-16-50-mm-objektiv",
-    "slug": "sony-alpha-zv-e10-ii-mit-35-mm-16-50-mm-objektiv",
-    "sku": "PHTR-005",
-    "title": "Sony Alpha ZV-E10 II — mit 35 mm & 16–50 mm Objektiv",
-    "brand": "Sony",
-    "category": "Systemkameras",
-    "categorySlug": "systemkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_37e90ce0-514b-4f2f-93ab-7c1b96c27966.jpg?v=1781903855",
-        "alt": "Sony Sony Alpha ZV-E10 II — mit 35 mm & 16–50 mm Objektiv — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_6ad59e1d-5cfc-49f5-b38e-8180185452ba.jpg?v=1781903855",
-        "alt": "Sony Sony Alpha ZV-E10 II — mit 35 mm & 16–50 mm Objektiv — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_5171aba8-2bf3-47f8-a034-6b8d344a8b8e.jpg?v=1781903855",
-        "alt": "Sony Sony Alpha ZV-E10 II — mit 35 mm & 16–50 mm Objektiv — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_2cc1b818-dc96-4136-803a-69a5a033cacb.jpg?v=1781903855",
-        "alt": "Sony Sony Alpha ZV-E10 II — mit 35 mm & 16–50 mm Objektiv — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_7cf2fae0-0822-4664-aadb-87f2f11ea3d1.jpg?v=1781903855",
-        "alt": "Sony Sony Alpha ZV-E10 II — mit 35 mm & 16–50 mm Objektiv — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_8ce419bc-e733-4030-a343-1b786b17d82d.jpg?v=1781903855",
-        "alt": "Sony Sony Alpha ZV-E10 II — mit 35 mm & 16–50 mm Objektiv — Bild 6"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_645205e4-a134-47dc-b519-d8f260be1c15.jpg?v=1781903855",
-        "alt": "Sony Sony Alpha ZV-E10 II — mit 35 mm & 16–50 mm Objektiv — Bild 7"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_3162e3ce-8c91-4038-a08e-32131b6743ab.jpg?v=1781903855",
-        "alt": "Sony Sony Alpha ZV-E10 II — mit 35 mm & 16–50 mm Objektiv — Bild 8"
-      }
-    ],
-    "shortDescription": "Sony ZV-E10 II in sehr gutem Zustand mit SEL35F18 (35 mm) und SELP1650 (16–50 mm). Akku dabei, ohne Ladegerät.",
-    "description": "Die Sony Alpha ZV-E10 II ist eine vielseitige Systemkamera für Foto und Video. Dieses Set ist in ausgezeichnetem Zustand und enthält die Objektive SEL35F18 (35 mm) und SELP16502 (16–50 mm) sowie einen Akku. Ein Ladegerät ist nicht enthalten. Originalrechnungen und Garantieunterlagen können beiliegen.",
-    "features": [
-      "Spiegellose APS-C-Systemkamera",
-      "Zwei Objektive: 35 mm f/1,8 und 16–50 mm",
-      "Sehr guter optischer Zustand",
-      "Akku im Lieferumfang",
-      "Ideal für Video und Fotografie"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Sony"
-      },
-      {
-        "label": "Modell",
-        "value": "Alpha ZV-E10 II"
-      },
-      {
-        "label": "Objektive",
-        "value": "35 mm + 16–50 mm"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
+      { "label": "Material", "value": "Feuerverzinkter Stahl, 0,6 mm" },
+      { "label": "Großer Kübel", "value": "30 cm Durchmesser x 26 cm hoch" },
+      { "label": "Mittlerer Kübel", "value": "25 cm Durchmesser x 22 cm hoch" },
+      { "label": "Kleiner Kübel", "value": "20 cm Durchmesser x 18 cm hoch" },
+      { "label": "Drainage", "value": "4 vorgebohrte Löcher pro Kübel" },
+      { "label": "Gewicht des Sets", "value": "2,1 kg" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": true,
-    "tags": [
-      "sony",
-      "systemkamera",
-      "zv-e10",
-      "objektiv-set"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
+    "tags": ["pflanzkübel", "stahl", "set", "außenbereich"]
   },
   {
-    "id": "sony-zv-1f-20-1-mp-4k-vlogging-kamera",
-    "slug": "sony-zv-1f-20-1-mp-4k-vlogging-kamera",
-    "sku": "PHTR-006",
-    "title": "Sony ZV-1F — 20,1 MP, 4K Vlogging-Kamera",
-    "brand": "Sony",
-    "category": "Kompaktkameras",
-    "categorySlug": "kompaktkameras",
-    "price": 91.95,
+    "id": "gartenbox-wetterfest-120-l",
+    "slug": "gartenbox-wetterfest-120-l",
+    "sku": "THST-003",
+    "title": "Wetterfeste Gartenbox, 120 L",
+    "brand": "Hainholt",
+    "category": "Außenaufbewahrung",
+    "categorySlug": "aussenaufbewahrung",
+    "price": 94.95,
     "currency": "EUR",
-    "condition": "used",
+    "condition": "new",
     "availability": "in_stock",
     "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
+    "googleProductCategory": "Home & Garden > Household Supplies > Storage & Organization > Storage Boxes",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_d7e71638-8b20-4a87-93f2-18bdde2d4da2.jpg?v=1781903854",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, 4K Vlogging-Kamera — Hauptbild"
+        "src": "/images/products/outdoor-storage-box-120l-1.jpg",
+        "alt": "Hainholt wetterfeste Gartenbox mit 120 Litern, geschlossener Deckel"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_1b70cd4d-0b6f-47c3-a299-28bcac297c92.jpg?v=1781903854",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, 4K Vlogging-Kamera — Bild 2"
+        "src": "/images/products/outdoor-storage-box-120l-2.jpg",
+        "alt": "Hainholt Gartenbox auf einer Terrasse mit geöffnetem Deckel und Blick auf das Innenvolumen"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_7dc30412-ddb4-46fa-b63c-58b0411b6b32.jpg?v=1781903854",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, 4K Vlogging-Kamera — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_0bfd0230-4568-4974-a29c-7a92ec5b4d62.jpg?v=1781903854",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, 4K Vlogging-Kamera — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_a66d256e-a281-41f4-969b-e5005047009e.jpg?v=1781903854",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, 4K Vlogging-Kamera — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_7655e543-59ed-4ff2-a067-88be725efed2.jpg?v=1781903854",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, 4K Vlogging-Kamera — Bild 6"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_a77b0ce1-c1e4-467a-a52e-e2067f3fbabf.jpg?v=1781903854",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, 4K Vlogging-Kamera — Bild 7"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ec1d8df0-0b78-44a1-9b68-a0ea1839a734.jpg?v=1781903854",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, 4K Vlogging-Kamera — Bild 8"
+        "src": "/images/products/outdoor-storage-box-120l-3.jpg",
+        "alt": "Nahaufnahme von Gasdruckfeder und Deckelfalz der Hainholt Gartenbox"
       }
     ],
-    "shortDescription": "Sony ZV-1F in ausgezeichnetem Zustand mit Schutztasche, Ladegerät und Akku.",
-    "description": "Die Sony ZV-1F ist eine kompakte 4K-Vlogging-Kamera mit hellem f/2-Objektiv. Dieses Exemplar ist in ausgezeichnetem Zustand und wird mit Schutztasche, Ladegerät, Akku und Zubehör geliefert. Originalunterlagen können beiliegen.",
+    "shortDescription": "Eine Box mit 120 Litern aus UV-stabilisiertem Kunststoff, mit überlappendem Deckel, Gasdruckfedern und belüftetem Boden, groß genug für Polster oder Werkzeug und belastbar als Sitzbank.",
+    "description": "Gartenpolster verbringen weit mehr Zeit im Haus als nötig, weil es draußen keinen trockenen Platz für sie gibt. Diese Box fasst 120 Liter, das entspricht den Polstern einer Zweisitzergarnitur oder einer vollständigen Sammlung Handwerkzeug. Der Deckel überlappt den Korpus, sodass Regen an den Seiten abläuft und nicht in die Fuge dringt. Gasdruckfedern halten den Deckel beim Beladen offen und senken ihn langsam ab, statt auf die Finger zu fallen. Der Boden ist gerippt und leicht erhöht, damit Luft darunter zirkuliert und sich auf der Terrasse keine Feuchtigkeit sammelt. Der Deckel ist zum Sitzen freigegeben und funktioniert damit als Bank neben der Hintertür.",
     "features": [
-      "20,1 MP, 4K-Video",
-      "Helles f/2-Weitwinkelobjektiv",
-      "Schutztasche und Originalzubehör",
-      "Ladegerät und Akku enthalten"
+      "120 Liter Volumen mit überlappendem, regenabweisendem Deckel",
+      "Gasdruckfedern halten den Deckel offen und senken ihn langsam",
+      "Belüfteter, erhöhter Boden gegen Staufeuchte",
+      "Deckel als Sitzfläche bis 120 kg freigegeben",
+      "UV-stabilisierter Kunststoff, kein Nachstreichen nötig"
     ],
     "specifications": [
-      {
-        "label": "Marke",
-        "value": "Sony"
-      },
-      {
-        "label": "Modell",
-        "value": "ZV-1F"
-      },
-      {
-        "label": "Video",
-        "value": "4K"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
+      { "label": "Volumen", "value": "120 Liter" },
+      { "label": "Material", "value": "UV-stabilisiertes Polypropylen" },
+      { "label": "Außenmaße", "value": "116 x 45 x 57 cm" },
+      { "label": "Innenmaße", "value": "110 x 40 x 50 cm" },
+      { "label": "Sitzbelastung", "value": "120 kg" },
+      { "label": "Gewicht", "value": "9,8 kg" },
+      { "label": "Montage", "value": "Werkzeuglos, etwa 10 Minuten" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": true,
-    "tags": [
-      "sony",
-      "vlogging",
-      "4k",
-      "zv-1f"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
+    "tags": ["gartenbox", "aufbewahrung", "wetterfest", "sitzbank"]
   },
   {
-    "id": "sony-zv-1f-20-1-mp-sehr-guter-zustand",
-    "slug": "sony-zv-1f-20-1-mp-sehr-guter-zustand",
-    "sku": "PHTR-007",
-    "title": "Sony ZV-1F — 20,1 MP, sehr guter Zustand",
-    "brand": "Sony",
-    "category": "Kompaktkameras",
-    "categorySlug": "kompaktkameras",
-    "price": 91.95,
+    "id": "hochbeet-bambus",
+    "slug": "hochbeet-bambus",
+    "sku": "THST-004",
+    "title": "Hochbeet aus Bambus",
+    "brand": "Hainholt",
+    "category": "Pflanzgefäße & Anbau",
+    "categorySlug": "pflanzgefaesse-anbau",
+    "price": 104.95,
     "currency": "EUR",
-    "condition": "used",
+    "condition": "new",
     "availability": "in_stock",
     "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Pots & Planters",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_921cbe27-ac71-4227-aa8f-4cadff2a5600.jpg?v=1781903853",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, sehr guter Zustand — Hauptbild"
+        "src": "/images/products/bamboo-raised-garden-bed-1.jpg",
+        "alt": "Hainholt Hochbeet aus Bambus, unbepflanzt"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_6ab17ecb-60e8-4181-9d18-ef5b9e3e43b9.jpg?v=1781903853",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, sehr guter Zustand — Bild 2"
+        "src": "/images/products/bamboo-raised-garden-bed-2.jpg",
+        "alt": "Hainholt Hochbeet aus Bambus mit Gemüse bepflanzt"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ddd0d87d-bdd6-4b08-ab6c-178da055a41e.jpg?v=1781903853",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, sehr guter Zustand — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ac43866b-1ba7-481c-8158-8061b63e814c.jpg?v=1781903853",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, sehr guter Zustand — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_8ad3d23b-8203-4e05-92be-6d5a473aa79a.jpg?v=1781903853",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, sehr guter Zustand — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_556ee4c2-b2ad-4f5e-b627-f4f4edd19ecd.jpg?v=1781903853",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, sehr guter Zustand — Bild 6"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_9698017e-1592-4ea0-bc95-7dc48e6c7bb4.jpg?v=1781903853",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, sehr guter Zustand — Bild 7"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_9f12076b-e659-4efe-a6fc-cf48e61d504a.jpg?v=1781903853",
-        "alt": "Sony Sony ZV-1F — 20,1 MP, sehr guter Zustand — Bild 8"
+        "src": "/images/products/bamboo-raised-garden-bed-3.jpg",
+        "alt": "Eckverbindung des Hainholt Hochbeets aus Bambus im Detail"
       }
     ],
-    "shortDescription": "Sony ZV-1F in sehr gutem Zustand mit Akku, Tasche und USB-Kabel. Werkseinstellungen zurückgesetzt.",
-    "description": "Gepflegte Sony ZV-1F mit kaum sichtbaren Gebrauchsspuren am Gehäuse. Display in sehr gutem Zustand. Enthalten sind Kamera, Ersatzakku (nicht original), Tasche und USB-Kabel. Originalverpackung und Ladegerät fehlen. Auf Werkseinstellungen zurückgesetzt und geprüft.",
+    "shortDescription": "Ein Hochbeet in Hüfthöhe aus Moso-Bambus mit ausgekleidetem Pflanztrog und unterer Ablage, tief genug für Karotten, Salat und Buschbohnen.",
+    "description": "Ein Hochbeet in Hüfthöhe macht aus dem Gemüseanbau eine Arbeit, die man im Stehen erledigt. Das zählt besonders, wenn Knien unangenehm ist oder der Garten ein gepflasterter Hof ist. Der Trog ist 30 cm tief, also ausreichend für Karotten und Rote Bete und nicht nur für flach wurzelnden Salat. Eine herausnehmbare Auskleidung hält die Erde im Beet und den Bambus trocken, Drainagelöcher verlaufen über die gesamte Bodenlänge. Darunter liegt eine Lattenablage für Gießkannen, Anzuchtschalen und Handschuhe. Moso-Bambus ist dicht und schnell nachwachsend und hier mit einem pflanzenverträglichen Öl behandelt, das nicht abblättert.",
     "features": [
-      "20,1 MP Kompaktkamera",
-      "Display in sehr gutem Zustand",
-      "Auf Werkseinstellungen zurückgesetzt",
-      "Akku, Tasche und USB-Kabel inklusive"
+      "Anbau in Hüfthöhe, ohne Knien oder Bücken",
+      "30 cm tiefer Trog, auch für Wurzelgemüse geeignet",
+      "Herausnehmbare Auskleidung mit Drainagelöchern über die volle Länge",
+      "Untere Lattenablage für Kannen, Schalen und Werkzeug",
+      "Moso-Bambus mit pflanzenverträglichem Öl behandelt"
     ],
     "specifications": [
-      {
-        "label": "Marke",
-        "value": "Sony"
-      },
-      {
-        "label": "Modell",
-        "value": "ZV-1F"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — sehr gut"
-      },
-      {
-        "label": "Lieferumfang",
-        "value": "Ohne Original-Ladegerät"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "sony",
-      "zv-1f",
-      "kompaktkamera"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "sony-alpha-zv-e10-mit-16-50-mm-zubehor-set",
-    "slug": "sony-alpha-zv-e10-mit-16-50-mm-zubehor-set",
-    "sku": "PHTR-008",
-    "title": "Sony Alpha ZV-E10 — mit 16–50 mm & Zubehör-Set",
-    "brand": "Sony",
-    "category": "Systemkameras",
-    "categorySlug": "systemkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_8a7742ee-4cd7-4327-acbd-18b56abafd3a.jpg?v=1781903849",
-        "alt": "Sony Sony Alpha ZV-E10 — mit 16–50 mm & Zubehör-Set — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_fac25877-0c47-4706-8bca-ae6b6ac6bfdf.jpg?v=1781903849",
-        "alt": "Sony Sony Alpha ZV-E10 — mit 16–50 mm & Zubehör-Set — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ba607070-644c-4137-9e3c-223c607fadce.jpg?v=1781903849",
-        "alt": "Sony Sony Alpha ZV-E10 — mit 16–50 mm & Zubehör-Set — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_e00bc604-f2ad-455f-90ca-0f01be7060b3.jpg?v=1781903849",
-        "alt": "Sony Sony Alpha ZV-E10 — mit 16–50 mm & Zubehör-Set — Bild 4"
-      }
-    ],
-    "shortDescription": "Sony ZV-E10 mit 16–50-mm-Objektiv, Rode-Mikrofon, SmallRig-Akku/ Ladegerät, Ringlicht und Cage.",
-    "description": "Komplettes Creator-Set rund um die Sony Alpha ZV-E10 mit 16–50-mm-Kit-Objektiv. In ausgezeichnetem Zustand. Enthalten sind Rode Pro Mikrofon, SmallRig-Akkus mit Ladegerät, Ringlicht und SmallRig Cage. Originalunterlagen können beiliegen.",
-    "features": [
-      "Sony ZV-E10 mit 16–50-mm-Objektiv",
-      "Rode Pro Mikrofon",
-      "SmallRig Cage, Akkus und Ladegerät",
-      "Ringlicht für Video",
-      "Ausgezeichneter Zustand"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Sony"
-      },
-      {
-        "label": "Modell",
-        "value": "Alpha ZV-E10"
-      },
-      {
-        "label": "Objektiv",
-        "value": "16–50 mm"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "sony",
-      "systemkamera",
-      "vlogging",
-      "creator-set"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "canon-powershot-g7-x-mark-ii-ersatzteile-reparatur",
-    "slug": "canon-powershot-g7-x-mark-ii-ersatzteile-reparatur",
-    "sku": "PHTR-009",
-    "title": "Canon PowerShot G7 X Mark II — Ersatzteile / Reparatur",
-    "brand": "Canon",
-    "category": "Kompaktkameras",
-    "categorySlug": "kompaktkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_8d1396f7-f018-4ee8-ba24-871d3fd8469f.jpg?v=1781903849",
-        "alt": "Canon Canon PowerShot G7 X Mark II — Ersatzteile / Reparatur — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ff841b33-ee53-4f13-ae1e-34a170d973dc.jpg?v=1781903849",
-        "alt": "Canon Canon PowerShot G7 X Mark II — Ersatzteile / Reparatur — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_b855517d-c310-47b0-bb03-81e0bf8ead13.jpg?v=1781903849",
-        "alt": "Canon Canon PowerShot G7 X Mark II — Ersatzteile / Reparatur — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_636da910-1a3a-4b32-9d62-6231015b4406.jpg?v=1781903849",
-        "alt": "Canon Canon PowerShot G7 X Mark II — Ersatzteile / Reparatur — Bild 4"
-      }
-    ],
-    "shortDescription": "Canon G7 X Mark II defekt — für Ersatzteile oder Reparatur. Schaltet nicht ein, USB zeigt orangefarbenes Licht.",
-    "description": "Diese Canon PowerShot G7 X Mark II ist nach einem Sturz beschädigt und schaltet nicht mehr ein. Per USB erscheint ein orangefarbenes Betriebslicht. Verkauf ausschließlich als Ersatzteilspender oder für erfahrene Reparateure. Keine Rücknahme.",
-    "features": [
-      "20,1 MP 1\"-Sensor, DIGIC 7",
-      "Defekt — schaltet nicht ein",
-      "Für Ersatzteile oder Reparatur",
-      "Verkauf ohne Gewährleistung auf Funktion"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Canon"
-      },
-      {
-        "label": "Modell",
-        "value": "PowerShot G7 X Mark II"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — mäßig / defekt"
-      },
-      {
-        "label": "Hinweis",
-        "value": "Nur Ersatzteile / Reparatur"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "canon",
-      "ersatzteile",
-      "reparatur"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "canon-eos-77d-mit-18-55-mm-55-250-mm-objektiv",
-    "slug": "canon-eos-77d-mit-18-55-mm-55-250-mm-objektiv",
-    "sku": "PHTR-010",
-    "title": "Canon EOS 77D — mit 18–55 mm & 55–250 mm Objektiv",
-    "brand": "Canon",
-    "category": "Spiegelreflexkameras",
-    "categorySlug": "spiegelreflexkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_b2356fb3-fbbe-4ad1-b419-51653826be5f.jpg?v=1781903843",
-        "alt": "Canon Canon EOS 77D — mit 18–55 mm & 55–250 mm Objektiv — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_4f9fd275-272a-4aa1-9867-c6568bc9e59c.jpg?v=1781903843",
-        "alt": "Canon Canon EOS 77D — mit 18–55 mm & 55–250 mm Objektiv — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_89c83726-bf96-4bf5-8e66-f9adb17871c2.jpg?v=1781903843",
-        "alt": "Canon Canon EOS 77D — mit 18–55 mm & 55–250 mm Objektiv — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_4b092782-ee82-4b03-b1e1-566e58a2fa67.jpg?v=1781903843",
-        "alt": "Canon Canon EOS 77D — mit 18–55 mm & 55–250 mm Objektiv — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_1990868d-3560-467f-ac79-8aaba25ad160.jpg?v=1781903843",
-        "alt": "Canon Canon EOS 77D — mit 18–55 mm & 55–250 mm Objektiv — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_e425ec20-1f3d-4f8c-9397-b0416c2bf3a3.jpg?v=1781903843",
-        "alt": "Canon Canon EOS 77D — mit 18–55 mm & 55–250 mm Objektiv — Bild 6"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_9a33595f-8cf3-4e10-a6d7-8324f9fd1cf7.jpg?v=1781903843",
-        "alt": "Canon Canon EOS 77D — mit 18–55 mm & 55–250 mm Objektiv — Bild 7"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_1e19a071-504b-4acd-9220-d09002527af6.jpg?v=1781903843",
-        "alt": "Canon Canon EOS 77D — mit 18–55 mm & 55–250 mm Objektiv — Bild 8"
-      }
-    ],
-    "shortDescription": "Canon EOS 77D DSLR mit 18–55-mm- und 55–250-mm-Objektiv. Gut geprüft, mit Akku und Ladegerät.",
-    "description": "Die Canon EOS 77D ist eine vielseitige 24,2-MP-DSLR mit Dual Pixel AF, 45 Kreuzpunkt-AF und WLAN. Dieses Set enthält die Objektive EF-S 18–55 mm und EF-S 55–250 mm sowie Akku und Ladegerät. Alle Funktionen wurden geprüft.",
-    "features": [
-      "24,2 MP APS-C CMOS-Sensor",
-      "Dual Pixel CMOS AF und 45-Punkt-AF",
-      "Zwei Zoomobjektive im Set",
-      "WLAN, NFC und Bluetooth",
-      "Schwenkbares Touch-Display"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Canon"
-      },
-      {
-        "label": "Modell",
-        "value": "EOS 77D"
-      },
-      {
-        "label": "Auflösung",
-        "value": "24,2 MP"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
+      { "label": "Material", "value": "Moso-Bambus, geölt" },
+      { "label": "Gesamtmaße", "value": "100 x 50 x 80 cm" },
+      { "label": "Trogtiefe", "value": "30 cm" },
+      { "label": "Erdvolumen", "value": "etwa 105 Liter" },
+      { "label": "Auskleidung", "value": "Herausnehmbar, perforiertes PE" },
+      { "label": "Gewicht", "value": "12,5 kg" },
+      { "label": "Montage", "value": "Erforderlich, Werkzeug und Anleitung enthalten" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": true,
-    "tags": [
-      "canon",
-      "dslr",
-      "eos-77d",
-      "objektiv-set"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
+    "tags": ["hochbeet", "bambus", "gemüse", "anbau"]
   },
   {
-    "id": "nikon-d850-45-7-mp-gehause",
-    "slug": "nikon-d850-45-7-mp-gehause",
-    "sku": "PHTR-011",
-    "title": "Nikon D850 — 45,7 MP Gehäuse",
-    "brand": "Nikon",
-    "category": "Spiegelreflexkameras",
-    "categorySlug": "spiegelreflexkameras",
-    "price": 91.95,
+    "id": "kniepolster-garten",
+    "slug": "kniepolster-garten",
+    "sku": "THST-006",
+    "title": "Robustes Kniepolster für die Gartenarbeit",
+    "brand": "Hainholt",
+    "category": "Gartenwerkzeug",
+    "categorySlug": "gartenwerkzeug",
+    "price": 17.95,
     "currency": "EUR",
-    "condition": "used",
+    "condition": "new",
     "availability": "in_stock",
     "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Gardening Tools",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_36379777-c375-47a4-b2a3-2741ee4ceb70.jpg?v=1781903843",
-        "alt": "Nikon Nikon D850 — 45,7 MP Gehäuse — Hauptbild"
+        "src": "/images/products/heavy-duty-garden-kneeling-pad-1.jpg",
+        "alt": "Hainholt robustes Kniepolster für die Gartenarbeit"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_351636de-7c23-4737-a5ed-4a1ed0803272.jpg?v=1781903843",
-        "alt": "Nikon Nikon D850 — 45,7 MP Gehäuse — Bild 2"
+        "src": "/images/products/heavy-duty-garden-kneeling-pad-2.jpg",
+        "alt": "Hainholt Kniepolster im Einsatz neben einem Blumenbeet"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_340c43ed-2366-49bd-bf0a-33a1e247c893.jpg?v=1781903843",
-        "alt": "Nikon Nikon D850 — 45,7 MP Gehäuse — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_88b5ef93-381d-4257-a683-aaa0d3cf0851.jpg?v=1781903843",
-        "alt": "Nikon Nikon D850 — 45,7 MP Gehäuse — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ea3f9400-1104-498c-be08-44539b4df008.jpg?v=1781903843",
-        "alt": "Nikon Nikon D850 — 45,7 MP Gehäuse — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_0d2f6285-ae80-447a-860f-5f1c5fcff5d7.jpg?v=1781903843",
-        "alt": "Nikon Nikon D850 — 45,7 MP Gehäuse — Bild 6"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_7a9a51fe-73bd-416d-a674-677884f1e39c.jpg?v=1781903843",
-        "alt": "Nikon Nikon D850 — 45,7 MP Gehäuse — Bild 7"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_1ae56eae-d0d0-4327-b089-0d584d214676.jpg?v=1781903843",
-        "alt": "Nikon Nikon D850 — 45,7 MP Gehäuse — Bild 8"
+        "src": "/images/products/heavy-duty-garden-kneeling-pad-3.jpg",
+        "alt": "Nahaufnahme der strukturierten Oberfläche und des Tragegriffs am Hainholt Kniepolster"
       }
     ],
-    "shortDescription": "Nikon D850 Vollformat-DSLR, 6.116 Auslösungen. Getestet und voll funktionsfähig. Ohne Akku, Ladegerät und Gurt.",
-    "description": "Die Nikon D850 ist eine professionelle 45,7-MP-Vollformat-DSLR mit 153-Punkt-AF, 4K-Video und wetterfestem Magnesiumgehäuse. Auslösungszähler: 6.116. Voll funktionsfähig geprüft. Geliefert wird nur das Gehäuse — ohne Akku, Ladegerät, Tragegurt und Verpackung.",
+    "shortDescription": "Ein 40 mm starkes Polster aus geschlossenzelligem Schaum, das auf nassem Boden trocken bleibt, mit angeformtem Griff und abwischbarer Oberfläche.",
+    "description": "Vierzig Millimeter geschlossenzelliger Schaum sind der Unterschied zwischen einer Stunde Pflanzarbeit und fünf Minuten, bis die Knie sich melden. Geschlossenzellig bedeutet, dass der Schaum kein Wasser aufnimmt: Das Polster kann auf nassem Rasen oder einer verregneten Terrasse liegen und bleibt oben trocken. Die Oberfläche ist strukturiert, damit sie auf Holzdielen greift statt zu rutschen, und lässt sich mit einem Tuch abwischen, anstatt abgespritzt werden zu müssen. In eine Seite ist ein Griff eingeformt, sodass das Polster am Schuppenhaken hängt und sich in derselben Hand wie eine Pflanzkelle tragen lässt.",
     "features": [
-      "45,7 MP Vollformat ohne Tiefpassfilter",
-      "153-Punkt-Autofokus",
-      "4K-UHD-Video",
-      "Nur 6.116 Auslösungen",
-      "Wetterfestes Magnesiumgehäuse"
+      "40 mm geschlossenzelliger Schaum, nimmt kein Wasser auf",
+      "Strukturierte, rutschhemmende Oberfläche für Terrasse und Holzdielen",
+      "Angeformter Tragegriff, passt auf jeden Schuppenhaken",
+      "Mit einem feuchten Tuch abwischbar",
+      "Reißt bei Frost nicht und wird in der Sonne nicht brüchig"
     ],
     "specifications": [
+      { "label": "Material", "value": "Geschlossenzelliger EVA-Schaum" },
+      { "label": "Maße", "value": "44 x 24 x 4 cm" },
+      { "label": "Gewicht", "value": "0,4 kg" },
+      { "label": "Oberfläche", "value": "Strukturiert, rutschhemmend" },
+      { "label": "Pflege", "value": "Feucht abwischen" }
+    ],
+    "reviewCount": 0,
+    "ratingValue": 0,
+    "featured": false,
+    "tags": ["kniepolster", "schaum", "gartenarbeit"]
+  },
+  {
+    "id": "giesskanne-edelstahl-5-l",
+    "slug": "giesskanne-edelstahl-5-l",
+    "sku": "THST-007",
+    "title": "Gießkanne aus Edelstahl, 5 L",
+    "brand": "Hainholt",
+    "category": "Gartenwerkzeug",
+    "categorySlug": "gartenwerkzeug",
+    "price": 32.95,
+    "currency": "EUR",
+    "condition": "new",
+    "availability": "in_stock",
+    "gtin": "",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Watering Equipment > Watering Cans",
+    "images": [
       {
-        "label": "Marke",
-        "value": "Nikon"
+        "src": "/images/products/stainless-steel-watering-can-5l-1.jpg",
+        "alt": "Hainholt Gießkanne aus Edelstahl mit 5 Litern und Messingbrause"
       },
       {
-        "label": "Modell",
-        "value": "D850"
+        "src": "/images/products/stainless-steel-watering-can-5l-2.jpg",
+        "alt": "Hainholt Gießkanne beim Wässern von Jungpflanzen in Töpfen"
       },
       {
-        "label": "Auslösungen",
-        "value": "6.116"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
+        "src": "/images/products/stainless-steel-watering-can-5l-3.jpg",
+        "alt": "Abnehmbare Messingbrause der Hainholt Gießkanne"
       }
+    ],
+    "shortDescription": "Eine Kanne mit 5 Litern aus gebürstetem Edelstahl, mit langem, ausbalanciertem Ausguss und abnehmbarer Messingbrause für Jungpflanzen.",
+    "description": "Kunststoffkannen brechen nach zwei Sommern in der Sonne am Griff. Diese hier ist aus gebürstetem Edelstahl mit Rollrand und geschweißten Nähten, hält also lange und sieht aus wie etwas, das draußen stehen bleiben darf, statt versteckt zu werden. Fünf Liter sind der sinnvolle Kompromiss: genug, um eine Reihe Töpfe zu wässern, ohne nachzufüllen, und leicht genug, um die Kanne voll in einer Hand zu tragen. Der Ausguss ist lang und tief am Korpus angesetzt, was den Wasserfluss auch bei sinkendem Füllstand gleichmäßig hält und die Reichweite bis in die Beetmitte verlängert. Die Messingbrause lässt sich für einen feinen Sprühstrahl über Jungpflanzen aufdrehen oder abnehmen, um direkt an der Wurzel zu gießen.",
+    "features": [
+      "Gebürsteter Edelstahl mit geschweißten, dichten Nähten",
+      "Langer, tief angesetzter Ausguss für gleichmäßigen Fluss und mehr Reichweite",
+      "Abnehmbare Messingbrause für feinen Sprühstrahl",
+      "Ausbalancierter Griff, auch voll bequem zu tragen",
+      "Für Zimmerpflanzen und Gartenbeete geeignet"
+    ],
+    "specifications": [
+      { "label": "Volumen", "value": "5 Liter" },
+      { "label": "Material", "value": "Edelstahl 201, gebürstet" },
+      { "label": "Brause", "value": "Massives Messing, abnehmbar" },
+      { "label": "Maße", "value": "48 x 17 x 30 cm" },
+      { "label": "Leergewicht", "value": "1,1 kg" },
+      { "label": "Pflege", "value": "Bei Frost entleeren und trocknen" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": true,
-    "tags": [
-      "nikon",
-      "vollformat",
-      "d850",
-      "dslr"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
+    "tags": ["gießkanne", "edelstahl", "messing"]
   },
   {
-    "id": "canon-eos-rebel-t7-mit-18-55-mm-75-300-mm",
-    "slug": "canon-eos-rebel-t7-mit-18-55-mm-75-300-mm",
-    "sku": "PHTR-012",
-    "title": "Canon EOS Rebel T7 — mit 18–55 mm & 75–300 mm",
-    "brand": "Canon",
-    "category": "Spiegelreflexkameras",
-    "categorySlug": "spiegelreflexkameras",
-    "price": 91.95,
+    "id": "komposteimer-kueche",
+    "slug": "komposteimer-kueche",
+    "sku": "THST-008",
+    "title": "Kompakter Komposteimer für die Küche",
+    "brand": "Hainholt",
+    "category": "Küche & Kompost",
+    "categorySlug": "kueche-kompost",
+    "price": 29.95,
     "currency": "EUR",
-    "condition": "used",
+    "condition": "new",
     "availability": "in_stock",
     "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Gardening > Composting",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_3928c81e-6d91-4834-aa3b-9d7dd2b66a5e.jpg?v=1781903841",
-        "alt": "Canon Canon EOS Rebel T7 — mit 18–55 mm & 75–300 mm — Hauptbild"
+        "src": "/images/products/compact-kitchen-compost-bin-1.jpg",
+        "alt": "Hainholt kompakter Komposteimer für die Küche"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_02b618b2-b14d-44a6-ac63-680cd96a4e5d.jpg?v=1781903841",
-        "alt": "Canon Canon EOS Rebel T7 — mit 18–55 mm & 75–300 mm — Bild 2"
+        "src": "/images/products/compact-kitchen-compost-bin-2.jpg",
+        "alt": "Hainholt Komposteimer auf einer Küchenarbeitsplatte"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_f78f3780-375d-4a08-8f16-adc8be8a9d86.jpg?v=1781903841",
-        "alt": "Canon Canon EOS Rebel T7 — mit 18–55 mm & 75–300 mm — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_c8e93d44-e534-47bc-a410-2c1aa6067787.jpg?v=1781903841",
-        "alt": "Canon Canon EOS Rebel T7 — mit 18–55 mm & 75–300 mm — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_9d0028a6-619e-4b44-9c60-393c009a937a.jpg?v=1781903841",
-        "alt": "Canon Canon EOS Rebel T7 — mit 18–55 mm & 75–300 mm — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_60e7e06a-d28f-4986-ae1c-1a6eeaa03833.jpg?v=1781903841",
-        "alt": "Canon Canon EOS Rebel T7 — mit 18–55 mm & 75–300 mm — Bild 6"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_6956df7f-719a-472f-a176-593b9e6975de.jpg?v=1781903841",
-        "alt": "Canon Canon EOS Rebel T7 — mit 18–55 mm & 75–300 mm — Bild 7"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_fe817f89-8ff8-42ab-83e5-88bce273cfcb.jpg?v=1781903841",
-        "alt": "Canon Canon EOS Rebel T7 — mit 18–55 mm & 75–300 mm — Bild 8"
+        "src": "/images/products/compact-kitchen-compost-bin-3.jpg",
+        "alt": "Geöffneter Deckel des Hainholt Komposteimers mit Blick auf den Aktivkohlefilter"
       }
     ],
-    "shortDescription": "Canon EOS Rebel T7 (EOS 2000D) mit zwei Objektiven. 24,1 MP, WLAN, voll funktionsfähig geprüft.",
-    "description": "Einsteigerfreundliche Canon EOS Rebel T7 mit 24,1 MP und zwei Zoomobjektiven (18–55 mm und 75–300 mm). Ideal für Urlaub, Sport und Familie. WLAN für einfaches Teilen. Vollständig getestet und funktionsfähig.",
+    "shortDescription": "Ein Eimer mit 5 Litern für die Arbeitsplatte, aus pulverbeschichtetem Stahl, mit austauschbarem Aktivkohlefilter im Deckel und herausnehmbarem Innenbehälter.",
+    "description": "Ein Bioabfalleimer wird nur benutzt, wenn er auf der Arbeitsplatte stehen kann, ohne unangenehm zu werden. Deshalb sitzt hier ein Aktivkohlefilter im Deckel, der die Gerüche zwischen zwei Entleerungen abfängt, und der Deckel schließt dicht, statt nur aufzuliegen. Fünf Liter entsprechen etwa zwei bis drei Tagen Schalenabfall in einem kleinen Haushalt. Der Innenbehälter lässt sich am Drahtgriff herausheben, zur Biotonne tragen und im Becken ausspülen, sodass die Außenhülle sauber bleibt. Diese Hülle ist aus pulverbeschichtetem Stahl in gedeckten Farben statt aus weißem Kunststoff, der nach einem Monat Kaffeesatz Flecken behält.",
     "features": [
-      "24,1 MP Auflösung",
-      "Zwei Objektive: 18–55 mm und 75–300 mm",
-      "3\"-Display und eingebauter Blitz",
-      "WLAN-Konnektivität",
-      "Gesichtserkennung"
+      "Austauschbarer Aktivkohlefilter im Deckel",
+      "Herausnehmbarer Innenbehälter mit Drahtgriff",
+      "5 Liter Volumen, etwa 2 bis 3 Tage für einen kleinen Haushalt",
+      "Abwischbare Außenhülle aus pulverbeschichtetem Stahl",
+      "Passend für handelsübliche kompostierbare Beutel"
     ],
     "specifications": [
-      {
-        "label": "Marke",
-        "value": "Canon"
-      },
-      {
-        "label": "Modell",
-        "value": "EOS Rebel T7 / 2000D"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
+      { "label": "Volumen", "value": "5 Liter" },
+      { "label": "Außenhülle", "value": "Pulverbeschichteter Stahl" },
+      { "label": "Innenbehälter", "value": "Herausnehmbar, lebensmittelechter Kunststoff" },
+      { "label": "Filter", "value": "Aktivkohle, austauschbar" },
+      { "label": "Maße", "value": "20 x 20 x 28 cm" },
+      { "label": "Gewicht", "value": "1,3 kg" },
+      { "label": "Lieferumfang", "value": "Eimer, Innenbehälter, 2 Aktivkohlefilter" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": false,
-    "tags": [
-      "canon",
-      "dslr",
-      "einsteiger",
-      "objektiv-set"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
+    "tags": ["kompost", "küche", "bioabfall", "stahl"]
   },
   {
-    "id": "nikon-coolpix-p1000-125-fach-superzoom",
-    "slug": "nikon-coolpix-p1000-125-fach-superzoom",
-    "sku": "PHTR-013",
-    "title": "Nikon COOLPIX P1000 — 125-fach Superzoom",
-    "brand": "Nikon",
-    "category": "Kompaktkameras",
-    "categorySlug": "kompaktkameras",
-    "price": 91.95,
+    "id": "schutzhuellen-set-gartenmoebel",
+    "slug": "schutzhuellen-set-gartenmoebel",
+    "sku": "THST-009",
+    "title": "Wetterfestes Schutzhüllen-Set für Gartenmöbel",
+    "brand": "Hainholt",
+    "category": "Außenaufbewahrung",
+    "categorySlug": "aussenaufbewahrung",
+    "price": 52.95,
     "currency": "EUR",
-    "condition": "used",
+    "condition": "new",
     "availability": "in_stock",
     "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
+    "googleProductCategory": "Home & Garden > Lawn & Garden > Outdoor Living > Outdoor Furniture Accessories > Outdoor Furniture Covers",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_164b3f46-bf77-468a-94c0-91094744df86.jpg?v=1781903838",
-        "alt": "Nikon Nikon COOLPIX P1000 — 125-fach Superzoom — Hauptbild"
+        "src": "/images/products/weatherproof-garden-furniture-cover-set-1.jpg",
+        "alt": "Hainholt wetterfestes Schutzhüllen-Set für Gartenmöbel, zusammengefaltet"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_312c9d59-411f-4373-8d11-94499bdae986.jpg?v=1781903838",
-        "alt": "Nikon Nikon COOLPIX P1000 — 125-fach Superzoom — Bild 2"
+        "src": "/images/products/weatherproof-garden-furniture-cover-set-2.jpg",
+        "alt": "Hainholt Schutzhüllen über Gartentisch und Stühlen gezogen"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_2a329c86-28ba-4d86-80b3-94f7858a86af.jpg?v=1781903838",
-        "alt": "Nikon Nikon COOLPIX P1000 — 125-fach Superzoom — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_fa6c16c2-0130-442a-bb4f-4b5df2a2069e.jpg?v=1781903838",
-        "alt": "Nikon Nikon COOLPIX P1000 — 125-fach Superzoom — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_88aa5c86-d8a2-4412-86a3-c05c5af09d16.jpg?v=1781903838",
-        "alt": "Nikon Nikon COOLPIX P1000 — 125-fach Superzoom — Bild 5"
+        "src": "/images/products/weatherproof-garden-furniture-cover-set-3.jpg",
+        "alt": "Detail von verschweißter Naht und Kordelzug einer Hainholt Schutzhülle"
       }
     ],
-    "shortDescription": "Nikon P1000 mit 125-fach Zoom (24–3000 mm), Objektivblende, Tragegurt und Akkukabel. Voll funktionsfähig.",
-    "description": "Die Nikon COOLPIX P1000 bietet ein außergewöhnliches 125-fach-Zoom (24–3000 mm) — ideal für Mond- und Naturaufnahmen. Dieses US-Modell ist in gutem Zustand und voll funktionsfähig. Mitgeliefert werden Objektivblende, Tragegurt und Akkukabel.",
+    "shortDescription": "Ein dreiteiliges Set aus beschichtetem 600D-Polyester mit verschweißten Nähten, Lüftungsgittern und Kordelzug, für einen Tisch und zwei Stuhlstapel.",
+    "description": "Schutzhüllen versagen auf zwei Arten: Sie lassen Wasser durch die Nähte, oder sie halten es darunter fest und alles beginnt zu schimmeln. Dieses Set löst das erste Problem mit 600D-Polyester, wasserdichter Beschichtung und verschweißten Nähten und das zweite mit Lüftungsgittern in den Deckflächen, sodass Luft in Bewegung bleibt und sich kein Kondenswasser auf der Tischplatte sammelt. Elastische Säume mit Kordelzug werden unter den Kanten festgezogen, damit eine Windböe die Hülle nicht als Segel über den Rasen trägt. Das Set deckt einen rechteckigen Tisch und zwei Stuhlstapel ab, und jedes Teil lässt sich über den Winter in seinem eigenen Beutel verstauen.",
     "features": [
-      "16 MP mit 125-fach optischem Zoom",
-      "Brennweite 24–3000 mm, f/2,8",
-      "Spezialmodus für Mondaufnahmen",
-      "4K-Video",
-      "WLAN und Bluetooth"
+      "600D-Polyester mit wasserdichter Beschichtung und verschweißten Nähten",
+      "Lüftungsgitter reduzieren Kondenswasser und Schimmel",
+      "Elastische Säume mit Kordelzug halten bei Wind",
+      "Drei Teile: eine Tischhülle, zwei Stuhlhüllen",
+      "Aufbewahrungsbeutel für jedes Teil enthalten"
     ],
     "specifications": [
-      {
-        "label": "Marke",
-        "value": "Nikon"
-      },
-      {
-        "label": "Modell",
-        "value": "COOLPIX P1000"
-      },
-      {
-        "label": "Zoom",
-        "value": "125x (24–3000 mm)"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
+      { "label": "Material", "value": "600D-Polyester, PU-beschichtet" },
+      { "label": "Tischhülle", "value": "200 x 110 x 70 cm" },
+      { "label": "Stuhlhüllen", "value": "2 x 70 x 70 x 110 cm" },
+      { "label": "Nähte", "value": "Verschweißt und abgeklebt" },
+      { "label": "Befestigung", "value": "Elastischer Saum mit Kordelzug" },
+      { "label": "Gewicht des Sets", "value": "3,2 kg" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": false,
-    "tags": [
-      "nikon",
-      "superzoom",
-      "p1000"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
+    "tags": ["schutzhülle", "gartenmöbel", "wetterfest", "winter"]
   },
   {
-    "id": "nikon-coolpix-p1000-16-mp-schwarz",
-    "slug": "nikon-coolpix-p1000-16-mp-schwarz",
-    "sku": "PHTR-014",
-    "title": "Nikon COOLPIX P1000 — 16 MP, schwarz",
-    "brand": "Nikon",
-    "category": "Kompaktkameras",
-    "categorySlug": "kompaktkameras",
-    "price": 91.95,
+    "id": "vogelfutterstation-holz",
+    "slug": "vogelfutterstation-holz",
+    "sku": "THST-010",
+    "title": "Vogelfutterstation aus Holz",
+    "brand": "Hainholt",
+    "category": "Vögel & Wildtiere",
+    "categorySlug": "voegel-wildtiere",
+    "price": 64.95,
     "currency": "EUR",
-    "condition": "used",
+    "condition": "new",
     "availability": "in_stock",
     "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
+    "googleProductCategory": "Home & Garden > Decor > Bird & Wildlife Feeders",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_7dca2d5f-f87a-4852-9a05-d4f084c5cc0e.jpg?v=1781903837",
-        "alt": "Nikon Nikon COOLPIX P1000 — 16 MP, schwarz — Hauptbild"
+        "src": "/images/products/wooden-bird-feeding-station-1.jpg",
+        "alt": "Hainholt Vogelfutterstation aus Holz"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_3dbe43f9-5782-4d94-8f6a-1bd9259bc79f.jpg?v=1781903837",
-        "alt": "Nikon Nikon COOLPIX P1000 — 16 MP, schwarz — Bild 2"
+        "src": "/images/products/wooden-bird-feeding-station-2.jpg",
+        "alt": "Hainholt Vogelfutterstation mit Vögeln auf den Auslegern"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_6689f06c-552e-4286-a505-5a0ebc1c098f.jpg?v=1781903837",
-        "alt": "Nikon Nikon COOLPIX P1000 — 16 MP, schwarz — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ffa74d06-b79f-426b-ad21-84e5da2fc35c.jpg?v=1781903837",
-        "alt": "Nikon Nikon COOLPIX P1000 — 16 MP, schwarz — Bild 4"
+        "src": "/images/products/wooden-bird-feeding-station-3.jpg",
+        "alt": "Futterschale mit Gitterboden und Ausleger der Hainholt Vogelfutterstation im Detail"
       }
     ],
-    "shortDescription": "Nikon Coolpix P1000 Kompaktkamera mit 125-fach Zoom und 4K-Video. Getestet, voll funktionsfähig.",
-    "description": "Kompakte Nikon P1000 mit 16 MP, 125-fach optischem Zoom und 4K-Videoaufnahme. WLAN, Bluetooth und 3\"-Display. In gutem Zustand, alle Funktionen geprüft.",
+    "shortDescription": "Eine 1,9 m hohe Station aus FSC-zertifizierter Kiefer mit vier Auslegern, Futterschale, Wasserschale und Erdspieß für Rasen und Beete.",
+    "description": "Ein Pfosten, vier Aufhängepunkte, und plötzlich hat ein Garten regen Vogelverkehr. Diese Station besteht aus FSC-zertifizierter Kiefer, kesseldruckimprägniert, damit sie das ganze Jahr im Boden bleiben kann, statt den ersten nassen Winter über durchzufaulen. Vier Ausleger tragen gleichzeitig Körnersilo, Fettkugeln, Erdnüsse und ein Nigersaatsilo, und genau diese Vielfalt bringt ein breites Artenspektrum an den Garten statt nur Tauben. Auf halber Höhe fängt eine Futterschale mit Gitterboden herabfallende Körner auf, weiter unten lässt sich eine flache Wasserschale zum Trinken und Baden einklipsen. Der Erdspieß wird in Rasen oder Beet getrieben, und der Pfosten lässt sich zum Verstauen in drei Teile zerlegen.",
     "features": [
-      "16 MP, 125-fach Zoom",
-      "4K-Video und UHD-Aufnahme",
-      "WLAN und Bluetooth",
-      "3\"-Display",
-      "Stativgewinde"
+      "FSC-zertifizierte Kiefer, kesseldruckimprägniert für den Ganzjahreseinsatz",
+      "Vier Ausleger für Körner, Fettkugeln, Erdnüsse und Nigersaat",
+      "Futterschale mit Gitterboden fängt herabfallende Körner auf",
+      "Einklipsbare Wasserschale zum Trinken und Baden",
+      "Dreiteiliger Pfosten mit Erdspieß, kein Ausheben nötig"
     ],
     "specifications": [
-      {
-        "label": "Marke",
-        "value": "Nikon"
-      },
-      {
-        "label": "Modell",
-        "value": "COOLPIX P1000"
-      },
-      {
-        "label": "Farbe",
-        "value": "Schwarz"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
+      { "label": "Material", "value": "FSC-zertifizierte Kiefer, kesseldruckimprägniert" },
+      { "label": "Höhe", "value": "1,9 m über dem Boden" },
+      { "label": "Ausleger", "value": "4" },
+      { "label": "Futterschale", "value": "30 cm Durchmesser, Gitterboden" },
+      { "label": "Wasserschale", "value": "22 cm Durchmesser, einklipsbar" },
+      { "label": "Gewicht", "value": "5,6 kg" },
+      { "label": "Montage", "value": "Erforderlich, Futtersilos nicht enthalten" }
     ],
     "reviewCount": 0,
     "ratingValue": 0,
     "featured": false,
-    "tags": [
-      "nikon",
-      "superzoom",
-      "p1000",
-      "4k"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "nikon-d7500-gehause-schwarz",
-    "slug": "nikon-d7500-gehause-schwarz",
-    "sku": "PHTR-015",
-    "title": "Nikon D7500 — Gehäuse, schwarz",
-    "brand": "Nikon",
-    "category": "Spiegelreflexkameras",
-    "categorySlug": "spiegelreflexkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_5533def1-c3ec-424c-a473-b7d118f5910f.jpg?v=1781903821",
-        "alt": "Nikon Nikon D7500 — Gehäuse, schwarz — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_987a655f-860b-479a-833e-1aedd98ec0ec.jpg?v=1781903821",
-        "alt": "Nikon Nikon D7500 — Gehäuse, schwarz — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_0cdcab31-4807-4710-869b-fd209dfcc0cd.jpg?v=1781903821",
-        "alt": "Nikon Nikon D7500 — Gehäuse, schwarz — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_6efb3022-182c-4452-a63d-16d0d56aecd3.jpg?v=1781903821",
-        "alt": "Nikon Nikon D7500 — Gehäuse, schwarz — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_acb85995-7b00-43c7-8d62-9182955d35b6.jpg?v=1781903821",
-        "alt": "Nikon Nikon D7500 — Gehäuse, schwarz — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_323f6295-3b92-4cd4-b8d1-4581be4dbbec.jpg?v=1781903821",
-        "alt": "Nikon Nikon D7500 — Gehäuse, schwarz — Bild 6"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_1e5da415-e94e-4aa0-97c0-6f4d05ace6c8.jpg?v=1781903821",
-        "alt": "Nikon Nikon D7500 — Gehäuse, schwarz — Bild 7"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_15f67780-90c8-445f-b9ee-6e9f39346ce1.jpg?v=1781903821",
-        "alt": "Nikon Nikon D7500 — Gehäuse, schwarz — Bild 8"
-      }
-    ],
-    "shortDescription": "Nikon D7500 DSLR-Gehäuse in gutem Zustand. Wenige Gebrauchsspuren, von Fachpersonal geprüft.",
-    "description": "Das Nikon D7500 Gehäuse ist in gutem, sauberem Zustand mit wenigen leichten Gebrauchsspuren. Die Funktion wurde von Fachpersonal geprüft und arbeitet einwandfrei. Bitte Fotos für das genaue Lieferumfang prüfen.",
-    "features": [
-      "APS-C DSLR-Gehäuse",
-      "Sauberer, gepflegter Zustand",
-      "Funktion von Fachpersonal geprüft",
-      "Wenige sichtbare Gebrauchsspuren"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Nikon"
-      },
-      {
-        "label": "Modell",
-        "value": "D7500"
-      },
-      {
-        "label": "Farbe",
-        "value": "Schwarz"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "nikon",
-      "dslr",
-      "d7500"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "nikon-z-50-mit-16-50-mm-vr-objektiv-4-700-auslosungen",
-    "slug": "nikon-z-50-mit-16-50-mm-vr-objektiv-4-700-auslosungen",
-    "sku": "PHTR-016",
-    "title": "Nikon Z 50 — mit 16–50 mm VR Objektiv, ~4.700 Auslösungen",
-    "brand": "Nikon",
-    "category": "Systemkameras",
-    "categorySlug": "systemkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ba5af86f-b061-40ab-bbd8-36df11e5189b.jpg?v=1781903819",
-        "alt": "Nikon Nikon Z 50 — mit 16–50 mm VR Objektiv, ~4.700 Auslösungen — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_080f4a05-b0f1-47f9-b991-abd1a0059ca7.jpg?v=1781903819",
-        "alt": "Nikon Nikon Z 50 — mit 16–50 mm VR Objektiv, ~4.700 Auslösungen — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_3a0837bd-53e5-41e5-bc5f-3d03637d6c96.jpg?v=1781903819",
-        "alt": "Nikon Nikon Z 50 — mit 16–50 mm VR Objektiv, ~4.700 Auslösungen — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_bd29f323-af48-4922-8579-cdf11e78f6cd.jpg?v=1781903819",
-        "alt": "Nikon Nikon Z 50 — mit 16–50 mm VR Objektiv, ~4.700 Auslösungen — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ec931af3-a88f-4cc3-9c8b-3c8ec5d91b47.jpg?v=1781903819",
-        "alt": "Nikon Nikon Z 50 — mit 16–50 mm VR Objektiv, ~4.700 Auslösungen — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_c7f8209e-ffba-457e-8f69-5dce89e3edfd.jpg?v=1781903819",
-        "alt": "Nikon Nikon Z 50 — mit 16–50 mm VR Objektiv, ~4.700 Auslösungen — Bild 6"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_1d4ceb48-a82d-4f8a-8b48-db9e0ca64182.jpg?v=1781903819",
-        "alt": "Nikon Nikon Z 50 — mit 16–50 mm VR Objektiv, ~4.700 Auslösungen — Bild 7"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_86f784be-48e3-4722-bd4e-30617f9efcbb.jpg?v=1781903819",
-        "alt": "Nikon Nikon Z 50 — mit 16–50 mm VR Objektiv, ~4.700 Auslösungen — Bild 8"
-      }
-    ],
-    "shortDescription": "Nikon Z 50 mit 16–50-mm-VR-Objektiv. Nur 4.703 Auslösungen. Akku, Ladegerät und Tragegurt.",
-    "description": "Kompakte Nikon Z 50 Systemkamera mit nur 4.703 Auslösungen. Normaler Gebrauchsspuren am Gehäuse; Sensor mit kleinen, unsichtbaren Markierungen. Enthalten sind Gehäuse, Frontdeckel (ohne hinteren Objektivdeckel), Tragegurt, Nikon-Akku und Ladegerät.",
-    "features": [
-      "20,9 MP spiegellose APS-C-Kamera",
-      "Nur 4.703 Auslösungen",
-      "16–50-mm-VR-Kit-Objektiv",
-      "Akku und Ladegerät inklusive"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Nikon"
-      },
-      {
-        "label": "Modell",
-        "value": "Z 50"
-      },
-      {
-        "label": "Auslösungen",
-        "value": "4.703"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "nikon",
-      "z50",
-      "systemkamera",
-      "kit"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "nikon-z50-nur-gehause-mit-smallrig-cage",
-    "slug": "nikon-z50-nur-gehause-mit-smallrig-cage",
-    "sku": "PHTR-017",
-    "title": "Nikon Z50 — nur Gehäuse mit SmallRig Cage",
-    "brand": "Nikon",
-    "category": "Systemkameras",
-    "categorySlug": "systemkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_238f20bb-c5a8-4cbb-a8ad-7eb917fba3b6.jpg?v=1781903816",
-        "alt": "Nikon Nikon Z50 — nur Gehäuse mit SmallRig Cage — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_d86a23ff-8e2f-483d-9945-a58ad81bcdf1.jpg?v=1781903816",
-        "alt": "Nikon Nikon Z50 — nur Gehäuse mit SmallRig Cage — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_5fe209b0-b403-4e33-8725-61b142b67ee5.jpg?v=1781903816",
-        "alt": "Nikon Nikon Z50 — nur Gehäuse mit SmallRig Cage — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_4d9dee7c-8035-4126-b573-1eccca9dee57.jpg?v=1781903816",
-        "alt": "Nikon Nikon Z50 — nur Gehäuse mit SmallRig Cage — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_96a74871-dbec-47e4-b611-41caa0d23159.jpg?v=1781903816",
-        "alt": "Nikon Nikon Z50 — nur Gehäuse mit SmallRig Cage — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_4c628fce-d214-400f-b840-5e68bc615d73.jpg?v=1781903816",
-        "alt": "Nikon Nikon Z50 — nur Gehäuse mit SmallRig Cage — Bild 6"
-      }
-    ],
-    "shortDescription": "Nikon Z50 Gehäuse mit SmallRig Cage. 10.007 Auslösungen. Mit Tragegurt, Akku und Ladegerät.",
-    "description": "Nikon Z50 Kameragehäuse für das Z-Bajonett, ausgestattet mit einem SmallRig Cage. Auslösungszähler: 10.007. Geliefert werden Gehäuse, Cage, Tragegurt, Akku und Ladegerät.",
-    "features": [
-      "Nikon Z50 Gehäuse",
-      "SmallRig Cage inklusive",
-      "10.007 Auslösungen",
-      "Akku, Ladegerät und Tragegurt"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Nikon"
-      },
-      {
-        "label": "Modell",
-        "value": "Z50"
-      },
-      {
-        "label": "Auslösungen",
-        "value": "10.007"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "nikon",
-      "z50",
-      "cage",
-      "gehaeuse"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "nikon-z50-gehause-mit-128-gb-sd-karte-tasche",
-    "slug": "nikon-z50-gehause-mit-128-gb-sd-karte-tasche",
-    "sku": "PHTR-018",
-    "title": "Nikon Z50 — Gehäuse mit 128-GB-SD-Karte & Tasche",
-    "brand": "Nikon",
-    "category": "Systemkameras",
-    "categorySlug": "systemkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_d9d8fd3a-deac-48f5-9729-c40c34ad68a0.jpg?v=1781903808",
-        "alt": "Nikon Nikon Z50 — Gehäuse mit 128-GB-SD-Karte & Tasche — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_8e40f0a5-33a6-4f38-90a7-b37ed6aafe59.jpg?v=1781903808",
-        "alt": "Nikon Nikon Z50 — Gehäuse mit 128-GB-SD-Karte & Tasche — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_1b808412-6b33-481c-ae5f-2ccfbb209e61.jpg?v=1781903808",
-        "alt": "Nikon Nikon Z50 — Gehäuse mit 128-GB-SD-Karte & Tasche — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_0292599f-68df-43d6-aedc-aaa8da6ce0af.jpg?v=1781903808",
-        "alt": "Nikon Nikon Z50 — Gehäuse mit 128-GB-SD-Karte & Tasche — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ebe2836c-d97f-41a5-a7b0-72274faaeec5.jpg?v=1781903808",
-        "alt": "Nikon Nikon Z50 — Gehäuse mit 128-GB-SD-Karte & Tasche — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_57a9a238-02a3-43fa-8de3-8e9d78216f35.jpg?v=1781903808",
-        "alt": "Nikon Nikon Z50 — Gehäuse mit 128-GB-SD-Karte & Tasche — Bild 6"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_ca66c0f8-50c9-4162-9438-2b9d87e50276.jpg?v=1781903808",
-        "alt": "Nikon Nikon Z50 — Gehäuse mit 128-GB-SD-Karte & Tasche — Bild 7"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_e3fb522e-0888-4f1a-8e44-df3250a313bf.jpg?v=1781903808",
-        "alt": "Nikon Nikon Z50 — Gehäuse mit 128-GB-SD-Karte & Tasche — Bild 8"
-      }
-    ],
-    "shortDescription": "Nikon Z50 in gutem Zustand, nur ~105 Auslösungen. Mit 128-GB-SD-Karte und kleiner Kameratasche.",
-    "description": "Kaum benutzte Nikon Z50 mit nur etwa 105 Auslösungen. Voll funktionsfähig. Enthalten sind Gehäuse, Tragegurt, Akku, 128-GB-SD-Karte und kleine Kameratasche. Ohne Ladegerät und Objektiv.",
-    "features": [
-      "Nur ca. 105 Auslösungen",
-      "128-GB-SD-Karte inklusive",
-      "Kleine Kameratasche",
-      "Akku und Tragegurt"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Nikon"
-      },
-      {
-        "label": "Modell",
-        "value": "Z50"
-      },
-      {
-        "label": "Auslösungen",
-        "value": "~105"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "nikon",
-      "z50",
-      "sd-karte"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "nikon-d3300-mit-18-55-mm-55-200-mm-wlan-adapter",
-    "slug": "nikon-d3300-mit-18-55-mm-55-200-mm-wlan-adapter",
-    "sku": "PHTR-019",
-    "title": "Nikon D3300 — mit 18–55 mm & 55–200 mm, WLAN-Adapter",
-    "brand": "Nikon",
-    "category": "Spiegelreflexkameras",
-    "categorySlug": "spiegelreflexkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_df1ce92c-4709-40ef-a616-ac1faa5a7d32.jpg?v=1781903804",
-        "alt": "Nikon Nikon D3300 — mit 18–55 mm & 55–200 mm, WLAN-Adapter — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_f0667252-ca65-4a8e-825f-531a4a754117.jpg?v=1781903804",
-        "alt": "Nikon Nikon D3300 — mit 18–55 mm & 55–200 mm, WLAN-Adapter — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_932f5b0b-eb2b-412a-8704-cfd14f674126.jpg?v=1781903804",
-        "alt": "Nikon Nikon D3300 — mit 18–55 mm & 55–200 mm, WLAN-Adapter — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_2ac397a7-a06b-4aaa-97a8-0eec440d5725.jpg?v=1781903804",
-        "alt": "Nikon Nikon D3300 — mit 18–55 mm & 55–200 mm, WLAN-Adapter — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_6fbd398e-8ace-482a-a3fd-60f70b6b15be.jpg?v=1781903804",
-        "alt": "Nikon Nikon D3300 — mit 18–55 mm & 55–200 mm, WLAN-Adapter — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_9f149531-34b3-40c1-b0a4-815bc4dcd835.jpg?v=1781903804",
-        "alt": "Nikon Nikon D3300 — mit 18–55 mm & 55–200 mm, WLAN-Adapter — Bild 6"
-      }
-    ],
-    "shortDescription": "Nikon D3300 mit zwei Objektiven und WU-1A WLAN-Adapter. 18–55-mm-Objektiv mit Erkennungsproblem.",
-    "description": "Nikon D3300 mit 18–55-mm- und 55–200-mm-Objektiv sowie WU-1A WLAN-Adapter. Akku geladen, Kamera schaltet ein. Das 18–55-mm-Objektiv wird teilweise nicht erkannt; das 55–200-mm-Objektiv funktioniert. Ladegerät und Tasche inklusive.",
-    "features": [
-      "24,2 MP DSLR",
-      "Zwei Objektive und WLAN-Adapter",
-      "55–200-mm-Objektiv funktioniert einwandfrei",
-      "Hinweis: 18–55-mm-Objektiv wird nicht immer erkannt",
-      "Ladegerät und Tasche inklusive"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Nikon"
-      },
-      {
-        "label": "Modell",
-        "value": "D3300"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      },
-      {
-        "label": "Hinweis",
-        "value": "Kit-Objektiv mit Kontaktproblem"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "nikon",
-      "dslr",
-      "d3300",
-      "wlan"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
-  },
-  {
-    "id": "nikon-d3500-mit-18-55-mm-vr-objektiv",
-    "slug": "nikon-d3500-mit-18-55-mm-vr-objektiv",
-    "sku": "PHTR-020",
-    "title": "Nikon D3500 — mit 18–55 mm VR Objektiv",
-    "brand": "Nikon",
-    "category": "Spiegelreflexkameras",
-    "categorySlug": "spiegelreflexkameras",
-    "price": 91.95,
-    "currency": "EUR",
-    "condition": "used",
-    "availability": "in_stock",
-    "gtin": "",
-    "googleProductCategory": "Cameras & Optics > Cameras > Digital Cameras",
-    "images": [
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_33504a95-9413-4f33-ba2c-2906c2ca4012.jpg?v=1781903803",
-        "alt": "Nikon Nikon D3500 — mit 18–55 mm VR Objektiv — Hauptbild"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_efdaad08-d75e-4e20-939d-031aa54a25f2.jpg?v=1781903803",
-        "alt": "Nikon Nikon D3500 — mit 18–55 mm VR Objektiv — Bild 2"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_4cda357f-4f26-4b2a-acc3-c4cb14d85549.jpg?v=1781903803",
-        "alt": "Nikon Nikon D3500 — mit 18–55 mm VR Objektiv — Bild 3"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_14de1de8-8813-4a06-8e0b-34c039f34039.jpg?v=1781903803",
-        "alt": "Nikon Nikon D3500 — mit 18–55 mm VR Objektiv — Bild 4"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_5821c3f8-4f65-4c94-98c1-bcc7b66ebdf7.jpg?v=1781903803",
-        "alt": "Nikon Nikon D3500 — mit 18–55 mm VR Objektiv — Bild 5"
-      },
-      {
-        "src": "https://cdn.shopify.com/s/files/1/0836/2688/5345/files/s-l900_4ad4bc80-0b57-449e-a29f-62980e2d963a.jpg?v=1781903803",
-        "alt": "Nikon Nikon D3500 — mit 18–55 mm VR Objektiv — Bild 6"
-      }
-    ],
-    "shortDescription": "Nikon D3500 Kit mit 18–55-mm-VR-Objektiv. Voll getestet, mit Akku, Ladegerät und Tasche.",
-    "description": "Beliebtes Nikon D3500 Einsteiger-Set mit 18–55-mm-VR-Objektiv. Vollständig getestet und funktionsfähig. Enthalten sind Akku, Ladegerät und Tasche.",
-    "features": [
-      "24,2 MP DSLR",
-      "18–55-mm-VR-Kit-Objektiv",
-      "Vollständig getestet",
-      "Akku, Ladegerät und Tasche"
-    ],
-    "specifications": [
-      {
-        "label": "Marke",
-        "value": "Nikon"
-      },
-      {
-        "label": "Modell",
-        "value": "D3500"
-      },
-      {
-        "label": "Zustand",
-        "value": "Gebraucht — gut"
-      }
-    ],
-    "reviewCount": 0,
-    "ratingValue": 0,
-    "featured": false,
-    "tags": [
-      "nikon",
-      "dslr",
-      "d3500",
-      "einsteiger"
-    ],
-    "safetyNotes": [
-      "Nur für den privaten Gebrauch bestimmt.",
-      "Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.",
-      "Kleinteile und Batterien von Kindern fernhalten."
-    ]
+    "tags": ["vogelfutter", "wildtiere", "holz", "garten"]
   }
 ]

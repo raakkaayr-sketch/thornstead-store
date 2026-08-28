@@ -14,15 +14,15 @@ export interface Product {
   /** Stable internal identifier, also used as the feed `mpn`. */
   sku: string;
   title: string;
-  /** Hersteller oder Markenname des Produkts (z. B. Canon, Nikon). */
+  /** Always "Hainholt" — we are the brand of record for everything we sell. */
   brand: string;
   category: string;
   categorySlug: string;
   price: number;
   /** ISO 4217, für diesen Shop immer EUR. Bruttopreis inklusive MwSt. */
   currency: string;
-  /** Google product condition. */
-  condition: 'new' | 'refurbished' | 'used';
+  /** Google product condition. All stock is new. */
+  condition: 'new';
   availability: 'in_stock' | 'out_of_stock' | 'preorder';
   /**
    * Real barcode if the product has one. Left empty for own-brand goods that

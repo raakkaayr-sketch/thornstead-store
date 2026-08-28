@@ -9,7 +9,7 @@ import { jsonLdScript, breadcrumbJsonLd } from '@/lib/structured-data';
 export const metadata: Metadata = {
   title: 'Kategorien',
   description:
-    'Hainholt nach Kategorie durchsehen: Kompaktkameras, Systemkameras und Spiegelreflexkameras von Canon, Sony und Nikon.',
+    'Hainholt nach Kategorie durchsehen: Gartenwerkzeug, Pflanzgefäße und Anbau, Außenaufbewahrung, Küche und Kompost sowie Vögel und Wildtiere.',
   alternates: { canonical: '/kategorien' },
 };
 
