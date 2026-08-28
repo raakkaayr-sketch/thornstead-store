@@ -20,8 +20,9 @@ export function BuyBox({ product }: { product: Product }) {
 
   /**
    * "Jetzt kaufen" löst keine Zahlung aus, sondern legt den Artikel in den
-   * Warenkorb und führt zur Bestellübersicht. Ein direkter Sprung zu Stripe
-   * würde die Pflichtangaben nach § 312j Abs. 2 BGB überspringen.
+   * Warenkorb und führt zur Bestellübersicht. Die Zahlung bleibt dort auf
+   * dieser Website; ein Sprung zu Stripe würde die Pflichtangaben nach
+   * § 312j Abs. 2 BGB überspringen.
    */
   const buyNow = () => {
     addItem(product, quantity, { open: false });

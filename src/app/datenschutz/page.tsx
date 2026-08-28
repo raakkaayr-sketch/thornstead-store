@@ -73,6 +73,7 @@ const sections: LegalSection[] = [
     heading: '6. Bestellabwicklung',
     body: [
       'Für eine Bestellung verarbeiten wir Ihren Namen, Ihre Lieferanschrift, Ihre E-Mail-Adresse, die bestellten Artikel und die Zahlungsinformationen.',
+      'Wenn Sie den Status einer Bestellung abfragen oder sie stornieren, prüfen wir Bestellreferenz und E-Mail-Adresse gegen die bei Stripe gespeicherten Angaben. Ohne diese Übereinstimmung wird keine Bestellung angezeigt.',
       'Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe b DSGVO, da die Verarbeitung zur Erfüllung des Kaufvertrags erforderlich ist. Ohne diese Angaben kann der Vertrag nicht geschlossen und die Ware nicht zugestellt werden.',
       'Ihre Lieferdaten geben wir an das mit dem Versand beauftragte Unternehmen weiter, soweit dies für die Zustellung erforderlich ist. Rechnungsdaten übermitteln wir an unser Steuerbüro, soweit dies zur Erfüllung steuerlicher Pflichten erforderlich ist.',
     ],
@@ -81,7 +82,7 @@ const sections: LegalSection[] = [
     heading: '7. Zahlungsabwicklung',
     body: [
       `Die Zahlung erfolgt über ${payment.processor}. Für Kundinnen und Kunden im Europäischen Wirtschaftsraum ist Stripe Payments Europe Limited, 1 Grand Canal Street Lower, Dublin 2, Irland verantwortlich.`,
-      'Wenn Sie die Bestellung abschicken, werden Sie auf eine von Stripe betriebene Zahlungsseite weitergeleitet. Ihre Kartendaten geben Sie ausschließlich dort ein; sie werden weder an uns übermittelt noch von uns gespeichert. Wir erhalten lediglich die Information, ob die Zahlung erfolgreich war, sowie die zur Bestellzuordnung notwendigen Angaben.',
+      'Wenn Sie die Bestellung abschicken, erscheint auf unserer Kasse ein von Stripe betriebenes Zahlungsformular. Ihre Kartendaten geben Sie ausschließlich dort ein; sie werden weder an uns übermittelt noch von uns gespeichert. Wir erhalten lediglich die Information, ob die Zahlung erfolgreich war, sowie die zur Bestellzuordnung notwendigen Angaben. Eine Weiterleitung auf checkout.stripe.com findet nicht statt.',
       'Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe b DSGVO. Stripe verarbeitet die Daten zusätzlich zur Betrugsprävention und zur Erfüllung eigener gesetzlicher Pflichten auf Grundlage von Artikel 6 Absatz 1 Buchstabe f und Buchstabe c DSGVO. Einzelheiten finden Sie in der Datenschutzerklärung von Stripe unter stripe.com/de/privacy.',
     ],
   },

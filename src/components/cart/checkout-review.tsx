@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
@@ -18,6 +18,7 @@ import { Button } from '@/components/ui/button';
 import { buttonVariants } from '@/components/ui/button-variants';
 import { useCart } from '@/components/providers/cart-provider';
 import { useCheckout } from './use-checkout';
+import { EmbeddedPayment } from './embedded-payment';
 import { siteConfig, deliveryWindow, vatNote } from '@/lib/config';
 import { formatPrice, orderTotal, shippingFor, vatPortion } from '@/lib/utils';
 
@@ -36,14 +37,22 @@ const deliveryEstimate = deliveryWindow();
  * kommt kein Vertrag zustande.
  *
  * Diese Seite darf daher nicht übersprungen werden. Sowohl „Jetzt kaufen" auf
- * der Produktseite als auch „Zur Kasse" im Warenkorb führen hierher, nicht
- * direkt zu Stripe.
+ * der Produktseite als auch „Zur Kasse" im Warenkorb führen hierher. Die
+ * Zahlung selbst bleibt auf dieser Website (eingebettetes Stripe-Formular).
  */
 export function CheckoutReview() {
   const { items, subtotal, hydrated, updateQuantity, removeItem } = useCart();
-  const { checkout, loading, error } = useCheckout();
+  const { checkout, reset, loading, error, clientSecret } = useCheckout();
   const searchParams = useSearchParams();
   const [accepted, setAccepted] = useState(false);
+  const paying = Boolean(clientSecret);
+
+  useEffect(() => {
+    if (!paying) return;
+    document
+      .getElementById('zahlung')
+      ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [paying]);
 
   const cancelled = searchParams.get('abgebrochen') === '1';
   const shippingCost = shippingFor(subtotal);
@@ -86,7 +95,7 @@ export function CheckoutReview() {
   return (
     <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr] lg:items-start">
       <div className="space-y-6">
-        {cancelled && (
+        {cancelled && !paying && (
           <p className="flex items-start gap-2 rounded-2xl border border-border bg-muted/50 px-4 py-3 text-sm text-muted-foreground">
             <Info className="mt-0.5 h-4 w-4 shrink-0" />
             Die Zahlung wurde abgebrochen. Ihr Warenkorb ist unverändert, es
@@ -138,8 +147,9 @@ export function CheckoutReview() {
                       <button
                         type="button"
                         aria-label={`Menge von ${item.title} verringern`}
+                        disabled={paying}
                         onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                        className="flex h-9 w-9 items-center justify-center rounded-full text-muted-foreground hover:text-foreground"
+                        className="flex h-9 w-9 items-center justify-center rounded-full text-muted-foreground hover:text-foreground disabled:opacity-40"
                       >
                         <Minus className="h-3.5 w-3.5" />
                       </button>
@@ -149,8 +159,9 @@ export function CheckoutReview() {
                       <button
                         type="button"
                         aria-label={`Menge von ${item.title} erhöhen`}
+                        disabled={paying}
                         onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                        className="flex h-9 w-9 items-center justify-center rounded-full text-muted-foreground hover:text-foreground"
+                        className="flex h-9 w-9 items-center justify-center rounded-full text-muted-foreground hover:text-foreground disabled:opacity-40"
                       >
                         <Plus className="h-3.5 w-3.5" />
                       </button>
@@ -163,8 +174,9 @@ export function CheckoutReview() {
                       <button
                         type="button"
                         aria-label={`${item.title} entfernen`}
+                        disabled={paying}
                         onClick={() => removeItem(item.id)}
-                        className="text-muted-foreground transition-colors hover:text-destructive"
+                        className="text-muted-foreground transition-colors hover:text-destructive disabled:opacity-40"
                       >
                         <Trash2 className="h-4 w-4" />
                       </button>
@@ -249,6 +261,7 @@ export function CheckoutReview() {
             <input
               type="checkbox"
               checked={accepted}
+              disabled={paying}
               onChange={(e) => setAccepted(e.target.checked)}
               className="mt-0.5 h-4 w-4 shrink-0 rounded border-border accent-brand"
             />
@@ -280,33 +293,68 @@ export function CheckoutReview() {
             Die Beschriftung ist gesetzlich vorgegeben (§ 312j Abs. 3 BGB) und
             darf nicht zu "Weiter", "Kaufen" oder "Bezahlen" geändert werden.
           */}
-          <Button
-            variant="brand"
-            size="lg"
-            className="mt-5 w-full"
-            disabled={loading || !accepted}
-            onClick={() => checkout(items)}
-          >
-            {loading ? (
-              <>
-                <Loader2 className="h-4 w-4 animate-spin" /> Weiterleitung zur
-                Zahlung…
-              </>
-            ) : (
-              <>
-                <Lock className="h-4 w-4" /> Zahlungspflichtig bestellen
-              </>
-            )}
-          </Button>
-
-          <p className="mt-3 text-center text-[11px] leading-relaxed text-muted-foreground">
-            Mit Klick auf „Zahlungspflichtig bestellen" geben Sie ein
-            verbindliches Angebot ab. Lieferadresse und Zahlungsdaten geben Sie
-            im nächsten Schritt bei {payment.processor} ein. Wir erhalten keine
-            vollständigen Kartendaten.
-          </p>
+          {!paying ? (
+            <>
+              <Button
+                variant="brand"
+                size="lg"
+                className="mt-5 w-full"
+                disabled={loading || !accepted}
+                onClick={() => checkout(items)}
+              >
+                {loading ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" /> Zahlung wird
+                    vorbereitet…
+                  </>
+                ) : (
+                  <>
+                    <Lock className="h-4 w-4" /> Zahlungspflichtig bestellen
+                  </>
+                )}
+              </Button>
+              <p className="mt-3 text-center text-[11px] leading-relaxed text-muted-foreground">
+                Mit Klick auf „Zahlungspflichtig bestellen" geben Sie ein
+                verbindliches Angebot ab. Lieferadresse und Zahlung geben Sie
+                anschließend auf dieser Seite ein. Die Kartendaten gehen direkt
+                an {payment.processor}; wir sehen sie nie.
+              </p>
+            </>
+          ) : (
+            <p className="mt-5 text-sm text-muted-foreground">
+              Bitte schließen Sie die Zahlung im Formular darunter ab. Sie
+              verlassen diese Website nicht.
+            </p>
+          )}
         </div>
       </aside>
+
+      {paying && (
+        <section
+          aria-labelledby="zahlung"
+          className="space-y-3 lg:col-span-2"
+        >
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <h2 id="zahlung" className="font-display text-lg font-semibold">
+                Zahlung auf dieser Seite
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Adresse und Kartendaten geben Sie hier ein. Nach dem Bezahlen
+                gelangen Sie zur Bestätigung.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={reset}
+              className="text-sm text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
+            >
+              Bestellung ändern
+            </button>
+          </div>
+          <EmbeddedPayment clientSecret={clientSecret} />
+        </section>
+      )}
     </div>
   );
 }

@@ -16,6 +16,8 @@ const companyLinks = [
   { href: '/ueber-uns', label: 'Über Hainholt' },
   { href: '/kontakt', label: 'Kontakt' },
   { href: '/faq', label: 'Häufige Fragen' },
+  { href: '/bestellung-verfolgen', label: 'Bestellung verfolgen' },
+  { href: '/bestellung-stornieren', label: 'Bestellung stornieren' },
 ];
 
 /**

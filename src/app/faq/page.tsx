@@ -50,8 +50,12 @@ const faqs = [
         : 'Bei einem Widerruf tragen Sie die unmittelbaren Kosten der Rücksendung. Ist die Ware mangelhaft, übernehmen wir die Rücksendekosten selbstverständlich.',
   },
   {
+    q: 'Wie verfolge oder storniere ich eine Bestellung?',
+    a: `Unter „Bestellung verfolgen“ sehen Sie den Status anhand der Bestellreferenz aus der Bestätigungsmail. Solange das Paket noch nicht übergeben wurde, können Sie unter „Bestellung stornieren“ die Zahlung erstatten lassen. Danach gilt das Widerrufsrecht von ${returns.statutoryCancellationDays} Tagen.`,
+  },
+  {
     q: 'Wie bezahle ich, und ist das sicher?',
-    a: `Die Zahlung läuft über ${payment.processor}, einen der größten Zahlungsdienstleister Europas. Akzeptiert werden ${payment.methods.join(', ')}. Ihre Kartendaten geben Sie ausschließlich auf der gesicherten Seite des Zahlungsdienstleisters ein; sie erreichen unsere Server nie.`,
+    a: `Die Zahlung läuft über ${payment.processor} auf dieser Website — Sie werden nicht auf eine fremde Zahlungsseite weitergeleitet. Akzeptiert werden ${payment.methods.join(', ')}. Ihre Kartendaten geben Sie im eingebetteten Zahlungsformular ein; sie erreichen unsere Server nie.`,
   },
   {
     q: 'Sind das Ihre eigenen Produkte oder verkaufen Sie fremde Marken weiter?',
@@ -117,8 +121,22 @@ export default function FaqPage() {
           Ihre Frage ist nicht dabei?{' '}
           <Link href="/kontakt" className="text-brand hover:underline">
             Schreiben Sie uns
+          </Link>
+          , oder prüfen Sie unter{' '}
+          <Link
+            href="/bestellung-verfolgen"
+            className="text-brand hover:underline"
+          >
+            Bestellung verfolgen
           </Link>{' '}
-          — wir antworten innerhalb eines Werktags.
+          und{' '}
+          <Link
+            href="/bestellung-stornieren"
+            className="text-brand hover:underline"
+          >
+            Bestellung stornieren
+          </Link>{' '}
+          den Status. Wir antworten innerhalb eines Werktags.
         </p>
       </div>
     </>

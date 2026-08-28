@@ -29,6 +29,8 @@ const nextConfig = {
         permanent: true,
       },
       { source: '/checkout/success', destination: '/kasse/bestaetigung', permanent: true },
+      { source: '/track-order', destination: '/bestellung-verfolgen', permanent: true },
+      { source: '/cancel-order', destination: '/bestellung-stornieren', permanent: true },
     ];
   },
 };

@@ -79,6 +79,18 @@ export default function KontaktPage() {
               <Link href="/versand" className="text-brand hover:underline">
                 Versand &amp; Lieferung
               </Link>
+              <Link
+                href="/bestellung-verfolgen"
+                className="text-brand hover:underline"
+              >
+                Bestellung verfolgen
+              </Link>
+              <Link
+                href="/bestellung-stornieren"
+                className="text-brand hover:underline"
+              >
+                Stornieren
+              </Link>
               <Link href="/widerruf" className="text-brand hover:underline">
                 {returns.days} Tage Rückgabe
               </Link>

@@ -47,7 +47,7 @@ const sections: LegalSection[] = [
     heading: '4. Zahlung',
     body: [
       `Die Zahlung erfolgt über unseren Zahlungsdienstleister ${payment.processor}. Akzeptiert werden ${payment.methods.join(', ')}.`,
-      'Der Kaufpreis ist mit Vertragsschluss sofort zur Zahlung fällig. Ihre Zahlungsdaten geben Sie ausschließlich in der gesicherten Umgebung des Zahlungsdienstleisters ein; vollständige Kartendaten werden von uns weder verarbeitet noch gespeichert.',
+      'Der Kaufpreis ist mit Vertragsschluss sofort zur Zahlung fällig. Lieferadresse und Zahlungsdaten geben Sie auf der Bestellseite in einem von Stripe betriebenen Formular ein; Sie bleiben dabei auf unserer Website. Vollständige Kartendaten werden von uns weder verarbeitet noch gespeichert.',
       'Bei Zahlungsverzug sind wir berechtigt, Verzugszinsen in gesetzlicher Höhe zu verlangen.',
     ],
   },

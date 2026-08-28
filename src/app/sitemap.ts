@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/ueber-uns', priority: 0.6 },
     { path: '/kontakt', priority: 0.6 },
     { path: '/faq', priority: 0.5 },
+    { path: '/bestellung-verfolgen', priority: 0.5 },
+    { path: '/bestellung-stornieren', priority: 0.5 },
     { path: '/versand', priority: 0.5 },
     { path: '/widerruf', priority: 0.5 },
     { path: '/impressum', priority: 0.4 },

@@ -78,18 +78,24 @@ export function OrderConfirmation() {
 
       <div className="flex w-full flex-col gap-2 sm:flex-row">
         <Link
-          href="/shop"
-          className={`${buttonVariants({ variant: 'outline' })} flex-1`}
-        >
-          Weiter einkaufen
-        </Link>
-        <Link
-          href="/kontakt"
+          href="/bestellung-verfolgen"
           className={`${buttonVariants({ variant: 'brand' })} flex-1`}
         >
-          Frage zu dieser Bestellung
+          Bestellung verfolgen
+        </Link>
+        <Link
+          href="/bestellung-stornieren"
+          className={`${buttonVariants({ variant: 'outline' })} flex-1`}
+        >
+          Bestellung stornieren
         </Link>
       </div>
+      <Link
+        href="/shop"
+        className="text-sm text-muted-foreground hover:text-foreground hover:underline"
+      >
+        Weiter einkaufen
+      </Link>
 
       <p className="text-xs text-muted-foreground">
         Bitte bewahren Sie die Bestellreferenz auf. Mit ihr lassen sich Fragen zu

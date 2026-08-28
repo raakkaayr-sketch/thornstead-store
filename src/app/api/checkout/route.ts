@@ -90,18 +90,21 @@ export async function POST(request: Request) {
 
   const shippingCost = shippingFor(subtotal);
   const window = deliveryWindow();
+  const host =
+    request.headers.get('x-forwarded-host') || request.headers.get('host');
+  const proto = request.headers.get('x-forwarded-proto') || 'https';
+  const origin = host ? `${proto}://${host}` : siteConfig.url.replace(/\/$/, '');
+  const returnUrl = `${origin}/kasse/bestaetigung?session_id={CHECKOUT_SESSION_ID}`;
 
   try {
     const session = await getStripe().checkout.sessions.create({
+      ui_mode: 'embedded',
       mode: 'payment',
-      submit_type: 'pay',
       locale: 'de',
       line_items: lineItems,
       currency,
-      success_url: absoluteUrl(
-        '/kasse/bestaetigung?session_id={CHECKOUT_SESSION_ID}'
-      ),
-      cancel_url: absoluteUrl('/kasse?abgebrochen=1'),
+      return_url: returnUrl,
+      redirect_on_completion: 'always',
       phone_number_collection: { enabled: true },
       billing_address_collection: 'auto',
       shipping_address_collection: {
@@ -131,14 +134,17 @@ export async function POST(request: Request) {
       ],
     });
 
-    if (!session.url) {
+    if (!session.client_secret) {
       return NextResponse.json(
-        { error: 'Stripe hat keine Zahlungsadresse zurückgegeben.' },
+        { error: 'Stripe hat kein Zahlungsformular zurückgegeben.' },
         { status: 502 }
       );
     }
 
-    return NextResponse.json({ url: session.url, id: session.id });
+    return NextResponse.json({
+      clientSecret: session.client_secret,
+      id: session.id,
+    });
   } catch (error) {
     console.error('[kasse]', error);
     return NextResponse.json(

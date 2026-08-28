@@ -4,18 +4,17 @@ import { useState } from 'react';
 import type { CartItem } from '@/lib/types';
 
 /**
- * Startet eine Stripe-Checkout-Session. Preise werden nie aus dem Browser
- * gesendet — die API-Route sucht jede Artikelnummer serverseitig im Katalog, der
- * belastete Betrag entspricht damit immer dem Preis auf der Produktseite und im
- * Merchant-Center-Feed.
+ * Startet eine eingebettete Stripe-Checkout-Session auf /kasse. Preise werden
+ * nie aus dem Browser gesendet — die API-Route sucht jede Artikelnummer
+ * serverseitig im Katalog.
  *
- * Aufgerufen wird dies ausschließlich von der Bestellübersicht unter /kasse,
- * damit die Pflichtangaben nach § 312j Abs. 2 BGB unmittelbar vor der
- * Bestellschaltfläche stehen.
+ * Die Kundin oder der Kunde bleibt auf dieser Website; es gibt keine
+ * Weiterleitung auf checkout.stripe.com.
  */
 export function useCheckout() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [clientSecret, setClientSecret] = useState('');
 
   const checkout = async (items: CartItem[]) => {
     if (!items.length) return;
@@ -31,23 +30,32 @@ export function useCheckout() {
         }),
       });
 
-      const data = (await res.json()) as { url?: string; error?: string };
-      if (!res.ok || !data.url) {
+      const data = (await res.json()) as {
+        clientSecret?: string;
+        error?: string;
+      };
+      if (!res.ok || !data.clientSecret) {
         throw new Error(
           data.error || 'Die Zahlung konnte nicht gestartet werden.'
         );
       }
 
-      window.location.href = data.url;
+      setClientSecret(data.clientSecret);
     } catch (err) {
       setError(
         err instanceof Error
           ? err.message
           : 'Die Zahlung konnte nicht gestartet werden. Bitte versuchen Sie es erneut.'
       );
+    } finally {
       setLoading(false);
     }
   };
 
-  return { checkout, loading, error };
+  const reset = () => {
+    setClientSecret('');
+    setError('');
+  };
+
+  return { checkout, reset, loading, error, clientSecret };
 }

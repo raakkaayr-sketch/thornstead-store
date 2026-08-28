@@ -67,7 +67,7 @@ const sections: LegalSection[] = [
   {
     heading: 'Adressänderung und Stornierung',
     body: [
-      `Solange eine Bestellung noch nicht versendet wurde, können wir die Lieferadresse ändern oder die Bestellung stornieren. Schreiben Sie dafür so früh wie möglich an ${contact.email}.`,
+      `Solange eine Bestellung noch nicht versendet wurde, können wir die Lieferadresse ändern oder die Bestellung stornieren. Dafür steht die Seite „Bestellung stornieren“ bereit; alternativ schreiben Sie so früh wie möglich an ${contact.email}.`,
       `Nach dem Versand greift Ihr Widerrufsrecht von ${returns.statutoryCancellationDays} Tagen sowie unser freiwilliges Rückgaberecht von ${returns.days} Tagen. Die Einzelheiten stehen unter „Widerrufsrecht & Rückgabe".`,
     ],
   },
