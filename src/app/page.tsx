@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Leaf, PackageCheck, ShieldCheck, Truck } from 'lucide-react';
+import { ArrowRight, Camera, PackageCheck, ShieldCheck, Truck } from 'lucide-react';
 import { ProductCard } from '@/components/product/product-card';
 import { buttonVariants } from '@/components/ui/button-variants';
 import { PriceNote } from '@/components/price-note';
@@ -21,9 +21,9 @@ export default function HomePage() {
 
   const promises = [
     {
-      icon: Leaf,
-      title: 'Eigene Entwürfe',
-      body: 'Jedes Produkt wird von Hainholt entworfen, unter eigener Marke geführt und verkauft. Hier gibt es keine umetikettierte Katalogware.',
+      icon: Camera,
+      title: 'Geprüfte Gebrauchtware',
+      body: 'Jede Kamera wird vor dem Verkauf beschrieben und geprüft — mit ehrlichen Angaben zu Zustand, Auslösungen und Lieferumfang.',
     },
     {
       icon: Truck,
@@ -51,16 +51,15 @@ export default function HomePage() {
         <div className="container-page grid gap-10 px-6 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
           <div className="animate-fade-up">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand">
-              Garten &amp; Zuhause, von uns gemacht
+              Kameras &amp; Optik, geprüft verkauft
             </p>
             <h1 className="mt-4 text-4xl font-semibold leading-[1.1] sm:text-5xl">
-              Dinge für den Garten, die länger halten als eine Saison.
+              Gebrauchte Digitalkameras, ehrlich beschrieben.
             </h1>
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Hainholt entwickelt sein Sortiment aus Pflanzkübeln,
-              Aufbewahrung, Werkzeug und Vogelpflege selbst — und verkauft es
-              direkt. Sie zahlen also für das Produkt und nicht für drei
-              Zwischenhändler.
+              Hainholt verkauft geprüfte Kameras von Canon, Sony und Nikon —
+              Kompakt-, System- und Spiegelreflexmodelle mit klaren Angaben zu
+              Zustand, Zubehör und Preis in Euro.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -74,7 +73,7 @@ export default function HomePage() {
                 href="/ueber-uns"
                 className={buttonVariants({ variant: 'outline', size: 'lg' })}
               >
-                Warum wir selbst herstellen
+                Warum Hainholt
               </Link>
             </div>
             <p className="mt-6 text-sm text-muted-foreground">

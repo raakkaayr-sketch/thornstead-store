@@ -34,7 +34,7 @@ export const siteConfig = {
   name: 'Hainholt',
   tagline: 'Gemacht, um zu bleiben.',
   description:
-    'Hainholt entwickelt und verkauft eigene Produkte für Garten und Zuhause in Deutschland — Pflanzkübel, Gartenboxen, Gartenwerkzeug und Vogelpflege, versandkostenfrei ab 50 €.',
+    'Hainholt verkauft geprüfte gebrauchte Digitalkameras in Deutschland — Kompakt-, System- und Spiegelreflexmodelle von Canon, Sony und Nikon, versandkostenfrei ab 50 €.',
   /**
    * Live-Shop-URL für Canonicals, Sitemap, JSON-LD und den Merchant-Center-Feed.
    * NEXT_PUBLIC_SITE_URL in Vercel setzen, sobald eine eigene Domain live ist.

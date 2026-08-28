@@ -5,9 +5,9 @@ import type { Product } from '@/lib/types';
 const { gpsr, contact } = siteConfig;
 
 const DEFAULT_SAFETY_NOTES = [
-  'Nur für den privaten Gebrauch in Haus und Garten bestimmt.',
-  'Nicht als Trittfläche, Sitzgelegenheit oder Leiter verwenden, sofern nicht ausdrücklich dafür vorgesehen.',
-  'Von kleinen Kindern fernhalten; Verpackungsmaterial ist kein Spielzeug.',
+  'Nur für den privaten Gebrauch bestimmt.',
+  'Akku nur mit dem Original-Ladegerät oder einem vom Hersteller freigegebenen Ersatz laden.',
+  'Kleinteile und Batterien von Kindern fernhalten.',
 ];
 
 /**
@@ -24,6 +24,7 @@ export function ProductCompliance({ product }: { product: Product }) {
   const notes = product.safetyNotes?.length
     ? product.safetyNotes
     : DEFAULT_SAFETY_NOTES;
+  const manufacturerName = product.brand;
 
   return (
     <section
@@ -48,11 +49,15 @@ export function ProductCompliance({ product }: { product: Product }) {
           <dl className="mt-2 space-y-1 text-sm text-muted-foreground">
             <div>
               <dt className="sr-only">Name</dt>
-              <dd>{gpsr.manufacturerName}</dd>
+              <dd>{manufacturerName}</dd>
             </div>
             <div>
               <dt className="sr-only">Anschrift</dt>
-              <dd>{formattedAddress()}</dd>
+              <dd>
+                Vollständige Kontaktdaten des Herstellers finden Sie in der
+                mitgelieferten Dokumentation oder auf der Website von{' '}
+                {manufacturerName}.
+              </dd>
             </div>
             <div>
               <dt className="sr-only">E-Mail</dt>

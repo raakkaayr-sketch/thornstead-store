@@ -1,27 +1,17 @@
 [
   {
-    "name": "Gartenwerkzeug",
-    "slug": "gartenwerkzeug",
-    "description": "Kniebänke, Gießkannen und Handwerkzeug, gebaut für viele Saisons."
+    "name": "Kompaktkameras",
+    "slug": "kompaktkameras",
+    "description": "Kompakte Digitalkameras und Vlogging-Modelle — leicht, schnell startklar."
   },
   {
-    "name": "Pflanzgefäße & Anbau",
-    "slug": "pflanzgefaesse-anbau",
-    "description": "Pflanzkübel und Hochbeete für Balkon, Terrasse und Garten."
+    "name": "Systemkameras",
+    "slug": "systemkameras",
+    "description": "Spiegellose Kameras mit wechselbaren Objektiven für Foto und Video."
   },
   {
-    "name": "Außenaufbewahrung",
-    "slug": "aussenaufbewahrung",
-    "description": "Wetterfeste Boxen und Schutzhüllen, die Polster, Werkzeug und Möbel trocken halten."
-  },
-  {
-    "name": "Küche & Kompost",
-    "slug": "kueche-kompost",
-    "description": "Alltagshelfer für die Küche, die das Sammeln von Bioabfall unkompliziert machen."
-  },
-  {
-    "name": "Vögel & Wildtiere",
-    "slug": "voegel-wildtiere",
-    "description": "Futterstationen, die Gartenvögel näher ans Haus bringen."
+    "name": "Spiegelreflexkameras",
+    "slug": "spiegelreflexkameras",
+    "description": "DSLR-Kameras mit optischem Sucher und bewährtem Objektivsystem."
   }
 ]
