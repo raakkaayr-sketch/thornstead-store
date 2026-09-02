@@ -383,11 +383,11 @@ const products = [
       ),
       img(
         '/images/products/sage-barista-express-ses875-2.avif',
-        'Sage Barista Express SES875, Seitenansicht'
+        'Sage Barista Express SES875 beim Extrahieren'
       ),
       img(
         '/images/products/sage-barista-express-ses875-3.avif',
-        'Sage Barista Express SES875 mit Milchkanne'
+        'Sage Barista Express SES875, Seitenansicht'
       ),
     ],
     short: 'Siebträger mit integriertem Mahlwerk — der übliche Einstieg in echten Espresso.',
