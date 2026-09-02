@@ -70,7 +70,7 @@ export function SearchDialog() {
                 ref={inputRef}
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Pflanzkübel, Aufbewahrung, Werkzeug…"
+                placeholder="Kaffeevollautomat, KitchenAid, Messer…"
                 className="h-14 flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground"
               />
               <button
@@ -87,13 +87,13 @@ export function SearchDialog() {
               {query.trim() && results.length === 0 && (
                 <p className="px-3 py-8 text-center text-sm text-muted-foreground">
                   Zu „{query}" wurde nichts gefunden. Versuchen Sie
-                  „Pflanzkübel", „Aufbewahrung" oder „Kompost".
+                  „KitchenAid", „Le Creuset" oder „Vollautomat".
                 </p>
               )}
 
               {!query.trim() && (
                 <p className="px-3 py-8 text-center text-sm text-muted-foreground">
-                  Tippen Sie los, um das Hainholt-Sortiment zu durchsuchen.
+                  Tippen Sie los, um Kaffee, Kochen, Messer und Grill zu durchsuchen.
                 </p>
               )}
 

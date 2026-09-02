@@ -91,7 +91,7 @@ const sections: LegalSection[] = [
   {
     heading: '10. Produktsicherheit und bestimmungsgemäße Verwendung',
     body: [
-      'Unsere Produkte sind für den privaten Gebrauch in Haus und Garten bestimmt. Angaben zum Hersteller und zur in der EU niedergelassenen verantwortlichen Person nach Artikel 19 der Verordnung (EU) 2023/988 sowie Sicherheits- und Pflegehinweise finden Sie auf der jeweiligen Produktseite.',
+      'Unsere Produkte sind für den privaten Gebrauch in Küche und Haushalt bestimmt. Angaben zum Hersteller und zur in der EU niedergelassenen verantwortlichen Person nach Artikel 19 der Verordnung (EU) 2023/988 sowie Sicherheits- und Pflegehinweise finden Sie auf der jeweiligen Produktseite.',
       'Bei Verwendung entgegen den Sicherheits- und Pflegehinweisen können wir für daraus entstehende Schäden nicht einstehen.',
     ],
   },

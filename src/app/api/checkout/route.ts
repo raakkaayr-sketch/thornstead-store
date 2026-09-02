@@ -107,6 +107,7 @@ export async function POST(request: Request) {
       redirect_on_completion: 'always',
       phone_number_collection: { enabled: true },
       billing_address_collection: 'auto',
+      customer_creation: 'always',
       shipping_address_collection: {
         allowed_countries: [
           ...siteConfig.shipping.shipToCountries,

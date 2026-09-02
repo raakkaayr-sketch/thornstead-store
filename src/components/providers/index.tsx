@@ -1,5 +1,6 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { ThemeProvider } from 'next-themes';
 import { CartProvider } from './cart-provider';
 import { WishlistProvider } from './wishlist-provider';
@@ -8,6 +9,9 @@ import { CartDrawer } from '@/components/cart/cart-drawer';
 import { CookieBanner } from '@/components/layout/cookie-banner';
 
 export function Providers({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  const isAdmin = pathname.startsWith('/admin');
+
   return (
     <ThemeProvider
       attribute="class"
@@ -19,8 +23,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
         <WishlistProvider>
           <RecentlyViewedProvider>
             {children}
-            <CartDrawer />
-            <CookieBanner />
+            {isAdmin ? null : <CartDrawer />}
+            {isAdmin ? null : <CookieBanner />}
           </RecentlyViewedProvider>
         </WishlistProvider>
       </CartProvider>

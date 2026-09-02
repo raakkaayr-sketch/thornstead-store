@@ -14,7 +14,7 @@ export default function robots(): MetadataRoute.Robots {
          * Googlebot und AdsBot müssen den Feed und die Produktseiten weiterhin
          * abrufen können, daher keine pauschalen Sperren.
          */
-        disallow: ['/api/', '/kasse', '/merkliste'],
+        disallow: ['/api/', '/kasse', '/merkliste', '/admin'],
       },
     ],
     sitemap: `${base}/sitemap.xml`,

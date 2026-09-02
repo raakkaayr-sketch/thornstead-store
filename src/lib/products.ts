@@ -1,8 +1,8 @@
-import productsData from '@/data/products.json';
+import kitchenProductsData from '@/data/kitchen-products.json';
 import categoriesData from '@/data/categories.json';
-import type { Category, Product, SortOption } from './types';
+import type { Category, Product, ProductImage, SortOption } from './types';
 
-const products = productsData as Product[];
+const products = kitchenProductsData as Product[];
 const categories = categoriesData as Category[];
 
 export function getAllProducts(): Product[] {
@@ -33,7 +33,7 @@ export function countProductsInCategory(slug: string): number {
   return getProductsByCategory(slug).length;
 }
 
-export function getFeaturedProducts(limit = 4): Product[] {
+export function getFeaturedProducts(limit = 6): Product[] {
   const featured = products.filter((p) => p.featured);
   return (featured.length ? featured : products).slice(0, limit);
 }
@@ -46,6 +46,20 @@ export function getRelatedProducts(product: Product, limit = 4): Product[] {
     (p) => p.categorySlug !== product.categorySlug && p.id !== product.id
   );
   return [...sameCategory, ...others].slice(0, limit);
+}
+
+export interface CategoryShowcase extends Category {
+  count: number;
+  cover?: ProductImage;
+}
+
+export function getCategoryShowcase(): CategoryShowcase[] {
+  return categories.map((category) => {
+    const items = getProductsByCategory(category.slug);
+    const cover =
+      items.find((product) => product.featured)?.images[0] ?? items[0]?.images[0];
+    return { ...category, count: items.length, cover };
+  });
 }
 
 export function getPriceRange(): { min: number; max: number } {
@@ -81,6 +95,7 @@ export function filterProducts(filters: ProductFilters = {}): Product[] {
     result = result.filter(
       (p) =>
         p.title.toLowerCase().includes(q) ||
+        p.brand.toLowerCase().includes(q) ||
         p.category.toLowerCase().includes(q) ||
         p.sku.toLowerCase().includes(q) ||
         p.shortDescription.toLowerCase().includes(q) ||
@@ -100,10 +115,10 @@ export function filterProducts(filters: ProductFilters = {}): Product[] {
       result.sort((a, b) => b.price - a.price);
       break;
     case 'name-asc':
-      result.sort((a, b) => a.title.localeCompare(b.title));
+      result.sort((a, b) => a.title.localeCompare(b.title, 'de-DE'));
       break;
     case 'name-desc':
-      result.sort((a, b) => b.title.localeCompare(a.title));
+      result.sort((a, b) => b.title.localeCompare(a.title, 'de-DE'));
       break;
     default:
       result.sort(

@@ -9,7 +9,7 @@ import { jsonLdScript, breadcrumbJsonLd } from '@/lib/structured-data';
 export const metadata: Metadata = {
   title: 'Kategorien',
   description:
-    'Hainholt nach Kategorie durchsehen: Gartenwerkzeug, Pflanzgefäße und Anbau, Außenaufbewahrung, Küche und Kompost sowie Vögel und Wildtiere.',
+    'Hainholt nach Kategorie: Kaffee, Küchenmaschinen, Heißluftfritteusen, Töpfe und Pfannen, Messer sowie Grills und Pizzaöfen.',
   alternates: { canonical: '/kategorien' },
 };
 
@@ -29,7 +29,7 @@ export default function KategorienPage() {
       />
       <PageHeader
         title="Kategorien"
-        description={`${categories.length} Bereiche, die unser gesamtes Sortiment für Haus und Garten abdecken.`}
+        description={`${categories.length} Bereiche für Kaffee, Kochen, Messer und Grill.`}
         crumbs={crumbs}
       />
 

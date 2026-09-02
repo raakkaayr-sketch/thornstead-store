@@ -5,8 +5,8 @@ import type { Product } from '@/lib/types';
 const { gpsr, contact } = siteConfig;
 
 const DEFAULT_SAFETY_NOTES = [
-  'Nur für den privaten Gebrauch in Haus und Garten bestimmt.',
-  'Nicht als Trittfläche, Sitzgelegenheit oder Leiter verwenden, sofern nicht ausdrücklich dafür vorgesehen.',
+  'Nur für den privaten Gebrauch im Haushalt bestimmt.',
+  'Bedienungsanleitung vor der ersten Inbetriebnahme lesen und Sicherheitshinweise beachten.',
   'Von kleinen Kindern fernhalten; Verpackungsmaterial ist kein Spielzeug.',
 ];
 
@@ -24,6 +24,22 @@ export function ProductCompliance({ product }: { product: Product }) {
   const notes = product.safetyNotes?.length
     ? product.safetyNotes
     : DEFAULT_SAFETY_NOTES;
+  const manufacturer = product.manufacturer
+    ? {
+        name: product.manufacturer.name,
+        address: `${product.manufacturer.street}, ${product.manufacturer.postcode} ${product.manufacturer.city}, ${product.manufacturer.country}`,
+        email: product.manufacturer.email || contact.email,
+      }
+    : {
+        name: gpsr.manufacturerName,
+        address: formattedAddress(),
+        email: contact.email,
+      };
+  const euPerson = {
+    name: gpsr.euResponsiblePerson.name,
+    address: euResponsibleAddress(),
+    email: gpsr.euResponsiblePerson.email,
+  };
 
   return (
     <section
@@ -48,20 +64,20 @@ export function ProductCompliance({ product }: { product: Product }) {
           <dl className="mt-2 space-y-1 text-sm text-muted-foreground">
             <div>
               <dt className="sr-only">Name</dt>
-              <dd>{gpsr.manufacturerName}</dd>
+              <dd>{manufacturer.name}</dd>
             </div>
             <div>
               <dt className="sr-only">Anschrift</dt>
-              <dd>{formattedAddress()}</dd>
+              <dd>{manufacturer.address}</dd>
             </div>
             <div>
               <dt className="sr-only">E-Mail</dt>
               <dd>
                 <a
-                  href={`mailto:${contact.email}`}
+                  href={`mailto:${manufacturer.email}`}
                   className="underline underline-offset-2 hover:text-foreground"
                 >
-                  {contact.email}
+                  {manufacturer.email}
                 </a>
               </dd>
             </div>
@@ -75,15 +91,22 @@ export function ProductCompliance({ product }: { product: Product }) {
           <dl className="mt-2 space-y-1 text-sm text-muted-foreground">
             <div>
               <dt className="sr-only">Name</dt>
-              <dd>{gpsr.euResponsiblePerson.name}</dd>
+              <dd>{euPerson.name}</dd>
             </div>
             <div>
               <dt className="sr-only">Anschrift</dt>
-              <dd>{euResponsibleAddress()}</dd>
+              <dd>{euPerson.address}</dd>
             </div>
             <div>
               <dt className="sr-only">E-Mail</dt>
-              <dd>{gpsr.euResponsiblePerson.email}</dd>
+              <dd>
+                <a
+                  href={`mailto:${euPerson.email}`}
+                  className="underline underline-offset-2 hover:text-foreground"
+                >
+                  {euPerson.email}
+                </a>
+              </dd>
             </div>
           </dl>
         </div>

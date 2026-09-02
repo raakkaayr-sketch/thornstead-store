@@ -83,10 +83,13 @@ function statusCopy(
 function resolveStatus(
   paid: boolean,
   refunded: boolean,
-  createdUnix: number
+  createdUnix: number,
+  fulfillment?: string | null
 ): OrderStatus {
-  if (refunded) return 'storniert';
+  if (refunded || fulfillment === 'storniert') return 'storniert';
   if (!paid) return 'zahlung_offen';
+  if (fulfillment === 'versendet') return 'versendet';
+  if (fulfillment === 'in_bearbeitung') return 'in_bearbeitung';
   return isWithinCancelWindow(createdUnix) ? 'in_bearbeitung' : 'versendet';
 }
 
@@ -137,10 +140,15 @@ export async function lookupOrder(
   const intentId = paymentIntentId(session.payment_intent);
   const refunded = intentId ? await isRefunded(intentId) : false;
   const paid = session.payment_status === 'paid';
-  const status = resolveStatus(paid, refunded, session.created);
+  const fulfillment = session.metadata?.fulfillment;
+  const status = resolveStatus(paid, refunded, session.created, fulfillment);
   const copy = statusCopy(status, refunded);
   const canCancel =
-    paid && !refunded && isWithinCancelWindow(session.created);
+    paid &&
+    !refunded &&
+    isWithinCancelWindow(session.created) &&
+    fulfillment !== 'versendet' &&
+    fulfillment !== 'storniert';
   const window = deliveryWindow();
   const paidAt = paid ? new Date(session.created * 1000) : null;
 
@@ -191,6 +199,12 @@ export async function cancelOrder(sessionId: string, email: string) {
   await getStripe().refunds.create({
     payment_intent: intentId,
     reason: 'requested_by_customer',
+  });
+  await getStripe().checkout.sessions.update(sessionId.trim(), {
+    metadata: {
+      ...(session.metadata ?? {}),
+      fulfillment: 'storniert',
+    },
   });
 
   const updated = await lookupOrder(sessionId, email);

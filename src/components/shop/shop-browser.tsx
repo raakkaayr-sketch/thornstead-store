@@ -46,6 +46,7 @@ export function ShopBrowser({
       if (!q) return true;
       return (
         product.title.toLowerCase().includes(q) ||
+        product.brand.toLowerCase().includes(q) ||
         product.category.toLowerCase().includes(q) ||
         product.sku.toLowerCase().includes(q) ||
         product.shortDescription.toLowerCase().includes(q) ||
@@ -102,7 +103,7 @@ export function ShopBrowser({
         <Input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Sortiment durchsuchen"
+          placeholder="Marke oder Modell suchen"
           className="mt-3"
           aria-label="Produkte durchsuchen"
         />

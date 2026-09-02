@@ -14,8 +14,20 @@ export interface Product {
   /** Stable internal identifier, also used as the feed `mpn`. */
   sku: string;
   title: string;
-  /** Always "Hainholt" — we are the brand of record for everything we sell. */
+  /** Product brand as sold. Hainholt is the retailer, not the manufacturer. */
   brand: string;
+  /**
+   * GPSR manufacturer. Own-brand goods omit this and fall back to siteConfig.gpsr.
+   * For third-party brands this is the actual producer, not the shop.
+   */
+  manufacturer?: {
+    name: string;
+    street: string;
+    postcode: string;
+    city: string;
+    country: string;
+    email?: string;
+  };
   category: string;
   categorySlug: string;
   price: number;

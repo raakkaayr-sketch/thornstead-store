@@ -1,27 +1,32 @@
 [
   {
-    "name": "Gartenwerkzeug",
-    "slug": "gartenwerkzeug",
-    "description": "Kniebänke, Gießkannen und Handwerkzeug, gebaut für viele Saisons."
+    "name": "Kaffee & Espresso",
+    "slug": "kaffee-espresso",
+    "description": "Vollautomaten und Siebträger von De’Longhi, Philips, Sage, JURA, Siemens und Melitta."
   },
   {
-    "name": "Pflanzgefäße & Anbau",
-    "slug": "pflanzgefaesse-anbau",
-    "description": "Pflanzkübel und Hochbeete für Balkon, Terrasse und Garten."
+    "name": "Küchenmaschinen",
+    "slug": "kuechenmaschinen",
+    "description": "Küchenmaschinen, Hochleistungsmixer und Stabmixer für Teig, Smoothies und den Alltag."
   },
   {
-    "name": "Außenaufbewahrung",
-    "slug": "aussenaufbewahrung",
-    "description": "Wetterfeste Boxen und Schutzhüllen, die Polster, Werkzeug und Möbel trocken halten."
+    "name": "Heißluftfritteusen & Multikocher",
+    "slug": "heissluftfritteusen-multikocher",
+    "description": "Heißluftfritteusen und Multikocher mit zwei Zonen, Druckgaren und großer Rezeptbasis."
   },
   {
-    "name": "Küche & Kompost",
-    "slug": "kueche-kompost",
-    "description": "Alltagshelfer für die Küche, die das Sammeln von Bioabfall unkompliziert machen."
+    "name": "Töpfe & Pfannen",
+    "slug": "toepfe-pfannen",
+    "description": "Bräter, Topfsets und Pfannen von Le Creuset, Staub, Fissler, WMF und Zwilling."
   },
   {
-    "name": "Vögel & Wildtiere",
-    "slug": "voegel-wildtiere",
-    "description": "Futterstationen, die Gartenvögel näher ans Haus bringen."
+    "name": "Messer",
+    "slug": "messer",
+    "description": "Messerblöcke und Kochmesser aus Solingen und Japan — Wüsthof, Zwilling, Miyabi und KAI Shun."
+  },
+  {
+    "name": "Grills & Pizzaöfen",
+    "slug": "grills-pizzaoefen",
+    "description": "Gas- und Holzkohlegrills von Weber sowie Pizzaöfen von Ooni und Gozney."
   }
 ]

@@ -8,7 +8,7 @@ import { getAllProducts, getAllCategories } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Über Hainholt',
   description:
-    'Hainholt ist eine Eigenmarke für Garten und Zuhause. Wir entwerfen unser Sortiment selbst und verkaufen direkt — wir sind die Marke, kein Wiederverkäufer.',
+    'Hainholt führt ausgewählte Küchengeräte bekannter Marken direkt nach Deutschland — Kaffee, Kochen, Messer und Grill.',
   alternates: { canonical: '/ueber-uns' },
 };
 
@@ -21,7 +21,7 @@ export default function UeberUnsPage() {
     <>
       <PageHeader
         title="Über Hainholt"
-        description="Eine kleine Marke, die ihr Sortiment für Haus und Garten selbst entwickelt und direkt verkauft."
+        description="Ausgewählte Küchengeräte bekannter Marken, direkt nach Deutschland."
         crumbs={[
           { name: 'Startseite', path: '/' },
           { name: 'Über uns', path: '/ueber-uns' },
@@ -30,64 +30,41 @@ export default function UeberUnsPage() {
 
       <div className="container-page grid gap-12 px-6 py-12 lg:grid-cols-[1fr_320px]">
         <div className="prose-legal max-w-2xl">
-          <h2>Wir sind die Marke, kein Wiederverkäufer</h2>
+          <h2>Ein Küchenshop, kein Warenhaus</h2>
           <p>
-            Das ist wichtig genug, um es gleich am Anfang klar zu sagen: Jedes
-            Produkt auf dieser Website wird von Hainholt entworfen, nach
-            unserer Spezifikation gefertigt, unter unserem Namen verkauft und von
-            uns versandt. Wir sind für das gesamte Sortiment die Marke selbst.
-            Wir führen keine Markenware anderer Unternehmen, wir bezeichnen uns
-            nicht als autorisierten Händler für irgendwen, und Sie werden in
-            diesem Shop kein Fremdlogo finden.
+            Hainholt verkauft ausgewählte Küchengeräte: Kaffeevollautomaten und
+            Siebträger, Küchenmaschinen, Heißluftfritteusen, Kochgeschirr, Messer
+            und Grills. Die Marken stehen auf der Produktseite — De’Longhi,
+            Philips, KitchenAid, Le Creuset, Wüsthof, Weber und andere, die in
+            ihrer Kategorie Maßstäbe setzen. Wir sind der Händler, nicht der
+            Hersteller.
           </p>
           <p>
-            Für Sie bleibt es damit einfach: Ein Unternehmen hat es entworfen,
-            ein Unternehmen hat es Ihnen verkauft, und ein Unternehmen geht ans
-            Telefon, wenn etwas nicht stimmt.
+            Für Sie bleibt der Weg kurz: Ein Unternehmen verkauft, versendet und
+            geht ans Telefon, wenn etwas nicht stimmt. Wer der Hersteller ist,
+            steht zusammen mit den Pflichtangaben zur Produktsicherheit auf jeder
+            Produktseite.
           </p>
 
-          <h2>Wie das Sortiment entstanden ist</h2>
+          <h2>Wie das Sortiment entsteht</h2>
           <p>
-            Hainholt ist aus einem Ärger entstanden, den jeder kennt, der
-            Gartenausrüstung online gekauft hat: die Kniebank, deren Rahmen in
-            der zweiten Saison nachgibt, der Pflanzkübel, dessen Lack nach einem
-            Winter abblättert, die Aufbewahrungsbox, die am Deckelfalz Wasser
-            zieht. Günstig ist nicht das Problem. Auf Ersatz ausgelegt ist das
-            Problem.
-          </p>
-          <p>
-            Wir haben deshalb eine überschaubare Auswahl an Dingen genommen, die
-            man wirklich jede Woche benutzt — etwas zum Knien, etwas zum
-            Einpflanzen, einen trockenen Platz für die Polster, eine Lösung für
-            Küchenabfälle, Futter für die Vögel — und an jedem einzelnen
-            gearbeitet, bis es sich zu behalten lohnt. Das Sortiment ist bewusst
-            klein: {productCount} Produkte in {categoryCount} Kategorien statt
-            eines Katalogs mit Tausenden Artikeln.
+            Wir führen wenige Geräte, die sich in der Beratung lohnen — nicht
+            Tausende Artikel, die sich nur im Filter unterscheiden. Zusammen
+            sind es {productCount} Produkte in {categoryCount} Kategorien.
+            Jedes Stück hat eine Produktseite mit technischen Daten,
+            Herstellerangaben und den Warnhinweisen, die nach GPSR dazugehören.
           </p>
 
           <h2>Wie wir verkaufen</h2>
           <p>
             Direkt, über diese Website, an Kundinnen und Kunden in Deutschland.
-            Direktverkauf bedeutet, dass keine Großhandels- und keine
-            Handelsmarge auf die tatsächlichen Herstellungskosten aufgeschlagen
-            wird. Genau deshalb kostet ein Stück von Hainholt in der Regel
-            weniger als ein vergleichbares im Ladenregal.
+            Sie zahlen den Gerätepreis an uns; Hersteller, Garantie und
+            Produktsicherheit stehen auf der jeweiligen Produktseite.
           </p>
           <p>
             Kartenzahlungen werden von {payment.processor} abgewickelt. Wir sehen
             und speichern Ihre Kartendaten nie. Der Versand erfolgt mit{' '}
             {shipping.serviceName} innerhalb Deutschlands.
-          </p>
-
-          <h2>Materialien, und Ehrlichkeit darüber</h2>
-          <p>
-            Wir verwenden verzinkten Stahl dort, wo es nass wird,
-            geschlossenzelligen Schaum dort, wo etwas auf feuchtem Boden liegt,
-            FSC-zertifiziertes Holz, wo wir überhaupt Holz einsetzen, und
-            beschichtetes Polyester mit verschweißten Nähten, wo Regen ablaufen
-            soll. Wo ein Material eine Grenze hat — Bambus braucht alle paar
-            Jahre neues Öl, unbehandeltes Holz vergraut — steht das auf der
-            Produktseite, statt zu hoffen, dass es niemandem auffällt.
           </p>
 
           <h2>Kontakt</h2>

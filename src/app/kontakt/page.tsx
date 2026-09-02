@@ -71,8 +71,8 @@ export default function KontaktPage() {
           <div className="mt-8 rounded-2xl bg-muted/60 p-5 text-sm text-muted-foreground">
             <p className="font-medium text-foreground">{business.ownerName}</p>
             <p className="mt-1.5">
-              Handelnd unter der Marke {business.tradingName}. Wir verkaufen
-              unsere eigenen Produkte für Garten und Zuhause an Kundinnen und
+              Handelnd unter der Marke {business.tradingName}. Wir führen
+              ausgewählte Küchengeräte bekannter Marken an Kundinnen und
               Kunden in Deutschland.
             </p>
             <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs">

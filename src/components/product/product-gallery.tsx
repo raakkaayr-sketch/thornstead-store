@@ -13,6 +13,7 @@ export function ProductGallery({ images }: { images: ProductImage[] }) {
     <div className="space-y-3">
       <div className="relative aspect-square overflow-hidden rounded-3xl bg-muted">
         <Image
+          key={current.src}
           src={current.src}
           alt={current.alt}
           fill

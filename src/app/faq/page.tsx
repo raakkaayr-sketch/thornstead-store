@@ -9,7 +9,7 @@ import { jsonLdScript } from '@/lib/structured-data';
 export const metadata: Metadata = {
   title: 'Häufige Fragen',
   description:
-    'Antworten zu Lieferzeiten, Versandkosten, Widerruf und Rückgabe, Zahlungssicherheit und dazu, wie unsere Eigenmarkenprodukte entstehen.',
+    'Antworten zu Lieferzeiten, Versandkosten, Widerruf, Zahlung und dazu, welche Marken Hainholt führt.',
   alternates: { canonical: '/faq' },
 };
 
@@ -58,8 +58,8 @@ const faqs = [
     a: `Die Zahlung läuft über ${payment.processor} auf dieser Website — Sie werden nicht auf eine fremde Zahlungsseite weitergeleitet. Akzeptiert werden ${payment.methods.join(', ')}. Ihre Kartendaten geben Sie im eingebetteten Zahlungsformular ein; sie erreichen unsere Server nie.`,
   },
   {
-    q: 'Sind das Ihre eigenen Produkte oder verkaufen Sie fremde Marken weiter?',
-    a: 'Jedes Produkt in diesem Shop wird von Hainholt entworfen, unter eigener Marke geführt und verkauft. Wir sind die Marke selbst. Wir handeln nicht mit Markenware anderer Unternehmen und sind kein autorisierter Händler für Drittmarken.',
+    q: 'Sind Sie der Hersteller der Geräte?',
+    a: 'Nein. Hainholt ist der Händler. Im Sortiment stehen ausgewählte Küchengeräte und Kochwaren von Marken wie De’Longhi, Philips, KitchenAid, Le Creuset, Wüsthof und Weber. Verkauf und Versand laufen über uns; Hersteller, Garantie und Produktsicherheit stehen auf der jeweiligen Produktseite.',
   },
   {
     q: 'Gibt es eine Garantie?',
@@ -95,7 +95,7 @@ export default function FaqPage() {
       />
       <PageHeader
         title="Häufige Fragen"
-        description="Lieferung, Widerruf, Zahlung und wie das Sortiment entsteht."
+        description="Lieferung, Widerruf, Zahlung und wer hinter den Marken steht."
         crumbs={[
           { name: 'Startseite', path: '/' },
           { name: 'Häufige Fragen', path: '/faq' },

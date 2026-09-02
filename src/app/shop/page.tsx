@@ -5,9 +5,9 @@ import { getAllCategories, getAllProducts, getPriceRange } from '@/lib/products'
 import { jsonLdScript, breadcrumbJsonLd } from '@/lib/structured-data';
 
 export const metadata: Metadata = {
-  title: 'Shop — alle Produkte für Garten und Zuhause',
+  title: 'Shop — Küchengeräte',
   description:
-    'Das gesamte Hainholt-Sortiment: Pflanzkübel, Außenaufbewahrung, Gartenwerkzeug, Küchenhelfer und Vogelpflege. Versand innerhalb Deutschlands.',
+    'Das Hainholt-Sortiment: Kaffeevollautomaten, Küchenmaschinen, Heißluftfritteusen, Kochgeschirr, Messer und Grills. Versand innerhalb Deutschlands.',
   alternates: { canonical: '/shop' },
 };
 
@@ -31,7 +31,7 @@ export default async function ShopPage({
       />
       <PageHeader
         title="Das gesamte Sortiment"
-        description="Alles von Hainholt an einem Ort. Filtern Sie nach Kategorie oder Preis, um schneller zu finden, was Sie suchen."
+        description="Kaffee, Küchenmaschinen, Kochgeschirr, Messer und Grills bekannter Marken. Filtern Sie nach Kategorie, Marke oder Preis."
         crumbs={crumbs}
       />
       <ShopBrowser

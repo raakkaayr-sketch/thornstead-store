@@ -32,9 +32,9 @@ function resolveSiteUrl() {
 
 export const siteConfig = {
   name: 'Hainholt',
-  tagline: 'Gemacht, um zu bleiben.',
+  tagline: 'Ausgewählte Küchengeräte.',
   description:
-    'Hainholt entwickelt und verkauft eigene Produkte für Garten und Zuhause in Deutschland — Pflanzkübel, Gartenboxen, Gartenwerkzeug und Vogelpflege, versandkostenfrei ab 50 €.',
+    'Hainholt führt ausgewählte Küchengeräte bekannter Marken — Kaffeevollautomaten, Küchenmaschinen, Kochgeschirr, Messer und Grills — mit Versand innerhalb Deutschlands, versandkostenfrei ab 50 €.',
   /**
    * Live-Shop-URL für Canonicals, Sitemap, JSON-LD und den Merchant-Center-Feed.
    * NEXT_PUBLIC_SITE_URL in Vercel setzen, sobald eine eigene Domain live ist.

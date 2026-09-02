@@ -50,8 +50,8 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Logo showTagline />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Hainholt entwickelt eigene Produkte für Garten und Zuhause und
-              verkauft sie direkt an Kundinnen und Kunden in Deutschland.
+              Hainholt führt ausgewählte Küchengeräte bekannter Marken direkt
+              an Kundinnen und Kunden in Deutschland.
             </p>
 
             <address className="mt-6 space-y-2 text-sm not-italic text-muted-foreground">
@@ -96,7 +96,7 @@ export function Footer() {
           <FooterColumn title="Shop" links={shopLinks} />
           <FooterColumn
             title="Kategorien"
-            links={categories.slice(0, 6).map((c) => ({
+            links={categories.map((c) => ({
               href: `/kategorien/${c.slug}`,
               label: c.name,
             }))}

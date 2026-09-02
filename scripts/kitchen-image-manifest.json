@@ -1,0 +1,285 @@
+{
+  "HH-KAF-001": {
+    "slug": "delonghi-magnifica-evo-ecam290",
+    "images": [],
+    "tried": 4
+  },
+  "HH-KAF-002": {
+    "slug": "philips-series-5500-lattego-ep5541",
+    "images": [
+      {
+        "src": "/images/products/philips-series-5500-lattego-ep5541-1.avif",
+        "source": "https://images.philips.com/is/image/philipsconsumer/vrs_9ef9a297_0354_4aed_b62899e847c213f6?wid=1800&hei=1800"
+      }
+    ],
+    "tried": 4
+  },
+  "HH-KAF-003": {
+    "slug": "sage-barista-express-ses875",
+    "images": [
+      {
+        "src": "/images/products/sage-barista-express-ses875-1.avif",
+        "source": "https://i.ytimg.com/vi/7xa_gPC2u4s/mqdefault.jpg"
+      },
+      {
+        "src": "/images/products/sage-barista-express-ses875-2.avif",
+        "source": "https://i.ytimg.com/vi/Z29tP03yfXc/mqdefault.jpg"
+      },
+      {
+        "src": "/images/products/sage-barista-express-ses875-3.avif",
+        "source": "https://breville-production-aem-assets.s3.us-west-2.amazonaws.com/BES875/BES875EUK_CAROUSEL1.png"
+      }
+    ],
+    "tried": 23
+  },
+  "HH-KAF-004": {
+    "slug": "siemens-eq500-integral",
+    "images": [],
+    "tried": 0
+  },
+  "HH-KAF-005": {
+    "slug": "jura-e4",
+    "images": [
+      {
+        "src": "/images/products/jura-e4-1.avif",
+        "source": "https://api.jura.com/media/global/images/home-products/e-line-2021/e4/e4-piano-black-ea-15435/e4_ea_pianoblack_packshot.jpg?cb=106122"
+      },
+      {
+        "src": "/images/products/jura-e4-2.avif",
+        "source": "https://api.jura.com/media/global/images/home-products/accessories/CupWarmer-new/tassenwaermer_new.jpg?cb=87225\\"
+      },
+      {
+        "src": "/images/products/jura-e4-3.avif",
+        "source": "https://api.jura.com/media/global/images/home-products/accessories/geschirrkollektion/packshot_esp_cup.jpg?cb=120334\\"
+      }
+    ],
+    "tried": 20
+  },
+  "HH-KAF-006": {
+    "slug": "melitta-caffeo-barista-ts-smart",
+    "images": [],
+    "tried": 0
+  },
+  "HH-KAF-007": {
+    "slug": "delonghi-dedica-maestro-ec950",
+    "images": [],
+    "tried": 1
+  },
+  "HH-MAS-001": {
+    "slug": "kitchenaid-artisan-5ksm175ps",
+    "images": [
+      {
+        "src": "/images/products/kitchenaid-artisan-5ksm175ps-1.avif",
+        "source": "https://upload.wikimedia.org/wikipedia/commons/4/42/Red_KitchenAid_Artisan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      },
+      {
+        "src": "/images/products/kitchenaid-artisan-5ksm175ps-2.avif",
+        "source": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Yellow_KitchenAid_Mixer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      }
+    ],
+    "tried": 25
+  },
+  "HH-MAS-002": {
+    "slug": "kenwood-chef-titanium",
+    "images": [
+      {
+        "src": "/images/products/kenwood-chef-titanium-1.avif",
+        "source": "https://upload.wikimedia.org/wikipedia/commons/3/35/Kenwood_Chef_XL_Titanium%2C_Causeway_Bay_555_Hennessy_Road_East_Point_Centre_SOGO_Department_Store_Thankful_Weeks_October_2021_SS2_023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      }
+    ],
+    "tried": 1
+  },
+  "HH-MAS-003": {
+    "slug": "bosch-mum5-styline",
+    "images": [],
+    "tried": 0
+  },
+  "HH-MAS-004": {
+    "slug": "vitamix-ascent-a2500i",
+    "images": [],
+    "tried": 0
+  },
+  "HH-MAS-005": {
+    "slug": "braun-multiquick-9",
+    "images": [],
+    "tried": 0
+  },
+  "HH-HLF-001": {
+    "slug": "ninja-foodi-max-dual-zone-af400",
+    "images": [
+      {
+        "src": "/images/products/ninja-foodi-max-dual-zone-af400-1.avif",
+        "source": "https://assets.sharkninja.com/image/upload/f_auto/q_auto/SharkNinja-EU/AS101EU-MASTER_01.jpg"
+      },
+      {
+        "src": "/images/products/ninja-foodi-max-dual-zone-af400-2.avif",
+        "source": "https://assets.sharkninja.com/image/upload/v1776696781/SharkNinja-EU/AS101EUCY_01.png"
+      },
+      {
+        "src": "/images/products/ninja-foodi-max-dual-zone-af400-3.avif",
+        "source": "https://assets.sharkninja.com/image/upload/v1772587923/SharkNinja-EU/FN101EUSGB_01.png"
+      }
+    ],
+    "tried": 7
+  },
+  "HH-HLF-002": {
+    "slug": "philips-airfryer-xxl-hd9650",
+    "images": [
+      {
+        "src": "/images/products/philips-airfryer-xxl-hd9650-1.avif",
+        "source": "https://images.philips.com/is/image/PhilipsConsumer/HD9650_90-IMS-de_DE?wid=1800&hei=1800"
+      }
+    ],
+    "tried": 4
+  },
+  "HH-HLF-003": {
+    "slug": "ninja-foodi-multikocher-ol750",
+    "images": [],
+    "tried": 0
+  },
+  "HH-HLF-004": {
+    "slug": "instant-pot-pro-crisp",
+    "images": [],
+    "tried": 0
+  },
+  "HH-TOP-001": {
+    "slug": "le-creuset-signature-braeter-24-cm",
+    "images": [
+      {
+        "src": "/images/products/le-creuset-signature-braeter-24-cm-1.avif",
+        "source": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Le_Creuset_Enamel_Cast_Iron_Cookware.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      },
+      {
+        "src": "/images/products/le-creuset-signature-braeter-24-cm-2.avif",
+        "source": "https://upload.wikimedia.org/wikipedia/commons/0/02/2019_12_Le_Creuset_fonte_tomate_caquelon_Enzo_Mari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      }
+    ],
+    "tried": 2
+  },
+  "HH-TOP-002": {
+    "slug": "staub-cocotte-rund-24-cm",
+    "images": [],
+    "tried": 0
+  },
+  "HH-TOP-003": {
+    "slug": "fissler-original-profi-collection-topfset",
+    "images": [],
+    "tried": 0
+  },
+  "HH-TOP-004": {
+    "slug": "wmf-fusiontec-topfset",
+    "images": [],
+    "tried": 0
+  },
+  "HH-TOP-005": {
+    "slug": "zwilling-motion-pfannenset",
+    "images": [],
+    "tried": 0
+  },
+  "HH-MES-001": {
+    "slug": "wuesthof-classic-ikon-messerblock",
+    "images": [],
+    "tried": 0
+  },
+  "HH-MES-002": {
+    "slug": "zwilling-pro-messerblock-7-tlg",
+    "images": [],
+    "tried": 0
+  },
+  "HH-MES-003": {
+    "slug": "miyabi-5000-mcd-gyutoh",
+    "images": [],
+    "tried": 0
+  },
+  "HH-MES-004": {
+    "slug": "kai-shun-classic-kochmesser-20-cm",
+    "images": [
+      {
+        "src": "/images/products/kai-shun-classic-kochmesser-20-cm-1.avif",
+        "source": "https://shun.kaiusa.com/media/wysiwyg/hero-june-sets-03.jpg"
+      },
+      {
+        "src": "/images/products/kai-shun-classic-kochmesser-20-cm-2.avif",
+        "source": "https://shun.kaiusa.com/media/wysiwyg/HP-FRD0705_Shiranami_BreadKnife-2.jpg"
+      },
+      {
+        "src": "/images/products/kai-shun-classic-kochmesser-20-cm-3.avif",
+        "source": "https://shun.kaiusa.com/media/wysiwyg/HP-FRDS0711_Shiranami_SteakKnife.jpg"
+      }
+    ],
+    "tried": 20
+  },
+  "HH-GRI-001": {
+    "slug": "weber-spirit-ii-e-310",
+    "images": [
+      {
+        "src": "/images/products/weber-spirit-ii-e-310-1.avif",
+        "source": "https://dw-images.weber.com/images/homepage/2026/Performer_PremiumSmart_Whitesweep.png?auto=compress"
+      },
+      {
+        "src": "/images/products/weber-spirit-ii-e-310-2.avif",
+        "source": "https://dw-images.weber.com/images/homepage/2026/Spirit_LandingPage_Mobile.jpg?auto=compress"
+      },
+      {
+        "src": "/images/products/weber-spirit-ii-e-310-3.avif",
+        "source": "https://dw-images.weber.com/images/homepage/2026/Spirit_LandingPage_Desktop.jpg?auto=compress"
+      }
+    ],
+    "tried": 20
+  },
+  "HH-GRI-002": {
+    "slug": "weber-master-touch-gbs-57",
+    "images": [],
+    "tried": 4
+  },
+  "HH-GRI-003": {
+    "slug": "ooni-koda-16",
+    "images": [
+      {
+        "src": "/images/products/ooni-koda-16-1.avif",
+        "source": "https://cdn.shopify.com/s/files/1/0944/3476/files/1000x1000-Ovens-ToScale-Koda16_1.webp?v=1749115978"
+      },
+      {
+        "src": "/images/products/ooni-koda-16-2.avif",
+        "source": "https://cdn.shopify.com/s/files/1/0944/3476/files/2048x2048-PDP-Koda16-Front.webp?v=1749115978"
+      },
+      {
+        "src": "/images/products/ooni-koda-16-3.avif",
+        "source": "https://cdn.shopify.com/s/files/1/0944/3476/files/2048x2048-PDP-Koda16-Front-Pizza.webp?v=1749115978"
+      }
+    ],
+    "tried": 13
+  },
+  "HH-GRI-004": {
+    "slug": "ooni-karu-12g",
+    "images": [
+      {
+        "src": "/images/products/ooni-karu-12g-1.avif",
+        "source": "https://eu.ooni.com/cdn/shop/files/1000x1000-Ovens-ToScale-Karu2_2.webp?v=1749115937"
+      },
+      {
+        "src": "/images/products/ooni-karu-12g-2.avif",
+        "source": "https://eu.ooni.com/cdn/shop/files/1000x1000-Ovens-ToScale-Karu2_2.webp?crop=center&height=600&v=1749115937&width=600"
+      }
+    ],
+    "tried": 2
+  },
+  "HH-GRI-005": {
+    "slug": "gozney-roccbox",
+    "images": [
+      {
+        "src": "/images/products/gozney-roccbox-1.avif",
+        "source": "https://cdn.shopify.com/s/files/1/0305/3558/1828/files/RBX_S1_3-4_Left_800x800_Frame_1_212f5999-a2fd-4c7c-852c-825fefa08773.png?v=1742493916"
+      },
+      {
+        "src": "/images/products/gozney-roccbox-2.avif",
+        "source": "https://cdn.shopify.com/s/files/1/0305/3558/1828/files/Roccbox_80ec1aeb-de3d-4aed-9e26-bc690f3db59a.png?v=1742493916"
+      },
+      {
+        "src": "/images/products/gozney-roccbox-3.avif",
+        "source": "https://cdn.shopify.com/s/files/1/0305/3558/1828/files/RBX_Black_-_lifestyle.png?v=1742493916"
+      }
+    ],
+    "tried": 9
+  }
+}
