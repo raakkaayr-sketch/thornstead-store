@@ -22,21 +22,6 @@ const BLOCK =
 
 const PRODUCTS = [
   {
-    sku: 'HH-KAF-001',
-    slug: 'delonghi-magnifica-evo-ecam290',
-    query: 'DeLonghi Magnifica Evo ECAM290 coffee machine',
-    pages: [
-      'https://www.delonghi.com/en/p/magnifica-evo-ecam290.61.b-magnifica-evo-automatic-coffee-maker/ECAM290.61.B.html',
-    ],
-    images: [
-      'https://dam.delonghi.com/1200x1200/assets/231532',
-      'https://dam.delonghi.com/902x902/assets/231532',
-      'https://dam.delonghi.com/1200x1200/assets/231535',
-      'https://dam.delonghi.com/1200x1200/assets/231506',
-      'https://dam.delonghi.com/600x600/assets/231532',
-    ],
-  },
-  {
     sku: 'HH-KAF-002',
     slug: 'philips-series-5500-lattego-ep5541',
     query: 'Philips 5500 LatteGo EP5541 coffee machine',

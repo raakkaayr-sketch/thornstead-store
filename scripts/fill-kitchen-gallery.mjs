@@ -16,13 +16,6 @@ const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36';
 
 const EXTRA = {
-  'delonghi-magnifica-evo-ecam290': [
-    'https://dam.delonghi.com/1200x1200/assets/231535',
-    'https://dam.delonghi.com/1200x1200/assets/231506',
-    'https://dam.delonghi.com/1200x1200/assets/231533',
-    'https://dam.delonghi.com/1200x1200/assets/231534',
-    'https://dam.delonghi.com/1200x1200/assets/231536',
-  ],
   'philips-series-5500-lattego-ep5541': [
     'https://images.philips.com/is/image/PhilipsConsumer/EP5541_50-GAL1-global?wid=1800&hei=1800&fmt=jpg',
     'https://images.philips.com/is/image/PhilipsConsumer/EP5541_50-GAL2-global?wid=1800&hei=1800&fmt=jpg',

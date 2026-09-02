@@ -280,48 +280,6 @@ const gpcOven = 'Home & Garden > Lawn & Garden > Outdoor Living > Outdoor Cookin
 
 const products = [
   product({
-    sku: 'HH-KAF-001',
-    slug: 'delonghi-magnifica-evo-ecam290',
-    title: "De'Longhi Magnifica Evo ECAM290.61.B",
-    brand: "De'Longhi",
-    manufacturer: M.delonghi,
-    category: coffee,
-    categorySlug: coffeeSlug,
-    price: 400,
-    gtin: '8004399021396',
-    gpc: gpcCoffee,
-    featured: true,
-    images: [
-      img(
-        '/images/products/delonghi-magnifica-evo-ecam290-1.avif',
-        "De'Longhi Magnifica Evo ECAM290 Kaffeevollautomat mit LatteCrema-Milchsystem"
-      ),
-    ],
-    short:
-      'Kaffeevollautomat für alle, die morgens keine Entscheidungen treffen wollen: Espresso, Kaffee und Milchgetränke auf Knopfdruck.',
-    long: 'Ein Gerät für Haushalte, in denen jeder etwas anderes trinkt. Das Kegelmahlwerk sitzt direkt im Gerät, gemahlen wird pro Tasse, die LatteCrema-Kanne schäumt Milchgetränke ohne Schlauchsalat. Fünf Getränke liegen auf farbigen Touch-Tasten, MyLatte verbraucht die eingefüllte Milchmenge ohne Reste in der Kanne. Reinigung und Entkalkung laufen geführt ab, die Brühgruppe lässt sich entnehmen. Schmal genug für die meisten Arbeitsplatten, mit 1,8-Liter-Tank und 250-g-Bohnenbehälter, die nicht nach jeder zweiten Tasse geleert werden müssen.',
-    features: [
-      'LatteCrema-Milchkanne, spülmaschinengeeignet, mit automatischer Spülung',
-      'Kegelmahlwerk, gemahlen wird pro Tasse',
-      'Fünf One-Touch-Getränke inklusive MyLatte ohne Milchreste',
-      'Herausnehmbare Brühgruppe und geführte Entkalkung',
-      'Schlankes Gehäuse, 24 cm breit',
-    ],
-    specs: [
-      ['Modell', 'ECAM290.61.B'],
-      ['Leistung', '1450 W'],
-      ['Pumpendruck', '15 bar'],
-      ['Wassertank', '1,8 l'],
-      ['Bohnenbehälter', '250 g'],
-      ['Milchsystem', 'LatteCrema Hot, 0,22 l'],
-      ['Maße (B × H × T)', '24 × 44 × 36 cm'],
-      ['Gewicht', '9,6 kg'],
-      ['Farbe', 'Schwarz / Silber'],
-    ],
-    tags: ['kaffeevollautomat', 'delonghi', 'milchsystem', 'espresso'],
-    safety: coffeeSafety,
-  }),
-  product({
     sku: 'HH-KAF-002',
     slug: 'philips-series-5500-lattego-ep5541',
     title: 'Philips Series 5500 LatteGo EP5541/50',
