@@ -13,7 +13,7 @@
  * GPSR Art. 19, VerpackG) — unvollständige Angaben sind abmahnbar.
  */
 
-const LIVE_SITE_URL = 'https://thornstead-store-three.vercel.app';
+const LIVE_SITE_URL = 'https://hainholt.de';
 const LEGACY_UK_HOST = 'thornstead.store';
 
 function resolveSiteUrl() {
@@ -37,9 +37,9 @@ export const siteConfig = {
     'Hainholt führt ausgewählte Küchengeräte bekannter Marken — Kaffeevollautomaten, Küchenmaschinen, Kochgeschirr, Messer und Grills — mit Versand innerhalb Deutschlands, versandkostenfrei ab 50 €.',
   /**
    * Live-Shop-URL für Canonicals, Sitemap, JSON-LD und den Merchant-Center-Feed.
-   * NEXT_PUBLIC_SITE_URL in Vercel setzen, sobald eine eigene Domain live ist.
-   * Die alte UK-Domain thornstead.store wird ignoriert, damit Google nicht auf
-   * den alten Shop geschickt wird.
+   * Live ist hainholt.de; NEXT_PUBLIC_SITE_URL in Vercel überschreibt den Wert
+   * nur für Vorschau-Umgebungen. Die alte UK-Domain thornstead.store wird
+   * ignoriert, damit Google nicht auf den alten Shop geschickt wird.
    */
   url: resolveSiteUrl(),
   locale: 'de-DE',

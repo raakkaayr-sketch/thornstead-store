@@ -174,8 +174,8 @@ How the flow works: the browser sends only product IDs and quantities. `src/app/
 
 Two feeds are generated from the same data that renders the site:
 
-- `https://thornstead-store-three.vercel.app/feed/products.xml` — primary feed
-- `https://thornstead-store-three.vercel.app/feed/products.csv` — same catalogue as CSV
+- `https://hainholt.de/feed/products.xml` — primary feed
+- `https://hainholt.de/feed/products.csv` — same catalogue as CSV
 
 In Merchant Center: **Data sources → Add product source → Scheduled fetch**, paste the XML URL, set the country to **Germany**, currency **EUR**, language **German**, and fetch daily.
 
@@ -188,8 +188,8 @@ Prices in the feed use a dot as the decimal separator. That is required by Googl
 1. **Point both the apex domain and `www` at the deployment.** A missing apex DNS record makes Google's fetch fail with a DNS error even though the site looks fine in a browser.
 2. **Claim and verify the domain** in Merchant Center.
 3. Set the policy URLs in Merchant Center settings:
-   - Returns: `https://thornstead-store-three.vercel.app/widerruf`
-   - Shipping: `https://thornstead-store-three.vercel.app/versand`
+   - Returns: `https://hainholt.de/widerruf`
+   - Shipping: `https://hainholt.de/versand`
 4. **Make the shipping settings in Merchant Center match `config.ts` exactly** — same cost (4,95 EUR), same free-delivery threshold (50 EUR), same handling and transit days. A "free shipping" setting against a site that charges 4,95 EUR is a misrepresentation flag.
 5. Fill every `PLATZHALTER` in `config.ts` and make sure the same legal name and address appear in Stripe and in Merchant Center.
 6. Complete identity verification if Merchant Center asks for it.
@@ -216,13 +216,13 @@ None of this guarantees approval — Google also assesses your business identity
 1. Push the repository to GitHub.
 2. In Vercel, **Add New → Project** and import the repo. The defaults are correct (`next build`).
 3. Add environment variables (Production): `STRIPE_SECRET_KEY`, `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_SITE_URL`.
-4. Deploy. The live shop is `https://thornstead-store-three.vercel.app`.
+4. Deploy. The live shop is `https://hainholt.de`.
 5. Confirm these all load before touching Merchant Center:
-   - `https://thornstead-store-three.vercel.app/`
-   - `https://thornstead-store-three.vercel.app/impressum`
-   - `https://thornstead-store-three.vercel.app/feed/products.xml`
-   - `https://thornstead-store-three.vercel.app/sitemap.xml`
-   - `https://thornstead-store-three.vercel.app/robots.txt`
+   - `https://hainholt.de/`
+   - `https://hainholt.de/impressum`
+   - `https://hainholt.de/feed/products.xml`
+   - `https://hainholt.de/sitemap.xml`
+   - `https://hainholt.de/robots.txt`
 
 ---
 
