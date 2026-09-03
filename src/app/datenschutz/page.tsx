@@ -29,7 +29,7 @@ const sections: LegalSection[] = [
     heading: '1. Verantwortlicher',
     body: [
       'Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne von Artikel 4 Nummer 7 DSGVO ist:',
-      `${business.ownerName}, handelnd unter der Marke ${business.tradingName}, ${formattedAddress()}. E-Mail: ${contact.email}, Telefon: ${contact.phone}.`,
+      `${business.ownerName}, handelnd unter der Marke ${business.tradingName}, ${formattedAddress()}. E-Mail: ${contact.email}.`,
       'Ein Datenschutzbeauftragter ist nicht bestellt, da die gesetzlichen Voraussetzungen des § 38 BDSG nicht erfüllt sind.',
     ],
   },
@@ -90,7 +90,7 @@ const sections: LegalSection[] = [
     heading: '8. Kontaktaufnahme',
     body: [
       'Das Formular auf unserer Kontaktseite überträgt keine Daten an unseren Server. Es öffnet lediglich Ihr eigenes E-Mail-Programm mit einer vorbereiteten Nachricht, die Sie selbst absenden.',
-      'Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir Ihre Angaben ausschließlich zur Bearbeitung Ihres Anliegens. Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe b DSGVO bei Anfragen mit Vertragsbezug, im Übrigen Artikel 6 Absatz 1 Buchstabe f DSGVO.',
+      'Wenn Sie uns per E-Mail oder über das Kontaktformular kontaktieren, verarbeiten wir Ihre Angaben ausschließlich zur Bearbeitung Ihres Anliegens. Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe b DSGVO bei Anfragen mit Vertragsbezug, im Übrigen Artikel 6 Absatz 1 Buchstabe f DSGVO.',
       'Anfragen ohne Vertragsbezug löschen wir spätestens zwei Jahre nach abschließender Bearbeitung.',
     ],
   },

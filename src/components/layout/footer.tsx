@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPin } from 'lucide-react';
 import { Logo } from '@/components/brand/logo';
 import { siteConfig, formattedAddress, vatNote } from '@/lib/config';
 import { getAllCategories } from '@/lib/products';
@@ -65,13 +65,6 @@ export function Footer() {
               >
                 <Mail className="h-4 w-4 shrink-0" />
                 {contact.email}
-              </a>
-              <a
-                href={`tel:${contact.phoneHref}`}
-                className="flex items-center gap-2.5 transition-colors hover:text-foreground"
-              >
-                <Phone className="h-4 w-4 shrink-0" />
-                {contact.phone}
               </a>
             </address>
 

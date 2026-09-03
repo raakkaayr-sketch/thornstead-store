@@ -29,7 +29,7 @@ const sections: LegalSection[] = [
     body: [
       `Sie haben das Recht, binnen ${returns.statutoryCancellationDays} Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.`,
       `Die Widerrufsfrist beträgt ${returns.statutoryCancellationDays} Tage ab dem Tag, an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben beziehungsweise hat. Bei einer Bestellung mehrerer Waren, die getrennt geliefert werden, beginnt die Frist mit dem Erhalt der letzten Ware.`,
-      `Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (${business.ownerName}, ${formattedAddress()}, E-Mail ${contact.email}, Telefon ${contact.phone}) mittels einer eindeutigen Erklärung über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das unten abgedruckte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.`,
+      `Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (${business.ownerName}, ${formattedAddress()}, E-Mail ${contact.email}) mittels einer eindeutigen Erklärung über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das unten abgedruckte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.`,
       'Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.',
     ],
   },
@@ -88,7 +88,7 @@ const sections: LegalSection[] = [
   {
     heading: 'Rücksendeadresse und Kontakt',
     body: [
-      `Bitte senden Sie Waren nicht ohne vorherige Absprache zurück, da Rücksendungen ohne Referenz deutlich länger in der Bearbeitung brauchen. Unsere Anschrift lautet ${formattedAddress()}. Sie erreichen uns unter ${contact.email} oder ${contact.phone}, ${contact.hours}.`,
+      `Bitte senden Sie Waren nicht ohne vorherige Absprache zurück, da Rücksendungen ohne Referenz deutlich länger in der Bearbeitung brauchen. Unsere Anschrift lautet ${formattedAddress()}. Sie erreichen uns unter ${contact.email}, ${contact.hours}.`,
     ],
   },
 ];

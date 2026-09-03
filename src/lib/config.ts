@@ -83,9 +83,6 @@ export const siteConfig = {
    */
   contact: {
     email: 'kontakt@hainholt.de',
-    phone: '+49 152 14085921',
-    /** Nur Ziffern, für tel:-Links. */
-    phoneHref: '+4915214085921',
     street: 'Finkenweg 12',
     city: 'Halle (Saale)',
     postcode: '06110',

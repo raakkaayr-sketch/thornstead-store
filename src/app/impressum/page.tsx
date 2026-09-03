@@ -35,7 +35,6 @@ const sections: LegalSection[] = [
     heading: 'Kontakt',
     list: [
       `E-Mail: ${contact.email}`,
-      `Telefon: ${contact.phone}`,
       `Erreichbarkeit: ${contact.hours}`,
     ],
   },

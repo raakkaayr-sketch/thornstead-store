@@ -41,7 +41,7 @@ export default function UeberUnsPage() {
           </p>
           <p>
             Für Sie bleibt der Weg kurz: Ein Unternehmen verkauft, versendet und
-            geht ans Telefon, wenn etwas nicht stimmt. Wer der Hersteller ist,
+            antwortet, wenn etwas nicht stimmt. Wer der Hersteller ist,
             steht zusammen mit den Pflichtangaben zur Produktsicherheit auf jeder
             Produktseite.
           </p>
@@ -70,9 +70,8 @@ export default function UeberUnsPage() {
           <h2>Kontakt</h2>
           <p>
             Verantwortlich ist {business.ownerName}, {formattedAddress()}.
-            Schreiben Sie an {contact.email} oder rufen Sie an unter{' '}
-            {contact.phone}, {contact.hours}. Beides liest und beantwortet ein
-            Mensch.
+            Schreiben Sie an {contact.email}, {contact.hours}. Jede Nachricht
+            liest und beantwortet ein Mensch.
           </p>
         </div>
 
@@ -89,7 +88,6 @@ export default function UeberUnsPage() {
             )}
             <Row label="Anschrift" value={formattedAddress()} />
             <Row label="E-Mail" value={contact.email} />
-            <Row label="Telefon" value={contact.phone} />
             <Row label="Lieferung nach" value="Deutschland" />
             <Row label="Währung" value="Euro (EUR)" />
           </dl>
