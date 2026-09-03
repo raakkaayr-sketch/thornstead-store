@@ -1,11 +1,16 @@
+import { unstable_noStore as noStore } from 'next/cache';
 import type Stripe from 'stripe';
 import { siteConfig } from './config';
 import type { OrderStatus } from './order-types';
 import { getStripe } from './stripe';
 import { formatPrice } from './utils';
 
-/** Wie viele Checkout-Sessions höchstens von Stripe gelesen werden. */
-const SESSION_CAP = 150;
+/** Abgeschlossene Käufe — das sind die echten Bestellungen. */
+const COMPLETE_CAP = 100;
+/** Offene Checkout-Versuche, damit „Zahlung offen“ nicht leer wirkt. */
+const OPEN_CAP = 40;
+/** Zusätzliche erfolgreiche Zahlungen, falls eine Session in der Liste fehlt. */
+const INTENT_LOOKBACK = 40;
 
 export const FULFILLMENT_META = 'fulfillment';
 export const TRACKING_META = 'tracking';
@@ -241,51 +246,123 @@ export function mapSession(session: Stripe.Checkout.Session): AdminOrder {
   };
 }
 
-async function listSessionsPage(
-  startingAfter: string | undefined,
-  limit: number,
-  expandCharge: boolean
-) {
-  return getStripe().checkout.sessions.list({
-    limit,
-    starting_after: startingAfter,
-    expand: expandCharge
-      ? ['data.line_items', 'data.payment_intent.latest_charge']
-      : ['data.line_items', 'data.payment_intent'],
+const LIST_EXPANDS: string[][] = [
+  ['data.line_items', 'data.payment_intent.latest_charge'],
+  ['data.line_items', 'data.payment_intent'],
+  ['data.line_items'],
+  [],
+];
+
+async function listSessionsByStatus(
+  status: 'complete' | 'open',
+  cap: number
+): Promise<Stripe.Checkout.Session[]> {
+  const collected: Stripe.Checkout.Session[] = [];
+  let startingAfter: string | undefined;
+  let expandIndex = 0;
+
+  while (collected.length < cap) {
+    const params: Stripe.Checkout.SessionListParams = {
+      limit: Math.min(100, cap - collected.length),
+      status,
+      starting_after: startingAfter,
+    };
+    const expand = LIST_EXPANDS[expandIndex];
+    if (expand.length) params.expand = expand;
+
+    try {
+      const page = await getStripe().checkout.sessions.list(params);
+      collected.push(...page.data);
+      if (!page.has_more || page.data.length === 0) break;
+      startingAfter = page.data[page.data.length - 1].id;
+    } catch (error) {
+      if (expandIndex < LIST_EXPANDS.length - 1) {
+        expandIndex += 1;
+        continue;
+      }
+      throw error;
+    }
+  }
+
+  return collected;
+}
+
+async function sessionsForSucceededIntents(
+  knownIntentIds: Set<string>
+): Promise<Stripe.Checkout.Session[]> {
+  const intents = await getStripe().paymentIntents.list({
+    limit: INTENT_LOOKBACK,
   });
+  const missing = intents.data.filter(
+    (intent) => intent.status === 'succeeded' && !knownIntentIds.has(intent.id)
+  );
+  if (!missing.length) return [];
+
+  const pages = await Promise.all(
+    missing.map((intent) =>
+      getStripe().checkout.sessions.list({
+        payment_intent: intent.id,
+        limit: 1,
+        expand: ['data.line_items'],
+      })
+    )
+  );
+
+  return pages
+    .map((page) => page.data[0])
+    .filter((session): session is Stripe.Checkout.Session => Boolean(session));
 }
 
 /**
  * Liest Bestellungen live von der Stripe-API. Es gibt keinen Webhook und
  * keine eigene Bestelldatenbank — Stripe bleibt die Quelle.
+ *
+ * Zuerst abgeschlossene Checkout-Sessions, sonst würden abgegebene
+ * Zahlungsversuche die echten Käufe aus der begrenzten Liste verdrängen.
  */
 export async function listAdminOrders(): Promise<AdminOrder[]> {
-  const collected: Stripe.Checkout.Session[] = [];
-  let startingAfter: string | undefined;
-  let expandCharge = true;
+  noStore();
 
-  while (collected.length < SESSION_CAP) {
-    const limit = Math.min(100, SESSION_CAP - collected.length);
-    let page: Stripe.ApiList<Stripe.Checkout.Session>;
-    try {
-      page = await listSessionsPage(startingAfter, limit, expandCharge);
-    } catch (error) {
-      if (expandCharge) {
-        expandCharge = false;
-        page = await listSessionsPage(startingAfter, limit, false);
-      } else {
-        throw error;
-      }
-    }
-    collected.push(...page.data);
-    if (!page.has_more || page.data.length === 0) break;
-    startingAfter = page.data[page.data.length - 1].id;
+  const [complete, open] = await Promise.all([
+    listSessionsByStatus('complete', COMPLETE_CAP),
+    listSessionsByStatus('open', OPEN_CAP),
+  ]);
+
+  const byId = new Map<string, Stripe.Checkout.Session>();
+  const intentIds = new Set<string>();
+
+  for (const session of [...complete, ...open]) {
+    byId.set(session.id, session);
+    const intentId = asId(session.payment_intent);
+    if (intentId) intentIds.add(intentId);
   }
 
-  return collected.map(mapSession);
+  for (const session of await sessionsForSucceededIntents(intentIds)) {
+    if (!byId.has(session.id)) byId.set(session.id, session);
+  }
+
+  return [...byId.values()].map(mapSession);
+}
+
+export function adminStripeErrorMessage(error: unknown) {
+  if (error instanceof Error && error.message.trim()) return error.message;
+  return 'Stripe konnte nicht gelesen werden.';
+}
+
+export async function loadAdminOrders(): Promise<{
+  orders: AdminOrder[];
+  error: string | null;
+}> {
+  try {
+    return { orders: await listAdminOrders(), error: null };
+  } catch (error) {
+    console.error('[admin stripe]', error);
+    return { orders: [], error: adminStripeErrorMessage(error) };
+  }
 }
 
 export async function getAdminOrder(sessionId: string): Promise<AdminOrder | null> {
+  noStore();
   try {
     const session = await getStripe().checkout.sessions.retrieve(sessionId, {
       expand: [

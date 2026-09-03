@@ -1,13 +1,15 @@
 import Link from 'next/link';
 import { OrdersTable } from '@/components/admin/orders-table';
+import { StripeLoadError } from '@/components/admin/stripe-load-error';
 import {
   dashboardStats,
   formatCents,
-  listAdminOrders,
+  loadAdminOrders,
 } from '@/lib/admin-orders';
 import { isStripeConfigured } from '@/lib/stripe';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 function StripeMissing() {
   return (
@@ -31,7 +33,18 @@ export default async function AdminHomePage() {
     );
   }
 
-  const orders = await listAdminOrders();
+  const { orders, error } = await loadAdminOrders();
+  if (error) {
+    return (
+      <div>
+        <h1 className="font-display text-3xl">Übersicht</h1>
+        <div className="mt-6">
+          <StripeLoadError message={error} />
+        </div>
+      </div>
+    );
+  }
+
   const stats = dashboardStats(orders);
   const packing = orders.filter((order) => order.status === 'in_bearbeitung');
   const recent = [...orders].sort((a, b) => b.created - a.created).slice(0, 8);
@@ -48,8 +61,9 @@ export default async function AdminHomePage() {
       <div>
         <h1 className="font-display text-3xl">Übersicht</h1>
         <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-          Bestellungen und Kunden werden bei jedem Aufruf direkt von Stripe
-          geladen. Es gibt keinen Webhook und keine Zwischendatenbank.
+          Bestellungen kommen direkt aus Stripe, sobald die Zahlung
+          abgeschlossen ist — ohne Webhook. Diese Seite neu laden, um den
+          aktuellen Stand zu sehen.
         </p>
       </div>
 

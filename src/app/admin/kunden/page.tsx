@@ -1,8 +1,10 @@
 import Link from 'next/link';
-import { formatAdminDateTime, formatCents, groupCustomers, listAdminOrders } from '@/lib/admin-orders';
+import { StripeLoadError } from '@/components/admin/stripe-load-error';
+import { formatAdminDateTime, formatCents, groupCustomers, loadAdminOrders } from '@/lib/admin-orders';
 import { isStripeConfigured } from '@/lib/stripe';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export const metadata = { title: 'Kunden' };
 
@@ -18,15 +20,27 @@ export default async function AdminCustomersPage() {
     );
   }
 
-  const customers = groupCustomers(await listAdminOrders());
+  const { orders, error } = await loadAdminOrders();
+  if (error) {
+    return (
+      <div>
+        <h1 className="font-display text-3xl">Kunden</h1>
+        <div className="mt-6">
+          <StripeLoadError message={error} />
+        </div>
+      </div>
+    );
+  }
+
+  const customers = groupCustomers(orders);
 
   return (
     <div className="space-y-6">
       <div>
         <h1 className="font-display text-3xl">Kunden</h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Aus Checkout-Sessions gruppiert — Name, E-Mail, Telefon, Adresse und
-          Bestellhistorie.
+          Aus Stripe-Checkouts gruppiert — Name, E-Mail, Telefon, Adresse und
+          Bestellhistorie. Ohne Webhook.
         </p>
       </div>
 

@@ -6,11 +6,12 @@ import {
   formatAdminDateTime,
   formatCents,
   groupCustomers,
-  listAdminOrders,
+  loadAdminOrders,
 } from '@/lib/admin-orders';
 import { isStripeConfigured } from '@/lib/stripe';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export const metadata = { title: 'Kunde' };
 
@@ -25,7 +26,10 @@ export default async function AdminCustomerDetailPage({
   const email = emailFromCustomerKey(key);
   if (!email) notFound();
 
-  const customer = groupCustomers(await listAdminOrders()).find(
+  const { orders: loaded, error } = await loadAdminOrders();
+  if (error) notFound();
+
+  const customer = groupCustomers(loaded).find(
     (entry) => entry.email === email
   );
   if (!customer) notFound();

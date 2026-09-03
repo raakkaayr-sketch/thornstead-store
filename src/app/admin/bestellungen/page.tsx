@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import { OrdersTable } from '@/components/admin/orders-table';
-import { listAdminOrders } from '@/lib/admin-orders';
+import { StripeLoadError } from '@/components/admin/stripe-load-error';
+import { loadAdminOrders } from '@/lib/admin-orders';
 import type { OrderStatus } from '@/lib/order-types';
 import { isStripeConfigured } from '@/lib/stripe';
 import { cn } from '@/lib/utils';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export const metadata = { title: 'Bestellungen' };
 
@@ -39,7 +41,19 @@ export default async function AdminOrdersPage({
     );
   }
 
-  let orders = await listAdminOrders();
+  const { orders: loaded, error } = await loadAdminOrders();
+  if (error) {
+    return (
+      <div>
+        <h1 className="font-display text-3xl">Bestellungen</h1>
+        <div className="mt-6">
+          <StripeLoadError message={error} />
+        </div>
+      </div>
+    );
+  }
+
+  let orders = loaded;
   if (active !== 'alle') {
     orders = orders.filter((order) => order.status === active);
   }
@@ -66,8 +80,8 @@ export default async function AdminOrdersPage({
       <div>
         <h1 className="font-display text-3xl">Bestellungen</h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Live aus Stripe. Neue Zahlungen erscheinen nach dem nächsten Laden
-          dieser Seite.
+          Live aus Stripe, ohne Webhook. Abgeschlossene Zahlungen erscheinen
+          nach dem nächsten Laden dieser Seite.
         </p>
       </div>
 

@@ -3,6 +3,7 @@ import { AdminShell } from '@/components/admin/admin-shell';
 import { isAdminAuthenticated } from '@/lib/admin-session';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: 'Verwaltung',
