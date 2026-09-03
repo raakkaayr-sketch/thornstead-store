@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import { Logo } from '@/components/brand/logo';
+import { ConsentSettingsButton } from '@/components/layout/consent-settings-button';
 import { siteConfig, formattedAddress, vatNote } from '@/lib/config';
 import { getAllCategories } from '@/lib/products';
 import { isRealProfileUrl } from '@/lib/social';
@@ -103,7 +105,11 @@ export function Footer() {
           />
           <div className="space-y-8">
             <FooterColumn title="Unternehmen" links={companyLinks} />
-            <FooterColumn title="Rechtliches" links={legalLinks} />
+            <FooterColumn title="Rechtliches" links={legalLinks}>
+              <li>
+                <ConsentSettingsButton />
+              </li>
+            </FooterColumn>
           </div>
         </div>
 
@@ -135,9 +141,11 @@ export function Footer() {
 function FooterColumn({
   title,
   links,
+  children,
 }: {
   title: string;
   links: { href: string; label: string }[];
+  children?: ReactNode;
 }) {
   return (
     <div>
@@ -155,6 +163,7 @@ function FooterColumn({
             </Link>
           </li>
         ))}
+        {children}
       </ul>
     </div>
   );

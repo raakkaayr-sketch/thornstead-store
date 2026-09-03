@@ -7,6 +7,7 @@ import { CheckCircle2 } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button-variants';
 import { useCart } from '@/components/providers/cart-provider';
 import { siteConfig, deliveryWindow } from '@/lib/config';
+import { trackPurchaseConversion } from '@/lib/ads';
 import { formatPrice } from '@/lib/utils';
 
 interface SessionSummary {
@@ -35,6 +36,15 @@ export function OrderConfirmation() {
       .then((data: SessionSummary | null) => data && setSummary(data))
       .catch(() => undefined);
   }, [sessionId]);
+
+  useEffect(() => {
+    if (!summary?.id || summary.amountTotal == null) return;
+    void trackPurchaseConversion({
+      transactionId: summary.id,
+      value: Number((summary.amountTotal / 100).toFixed(2)),
+      currency: summary.currency || 'EUR',
+    });
+  }, [summary]);
 
   return (
     <div className="container-page flex min-h-[60vh] max-w-xl flex-col items-center justify-center gap-6 px-6 py-16 text-center">
