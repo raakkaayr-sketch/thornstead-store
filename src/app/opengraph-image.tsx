@@ -15,7 +15,7 @@ export default function OpengraphImage() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          backgroundColor: '#f8f6f1',
+          backgroundColor: '#f8f3ef',
           padding: 72,
         }}
       >
@@ -25,16 +25,16 @@ export default function OpengraphImage() {
               width: 64,
               height: 64,
               borderRadius: 18,
-              backgroundColor: '#4a693e',
+              backgroundColor: '#BC5529',
             }}
           />
-          <span style={{ fontSize: 40, color: '#2a2723' }}>
+          <span style={{ fontSize: 40, color: '#2C221E' }}>
             {siteConfig.name}
           </span>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-          <span style={{ fontSize: 68, color: '#2a2723', lineHeight: 1.1 }}>
+          <span style={{ fontSize: 68, color: '#2C221E', lineHeight: 1.1 }}>
             Ausgewählte Küchengeräte, nach Deutschland geliefert.
           </span>
           <span style={{ fontSize: 30, color: '#6b665e' }}>

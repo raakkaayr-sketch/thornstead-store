@@ -4,34 +4,34 @@
 
 @layer base {
   :root {
-    /* Warm white, stone and moss — the Hainholt palette. */
-    --background: 40 33% 98%;
-    --foreground: 30 8% 14%;
+    /* Linen, cast iron and copper — cookware, not garden. */
+    --background: 32 28% 97%;
+    --foreground: 18 14% 13%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 30 8% 14%;
+    --card: 36 40% 99%;
+    --card-foreground: 18 14% 13%;
 
-    --muted: 38 20% 94%;
-    --muted-foreground: 30 6% 42%;
+    --muted: 30 18% 93%;
+    --muted-foreground: 22 8% 40%;
 
-    --accent: 38 24% 92%;
-    --accent-foreground: 30 8% 14%;
+    --accent: 28 20% 92%;
+    --accent-foreground: 18 14% 13%;
 
-    --primary: 30 9% 16%;
-    --primary-foreground: 40 33% 98%;
+    --primary: 18 14% 13%;
+    --primary-foreground: 36 35% 97%;
 
-    --secondary: 38 20% 94%;
-    --secondary-foreground: 30 8% 14%;
+    --secondary: 30 18% 93%;
+    --secondary-foreground: 18 14% 13%;
 
     --destructive: 0 62% 44%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 34 16% 87%;
-    --input: 34 16% 87%;
-    --ring: 103 26% 33%;
+    --border: 26 16% 85%;
+    --input: 26 16% 85%;
+    --ring: 18 64% 45%;
 
-    --brand: 103 26% 33%;
-    --brand-foreground: 0 0% 100%;
+    --brand: 18 64% 45%;
+    --brand-foreground: 36 40% 98%;
 
     --radius: 0.75rem;
 
@@ -42,33 +42,33 @@
   }
 
   .dark {
-    --background: 30 8% 9%;
-    --foreground: 40 20% 94%;
+    --background: 18 12% 8%;
+    --foreground: 32 22% 94%;
 
-    --card: 30 8% 12%;
-    --card-foreground: 40 20% 94%;
+    --card: 18 10% 11%;
+    --card-foreground: 32 22% 94%;
 
-    --muted: 30 6% 16%;
-    --muted-foreground: 35 8% 64%;
+    --muted: 18 8% 15%;
+    --muted-foreground: 28 10% 64%;
 
-    --accent: 30 6% 18%;
-    --accent-foreground: 40 20% 94%;
+    --accent: 18 10% 16%;
+    --accent-foreground: 32 22% 94%;
 
-    --primary: 40 20% 94%;
-    --primary-foreground: 30 8% 12%;
+    --primary: 32 22% 94%;
+    --primary-foreground: 18 14% 10%;
 
-    --secondary: 30 6% 16%;
-    --secondary-foreground: 40 20% 94%;
+    --secondary: 18 8% 15%;
+    --secondary-foreground: 32 22% 94%;
 
     --destructive: 0 55% 52%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 6% 21%;
-    --input: 30 6% 21%;
-    --ring: 100 26% 52%;
+    --border: 18 8% 20%;
+    --input: 18 8% 20%;
+    --ring: 20 58% 62%;
 
-    --brand: 100 26% 52%;
-    --brand-foreground: 30 8% 9%;
+    --brand: 20 58% 62%;
+    --brand-foreground: 18 14% 10%;
   }
 
   * {

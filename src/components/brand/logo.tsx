@@ -2,8 +2,8 @@ import { cn } from '@/lib/utils';
 import { siteConfig } from '@/lib/config';
 
 /**
- * Hainholt mark: a sprig growing from a grounded base, drawn in a single
- * weight so it stays legible at favicon size.
+ * Hainholt mark: a skillet, drawn in one weight so it stays clear at
+ * favicon size. Copper square, cream pan.
  */
 export function LogoMark({ className }: { className?: string }) {
   return (
@@ -14,31 +14,28 @@ export function LogoMark({ className }: { className?: string }) {
       className={cn('h-8 w-8', className)}
     >
       <rect width="32" height="32" rx="9" className="fill-brand" />
+      <circle
+        cx="13.5"
+        cy="16"
+        r="6.4"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        className="text-brand-foreground"
+      />
+      <circle
+        cx="13.5"
+        cy="16"
+        r="2.1"
+        fill="currentColor"
+        className="text-brand-foreground"
+        opacity="0.45"
+      />
       <path
-        d="M16 25V13"
+        d="M20 16h6.2"
         stroke="currentColor"
         strokeWidth="1.8"
         strokeLinecap="round"
         className="text-brand-foreground"
-      />
-      <path
-        d="M16 17c0-3.3 2.4-6 5.4-6 0 3.3-2.4 6-5.4 6Z"
-        fill="currentColor"
-        className="text-brand-foreground"
-      />
-      <path
-        d="M16 21c0-2.8-2-5-4.6-5 0 2.8 2 5 4.6 5Z"
-        fill="currentColor"
-        className="text-brand-foreground"
-        opacity="0.72"
-      />
-      <path
-        d="M10.5 25h11"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        className="text-brand-foreground"
-        opacity="0.5"
       />
     </svg>
   );
