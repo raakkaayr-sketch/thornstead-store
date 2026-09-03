@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { GoogleAdsScripts } from '@/components/analytics/google-ads-scripts';
 import { StoreShell } from '@/components/layout/store-shell';
 import { Providers } from '@/components/providers';
 import { siteConfig } from '@/lib/config';
@@ -59,7 +58,6 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <GoogleAdsScripts />
         <Providers>
           <StoreShell>{children}</StoreShell>
         </Providers>

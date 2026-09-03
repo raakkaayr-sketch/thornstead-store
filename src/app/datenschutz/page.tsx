@@ -6,23 +6,33 @@ import { siteConfig, formattedAddress } from '@/lib/config';
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
   description:
-    'Wie wir personenbezogene Daten nach DSGVO und TDDDG verarbeiten: Hosting, Bestellabwicklung, Zahlung, Google Ads, lokale Browserspeicherung und Ihre Rechte.',
+    'Wie wir personenbezogene Daten nach DSGVO und TDDDG verarbeiten: Hosting, Bestellabwicklung, Zahlung, lokale Browserspeicherung, Google Ads und Ihre Rechte.',
   alternates: { canonical: '/datenschutz' },
 };
 
 const { business, contact, payment } = siteConfig;
 
 /**
- * Diese Erklärung beschreibt nur, was tatsächlich stattfindet: Shop-Betrieb
- * über Local Storage (einwilligungsfrei nach § 25 Abs. 2 Nr. 2 TDDDG) und
- * Google Ads Conversion Tracking nach Einwilligung (§ 25 Abs. 1 TDDDG).
+ * Diese Erklärung beschreibt bewusst nur, was tatsächlich stattfindet.
+ *
+ * Warenkorb, Merkliste, Ansichtsverlauf und Designwahl liegen ausschließlich im
+ * Local Storage des Browsers und sind für den Betrieb des Shops erforderlich
+ * (§ 25 Abs. 2 Nr. 2 TDDDG) — dafür wird keine Einwilligung eingeholt.
+ *
+ * Darüber hinaus ist Google Ads Conversion Tracking eingebunden. Der
+ * Google-Tag wird nicht mit der Seite ausgeliefert, sondern erst nach aktiver
+ * Einwilligung nachgeladen (§ 25 Abs. 1 TDDDG, Art. 6 Abs. 1 lit. a DSGVO);
+ * die Logik dazu steht in src/lib/consent.ts und src/lib/gtag.ts.
+ *
+ * Wird ein weiterer Dienst ergänzt — Google Analytics, Meta Pixel und
+ * Ähnliches —, gehört er in Abschnitt 9 und in den Text des Banners.
  */
 const sections: LegalSection[] = [
   {
     heading: '1. Verantwortlicher',
     body: [
       'Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne von Artikel 4 Nummer 7 DSGVO ist:',
-      `${business.ownerName}, handelnd unter der Marke ${business.tradingName}, ${formattedAddress()}. E-Mail: ${contact.email}, Telefon: ${contact.phone}.`,
+      `${business.ownerName}, handelnd unter der Marke ${business.tradingName}, ${formattedAddress()}. E-Mail: ${contact.email}.`,
       'Ein Datenschutzbeauftragter ist nicht bestellt, da die gesetzlichen Voraussetzungen des § 38 BDSG nicht erfüllt sind.',
     ],
   },
@@ -30,7 +40,7 @@ const sections: LegalSection[] = [
     heading: '2. Umfang der Verarbeitung',
     body: [
       'Wir verarbeiten personenbezogene Daten nur, soweit dies für die Bereitstellung dieser Website und die Abwicklung Ihrer Bestellung erforderlich ist oder Sie eingewilligt haben.',
-      'Wir verkaufen keine personenbezogenen Daten. Conversion-Daten übermitteln wir an Google nur, wenn Sie in Google Ads eingewilligt haben.',
+      'Wir verkaufen keine personenbezogenen Daten und geben sie nicht zu Werbezwecken an Dritte weiter.',
     ],
   },
   {
@@ -44,6 +54,7 @@ const sections: LegalSection[] = [
   {
     heading: '4. Lokale Speicherung im Browser und Cookies',
     body: [
+      'Ohne Ihre Einwilligung setzen wir keine Analyse-, Tracking- oder Werbe-Cookies ein. Wie Google Ads behandelt wird, steht in Abschnitt 9.',
       'Für den Betrieb des Shops speichern wir einige Angaben im Local Storage Ihres Browsers. Diese Daten verlassen Ihr Gerät nicht und werden von uns nicht ausgelesen:',
     ],
     list: [
@@ -51,27 +62,18 @@ const sections: LegalSection[] = [
       'Ihre Merkliste',
       'Die zuletzt angesehenen Produkte',
       'Ihre Auswahl zwischen hellem und dunklem Design',
-      'Ihre Entscheidung zu Google Ads, damit das Banner nicht erneut erscheint',
+      'Ihre Entscheidung über Marketing-Cookies, damit das Banner nicht erneut erscheint',
     ],
   },
   {
     heading: '5. Rechtsgrundlage der lokalen Speicherung',
     body: [
-      'Der Zugriff auf Informationen in Ihrem Endgerät ist nach § 25 Absatz 2 Nummer 2 TDDDG einwilligungsfrei, wenn er unbedingt erforderlich ist, damit ein von Ihnen ausdrücklich gewünschter Dienst bereitgestellt werden kann. Das gilt für Warenkorb, Merkliste, Ansichtsverlauf und Designwahl.',
-      'Google-Ads-Cookies setzen wir nur nach Ihrer Einwilligung (§ 25 Absatz 1 TDDDG). Sie können den Local Storage und Cookies jederzeit über die Einstellungen Ihres Browsers löschen. Warenkorb, Merkliste und Designwahl werden dadurch zurückgesetzt.',
+      'Der Zugriff auf Informationen in Ihrem Endgerät ist nach § 25 Absatz 2 Nummer 2 TDDDG einwilligungsfrei, wenn er unbedingt erforderlich ist, damit ein von Ihnen ausdrücklich gewünschter Dienst bereitgestellt werden kann. Genau darauf beschränken wir uns.',
+      'Sie können den Local Storage jederzeit über die Einstellungen Ihres Browsers löschen. Warenkorb, Merkliste und Designwahl werden dadurch zurückgesetzt.',
     ],
   },
   {
-    heading: '6. Google Ads Conversion Tracking',
-    body: [
-      'Mit Ihrer Einwilligung setzen wir Google Ads Conversion Tracking ein, um zu messen, ob eine über eine Google-Anzeige begonnene Sitzung zu einem Kauf auf dieser Website geführt hat. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, kann als Unterauftragsverarbeiter eingesetzt werden.',
-      'Auf allen Seiten laden wir das Google-Tag (gtag.js). Ohne Einwilligung bleibt der Consent Mode auf „denied“: Es werden keine Werbe-Cookies gesetzt. Nach Einwilligung kann Google Cookies setzen (insbesondere zur Zuordnung von Anzeigenklicks) und auf der Bestätigungsseite nach einem Kauf ein Conversion-Ereignis mit Bestellwert, Währung und einer Bestellreferenz empfangen.',
-      'Rechtsgrundlage ist Ihre Einwilligung nach Artikel 6 Absatz 1 Buchstabe a DSGVO und § 25 Absatz 1 TDDDG. Die Einwilligung ist freiwillig und kann jederzeit mit Wirkung für die Zukunft über den Link „Cookie-Einstellungen“ im Footer oder über die Einstellungen Ihres Browsers widerrufen werden. Der Widerruf berührt nicht die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung.',
-      'Google kann Daten in den USA verarbeiten. Soweit der Empfänger nach dem EU-US Data Privacy Framework zertifiziert ist, erfolgt die Übermittlung nach Artikel 45 DSGVO, im Übrigen auf Grundlage der Standardvertragsklauseln nach Artikel 46 Absatz 2 Buchstabe c DSGVO. Weitere Angaben finden Sie unter policies.google.com/privacy und business.safety.google/privacy/.',
-    ],
-  },
-  {
-    heading: '7. Bestellabwicklung',
+    heading: '6. Bestellabwicklung',
     body: [
       'Für eine Bestellung verarbeiten wir Ihren Namen, Ihre Lieferanschrift, Ihre E-Mail-Adresse, die bestellten Artikel und die Zahlungsinformationen.',
       'Wenn Sie den Status einer Bestellung abfragen oder sie stornieren, prüfen wir Bestellreferenz und E-Mail-Adresse gegen die bei Stripe gespeicherten Angaben. Ohne diese Übereinstimmung wird keine Bestellung angezeigt.',
@@ -80,7 +82,7 @@ const sections: LegalSection[] = [
     ],
   },
   {
-    heading: '8. Zahlungsabwicklung',
+    heading: '7. Zahlungsabwicklung',
     body: [
       `Die Zahlung erfolgt über ${payment.processor}. Für Kundinnen und Kunden im Europäischen Wirtschaftsraum ist Stripe Payments Europe Limited, 1 Grand Canal Street Lower, Dublin 2, Irland verantwortlich.`,
       'Wenn Sie die Bestellung abschicken, erscheint auf unserer Kasse ein von Stripe betriebenes Zahlungsformular. Ihre Kartendaten geben Sie ausschließlich dort ein; sie werden weder an uns übermittelt noch von uns gespeichert. Wir erhalten lediglich die Information, ob die Zahlung erfolgreich war, sowie die zur Bestellzuordnung notwendigen Angaben. Eine Weiterleitung auf checkout.stripe.com findet nicht statt.',
@@ -88,11 +90,22 @@ const sections: LegalSection[] = [
     ],
   },
   {
-    heading: '9. Kontaktaufnahme',
+    heading: '8. Kontaktaufnahme',
     body: [
       'Das Formular auf unserer Kontaktseite überträgt keine Daten an unseren Server. Es öffnet lediglich Ihr eigenes E-Mail-Programm mit einer vorbereiteten Nachricht, die Sie selbst absenden.',
-      'Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir Ihre Angaben ausschließlich zur Bearbeitung Ihres Anliegens. Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe b DSGVO bei Anfragen mit Vertragsbezug, im Übrigen Artikel 6 Absatz 1 Buchstabe f DSGVO.',
+      'Wenn Sie uns per E-Mail oder über das Kontaktformular kontaktieren, verarbeiten wir Ihre Angaben ausschließlich zur Bearbeitung Ihres Anliegens. Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe b DSGVO bei Anfragen mit Vertragsbezug, im Übrigen Artikel 6 Absatz 1 Buchstabe f DSGVO.',
       'Anfragen ohne Vertragsbezug löschen wir spätestens zwei Jahre nach abschließender Bearbeitung.',
+    ],
+  },
+  {
+    heading: '9. Google Ads und Conversion-Messung',
+    body: [
+      'Wir schalten Anzeigen über Google Ads und möchten messen, welche Anzeige tatsächlich zu einer Bestellung geführt hat. Dafür binden wir den Google-Tag (gtag.js) ein.',
+      'Der Tag wird nicht mit der Seite ausgeliefert. Er wird erst nachgeladen, nachdem Sie im Banner auf „Akzeptieren" geklickt haben. Solange Sie nicht oder ablehnend entschieden haben, wird keine Verbindung zu Google hergestellt, es werden keine Cookies gesetzt und es werden keine Daten an Google übertragen.',
+      'Nach Ihrer Einwilligung übermitteln wir beim Abschluss einer Bestellung die Bestellreferenz, den Bestellwert und die Währung. Google verarbeitet daneben die üblichen Verbindungsdaten wie IP-Adresse, Browser- und Geräteangaben sowie Cookie-Kennungen, um den Besuch einer vorherigen Anzeige zuzuordnen.',
+      'Rechtsgrundlage für das Speichern und Auslesen von Informationen auf Ihrem Endgerät ist § 25 Absatz 1 TDDDG, für die anschließende Verarbeitung Artikel 6 Absatz 1 Buchstabe a DSGVO — jeweils Ihre Einwilligung.',
+      'Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Eine Übermittlung an die Google LLC in den USA ist dabei nicht ausgeschlossen; sie erfolgt auf Grundlage des EU-US Data Privacy Framework nach Artikel 45 DSGVO sowie ergänzend der Standardvertragsklauseln nach Artikel 46 DSGVO.',
+      'Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Dafür genügt ein Klick auf „Cookie-Einstellungen" im Fußbereich jeder Seite. Die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt davon unberührt.',
     ],
   },
   {
@@ -105,7 +118,7 @@ const sections: LegalSection[] = [
   {
     heading: '11. Übermittlung in Drittländer',
     body: [
-      'Unser Hosting-Anbieter Vercel hat seinen Sitz in den USA. Bei Einwilligung in Google Ads kann Google LLC Daten in den USA verarbeiten. Eine Übermittlung personenbezogener Daten in die USA kann daher nicht vollständig ausgeschlossen werden.',
+      'Unser Hosting-Anbieter Vercel hat seinen Sitz in den USA. Eine Übermittlung personenbezogener Daten in die USA kann daher nicht vollständig ausgeschlossen werden.',
       'Die Übermittlung erfolgt auf Grundlage der Standardvertragsklauseln der Europäischen Kommission nach Artikel 46 Absatz 2 Buchstabe c DSGVO in Verbindung mit ergänzenden Schutzmaßnahmen sowie, soweit der Empfänger zertifiziert ist, auf Grundlage des EU-US Data Privacy Framework nach Artikel 45 DSGVO.',
     ],
   },
@@ -162,7 +175,7 @@ export default function DatenschutzPage() {
           { name: 'Datenschutz', path: '/datenschutz' },
         ]}
       />
-      <LegalContent sections={sections} updated="3. September 2026" />
+      <LegalContent sections={sections} updated="17. August 2026" />
     </>
   );
 }

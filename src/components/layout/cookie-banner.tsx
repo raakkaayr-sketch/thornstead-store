@@ -3,64 +3,70 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import {
-  ADS_CONSENT_OPEN_EVENT,
-  persistAdsConsent,
-  readAdsConsent,
-  type AdsConsent,
-} from '@/lib/ads';
+import { readConsent, subscribeConsent, writeConsent } from '@/lib/consent';
 
 /**
- * Einwilligung für Google Ads nach § 25 Abs. 1 TDDDG.
+ * Echtes Consent-Banner, seit der Shop Google Ads einsetzt.
  *
- * Warenkorb, Merkliste, Ansichtsverlauf und Designwahl bleiben einwilligungsfrei
- * (§ 25 Abs. 2 Nr. 2 TDDDG). Google-Ads-Cookies werden erst nach ausdrücklicher
- * Zustimmung gesetzt. Ablehnen und Akzeptieren sind gleichwertig erreichbar.
+ * Vorgaben, die hier bewusst umgesetzt sind:
+ *  - Der Google-Tag lädt erst nach aktiver Einwilligung (§ 25 Abs. 1 TDDDG).
+ *    Ohne Klick wird keine Verbindung zu Google aufgebaut.
+ *  - "Ablehnen" ist gleichwertig gestaltet wie "Akzeptieren" — gleiche Größe,
+ *    gleiche Ebene. Ein weggedrücktes oder optisch untergeordnetes Ablehnen
+ *    gilt als unwirksame Einwilligung.
+ *  - Wegklicken ohne Entscheidung gibt es nicht; es gibt keinen X-Button, der
+ *    als Zustimmung gewertet würde.
+ *  - Der Widerruf läuft über "Cookie-Einstellungen" im Footer und ist damit
+ *    so einfach wie die Erteilung (Art. 7 Abs. 3 DSGVO).
+ *
+ * Technisch notwendige Speicherung — Warenkorb, Merkliste, Designwahl — ist
+ * davon unberührt und nach § 25 Abs. 2 Nr. 2 TDDDG einwilligungsfrei.
  */
 export function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    try {
-      if (!readAdsConsent()) setVisible(true);
-    } catch {
-      /* Local Storage nicht verfügbar, Hinweis entfällt */
-    }
-
-    const open = () => setVisible(true);
-    window.addEventListener(ADS_CONSENT_OPEN_EVENT, open);
-    return () => window.removeEventListener(ADS_CONSENT_OPEN_EVENT, open);
+    setVisible(readConsent() === null);
+    return subscribeConsent((choice) => setVisible(choice === null));
   }, []);
-
-  const choose = (consent: AdsConsent) => {
-    persistAdsConsent(consent);
-    setVisible(false);
-  };
 
   if (!visible) return null;
 
   return (
     <div
       role="dialog"
-      aria-label="Einwilligung in Google Ads"
+      aria-modal="false"
+      aria-label="Einwilligung in Marketing-Cookies"
       className="fixed inset-x-0 bottom-0 z-[70] animate-fade-up border-t border-border bg-card/95 backdrop-blur"
     >
       <div className="container-page flex flex-col gap-4 px-6 py-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm text-muted-foreground">
+        <p className="max-w-2xl text-sm text-muted-foreground">
           Warenkorb, Merkliste und Designwahl speichern wir lokal in Ihrem
-          Browser, damit der Shop funktioniert. Mit Ihrer Einwilligung setzen
-          wir Google Ads ein, um Käufe als Conversions zu messen. Sie können
-          ablehnen — der Einkauf bleibt davon unberührt. Einzelheiten in der{' '}
+          Browser — das ist für den Shop notwendig. Zusätzlich möchten wir
+          Google Ads einsetzen, um zu messen, welche Anzeige zu einer
+          Bestellung geführt hat. Das setzen wir nur mit Ihrer Einwilligung
+          ein; ohne Zustimmung wird nichts an Google übertragen. Einzelheiten
+          in der{' '}
           <Link href="/datenschutz" className="text-brand hover:underline">
             Datenschutzerklärung
           </Link>
           .
         </p>
         <div className="flex shrink-0 gap-2">
-          <Button variant="outline" size="sm" onClick={() => choose('denied')}>
+          <Button
+            variant="outline"
+            size="sm"
+            className="min-w-[120px]"
+            onClick={() => writeConsent('denied')}
+          >
             Ablehnen
           </Button>
-          <Button variant="brand" size="sm" onClick={() => choose('granted')}>
+          <Button
+            variant="brand"
+            size="sm"
+            className="min-w-[120px]"
+            onClick={() => writeConsent('granted')}
+          >
             Akzeptieren
           </Button>
         </div>

@@ -7,6 +7,7 @@ import { WishlistProvider } from './wishlist-provider';
 import { RecentlyViewedProvider } from './recently-viewed-provider';
 import { CartDrawer } from '@/components/cart/cart-drawer';
 import { CookieBanner } from '@/components/layout/cookie-banner';
+import { GoogleAds } from '@/components/analytics/google-ads';
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -25,6 +26,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
             {children}
             {isAdmin ? null : <CartDrawer />}
             {isAdmin ? null : <CookieBanner />}
+            {isAdmin ? null : <GoogleAds />}
           </RecentlyViewedProvider>
         </WishlistProvider>
       </CartProvider>

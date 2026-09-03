@@ -71,7 +71,7 @@ const faqs = [
   },
   {
     q: 'Haben Sie ein Ladengeschäft?',
-    a: `Wir verkaufen ausschließlich online, was ein Teil des Grundes ist, warum die Preise dort liegen, wo sie liegen. Sie erreichen uns per E-Mail unter ${contact.email} oder telefonisch unter ${contact.phone}, ${contact.hours}.`,
+    a: `Wir verkaufen ausschließlich online. Sie erreichen uns per E-Mail unter ${contact.email}, ${contact.hours}; wir antworten innerhalb eines Werktags.`,
   },
 ];
 

@@ -15,7 +15,7 @@
     },
     "category": "Kaffee & Espresso",
     "categorySlug": "kaffee-espresso",
-    "price": 550,
+    "price": 412.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -36,7 +36,7 @@
       }
     ],
     "shortDescription": "Milchsystem, das sich in zwei Teilen unter fließendem Wasser reinigen lässt — ohne Schläuche.",
-    "description": "Der Grund, warum dieses Gerät gekauft wird, ist nicht nur der Kaffee, sondern die Reinigung: Das LatteGo-Milchsystem besteht aus zwei Kunststoffteilen ohne Schläuche. Dazu eine Reihe vorprogrammiereter Getränke, ein Farbdisplay und Profile für unterschiedliche Vorlieben im Haushalt. 15 bar, Keramikmahlwerk, 1,8-Liter-Tank. Wer morgens Cappuccino und nachmittags einen Americano will, stellt beides einmal ein und drückt danach nur noch die Taste.",
+    "description": "Das LatteGo-Milchsystem besteht aus zwei Kunststoffteilen ohne Schläuche und lässt sich unter fließendem Wasser reinigen. Dazu eine Reihe vorprogrammierter Getränke, ein Farbdisplay und Profile für unterschiedliche Vorlieben im Haushalt. 15 bar, Keramikmahlwerk, 1,8-Liter-Tank. Wer morgens Cappuccino und nachmittags einen Americano möchte, stellt beides einmal ein und drückt danach nur noch die Taste.",
     "features": [
       "LatteGo-Milchsystem aus zwei Teilen, ohne Schläuche",
       "Keramikmahlwerk mit einstellbarem Mahlgrad",
@@ -109,7 +109,7 @@
     },
     "category": "Kaffee & Espresso",
     "categorySlug": "kaffee-espresso",
-    "price": 650,
+    "price": 487.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -203,7 +203,7 @@
     },
     "category": "Kaffee & Espresso",
     "categorySlug": "kaffee-espresso",
-    "price": 800,
+    "price": 599.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -293,7 +293,7 @@
     },
     "category": "Kaffee & Espresso",
     "categorySlug": "kaffee-espresso",
-    "price": 750,
+    "price": 562.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -314,7 +314,7 @@
       }
     ],
     "shortDescription": "Schweizer Vollautomat, reduziert auf schwarzen Kaffee und Espresso.",
-    "description": "Kein Milchsystem, keine Getränkeliste über zwei Bildschirmseiten — dieses Gerät konzentriert sich auf Espresso, Kaffee und Kaffee lang. Professional Aroma Grinder, Pulse Extraction Process und 3D-Brüheinheit. Entsprechend wenig kann kaputtgehen und entsprechend kurz ist die tägliche Reinigung. CLEARYL-Smart-Filter mit RFID, heißes Wasser über den separaten Auslauf. Preisstabil im Markt, Ersatzteile langfristig verfügbar.",
+    "description": "Kein Milchsystem, keine Getränkeliste über zwei Bildschirmseiten — dieses Gerät konzentriert sich auf Espresso, Kaffee und Kaffee lang. Professional Aroma Grinder, Pulse Extraction Process und 3D-Brüheinheit. Entsprechend wenig kann kaputtgehen und entsprechend kurz ist die tägliche Reinigung. CLEARYL-Smart-Filter mit RFID, heißes Wasser über den separaten Auslauf.",
     "features": [
       "Professional Aroma Grinder, gleichbleibende Mahlqualität",
       "Pulse Extraction Process (P.E.P.®) für Espresso",
@@ -387,7 +387,7 @@
     },
     "category": "Kaffee & Espresso",
     "categorySlug": "kaffee-espresso",
-    "price": 750,
+    "price": 562.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -481,11 +481,11 @@
     },
     "category": "Kaffee & Espresso",
     "categorySlug": "kaffee-espresso",
-    "price": 280,
+    "price": 209.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "8004399025462",
     "googleProductCategory": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Coffee Makers & Espresso Machines",
     "images": [
       {
@@ -502,7 +502,7 @@
       }
     ],
     "shortDescription": "Schmale Siebträgermaschine für Küchen ohne Platzreserve.",
-    "description": "Die Dedica-Reihe ist bewusst schlank gebaut und passt dort hin, wo eine normale Espressomaschine nicht mehr steht. Trotz der Breite ein vollwertiger Siebträger mit Dampflanze, Thermoblock und einstellbarer Temperatur. Passende Mühle separat — das ist der naheliegende Cross-Sell. Für Espresso und Milchschaum auf kleinem Fußabdruck, nicht für den Einstieg ins Profi-Barista-Setup mit 58-mm-Gruppe.",
+    "description": "Die Dedica-Reihe ist bewusst schlank gebaut und passt dort hin, wo eine normale Espressomaschine nicht mehr steht. Trotz der geringen Breite ein vollwertiger Siebträger mit Dampflanze, Thermoblock und einstellbarer Temperatur. Eine passende Mühle ist nicht im Lieferumfang enthalten. Für Espresso und Milchschaum auf kleinem Fußabdruck, nicht für den Einstieg ins Profi-Barista-Setup mit 58-mm-Gruppe.",
     "features": [
       "Sehr schmales Edelstahlgehäuse",
       "Thermoblock, kurze Aufheizzeit",
@@ -567,11 +567,11 @@
     },
     "category": "Küchenmaschinen",
     "categorySlug": "kuechenmaschinen",
-    "price": 650,
+    "price": 487.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "5413184400286",
     "googleProductCategory": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Mixers",
     "images": [
       {
@@ -588,7 +588,7 @@
       }
     ],
     "shortDescription": "Die Küchenmaschine, die gekauft wird, weil sie auf der Arbeitsplatte stehen bleiben soll.",
-    "description": "Vollmetallgehäuse, Planetenrührwerk und ein Zubehöranschluss, an den sich Fleischwolf, Nudelvorsatz und Gemüseschneider hängen lassen. 4,8-Liter-Schüssel plus zweite 3-Liter-Schüssel, Flexi-Rührer, Flachrührer, Schneebesen und Knethaken. Die Farbauswahl ist kein Detail, sondern der Grund für einen erheblichen Teil der Käufe. Fünf Jahre Herstellergarantie in der EU bei Registrierung.",
+    "description": "Vollmetallgehäuse, Planetenrührwerk und ein Zubehöranschluss, an den sich Fleischwolf, Nudelvorsatz und Gemüseschneider hängen lassen. 4,8-Liter-Schüssel plus zweite 3-Liter-Schüssel, Flexi-Rührer, Flachrührer, Schneebesen und Knethaken. Die Artisan ist in einer breiten Farbauswahl erhältlich. Fünf Jahre Herstellergarantie in der EU bei Registrierung.",
     "features": [
       "Planetenrührwerk, kippbarer Motorkopf",
       "4,8-l-Edelstahlschüssel plus 3-l-Zusatzschüssel",
@@ -657,7 +657,7 @@
     },
     "category": "Küchenmaschinen",
     "categorySlug": "kuechenmaschinen",
-    "price": 600,
+    "price": 449.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -678,7 +678,7 @@
       }
     ],
     "shortDescription": "Küchenmaschine für Haushalte, die regelmäßig große Teigmengen verarbeiten.",
-    "description": "Der direkte Wettbewerber zur Artisan, traditionell stärker bei Brot- und Hefeteig. 1200 W, integrierte Waage in der Schüssel, 5-Liter- und 3,5-Liter-Edelstahlschüssel, K-Beater, Knethaken, Schneebesen und Creaming Beater. Metallgetriebe und ein breites Zubehörprogramm, das den Kauf über Jahre erweiterbar macht. Smart Power Control passt die Leistung an die Masse an.",
+    "description": "Die Alternative zur Artisan, traditionell stark bei Brot- und Hefeteig. 1200 W, integrierte Waage in der Schüssel, 5-Liter- und 3,5-Liter-Edelstahlschüssel, K-Beater, Knethaken, Schneebesen und Creaming Beater. Metallgetriebe und ein breites Zubehörprogramm, das sich über Jahre erweitern lässt. Smart Power Control passt die Leistung an die Masse an.",
     "features": [
       "1200-W-Motor mit Smart Power Control",
       "EasyWeigh-Waage direkt in der Schüssel",
@@ -743,7 +743,7 @@
     },
     "category": "Küchenmaschinen",
     "categorySlug": "kuechenmaschinen",
-    "price": 280,
+    "price": 209.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -764,7 +764,7 @@
       }
     ],
     "shortDescription": "Der Preiseinstieg, wenn die Artisan zu teuer und das Handrührgerät zu wenig ist.",
-    "description": "Deutsche Marke, breite Ersatzteilversorgung und ein Preis, der sie zum häufigsten Hochzeits- und Einzugsgeschenk der Kategorie macht. Für Alltagsteige, Rührteig und Sahne völlig ausreichend. Mehrere Geschwindigkeiten, Kunststoff- oder Edelstahlschüssel je nach Ausführung, Anschluss für Fleischwolf und weiteren Vorsatz. Nicht die Maschine für fünf Kilo Brotteig jede Woche — dafür die, die nach zehn Jahren noch Ersatzteile hat.",
+    "description": "Deutsche Marke, breite Ersatzteilversorgung und ein Preis deutlich unterhalb der großen Metallmaschinen. Für Alltagsteige, Rührteig und Sahne völlig ausreichend. Mehrere Geschwindigkeiten, Kunststoff- oder Edelstahlschüssel je nach Ausführung, Anschluss für Fleischwolf und weiteren Vorsatz. Nicht die Maschine für fünf Kilo Brotteig jede Woche — dafür die, für die es nach Jahren noch Ersatzteile gibt.",
     "features": [
       "Alltagstaugliche Leistung für Teig, Sahne und Rühren",
       "Mehrere Geschwindigkeitsstufen plus Impuls",
@@ -825,7 +825,7 @@
     },
     "category": "Küchenmaschinen",
     "categorySlug": "kuechenmaschinen",
-    "price": 650,
+    "price": 487.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -846,7 +846,7 @@
       }
     ],
     "shortDescription": "Hochleistungsmixer für Smoothies, Suppen und Nussmus in einem Behälter.",
-    "description": "Die Drehzahl reicht aus, um Suppen durch Reibung zu erwärmen und Nüsse zu Mus zu verarbeiten. Der Behälter erkennt sich selbst und passt die Programme an. Drei Programme (Smoothie, Heiße Suppe, Gefrorene Desserts), variable Drehzahl, Pulse. Zielgruppe sind Haushalte mit klarem Gesundheits- oder Sportfokus, nicht wer einmal im Monat einen Shake macht. Lange Garantie, Messer und Behälter separat nachkaufbar.",
+    "description": "Die Drehzahl reicht aus, um Suppen durch Reibung zu erwärmen und Nüsse zu Mus zu verarbeiten. Der Behälter erkennt sich selbst und passt die Programme an. Drei Programme (Smoothie, Heiße Suppe, Gefrorene Desserts), variable Drehzahl, Pulse. Sinnvoll für Haushalte, die den Mixer mehrmals pro Woche nutzen — nicht für den gelegentlichen Shake. Lange Garantie, Messer und Behälter separat nachkaufbar.",
     "features": [
       "Selbstkennende Behälter, Programme passen sich an",
       "Heiße Suppe durch Reibung, ohne Heizstab",
@@ -907,7 +907,7 @@
     },
     "category": "Küchenmaschinen",
     "categorySlug": "kuechenmaschinen",
-    "price": 160,
+    "price": 119.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -927,8 +927,8 @@
         "alt": "Nahaufnahme: Braun MultiQuick 9"
       }
     ],
-    "shortDescription": "Stabmixer am unteren Ende der Preisklasse, mit hoher Absatzmenge.",
-    "description": "Kleines Ticket, aber hoher Durchsatz und ein guter Warenkorb-Auffüller neben den großen Geräten. ActiveBlade bewegt den Mixfuß, PowerBell Plus reduziert Spritzer. Zubehörsets (Zerkleinerer, Schneebesen, Pürierstab) erhöhen den durchschnittlichen Bestellwert deutlich. Für Suppen im Topf, Smoothies im Becher und Babybrei — nicht als Ersatz für einen Standmixer.",
+    "shortDescription": "Stabmixer für Suppen im Topf, Smoothies im Becher und Babybrei.",
+    "description": "ActiveBlade bewegt den Mixfuß unter Last, PowerBell Plus reduziert Spritzer. Erhältlich mit Zubehörsets aus Zerkleinerer, Schneebesen und Pürierstab. Der abnehmbare Schaft ist spülmaschinengeeignet. Für Suppen im Topf, Smoothies im Becher und Babybrei — nicht als Ersatz für einen Standmixer.",
     "features": [
       "ActiveBlade-Mixfuß aus Edelstahl",
       "Hohe Wattzahl für dickflüssige Suppen",
@@ -989,11 +989,11 @@
     },
     "category": "Heißluftfritteusen & Multikocher",
     "categorySlug": "heissluftfritteusen-multikocher",
-    "price": 230,
+    "price": 172.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "622356245272",
     "googleProductCategory": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Fryers",
     "images": [
       {
@@ -1010,7 +1010,7 @@
       }
     ],
     "shortDescription": "Zwei getrennte Garkammern — Hauptgericht und Beilage werden gleichzeitig fertig.",
-    "description": "Das Verkaufsargument der gesamten Kategorie steckt im Namen: zwei Zonen, zwei Temperaturen, eine Endzeit. Sync-Funktion stimmt unterschiedliche Garzeiten auf denselben Endpunkt ab. Großes Gesamtvolumen für Haushalte ab vier Personen, Körbe mit Antihaftbeschichtung, spülmaschinengeeignet. Genau das löst das Problem, das einfache Heißluftfritteusen haben, wenn mehr als eine Sache auf den Tisch soll.",
+    "description": "Der Kern des Geräts steckt im Namen: zwei Zonen, zwei Temperaturen, eine Endzeit. Die Sync-Funktion stimmt unterschiedliche Garzeiten auf denselben Endpunkt ab. Großes Gesamtvolumen für Haushalte ab vier Personen, Körbe mit Antihaftbeschichtung, spülmaschinengeeignet. Genau das löst das Problem, das einfache Heißluftfritteusen haben, wenn mehr als eine Sache auf den Tisch soll.",
     "features": [
       "Zwei unabhängig steuerbare Zonen",
       "Sync und Match für gemeinsames Fertigwerden",
@@ -1071,11 +1071,11 @@
     },
     "category": "Heißluftfritteusen & Multikocher",
     "categorySlug": "heissluftfritteusen-multikocher",
-    "price": 250,
+    "price": 187.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "8710103821847",
     "googleProductCategory": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Fryers",
     "images": [
       {
@@ -1091,8 +1091,8 @@
         "alt": "Nahaufnahme: Philips Airfryer XXL HD9650/90"
       }
     ],
-    "shortDescription": "Der Ursprung der Kategorie, mit der höchsten Markenbekanntheit im Segment.",
-    "description": "Philips hat die Heißluftfritteuse in Deutschland bekannt gemacht, und ein erheblicher Teil der Suchanfragen läuft weiterhin über den Markennamen statt über die Kategorie. XXL-Volumen für Haushalte ab vier Personen, Rapid-Air-Umwälzung, Fat-Removal-Auffang. 7,3-Liter-Korb, digital, spülmaschinengeeignete Teile. Ein ganzes Hähnchen oder 1,4 kg Pommes in einem Durchgang.",
+    "shortDescription": "XXL-Heißluftfritteuse für Haushalte ab vier Personen.",
+    "description": "XXL-Volumen für Haushalte ab vier Personen, Rapid-Air-Umwälzung und Fat-Removal-Auffang für abtropfendes Fett. 7,3-Liter-Korb, digitale Steuerung, spülmaschinengeeignete Teile. Ein ganzes Hähnchen oder 1,4 kg Pommes passen in einen Durchgang.",
     "features": [
       "Rapid-Air-Technologie, wenig bis kein Öl",
       "Fat-Removal fängt überschüssiges Fett auf",
@@ -1157,11 +1157,11 @@
     },
     "category": "Heißluftfritteusen & Multikocher",
     "categorySlug": "heissluftfritteusen-multikocher",
-    "price": 280,
+    "price": 209.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "622356245050",
     "googleProductCategory": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Fryers",
     "images": [
       {
@@ -1178,7 +1178,7 @@
       }
     ],
     "shortDescription": "Schnellkochtopf, Heißluftfritteuse und Slow Cooker in einem Gerät.",
-    "description": "Für kleine Küchen, in denen kein Platz für drei Geräte ist. Die Kombination aus Druckgaren und anschließendem Knusprig-Finish ist das, was in Rezeptvideos gezeigt wird und den Kauf auslöst. SmartLid wechselt zwischen Druck, Heißluft und kombinierter Funktion. 7,5 Liter, mehrere Programme, Zubehörkorb für das Finish.",
+    "description": "Für kleine Küchen, in denen kein Platz für drei Geräte ist. Druckgaren und anschließendes Knusprig-Finish laufen in einem Topf, ohne Umfüllen. SmartLid wechselt zwischen Druck, Heißluft und kombinierter Funktion. 7,5 Liter, mehrere Programme, Zubehörkorb für das Finish.",
     "features": [
       "Druckgaren und Heißluft in einem Topf",
       "SmartLid mit Funktionswahl",
@@ -1235,7 +1235,7 @@
     },
     "category": "Heißluftfritteusen & Multikocher",
     "categorySlug": "heissluftfritteusen-multikocher",
-    "price": 200,
+    "price": 149.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -1256,7 +1256,7 @@
       }
     ],
     "shortDescription": "Multikocher mit großer Rezept-Community im Hintergrund.",
-    "description": "Der Wert liegt weniger im Gerät als im Ökosystem: Zu kaum einem anderen Küchengerät gibt es so viele frei verfügbare Rezepte und Gruppen. Das senkt die Rückgabequote spürbar, weil Käufer das Gerät tatsächlich benutzen. Pro Crisp kombiniert Druckgaren mit einem zweiten Deckel für Heißluft. Edelstahl-Innentopf, mehrere Programme, 8-Quart-Klasse für Familienportionen.",
+    "description": "Zu kaum einem anderen Küchengerät gibt es so viele frei verfügbare Rezepte und Nutzergruppen — wer ohne Kochbuch anfangen will, findet schnell etwas. Pro Crisp kombiniert Druckgaren mit einem zweiten Deckel für Heißluft. Edelstahl-Innentopf, mehrere Programme, 8-Quart-Klasse für Familienportionen.",
     "features": [
       "Zwei Deckel: Druck und Heißluft",
       "Große, gut dokumentierte Rezeptbasis",
@@ -1313,11 +1313,11 @@
     },
     "category": "Töpfe & Pfannen",
     "categorySlug": "toepfe-pfannen",
-    "price": 300,
+    "price": 224.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "024147259770",
     "googleProductCategory": "Home & Garden > Kitchen & Dining > Cookware",
     "images": [
       {
@@ -1334,7 +1334,7 @@
       }
     ],
     "shortDescription": "Gusseisenbräter mit Emaillebeschichtung — Kochgeschirr und Einrichtungsgegenstand zugleich.",
-    "description": "Wird selten aus Not gekauft und fast immer aus Wunsch. Gusseisen speichert Wärme lange, die Emaille macht das Anbraten und die Reinigung unkompliziert. 24 cm ist die Größe, die für vier Personen reicht, ohne die Spülmaschine zu sprengen. Backofenfest, induktionsgeeignet, Signature-Griff größer als die Classic-Serie. Die Farbwahl entscheidet den Kauf mit und führt regelmäßig zu Nachkäufen in weiteren Größen.",
+    "description": "Gusseisen speichert Wärme lange, die Emaille macht das Anbraten und die Reinigung unkompliziert. 24 cm ist die Größe, die für vier Personen reicht, ohne die Spülmaschine zu sprengen. Backofenfest, induktionsgeeignet, Signature-Griff größer als bei der Classic-Serie. Erhältlich in mehreren Farben.",
     "features": [
       "Gusseisen mit Emaille innen und außen",
       "Induktion, Gas, Ceran, Backofen",
@@ -1403,7 +1403,7 @@
     },
     "category": "Töpfe & Pfannen",
     "categorySlug": "toepfe-pfannen",
-    "price": 280,
+    "price": 209.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -1424,7 +1424,7 @@
       }
     ],
     "shortDescription": "Schwarze Innenemaille und Tropfnoppen im Deckel für kontinuierliches Umbenetzen.",
-    "description": "Der Deckel ist innen mit Noppen versehen, an denen Kondenswasser gleichmäßig auf das Gargut zurücktropft. Die dunkle Innenemaille ist unempfindlicher gegen Verfärbungen als helle. Gusseisen, induktionsgeeignet, backofenfest. Dauerpräsenz in Kochbüchern und auf Instagram. 24 cm ist die meistverkaufte Größe — Schmorbraten, Brot backen, Eintopf.",
+    "description": "Der Deckel ist innen mit Noppen versehen, an denen Kondenswasser gleichmäßig auf das Gargut zurücktropft. Die dunkle Innenemaille ist unempfindlicher gegen Verfärbungen als helle. Gusseisen, induktionsgeeignet, backofenfest. 24 cm reicht für vier Personen — Schmorbraten, Brot backen, Eintopf.",
     "features": [
       "Tropfnoppen im Deckel für Selbstsoßierung",
       "Matte schwarze Innenemaille",
@@ -1489,7 +1489,7 @@
     },
     "category": "Töpfe & Pfannen",
     "categorySlug": "toepfe-pfannen",
-    "price": 550,
+    "price": 412.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -1510,7 +1510,7 @@
       }
     ],
     "shortDescription": "Deutsches Premium-Topfset, klassisches Hochzeits- und Einzugsgeschenk.",
-    "description": "Edelstahl, massive Cookstar-Böden und ein Aufbau, der auf Jahrzehnte ausgelegt ist. Das Set wird typisch einmal im Leben gekauft, entsprechend hoch ist die Beratungsintensität und entsprechend gut funktionieren ausführliche Produktseiten. Deckel sitzen innen, Schwitzwasser rinnt zurück, Skala innen. Induktion, Backofen, Spülmaschine. Lange Herstellergarantie auf den Boden.",
+    "description": "Edelstahl, massive Cookstar-Böden und ein Aufbau, der auf Jahrzehnte ausgelegt ist. Die Deckel sitzen innen, Schwitzwasser rinnt zurück, die Skala liegt innen. Induktion, Backofen, Spülmaschine. Lange Herstellergarantie auf den Boden.",
     "features": [
       "Cookstar-Allherdboden, auch Induktion",
       "Innenskalierung in Litern",
@@ -1575,7 +1575,7 @@
     },
     "category": "Töpfe & Pfannen",
     "categorySlug": "toepfe-pfannen",
-    "price": 450,
+    "price": 337.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -1596,7 +1596,7 @@
       }
     ],
     "shortDescription": "Materialmix aus Stahlkern und keramischer Oberfläche.",
-    "description": "WMF ist die bekannteste Haushaltswarenmarke Deutschlands, was die Kaufentscheidung erheblich verkürzt. Fusiontec liegt zwischen Edelstahl und Gusseisen: kratzfeste keramische Oberfläche bei geringerem Gewicht als Guss. Induktion, Backofen, pflegeleicht. Farbvarianten (Platinum, Dark Brass und andere) machen das Set zum Einrichtungsgegenstand, nicht nur zum Werkzeug.",
+    "description": "Fusiontec liegt zwischen Edelstahl und Gusseisen: kratzfeste keramische Oberfläche bei geringerem Gewicht als Guss. Induktion, Backofen, pflegeleicht. Erhältlich in mehreren Farbvarianten, unter anderem Platinum und Dark Brass.",
     "features": [
       "Fusiontec-Oberfläche, kratzunempfindlich im Alltag",
       "Leichter als Gusseisenbräter",
@@ -1657,7 +1657,7 @@
     },
     "category": "Töpfe & Pfannen",
     "categorySlug": "toepfe-pfannen",
-    "price": 200,
+    "price": 149.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -1677,8 +1677,8 @@
         "alt": "Nahaufnahme: Zwilling Motion Pfannenset"
       }
     ],
-    "shortDescription": "Solinger Markenname im Einstiegssegment der Antihaftpfannen.",
-    "description": "Aluminium mit Antihaftbeschichtung, deutlich leichter als Guss und für den Alltag gedacht. Der Markenname trägt die Kaufentscheidung, der Preis macht sie leicht. Induktionsfähig je nach Ausführung, backofenfest in einem begrenzten Temperaturbereich. Kein Bräterersatz, sondern die Pfanne für Eier, Pfannkuchen und das schnelle Anbraten.",
+    "shortDescription": "Antihaftpfannen aus Aluminium für den Alltag.",
+    "description": "Aluminium mit Antihaftbeschichtung, deutlich leichter als Guss und für den Alltag gedacht. Induktionsfähig je nach Ausführung, backofenfest in einem begrenzten Temperaturbereich. Kein Bräterersatz, sondern die Pfanne für Eier, Pfannkuchen und das schnelle Anbraten.",
     "features": [
       "Antihaftbeschichtung für fettarmes Braten",
       "Leichtes Aluminium",
@@ -1735,7 +1735,7 @@
     },
     "category": "Messer",
     "categorySlug": "messer",
-    "price": 650,
+    "price": 487.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -1756,7 +1756,7 @@
       }
     ],
     "shortDescription": "Bestückter Messerblock im oberen Preissegment, klassisches Hochzeitsgeschenk.",
-    "description": "Solinger Fertigung, durchgehender Erl und ein Griff, der nach hinten ausgestellt ist — das Erkennungszeichen der Ikon-Linie. Der höchste durchschnittliche Bestellwert der Messerkategorie. PEtec-Schliff, X50CrMoV15, Härte um 58 HRC. Nicht spülmaschinengeeignet. Gravur auf der Klinge ist der naheliegende Zusatz, der den Preisvergleich aushebelt.",
+    "description": "Solinger Fertigung, durchgehender Erl und ein Griff, der nach hinten ausgestellt ist — das Erkennungszeichen der Ikon-Linie. PEtec-Schliff, X50CrMoV15, Härte um 58 HRC. Nicht spülmaschinengeeignet.",
     "features": [
       "Geschmiedet in Solingen, durchgehender Erl",
       "Classic-Ikon-Griff, nach hinten ausgestellt",
@@ -1821,11 +1821,11 @@
     },
     "category": "Messer",
     "categorySlug": "messer",
-    "price": 400,
+    "price": 299.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "4009839521904",
     "googleProductCategory": "Home & Garden > Kitchen & Dining > Kitchen Tools & Utensils > Kitchen Knives",
     "images": [
       {
@@ -1841,8 +1841,8 @@
         "alt": "Nahaufnahme: Zwilling Pro Messerblock, 7-tlg."
       }
     ],
-    "shortDescription": "Die bekannteste Messermarke Deutschlands im meistverkauften Set-Format.",
-    "description": "Der gebogene Klingenübergang (Friodur, Sigmaforge) erlaubt das Wiegeschnitt-Arbeiten bis zum Griff. Für die meisten Käufer ist dieser Block der erste bewusste Messerkauf ihres Lebens — Beratungstexte zahlen sich hier direkt aus. Sieben Teile im Holzblock, Solinger Fertigung, nicht spülmaschinengeeignet. Allzweck, Kochmesser, Brot, Schälmesser — die Grundausstattung ohne Spezialklingen.",
+    "shortDescription": "Sieben Teile im Holzblock — die Grundausstattung ohne Spezialklingen.",
+    "description": "Der gebogene Klingenübergang (Friodur, Sigmaforge) erlaubt das Arbeiten im Wiegeschnitt bis zum Griff. Sieben Teile im Holzblock, Solinger Fertigung, nicht spülmaschinengeeignet. Allzweck, Kochmesser, Brot, Schälmesser — die Grundausstattung ohne Spezialklingen.",
     "features": [
       "Gebogener Klingenübergang für Wiegeschnitt",
       "Sigmaforge, Friodur-Eishärtung",
@@ -1903,11 +1903,11 @@
     },
     "category": "Messer",
     "categorySlug": "messer",
-    "price": 330,
+    "price": 247.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "4009839276019",
     "googleProductCategory": "Home & Garden > Kitchen & Dining > Kitchen Tools & Utensils > Kitchen Knives",
     "images": [
       {
@@ -1923,8 +1923,8 @@
         "alt": "Nahaufnahme: Miyabi 5000 MCD Gyutoh 20 cm"
       }
     ],
-    "shortDescription": "Japanische Klingengeometrie mit deutschem Vertrieb im Hintergrund.",
-    "description": "Damaszierter Klingenaufbau um einen MicroCarbide-Kern, sehr hohe Härte und ein dünner Schliff, der feines Arbeiten erlaubt. Gyutoh 20 cm ist das westliche Kochmesser-Format in japanischer Geometrie. Pakkaholzgriff. Käufer dieser Kategorie recherchieren gründlich und honorieren Produktseiten mit echten Daten statt Marketingtext. Nicht spülmaschinengeeignet, nicht für Knochen oder gefrorene Lebensmittel.",
+    "shortDescription": "Damaszierte japanische Klinge im 20-cm-Gyutoh-Format.",
+    "description": "Damaszierter Klingenaufbau um einen MicroCarbide-Kern, sehr hohe Härte und ein dünner Schliff, der feines Arbeiten erlaubt. Gyutoh 20 cm ist das westliche Kochmesser-Format in japanischer Geometrie. Griff aus Masurbirke. Nicht spülmaschinengeeignet, nicht für Knochen oder gefrorene Lebensmittel.",
     "features": [
       "MC63-MicroCarbide-Kern, Damastlagen",
       "Sehr hohe Härte, dünner Schliff",
@@ -1989,11 +1989,11 @@
     },
     "category": "Messer",
     "categorySlug": "messer",
-    "price": 175,
+    "price": 130.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "4901601556650",
     "googleProductCategory": "Home & Garden > Kitchen & Dining > Kitchen Tools & Utensils > Kitchen Knives",
     "images": [
       {
@@ -2010,7 +2010,7 @@
       }
     ],
     "shortDescription": "Der übliche Einstieg in japanische Küchenmesser in Deutschland.",
-    "description": "Damastlagen um einen harten VG-MAX-Kernstahl, D-förmiger Griff aus Pakkaholz. Hohe Bekanntheit durch Fernsehpräsenz, entsprechend viel Suchvolumen auf dem Modellnamen. 20 cm ist die Standardlänge. Nicht spülmaschinengeeignet. Für den Alltag schärfer als Solinger Haushaltsware, empfindlicher gegen Hebeln und Knochen.",
+    "description": "Damastlagen um einen harten VG-MAX-Kernstahl, D-förmiger Griff aus Pakkaholz. 20 cm ist die Standardlänge für ein Kochmesser. Nicht spülmaschinengeeignet. Im Alltag schärfer als Solinger Haushaltsware, dafür empfindlicher gegen Hebeln und Knochen.",
     "features": [
       "VG-MAX-Kern mit Damastlagen",
       "D-Griff aus Pakkaholz",
@@ -2075,7 +2075,7 @@
     },
     "category": "Grills & Pizzaöfen",
     "categorySlug": "grills-pizzaoefen",
-    "price": 650,
+    "price": 487.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -2095,8 +2095,8 @@
         "alt": "Nahaufnahme: Weber Spirit II E-310"
       }
     ],
-    "shortDescription": "Meistverkaufter Gasgrill Deutschlands, drei Brenner, Anzündung per Knopfdruck.",
-    "description": "Weber ist im Gasgrillsegment die Marke, die ohne lange Recherche gekauft wird. Drei Brenner, Flavorizer Bars, Deckelthermometer, Seitenablagen. Der eigentliche Ertrag liegt im Zubehör — Abdeckhaube, Grillrost, Thermometer und Reinigungsbürste hängen mit hoher Rate am Warenkorb. Nur im Freien betreiben, Gasflasche separat. Nachfolgemodelle der Spirit-Reihe sind bauähnlich; diese Seite führt das E-310-Format.",
+    "shortDescription": "Gasgrill mit drei Brennern und Anzündung per Knopfdruck.",
+    "description": "Drei Brenner, Flavorizer Bars, Deckelthermometer und Seitenablagen. Passendes Zubehör wie Abdeckhaube, Grillrost, Thermometer und Reinigungsbürste ist separat erhältlich. Nur im Freien betreiben, Gasflasche separat. Nachfolgemodelle der Spirit-Reihe sind bauähnlich; diese Seite führt das E-310-Format.",
     "features": [
       "Drei Edelstahlbrenner, elektronische Zündung",
       "Flavorizer Bars gegen Flammenrückschlag",
@@ -2157,7 +2157,7 @@
     },
     "category": "Grills & Pizzaöfen",
     "categorySlug": "grills-pizzaoefen",
-    "price": 300,
+    "price": 224.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -2177,8 +2177,8 @@
         "alt": "Nahaufnahme: Weber Master-Touch GBS 57 cm"
       }
     ],
-    "shortDescription": "Kugelgrill-Referenz mit austauschbarem Rosteinsatz.",
-    "description": "Der Gourmet-BBQ-System-Rost lässt sich in der Mitte gegen Pfanne, Pizzastein oder Wok tauschen — daraus entsteht eine Zubehörkette, die weit über den Grillkauf hinausgeht. 57 cm ist die Größe, die in deutschen Gärten als Standard gilt. Deckelthermometer, One-Touch-Reinigung, Deckelhalter. Robuste Verarbeitung, hoher Wiederverkaufswert. Nur Holzkohle, nur außen.",
+    "shortDescription": "Holzkohle-Kugelgrill, 57 cm, mit austauschbarem Rosteinsatz.",
+    "description": "Der Gourmet-BBQ-System-Rost lässt sich in der Mitte gegen Pfanne, Pizzastein oder Wok tauschen. 57 cm Rostdurchmesser, Deckelthermometer, One-Touch-Reinigung, Deckelhalter. Robuste Verarbeitung. Nur Holzkohle, nur im Freien.",
     "features": [
       "GBS-Rost mit wechselbarem Mitteleinsatz",
       "57 cm Kessel",
@@ -2239,11 +2239,11 @@
     },
     "category": "Grills & Pizzaöfen",
     "categorySlug": "grills-pizzaoefen",
-    "price": 600,
+    "price": 399.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "5060568343099",
     "googleProductCategory": "Home & Garden > Lawn & Garden > Outdoor Living > Outdoor Cooking > Outdoor Ovens",
     "images": [
       {
@@ -2260,7 +2260,7 @@
       }
     ],
     "shortDescription": "Gasbetriebener Pizzaofen für Steinofentemperaturen auf dem Gartentisch.",
-    "description": "Die Kategorie mit dem stärksten Nachfragezuwachs im Außenbereich. L-Brenner, Aufheizzeit im Minutenbereich, Backfläche für Pizzen bis 16 Zoll. Faltbare Beine, um die 19 kg. Schieber, Ersatzstein und Infrarotthermometer sind der naheliegende Zubehörverkauf. Nur im Freien, Propangas. 500 °C sind erreichbar — Handschuhe und Abstand sind keine Dekoration.",
+    "description": "L-Brenner, Aufheizzeit im Minutenbereich, Backfläche für Pizzen bis 16 Zoll. Faltbare Beine, um die 19 kg. Schieber, Ersatzstein und Infrarotthermometer sind separat erhältlich. Nur im Freien, Propangas. 500 °C sind erreichbar — Handschuhe und Abstand sind keine Dekoration.",
     "features": [
       "L-förmiger Gasbrenner, eine Umdrehung der Pizza",
       "Bis 500 °C in rund 20 Minuten",
@@ -2325,11 +2325,11 @@
     },
     "category": "Grills & Pizzaöfen",
     "categorySlug": "grills-pizzaoefen",
-    "price": 450,
+    "price": 269.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
-    "gtin": "",
+    "gtin": "5060967395675",
     "googleProductCategory": "Home & Garden > Lawn & Garden > Outdoor Living > Outdoor Cooking > Outdoor Ovens",
     "images": [
       {
@@ -2345,8 +2345,8 @@
         "alt": "Ooni Karu 12 schräg mit Tür"
       }
     ],
-    "shortDescription": "Pizzaofen für Holz und Gas — Einstieg in die Marke zum niedrigeren Preis.",
-    "description": "Wer mit Holz befeuern will, bekommt den Rauchgeschmack; wer es unkompliziert mag, hängt den Gasbrenner an. Diese Wahlmöglichkeit ist das Kaufargument gegenüber reinen Gasmodellen. 12-Zoll-Pizza, Schornstein, Tür. Karu 12G und Karu 12 sind bauähnlich; geliefert wird die aktuelle Karu-12-Generation. Nur außen, Handschuhe, Stein nicht mit kaltem Wasser abschrecken.",
+    "shortDescription": "Pizzaofen für Holz und Gas, 12 Zoll.",
+    "description": "Wer mit Holz befeuern will, bekommt den Rauchgeschmack; wer es unkompliziert mag, hängt den Gasbrenner an. 12-Zoll-Pizza, Schornstein, Tür. Karu 12G und Karu 12 sind bauähnlich; geliefert wird die aktuelle Karu-12-Generation. Nur im Freien, Handschuhe tragen, den Stein nicht mit kaltem Wasser abschrecken.",
     "features": [
       "Holz und optional Gas",
       "12-Zoll-Backfläche",
@@ -2407,7 +2407,7 @@
     },
     "category": "Grills & Pizzaöfen",
     "categorySlug": "grills-pizzaoefen",
-    "price": 500,
+    "price": 374.99,
     "currency": "EUR",
     "condition": "new",
     "availability": "in_stock",
@@ -2427,8 +2427,8 @@
         "alt": "Gozney Roccbox, Seitenansicht"
       }
     ],
-    "shortDescription": "Kompakter Pizzaofen mit Silikonmantel und eigener Anhängerschaft.",
-    "description": "Die Premium-Alternative zu Ooni, mit dickerer Isolierung, abnehmbarem Standfuß und Silikonhülle, die man anfassen kann, ohne sich sofort zu verbrennen. Gasbrenner serienmäßig, Holzbrenner separat. Kleinere, aber sehr markentreue Zielgruppe, die überdurchschnittlich viel Zubehör mitkauft. 12-Zoll-Pizza, 500 °C, nur außen.",
+    "shortDescription": "Kompakter Pizzaofen mit isolierendem Silikonmantel.",
+    "description": "Dickere Isolierung als bei vielen Modellen dieser Klasse, abnehmbarer Standfuß und ein Silikonmantel, der sich im Betrieb anfassen lässt. Gasbrenner serienmäßig, Holzbrenner separat erhältlich. 12-Zoll-Pizza, 500 °C, nur im Freien.",
     "features": [
       "Starke Isolierung, Silikonmantel",
       "Gasbrenner serienmäßig, Holzbrenner optional",

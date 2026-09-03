@@ -13,7 +13,7 @@
  * GPSR Art. 19, VerpackG) — unvollständige Angaben sind abmahnbar.
  */
 
-const LIVE_SITE_URL = 'https://thornstead-store-three.vercel.app';
+const LIVE_SITE_URL = 'https://hainholt.de';
 const LEGACY_UK_HOST = 'thornstead.store';
 
 function resolveSiteUrl() {
@@ -37,9 +37,9 @@ export const siteConfig = {
     'Hainholt führt ausgewählte Küchengeräte bekannter Marken — Kaffeevollautomaten, Küchenmaschinen, Kochgeschirr, Messer und Grills — mit Versand innerhalb Deutschlands, versandkostenfrei ab 50 €.',
   /**
    * Live-Shop-URL für Canonicals, Sitemap, JSON-LD und den Merchant-Center-Feed.
-   * NEXT_PUBLIC_SITE_URL in Vercel setzen, sobald eine eigene Domain live ist.
-   * Die alte UK-Domain thornstead.store wird ignoriert, damit Google nicht auf
-   * den alten Shop geschickt wird.
+   * Live ist hainholt.de; NEXT_PUBLIC_SITE_URL in Vercel überschreibt den Wert
+   * nur für Vorschau-Umgebungen. Die alte UK-Domain thornstead.store wird
+   * ignoriert, damit Google nicht auf den alten Shop geschickt wird.
    */
   url: resolveSiteUrl(),
   locale: 'de-DE',
@@ -82,10 +82,7 @@ export const siteConfig = {
    * Die Adresse muss mit Stripe und dem Merchant Center übereinstimmen.
    */
   contact: {
-    email: 'contact@thornstead.store',
-    phone: '+49 152 14085921',
-    /** Nur Ziffern, für tel:-Links. */
-    phoneHref: '+4915214085921',
+    email: 'kontakt@hainholt.de',
     street: 'Finkenweg 12',
     city: 'Halle (Saale)',
     postcode: '06110',
@@ -121,7 +118,7 @@ export const siteConfig = {
       postcode: '06110',
       city: 'Halle (Saale)',
       country: 'Deutschland',
-      email: 'contact@thornstead.store',
+      email: 'kontakt@hainholt.de',
     },
   },
 
@@ -168,6 +165,20 @@ export const siteConfig = {
      */
     returnShippingPaidBy: 'customer' as 'customer' | 'merchant',
     restockingFee: false,
+  },
+
+  /**
+   * Google Ads. Der Tag wird ausschließlich nach Einwilligung geladen
+   * (§ 25 Abs. 1 TDDDG) — siehe src/lib/consent.ts.
+   *
+   * conversionLabel ist NICHT die Tag-ID. Das Label steht in Google Ads unter
+   * Ziele → Conversions → die Conversion-Aktion "Kauf" → Tag einrichten und
+   * sieht aus wie "AbC-D_efGhIjKlMn". Solange es leer ist, wird zwar das
+   * purchase-Ereignis gesendet, aber keine Ads-Conversion gezählt.
+   */
+  analytics: {
+    googleAdsId: 'AW-18399591655',
+    purchaseConversionLabel: 'o_K1CLvejO0cEOf5zcVE',
   },
 
   /** Akzeptierte Zahlungsarten, anzugeben nach § 312j Abs. 1 BGB. */

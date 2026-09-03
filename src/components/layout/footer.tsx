@@ -1,8 +1,7 @@
 import Link from 'next/link';
-import type { ReactNode } from 'react';
-import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPin } from 'lucide-react';
 import { Logo } from '@/components/brand/logo';
-import { ConsentSettingsButton } from '@/components/layout/consent-settings-button';
+import { ConsentSettingsLink } from './consent-settings-link';
 import { siteConfig, formattedAddress, vatNote } from '@/lib/config';
 import { getAllCategories } from '@/lib/products';
 import { isRealProfileUrl } from '@/lib/social';
@@ -68,13 +67,6 @@ export function Footer() {
                 <Mail className="h-4 w-4 shrink-0" />
                 {contact.email}
               </a>
-              <a
-                href={`tel:${contact.phoneHref}`}
-                className="flex items-center gap-2.5 transition-colors hover:text-foreground"
-              >
-                <Phone className="h-4 w-4 shrink-0" />
-                {contact.phone}
-              </a>
             </address>
 
             {socials.length > 0 && (
@@ -105,11 +97,7 @@ export function Footer() {
           />
           <div className="space-y-8">
             <FooterColumn title="Unternehmen" links={companyLinks} />
-            <FooterColumn title="Rechtliches" links={legalLinks}>
-              <li>
-                <ConsentSettingsButton />
-              </li>
-            </FooterColumn>
+            <FooterColumn title="Rechtliches" links={legalLinks} />
           </div>
         </div>
 
@@ -132,6 +120,9 @@ export function Footer() {
             Kartenzahlungen werden sicher über {payment.processor} abgewickelt.
             Hainholt sieht und speichert Ihre vollständigen Kartendaten nie.
           </p>
+          <p>
+            <ConsentSettingsLink />
+          </p>
         </div>
       </div>
     </footer>
@@ -141,11 +132,9 @@ export function Footer() {
 function FooterColumn({
   title,
   links,
-  children,
 }: {
   title: string;
   links: { href: string; label: string }[];
-  children?: ReactNode;
 }) {
   return (
     <div>
@@ -163,7 +152,6 @@ function FooterColumn({
             </Link>
           </li>
         ))}
-        {children}
       </ul>
     </div>
   );

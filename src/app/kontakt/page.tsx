@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Clock, Mail, MapPin, Phone } from 'lucide-react';
+import { Clock, Mail, MapPin } from 'lucide-react';
 import { PageHeader } from '@/components/page-header';
 import { ContactForm } from '@/components/contact-form';
 import { siteConfig, formattedAddress } from '@/lib/config';
@@ -8,7 +8,7 @@ import { siteConfig, formattedAddress } from '@/lib/config';
 export const metadata: Metadata = {
   title: 'Kontakt',
   description:
-    'So erreichen Sie Hainholt: E-Mail, Telefon und Postanschrift sowie unsere Erreichbarkeitszeiten.',
+    'So erreichen Sie Hainholt: E-Mail und Postanschrift sowie unsere Erreichbarkeitszeiten.',
   alternates: { canonical: '/kontakt' },
 };
 
@@ -21,12 +21,6 @@ export default function KontaktPage() {
       label: 'E-Mail',
       value: contact.email,
       href: `mailto:${contact.email}`,
-    },
-    {
-      icon: Phone,
-      label: 'Telefon',
-      value: contact.phone,
-      href: `tel:${contact.phoneHref}`,
     },
     { icon: MapPin, label: 'Anschrift', value: formattedAddress() },
     { icon: Clock, label: 'Erreichbarkeit', value: contact.hours },
