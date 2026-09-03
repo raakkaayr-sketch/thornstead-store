@@ -167,6 +167,20 @@ export const siteConfig = {
     restockingFee: false,
   },
 
+  /**
+   * Google Ads. Der Tag wird ausschließlich nach Einwilligung geladen
+   * (§ 25 Abs. 1 TDDDG) — siehe src/lib/consent.ts.
+   *
+   * conversionLabel ist NICHT die Tag-ID. Das Label steht in Google Ads unter
+   * Ziele → Conversions → die Conversion-Aktion "Kauf" → Tag einrichten und
+   * sieht aus wie "AbC-D_efGhIjKlMn". Solange es leer ist, wird zwar das
+   * purchase-Ereignis gesendet, aber keine Ads-Conversion gezählt.
+   */
+  analytics: {
+    googleAdsId: 'AW-18399591655',
+    purchaseConversionLabel: '',
+  },
+
   /** Akzeptierte Zahlungsarten, anzugeben nach § 312j Abs. 1 BGB. */
   payment: {
     methods: ['Visa', 'Mastercard', 'American Express', 'Google Pay', 'Apple Pay'],

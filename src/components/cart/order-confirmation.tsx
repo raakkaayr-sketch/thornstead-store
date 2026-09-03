@@ -7,6 +7,7 @@ import { CheckCircle2 } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button-variants';
 import { useCart } from '@/components/providers/cart-provider';
 import { siteConfig, deliveryWindow } from '@/lib/config';
+import { trackPurchase } from '@/lib/gtag';
 import { formatPrice } from '@/lib/utils';
 
 interface SessionSummary {
@@ -35,6 +36,21 @@ export function OrderConfirmation() {
       .then((data: SessionSummary | null) => data && setSummary(data))
       .catch(() => undefined);
   }, [sessionId]);
+
+  /**
+   * Kauf-Conversion an Google Ads. Läuft erst, wenn der Betrag von Stripe
+   * bestätigt zurückgekommen ist — sonst würde ein Wert von 0 gemeldet.
+   * trackPurchase sendet nichts, solange keine Einwilligung vorliegt, und
+   * zählt dieselbe Bestellung nicht doppelt.
+   */
+  useEffect(() => {
+    if (!summary || summary.amountTotal == null) return;
+    trackPurchase({
+      transactionId: summary.id,
+      value: summary.amountTotal / 100,
+      currency: summary.currency.toUpperCase(),
+    });
+  }, [summary]);
 
   return (
     <div className="container-page flex min-h-[60vh] max-w-xl flex-col items-center justify-center gap-6 px-6 py-16 text-center">

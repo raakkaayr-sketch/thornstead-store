@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Facebook, Instagram, Mail, MapPin } from 'lucide-react';
 import { Logo } from '@/components/brand/logo';
+import { ConsentSettingsLink } from './consent-settings-link';
 import { siteConfig, formattedAddress, vatNote } from '@/lib/config';
 import { getAllCategories } from '@/lib/products';
 import { isRealProfileUrl } from '@/lib/social';
@@ -118,6 +119,9 @@ export function Footer() {
           <p>
             Kartenzahlungen werden sicher über {payment.processor} abgewickelt.
             Hainholt sieht und speichert Ihre vollständigen Kartendaten nie.
+          </p>
+          <p>
+            <ConsentSettingsLink />
           </p>
         </div>
       </div>

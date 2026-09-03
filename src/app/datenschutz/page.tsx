@@ -6,23 +6,26 @@ import { siteConfig, formattedAddress } from '@/lib/config';
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
   description:
-    'Wie wir personenbezogene Daten nach DSGVO und TDDDG verarbeiten: Hosting, Bestellabwicklung, Zahlung, lokale Browserspeicherung und Ihre Rechte.',
+    'Wie wir personenbezogene Daten nach DSGVO und TDDDG verarbeiten: Hosting, Bestellabwicklung, Zahlung, lokale Browserspeicherung, Google Ads und Ihre Rechte.',
   alternates: { canonical: '/datenschutz' },
 };
 
 const { business, contact, payment } = siteConfig;
 
 /**
- * Diese Erklärung beschreibt bewusst nur, was tatsächlich stattfindet. Auf der
- * Website sind keine Analyse-, Tracking- oder Marketing-Dienste eingebunden,
- * daher wird auch keine Einwilligung nach § 25 Abs. 1 TDDDG eingeholt: Warenkorb,
- * Merkliste, Ansichtsverlauf und Designwahl liegen ausschließlich im
- * Local Storage des Browsers und sind für den Betrieb des Shops erforderlich
- * (§ 25 Abs. 2 Nr. 2 TDDDG).
+ * Diese Erklärung beschreibt bewusst nur, was tatsächlich stattfindet.
  *
- * Beim Einbinden von Google Analytics, Meta Pixel, Google Ads Conversion
- * Tracking oder Ähnlichem muss diese Seite ergänzt und ein echtes
- * Consent-Management vor dem Laden der Skripte eingeführt werden.
+ * Warenkorb, Merkliste, Ansichtsverlauf und Designwahl liegen ausschließlich im
+ * Local Storage des Browsers und sind für den Betrieb des Shops erforderlich
+ * (§ 25 Abs. 2 Nr. 2 TDDDG) — dafür wird keine Einwilligung eingeholt.
+ *
+ * Darüber hinaus ist Google Ads Conversion Tracking eingebunden. Der
+ * Google-Tag wird nicht mit der Seite ausgeliefert, sondern erst nach aktiver
+ * Einwilligung nachgeladen (§ 25 Abs. 1 TDDDG, Art. 6 Abs. 1 lit. a DSGVO);
+ * die Logik dazu steht in src/lib/consent.ts und src/lib/gtag.ts.
+ *
+ * Wird ein weiterer Dienst ergänzt — Google Analytics, Meta Pixel und
+ * Ähnliches —, gehört er in Abschnitt 9 und in den Text des Banners.
  */
 const sections: LegalSection[] = [
   {
@@ -51,7 +54,7 @@ const sections: LegalSection[] = [
   {
     heading: '4. Lokale Speicherung im Browser und Cookies',
     body: [
-      'Wir setzen keine Analyse-, Tracking-, Werbe- oder Social-Media-Cookies ein. Es findet kein Profiling und keine Reichweitenmessung statt.',
+      'Ohne Ihre Einwilligung setzen wir keine Analyse-, Tracking- oder Werbe-Cookies ein. Wie Google Ads behandelt wird, steht in Abschnitt 9.',
       'Für den Betrieb des Shops speichern wir einige Angaben im Local Storage Ihres Browsers. Diese Daten verlassen Ihr Gerät nicht und werden von uns nicht ausgelesen:',
     ],
     list: [
@@ -59,7 +62,7 @@ const sections: LegalSection[] = [
       'Ihre Merkliste',
       'Die zuletzt angesehenen Produkte',
       'Ihre Auswahl zwischen hellem und dunklem Design',
-      'Die Bestätigung des Hinweises zur Datenspeicherung, damit dieser nicht erneut erscheint',
+      'Ihre Entscheidung über Marketing-Cookies, damit das Banner nicht erneut erscheint',
     ],
   },
   {
@@ -95,21 +98,32 @@ const sections: LegalSection[] = [
     ],
   },
   {
-    heading: '9. Speicherdauer',
+    heading: '9. Google Ads und Conversion-Messung',
+    body: [
+      'Wir schalten Anzeigen über Google Ads und möchten messen, welche Anzeige tatsächlich zu einer Bestellung geführt hat. Dafür binden wir den Google-Tag (gtag.js) ein.',
+      'Der Tag wird nicht mit der Seite ausgeliefert. Er wird erst nachgeladen, nachdem Sie im Banner auf „Akzeptieren" geklickt haben. Solange Sie nicht oder ablehnend entschieden haben, wird keine Verbindung zu Google hergestellt, es werden keine Cookies gesetzt und es werden keine Daten an Google übertragen.',
+      'Nach Ihrer Einwilligung übermitteln wir beim Abschluss einer Bestellung die Bestellreferenz, den Bestellwert und die Währung. Google verarbeitet daneben die üblichen Verbindungsdaten wie IP-Adresse, Browser- und Geräteangaben sowie Cookie-Kennungen, um den Besuch einer vorherigen Anzeige zuzuordnen.',
+      'Rechtsgrundlage für das Speichern und Auslesen von Informationen auf Ihrem Endgerät ist § 25 Absatz 1 TDDDG, für die anschließende Verarbeitung Artikel 6 Absatz 1 Buchstabe a DSGVO — jeweils Ihre Einwilligung.',
+      'Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Eine Übermittlung an die Google LLC in den USA ist dabei nicht ausgeschlossen; sie erfolgt auf Grundlage des EU-US Data Privacy Framework nach Artikel 45 DSGVO sowie ergänzend der Standardvertragsklauseln nach Artikel 46 DSGVO.',
+      'Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Dafür genügt ein Klick auf „Cookie-Einstellungen" im Fußbereich jeder Seite. Die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt davon unberührt.',
+    ],
+  },
+  {
+    heading: '10. Speicherdauer',
     body: [
       'Wir speichern personenbezogene Daten nur so lange, wie es für den jeweiligen Zweck erforderlich ist.',
       'Bestell- und Rechnungsdaten unterliegen den handels- und steuerrechtlichen Aufbewahrungsfristen. Buchungsbelege bewahren wir nach § 147 Absatz 3 Abgabenordnung und § 257 Handelsgesetzbuch zehn Jahre auf. Für die Dauer der Aufbewahrungspflicht sind diese Daten in der Verarbeitung eingeschränkt und werden nur noch zur Erfüllung dieser Pflicht verwendet.',
     ],
   },
   {
-    heading: '10. Übermittlung in Drittländer',
+    heading: '11. Übermittlung in Drittländer',
     body: [
       'Unser Hosting-Anbieter Vercel hat seinen Sitz in den USA. Eine Übermittlung personenbezogener Daten in die USA kann daher nicht vollständig ausgeschlossen werden.',
       'Die Übermittlung erfolgt auf Grundlage der Standardvertragsklauseln der Europäischen Kommission nach Artikel 46 Absatz 2 Buchstabe c DSGVO in Verbindung mit ergänzenden Schutzmaßnahmen sowie, soweit der Empfänger zertifiziert ist, auf Grundlage des EU-US Data Privacy Framework nach Artikel 45 DSGVO.',
     ],
   },
   {
-    heading: '11. Ihre Rechte',
+    heading: '12. Ihre Rechte',
     body: [
       'Sie haben uns gegenüber jederzeit die folgenden Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:',
     ],
@@ -124,26 +138,26 @@ const sections: LegalSection[] = [
     ],
   },
   {
-    heading: '12. Beschwerderecht',
+    heading: '13. Beschwerderecht',
     body: [
       `Zur Ausübung Ihrer Rechte genügt eine Nachricht an ${contact.email}. Wir antworten innerhalb der gesetzlichen Frist von einem Monat.`,
       'Unabhängig davon steht Ihnen ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu, insbesondere bei der Behörde Ihres gewöhnlichen Aufenthaltsorts, Ihres Arbeitsplatzes oder des Ortes des vermuteten Verstoßes.',
     ],
   },
   {
-    heading: '13. Automatisierte Entscheidungsfindung',
+    heading: '14. Automatisierte Entscheidungsfindung',
     body: [
       'Eine automatisierte Entscheidungsfindung einschließlich Profiling nach Artikel 22 DSGVO findet nicht statt. Eine Ausnahme bilden die automatisierten Betrugsprüfungen unseres Zahlungsdienstleisters, die vor der Freigabe einer Zahlung durchgeführt werden.',
     ],
   },
   {
-    heading: '14. Verschlüsselung',
+    heading: '15. Verschlüsselung',
     body: [
       'Diese Website verwendet aus Sicherheitsgründen eine TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresse mit „https://" beginnt und Ihr Browser ein Schlosssymbol anzeigt.',
     ],
   },
   {
-    heading: '15. Änderungen dieser Erklärung',
+    heading: '16. Änderungen dieser Erklärung',
     body: [
       'Wir passen diese Datenschutzerklärung an, wenn sich die Rechtslage oder die tatsächliche Verarbeitung ändert, etwa weil ein neuer Dienst eingebunden wird. Für Ihre Bestellung gilt jeweils die Fassung, die zum Zeitpunkt der Bestellung abrufbar war.',
     ],
