@@ -82,7 +82,7 @@ export const siteConfig = {
    * Die Adresse muss mit Stripe und dem Merchant Center übereinstimmen.
    */
   contact: {
-    email: 'contact@thornstead.store',
+    email: 'kontakt@hainholt.de',
     phone: '+49 152 14085921',
     /** Nur Ziffern, für tel:-Links. */
     phoneHref: '+4915214085921',
@@ -121,7 +121,7 @@ export const siteConfig = {
       postcode: '06110',
       city: 'Halle (Saale)',
       country: 'Deutschland',
-      email: 'contact@thornstead.store',
+      email: 'kontakt@hainholt.de',
     },
   },
 
